@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "potopo_plush:stuffed",
+            "category": "Items"
+        },
+
+        "components": {
+            "minecraft:icon": "stuffed",
+            "minecraft:render_offsets": "miscellaneous"
+        }
+    }
+}

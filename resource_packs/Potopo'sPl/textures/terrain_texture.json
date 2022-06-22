@@ -1,0 +1,58 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+
+        "lucky_box_top": {
+            "textures": "textures/blocks/old_textures/lucky_box_top"
+        },
+        "lucky_box_down": {
+            "textures": "textures/blocks/old_textures/lucky_box_down"
+        },
+
+        "lucky_box_side": {
+            "textures": "textures/blocks/old_textures/lucky_box_side"
+        },
+        "lucky_box_side_purple": {
+            "textures": "textures/blocks/old_textures/lucky_box_side_purple"
+        },
+        "lucky_box_side_red": {
+            "textures": "textures/blocks/old_textures/lucky_box_side_red"
+        },
+        "lucky_box_side_heroes": {
+            "textures": "textures/blocks/old_textures/lucky_box_side_heroes"
+        },
+
+        "stuffed_container": {
+            "textures": "textures/blocks/old_textures/stuffed_container"
+        },
+
+        "halloween_box_side": {
+            "textures": "textures/blocks/events/halloween/halloween_box_side"
+        },
+
+        "halloween_candy_box_face": {
+            "textures": "textures/blocks/events/halloween/halloween_candy_box_face"
+        },
+        "halloween_candy_box_side": {
+            "textures": "textures/blocks/events/halloween/halloween_candy_box_side"
+        },
+        "halloween_candy_box_bottom": {
+            "textures": "textures/blocks/events/halloween/halloween_candy_box_bottom"
+        },
+        "halloween_candy_top": {
+            "textures": "textures/blocks/events/halloween/halloween_candy_top"
+        },
+
+        "seasson_3_lucky_box_side": {
+            "textures": "textures/blocks/events/seasson_3/seasson_3_lucky_box_side"
+        },
+
+        "test_box_side": {
+            "textures": "textures/blocks/old_textures/test_box_side"
+        }
+
+    }
+}

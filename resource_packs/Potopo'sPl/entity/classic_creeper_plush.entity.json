@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+        "identifier": "potopo_plush:classic_creeper_plush",
+        "materials": {
+            "default": "cat"
+        },
+        "textures": {
+            "default": "textures/entity/classic_creeper_plush"
+        },
+        "geometry": {
+            "default": "geometry.creeper_plush"
+        },
+        "render_controllers": [
+            "controller.render.mob_plush"
+        ],
+        "spawn_egg": {
+            "texture": "plush_eggs",
+            "texture_index": 26
+        }
+    }
+  }
+}

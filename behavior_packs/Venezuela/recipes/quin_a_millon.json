@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "venezuela:quin_a_millon"
+    },
+    "groups": [
+      "venezuela"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "venezuela:quinientos_mil"
+      },
+      {
+        "item": "venezuela:quinientos_mil"
+      }
+    ],
+    "result": {
+      "item": "venezuela:un_millon",
+      "count": 1
+    }
+  }
+}

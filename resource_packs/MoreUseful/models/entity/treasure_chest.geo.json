@@ -1,0 +1,54 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.treasure_chest",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 0, -8], "size": [16, 10, 16], "uv": [0, 0]},
+						{"origin": [4, 0, 8], "size": [2, 11, 1], "uv": [0, 4]},
+						{"origin": [-6, 0, 8], "size": [2, 11, 1], "uv": [0, 4]},
+						{"origin": [4, 0, -9], "size": [2, 11, 1], "uv": [0, 4]},
+						{"origin": [-6, 0, -9], "size": [2, 11, 1], "uv": [0, 4]},
+						{"origin": [-8, 0, -8], "size": [16, 2, 16], "inflate": 0.4, "uv": [0, 46]},
+						{"origin": [-8, 8, -8], "size": [16, 2, 16], "inflate": 0.32, "uv": [0, 46]}
+					]
+				},
+				{
+					"name": "shutter",
+					"pivot": [0, 12, 8],
+					"cubes": [
+						{"origin": [-8, 10, -8], "size": [16, 4, 16], "uv": [0, 26]},
+						{"origin": [-7, 14, -8], "size": [14, 2, 16], "inflate": 0.3, "uv": [48, 10]},
+						{"origin": [4, 10, -9], "size": [2, 6, 1], "uv": [0, 4]},
+						{"origin": [-6, 10, -9], "size": [2, 6, 1], "uv": [0, 4]},
+						{"origin": [-6, 16, -9], "size": [2, 1, 18], "uv": [48, 28]},
+						{"origin": [4, 16, -9], "size": [2, 1, 18], "uv": [48, 28]},
+						{"origin": [-6, 10, 8], "size": [2, 6, 1], "uv": [0, 4]},
+						{"origin": [4, 10, 8], "size": [2, 6, 1], "uv": [0, 4]}
+					]
+				},
+				{
+					"name": "lock",
+					"parent": "shutter",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1.5, 8, -9], "size": [3, 2, 1], "inflate": 0.3, "uv": [0, 0]},
+						{"origin": [-1, 10, -9], "size": [2, 1, 1], "inflate": 0.1, "uv": [10, 0]},
+						{"origin": [-1, 7, -9], "size": [2, 1, 1], "inflate": 0.1, "uv": [10, 0]}
+					]
+				}
+			]
+		}
+	]
+}

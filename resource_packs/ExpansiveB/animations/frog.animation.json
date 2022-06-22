@@ -1,0 +1,85 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.frog.idle": {
+			"loop": true,
+			"animation_length": 1.72,
+			"bones": {
+				"bone": {
+					"position": {
+						"0.0": [0, 1, 0],
+						"0.4": [0, 0, 0],
+						"1.72": [0, 1, 0]
+					},
+					"scale": {
+						"0.0": [1, 0, 1],
+						"0.4": [1, 1, 1],
+						"1.72": [1, 0, 1]
+					}
+				}
+			}
+		},
+		"animation.frog.move": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"rotation": [40, 0, 0],
+					"position": [0, 1, 2.4]
+				},
+				"haunchLeft": {
+					"rotation": [40, 0, 0]
+				},
+				"haunchRight": {
+					"rotation": [40, 0, 0]
+				},
+				"frontLegLeft": {
+					"rotation": [-40, 0, 0]
+				},
+				"frontLegRight": {
+					"rotation": [-40, 0, 0]
+				}
+			}
+		},
+		"animation.frog.swim": {
+			"loop": true,
+			"animation_length": 0.96,
+			"bones": {
+				"bb_main": {
+					"position": {
+						"0.0": [0, 2, 6],
+						"0.48": [0, 3, 6],
+						"0.96": [0, 2, 6]
+					}
+				},
+				"haunchLeft": {
+					"rotation": {
+						"0.0": [0, 0, -65],
+						"0.48": [0, 0, -47.5],
+						"0.96": [0, 0, -65]
+					}
+				},
+				"haunchRight": {
+					"rotation": {
+						"0.0": [0, 0, 70],
+						"0.48": [0, 0, 55],
+						"0.96": [0, 0, 70]
+					}
+				},
+				"frontLegLeft": {
+					"rotation": {
+						"0.0": [57.5, 0, -62.5],
+						"0.48": [42.5, 0, -62.5],
+						"0.96": [57.5, 0, -62.5]
+					}
+				},
+				"frontLegRight": {
+					"rotation": {
+						"0.0": [55, 0, 65],
+						"0.48": [42.5, 0, 65],
+						"0.92": [55, 0, 65]
+					}
+				}
+			}
+		}
+	}
+}

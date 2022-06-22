@@ -1,0 +1,274 @@
+//bridge-file-version: #67
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"mud_block": {
+			"textures": [
+				"textures/blocks/mud_block"
+			]
+		},
+		"small_cactus": {
+			"textures": [
+				"textures/blocks/small_cactus"
+			]
+		},
+		"coconut_block": {
+			"textures": [
+				"textures/blocks/coconut"
+			]
+		},
+		"heated_stone": {
+			"textures": [
+				"textures/blocks/heated_stone"
+			]
+		},
+		"eruption_starter": {
+			"textures": [
+				"textures/blocks/empty"
+			]
+		},
+		"black_sand": {
+			"textures": [
+				"textures/blocks/black_sand"
+			]
+		},
+		"cherry_blossom_leaves": {
+			"textures": [
+				"textures/blocks/cherry_blossom_leaves"
+			]
+		},
+		"lavender_flower": {
+			"textures": [
+				"textures/blocks/lavender_flower"
+			]
+		},
+		"jacaranda_leaves": {
+			"textures": [
+				"textures/blocks/jacaranda_leaves"
+			]
+		},
+		"jacaranda_log": {
+			"textures": [
+				"textures/blocks/jacaranda_log"
+			]
+		},
+		"jacaranda_log_top": {
+			"textures": [
+				"textures/blocks/jacaranda_log_top"
+			]
+		},
+		"jacaranda_door": {
+			"textures": [
+				"textures/blocks/jacaranda_door"
+			]
+		},
+		"collision_north": {
+			"textures": [
+				"textures/blocks/nothing"
+			]
+		},
+		"collision_south": {
+			"textures": [
+				"textures/blocks/nothing"
+			]
+		},
+		"collision_east": {
+			"textures": [
+				"textures/blocks/nothing"
+			]
+		},
+		"collision_west": {
+			"textures": [
+				"textures/blocks/nothing"
+			]
+		},
+		"jacaranda_planks": {
+			"textures": [
+				"textures/blocks/planks_jacaranda"
+			]
+		},
+		"cherry_blossom_door": {
+			"textures": [
+				"textures/blocks/cherry_blossom_door"
+			]
+		},
+		"cherry_blossom_log": {
+			"textures": [
+				"textures/blocks/cherry_blossom_log"
+			]
+		},
+		"cherry_blossom_log_top": {
+			"textures": [
+				"textures/blocks/cherry_blossom_log_top"
+			]
+		},
+		"cherry_blossom_planks": {
+			"textures": [
+				"textures/blocks/cherry_blossom_planks"
+			]
+		},
+		"dune_grass": {
+			"textures": [
+				"textures/blocks/dune_grass"
+			]
+		},
+		"eruption_event": {
+			"textures": [
+				"textures/blocks/empty"
+			]
+		},
+		"forest_ambient": {
+			"textures": [
+				"textures/blocks/empty"
+			]
+		},
+		"bog_ambient": {
+			"textures": [
+				"textures/blocks/empty"
+			]
+		},
+		"hard_dirt": {
+			"textures": [
+				"textures/blocks/hard_dirt"
+			]
+		},
+		"burning_log": {
+			"textures": [
+				"textures/blocks/burning_log"
+			]
+		},
+		"burning_log_top": {
+			"textures": [
+				"textures/blocks/burning_log_top"
+			]
+		},
+		"smoldering_grass_block_top": {
+			"textures": [
+				"textures/blocks/smoldering_grass_block_top"
+			]
+		},
+		"smoldering_grass_block_side": {
+			"textures": [
+				"textures/blocks/smoldering_grass_block_side"
+			]
+		},
+		"smoldering_grass_block_bottom": {
+			"textures": [
+				"textures/blocks/smoldering_grass_block_bottom"
+			]
+		},
+		"scorched_grass_block_top": {
+			"textures": [
+				"textures/blocks/scorched_grass_block_top"
+			]
+		},
+		"scorched_leaves": {
+			"textures": [
+				"textures/blocks/scorched_leaves"
+			]
+		},
+		"autumn_oak_leaves": {
+			"textures": [
+				"textures/blocks/autumn_oak"
+			]
+		},
+		"autumn_birch_leaves": {
+			"textures": [
+				"textures/blocks/autumn_birch"
+			]
+		},
+		"cherry_blossom_sapling_block": {
+			"textures": [
+				"textures/blocks/cherry_blossom_sapling"
+			]
+		},
+		"jacaranda_sapling_block": {
+			"textures": [
+				"textures/blocks/jacaranda_sapling"
+			]
+		},
+		"autumn_oak_leaf_pile": {
+			"textures": [
+				"textures/blocks/autumn_oak_leaf_pile"
+			]
+		},
+		"autumn_birch_leaf_pile": {
+			"textures": [
+				"textures/blocks/autumn_birch_leaf_pile"
+			]
+		},
+		"vibranium_ore": {
+			"textures": [
+				"textures/blocks/vibranium_ore"
+			]
+		},
+		"vibrant_dripstone_small_up": {
+			"textures": [
+				"textures/blocks/vibrant_dripstone_up_tip"
+			]
+		},
+		"vibrant_dripstone_small_down": {
+			"textures": [
+				"textures/blocks/vibrant_dripstone_down_tip"
+			]
+		},
+		"vibrant_dripstone_big_down_tip": {
+			"textures": [
+				"textures/blocks/vibrant_dripstone_big_down"
+			]
+		},
+		"vibrant_dripstone_big_down_base": {
+			"textures": [
+				"textures/blocks/vibrant_dripstone_down_base_big"
+			]
+		},
+		"korbon:vibrancy_stone": {
+			"textures": [
+				"textures/blocks/vibrant_stone"
+			]
+		},
+		"spawner_trapper": {
+			"textures": [
+				"textures/blocks/nothing"
+			]
+		},
+		"maple_log_syrup": {
+			"textures": [
+				"textures/blocks/maple_log_syrup"
+			]
+		},
+		"maple_log_top": {
+			"textures": [
+				"textures/blocks/maple_log_top"
+			]
+		},
+		"maple_log_syrup_empty": {
+			"textures": [
+				"textures/blocks/maple_log_syrup_empty"
+			]
+		},
+		"maple_leaves": {
+			"textures": [
+				"textures/blocks/maple_leaves"
+			]
+		},
+		"maple_sapling_block": {
+			"textures": [
+				"textures/blocks/maple_sapling"
+			]
+		},
+		"syrup_block": {
+			"textures": [
+				"textures/blocks/syrup_block"
+			]
+		},
+		"vibranium_ore_deepslate": {
+			"textures": [
+				"textures/blocks/vibranium_ore_deepslate"
+			]
+		}
+	}
+}

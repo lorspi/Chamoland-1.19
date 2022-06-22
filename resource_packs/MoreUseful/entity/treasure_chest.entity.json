@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "muc:treasure_chest",
+			"geometry": {
+				"default": "geometry.treasure_chest"
+			},
+			"textures": {
+				"default": "textures/muc_textures/treasure_chest/treasure_chest"
+			},
+			"materials": {
+				"default": "muc_default"
+			},
+			"render_controllers": [ "controller.render.treasure_chest" ],
+			"animations": {
+				"closed": "animation.treasure_chest.closed",
+				"opening": "animation.treasure_chest.opening",
+				"opened": "animation.treasure_chest.opened",
+
+				"general": "controller.animation.treasure_chest.general",
+				"particles": "controller.animation.treasure_chest.particles"
+			},
+			"particle_effects": {
+				"dust": "muc:dust",
+				"gold_sparkles": "muc:gold_sparkles"
+			},
+			"scripts": {
+				"animate": [ "general", "particles" ]
+			}
+		}
+	}
+}

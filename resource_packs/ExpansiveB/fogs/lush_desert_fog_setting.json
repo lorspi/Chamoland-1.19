@@ -1,0 +1,23 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "korbon:lush_desert_fog"
+		},
+		"distance": {
+			"air": {
+				"fog_start": 1,
+				"fog_end": 1,
+				"fog_color": "#B4AA7F",
+				"render_distance_type": "render"
+			},
+			"water": {
+				"fog_start": 0,
+				"fog_end": 15,
+				"fog_color": "#44AFF5",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

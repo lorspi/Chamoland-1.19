@@ -1,0 +1,53 @@
+//bridge-file-version: #62
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.frog.move": {
+			"initial_state": "jumping",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"jumping": "query.vertical_speed >= 1"
+						},
+						{
+							"swimming": "query.is_in_water && !query.is_on_ground"
+						}
+					]
+				},
+				"jumping": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "query.vertical_speed == 0"
+						}
+					]
+				},
+				"swimming": {
+					"animations": [
+						"frog_swim",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_in_water && query.is_on_ground"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.frog.idle": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target",
+						"frog_idle"
+					]
+				}
+			}
+		}
+	}
+}

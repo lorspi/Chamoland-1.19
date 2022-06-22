@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.variant_bee_plushie": {
+	  "arrays": {
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.peaceful",
+		    "Texture.angry"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

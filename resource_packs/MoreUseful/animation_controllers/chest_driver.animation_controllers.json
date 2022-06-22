@@ -1,0 +1,82 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.chest_driver.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"closed"
+					],
+					"transitions": [
+						{
+							"pre_open": "query.mark_variant == 102"
+						}
+					]
+				},
+				"pre_open": {
+					"animations": [
+						"opening"
+					],
+					"transitions": [
+						{
+							"opened": "query.mark_variant == 103"
+						}
+					]
+				},
+				"opened": {
+					"animations": [
+						"opened"
+					],
+					"transitions": [
+						{
+							"pre_close": "query.mark_variant == 104"
+						}
+					]
+				},
+				"pre_close": {
+					"animations": [
+						"closing"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant == 101"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.chest_driver.general_2": {
+			"states": {
+				"default": {
+					"animations": [
+						"wheel"
+					]
+				}
+			}
+		},
+		"controller.animation.chest_driver.general_3": {
+			"states": {
+				"default": {
+					"animations": [
+						"default"
+					],
+					"transitions": [
+						{
+							"sitting": "query.variant == 2"
+						}
+					]
+				},
+				"sitting": {
+					"animations": [
+						"sitting"
+					],
+					"transitions": [
+						{
+							"default": "query.variant == 1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

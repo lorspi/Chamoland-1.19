@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gaming_chair.moving": {
+      "loop": true,
+      "bones": {
+        "upper_body": {
+		  "rotation": [ "query.modified_move_speed * -75", 0, 0 ]
+        }
+	  }
+    }
+  }
+}

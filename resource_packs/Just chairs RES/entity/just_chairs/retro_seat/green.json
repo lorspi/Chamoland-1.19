@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:green_retro_seat",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/office_chair/green"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.retro_seat"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 116
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

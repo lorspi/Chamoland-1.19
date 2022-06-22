@@ -1,0 +1,13 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"muc:chest_driver": {
+				"volume": 1.0,
+				"pitch": 1.0,
+				"events": {
+					"step": "chest_driver.moving"
+				}
+			}
+		}
+	}
+}

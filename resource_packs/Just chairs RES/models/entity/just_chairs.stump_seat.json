@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.just_chairs.stump_seat",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 8, 16],
+							"uv": {
+								"north": {"uv": [0, 48], "uv_size": [32, -16]},
+								"east": {"uv": [0, 48], "uv_size": [32, -16]},
+								"south": {"uv": [0, 48], "uv_size": [32, -16]},
+								"west": {"uv": [0, 48], "uv_size": [32, -16]},
+								"up": {"uv": [32, 32], "uv_size": [-32, -32]},
+								"down": {"uv": [0, 0], "uv_size": [32, 32]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

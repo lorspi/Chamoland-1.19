@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:birch_stump_seat",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/stump_seat/birch"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.stump_seat"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 107
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

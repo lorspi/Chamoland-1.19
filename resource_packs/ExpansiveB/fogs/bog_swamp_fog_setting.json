@@ -1,0 +1,29 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "korbon:bog_swamp_fog"
+		},
+		"distance": {
+			"air": {
+				"fog_start": 7,
+				"fog_end": 96,
+				"fog_color": "#466C4C",
+				"render_distance_type": "fixed"
+			},
+			"water": {
+				"fog_start": 1,
+				"fog_end": 15,
+				"fog_color": "#466C4C",
+				"render_distance_type": "fixed"
+			},
+			"weather": {
+				"fog_start": 3,
+				"fog_end": 96,
+				"fog_color": "#2B3E2E",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

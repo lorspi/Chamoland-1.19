@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "muc:safe",
+			"geometry": {
+				"default": "geometry.safe"
+			},
+			"textures": {
+				"default": "textures/muc_textures/safe/safe"
+			},
+			"materials": {
+				"default": "muc_default"
+			},
+			"render_controllers": [ "controller.render.safe" ],
+			"spawn_egg": {
+		        "texture": "safe",
+        		"texture_index": 0
+		      },
+			"animations": {
+				"unlocking": "animation.safe.unlocking",
+				"unlocked": "animation.safe.unlocked",
+				"locking": "animation.safe.locking",
+				"locked": "animation.safe.locked",
+				"r_1": "animation.safe.r_1",
+				"r_2": "animation.safe.r_2",
+				"r_3": "animation.safe.r_3",
+				"r_4": "animation.safe.r_4",
+
+				"general": "controller.animation.safe.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					{
+						"r_1": "query.variant == 1"
+					},
+					{
+						"r_2": "query.variant == 2"
+					},
+					{
+						"r_3": "query.variant == 3"
+					},
+					{
+						"r_4": "query.variant == 4"
+					}
+				]
+			}
+		}
+	}
+}

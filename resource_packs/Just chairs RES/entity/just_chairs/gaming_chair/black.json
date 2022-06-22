@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:black_gaming_chair",
+      "materials": {
+	    "default": "translucence"
+	  },
+	  "scripts": {
+	    "animate": [ "move" ]
+	  },
+	  "animations": {
+	    "move": "controller.animation.gaming_chair.move",
+	    "moving": "animation.gaming_chair.moving"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/office_chair/black"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.gaming_chair"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 61
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

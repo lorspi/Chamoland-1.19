@@ -1,0 +1,33 @@
+//bridge-file-version: #26
+[
+	{
+		"flipbook_texture": "textures/blocks/burning_log",
+		"atlas_tile": "burning_log",
+		"ticks_per_frame": 35
+	},
+	{
+		"flipbook_texture": "textures/blocks/smoldering_grass_block_top",
+		"atlas_tile": "smoldering_grass_block_top",
+		"ticks_per_frame": 35
+	},
+	{
+		"flipbook_texture": "textures/blocks/scorched_leaves",
+		"atlas_tile": "scorched_leaves",
+		"ticks_per_frame": 35
+	},
+	{},
+	{
+		"flipbook_texture": "textures/blocks/vibranium_ore",
+		"atlas_tile": "vibranium_ore",
+		"ticks_per_frame": 35,
+		"blend_frames": true
+	},
+	{},
+	{
+		"flipbook_texture": "textures/blocks/vibranium_ore_deepslate",
+		"atlas_tile": "vibranium_ore_deepslate",
+		"ticks_per_frame": 35,
+		"blend_frames": true
+	},
+	{}
+]

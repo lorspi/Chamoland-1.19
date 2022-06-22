@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "venezuela:quinientos_mil",
+      "register_to_creative_menu": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:max_damage": 0
+    }
+  }
+}

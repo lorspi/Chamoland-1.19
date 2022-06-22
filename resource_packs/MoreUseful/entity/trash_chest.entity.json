@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "muc:trash_chest",
+			"geometry": {
+				"default": "geometry.trash_chest"
+			},
+			"textures": {
+				"default": "textures/muc_textures/trash_chest/trash_chest"
+			},
+			"materials": {
+				"default": "muc_default"
+			},
+			"render_controllers": [ "controller.render.trash_chest" ],
+			"animations": {
+				"opening": "animation.trash_chest.opening",
+				"opened": "animation.trash_chest.opened",
+				"closing": "animation.trash_chest.closing",
+				"closed": "animation.trash_chest.closed",
+				"r_1": "animation.trash_chest.r_1",
+				"r_2": "animation.trash_chest.r_2",
+				"r_3": "animation.trash_chest.r_3",
+				"r_4": "animation.trash_chest.r_4",
+
+				"general": "controller.animation.trash_chest.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					{
+						"r_1": "query.variant == 1"
+					},
+					{
+						"r_2": "query.variant == 2"
+					},
+					{
+						"r_3": "query.variant == 3"
+					},
+					{
+						"r_4": "query.variant == 4"
+					}
+				]
+			}
+		}
+	}
+}

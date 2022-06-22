@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.jewelry.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"locked"
+					],
+					"transitions": [
+						{
+							"pre_unlock": "query.mark_variant == 102"
+						}
+					]
+				},
+				"pre_unlock": {
+					"animations": [
+						"unlocking"
+					],
+					"transitions": [
+						{
+							"unlocked": "query.mark_variant == 103"
+						}
+					]
+				},
+				"unlocked": {
+					"animations": [
+						"unlocked"
+					],
+					"transitions": [
+						{
+							"pre_lock": "query.mark_variant == 104"
+						}
+					]
+				},
+				"pre_lock": {
+					"animations": [
+						"locking"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant == 101"
+						}
+					]
+				}
+			}
+		}
+	}
+}

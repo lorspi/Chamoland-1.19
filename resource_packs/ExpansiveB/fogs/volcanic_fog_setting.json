@@ -1,0 +1,29 @@
+//bridge-file-version: #18
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "korbon:volcanic_fog"
+		},
+		"distance": {
+			"air": {
+				"fog_start": 80,
+				"fog_end": 128,
+				"fog_color": "#373737",
+				"render_distance_type": "fixed"
+			},
+			"water": {
+				"fog_start": 0,
+				"fog_end": 15,
+				"fog_color": "#2A2A2A",
+				"render_distance_type": "fixed"
+			},
+			"weather": {
+				"fog_start": 8,
+				"fog_end": 48,
+				"fog_color": "#282828",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

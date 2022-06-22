@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.composter_chest.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"closed"
+					],
+					"transitions": [
+						{
+							"pre_open": "query.mark_variant == 102"
+						}
+					]
+				},
+				"pre_open": {
+					"animations": [
+						"opening"
+					],
+					"transitions": [
+						{
+							"opened": "query.mark_variant == 103"
+						}
+					]
+				},
+				"opened": {
+					"animations": [
+						"opened"
+					],
+					"transitions": [
+						{
+							"pre_close": "query.mark_variant == 104"
+						}
+					]
+				},
+				"pre_close": {
+					"animations": [
+						"closing"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant == 101"
+						}
+					]
+				}
+			}
+		}
+	}
+}

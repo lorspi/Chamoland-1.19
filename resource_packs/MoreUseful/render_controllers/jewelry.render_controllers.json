@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.jewelry": {
+			"geometry": "Geometry.default",
+			"part_visibility": [
+				{
+					"glass": "query.mark_variant != 2001"
+				}
+			],
+			"textures": [ "Texture.default" ],
+			"materials": [
+				{
+					"*": "Material.default"
+				},
+				{
+					"glass": "Material.alpha"
+				}
+			]
+		}
+	}
+}

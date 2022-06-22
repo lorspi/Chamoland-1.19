@@ -1,0 +1,29 @@
+//bridge-file-version: #20
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "korbon:redwood_forest_fog"
+		},
+		"distance": {
+			"air": {
+				"fog_start": 1,
+				"fog_end": 256,
+				"fog_color": "#FFF0DD",
+				"render_distance_type": "fixed"
+			},
+			"water": {
+				"fog_start": 0,
+				"fog_end": 15,
+				"fog_color": "#246277",
+				"render_distance_type": "fixed"
+			},
+			"weather": {
+				"fog_start": 32,
+				"fog_end": 78,
+				"fog_color": "#9B8D7C",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

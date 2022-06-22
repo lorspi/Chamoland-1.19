@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "muc:hologram_safe",
+			"geometry": {
+				"default": "geometry.safe"
+			},
+			"textures": {
+				"default": "textures/muc_textures/hologram"
+			},
+			"materials": {
+				"default": "muc_glow"
+			},
+			"render_controllers": [ "controller.render.hologram" ]
+		}
+	}
+}

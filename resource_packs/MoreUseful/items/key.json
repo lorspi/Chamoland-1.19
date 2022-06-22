@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "muc:key",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:icon": "key",
+			"minecraft:render_offsets": "miscellaneous"
+		}
+	}
+}

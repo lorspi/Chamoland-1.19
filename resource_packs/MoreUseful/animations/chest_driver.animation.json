@@ -1,0 +1,97 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.chest_driver.default": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, 0, 0]
+				},
+				"wheel": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.chest_driver.wheel": {
+			"loop": true,
+			"bones": {
+				"wheel": {
+					"rotation": [ "query.modified_distance_moved * 1", 0, 0 ]
+				}
+			}
+		},
+		"animation.chest_driver.sitting": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, -2, 0]
+				},
+				"wheel": {
+					"position": [0, 2, 0]
+				}
+			}
+		},
+		"animation.chest_driver.opening": {
+			"animation_length": 1.0,
+			"bones": {
+				"shutter": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"0.2": [ 0, 0, 0 ],
+						"0.7": [ -65, 0, 0 ],
+						"1.0": [ -75, 0, 0 ]
+					}
+				},
+				"lock": {
+					"position": {
+						"0.0": [ 0, 0, 0 ],
+						"0.2": [ 0, 2, 0 ],
+						"1.0": [ 0, 2, 0 ]
+					}
+				}
+			}
+		},
+		"animation.chest_driver.opened": {
+			"loop": true,
+			"bones": {
+				"shutter": {
+					"rotation": [ -75, 0, 0 ]
+				},
+				"lock": {
+					"rotation": [ 0, 2, 0 ]
+				}
+			}
+		},
+		"animation.chest_driver.closing": {
+			"animation_length": 1.0,
+			"bones": {
+				"shutter": {
+					"rotation": {
+						"0.0": [ -75, 0, 0 ],
+						"0.2": [ -65, 0, 0 ],
+						"0.8": [ 0, 0, 0 ],
+						"1.0": [ 0, 0, 0 ]
+					}
+				},
+				"lock": {
+					"position": {
+						"0.0": [ 0, 2, 0 ],
+						"0.8": [ 0, 2, 0 ],
+						"1.0": [ 0, 0, 0 ]
+					}
+				}
+			}
+		},
+		"animation.chest_driver.closed": {
+			"loop": true,
+			"bones": {
+				"shutter": {
+					"rotation": [ 0, 0, 0 ]
+				},
+				"lock": {
+					"rotation": [ 0, 0, 0 ]
+				}
+			}
+		}
+	}
+}

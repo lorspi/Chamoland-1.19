@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "muc:item_lc",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:icon": "locked_chest",
+			"minecraft:render_offsets": "miscellaneous"
+		}
+	}
+}

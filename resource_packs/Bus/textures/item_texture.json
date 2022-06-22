@@ -1,0 +1,11 @@
+{
+  "resource_pack_name": "domestic_moba",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "egg_3205": {
+      "textures": [
+        "textures/items/egg_3205"
+      ]
+    }
+  }
+}

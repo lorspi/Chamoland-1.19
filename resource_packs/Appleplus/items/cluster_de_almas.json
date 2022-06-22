@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "appleplus:cluster_de_almas",
+      "category": "Items",
+      "register_to_creative_menu": true
+    },
+    "components": {
+      "minecraft:icon": "cluster_de_almas",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

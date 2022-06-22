@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "muc:chest_driver",
+			"geometry": {
+				"default": "geometry.chest_driver"
+			},
+			"textures": {
+				"on": "textures/muc_textures/chest_driver/on",
+				"off": "textures/muc_textures/chest_driver/off"
+			},
+			"materials": {
+				"default": "muc_default",
+				"glow": "muc_glow",
+				"translucent": "muc_translucent"
+			},
+			"render_controllers": [ "controller.render.chest_driver" ],
+			"spawn_egg": {
+		        "texture": "chest_driver",
+        		"texture_index": 0
+		      },
+			"animations": {
+				"opening": "animation.chest_driver.opening",
+				"opened": "animation.chest_driver.opened",
+				"closing": "animation.chest_driver.closing",
+				"closed": "animation.chest_driver.closed",
+				"default": "animation.chest_driver.default",
+				"wheel": "animation.chest_driver.wheel",
+				"sitting": "animation.chest_driver.sitting",
+
+				"general": "controller.animation.chest_driver.general",
+				"general_2": "controller.animation.chest_driver.general_2",
+				"general_3": "controller.animation.chest_driver.general_3"
+			},
+			"scripts": {
+				"animate": [ "general", "general_2", "general_3" ]
+			}
+		}
+	}
+}

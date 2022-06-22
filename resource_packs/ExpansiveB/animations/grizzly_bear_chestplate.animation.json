@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cape.default": {
+			"loop": true,
+			"bones": {
+				"cape_custom": {
+					"rotation": ["math.lerp(10.0, 126.0, query.cape_flap_amount) - 6.0", 0, 0]
+				}
+			}
+		},
+		"animation.cape.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"cape_custom": {
+					"rotation": ["math.lerp(10.0, 126.0, query.cape_flap_amount) - 6.0", 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+        "identifier": "potopo_plush:creamy_trader_llama_plush",
+        "materials": {
+            "default": "cat"
+        },
+        "textures": {
+            "default": "textures/entity/creamy_trader_llama_plush"
+        },
+        "geometry": {
+            "default": "geometry.llama_llama_plush"
+        },
+        "render_controllers": [
+            "controller.render.llama_llama_plush"
+        ],
+        "spawn_egg": {
+            "texture": "plush_eggs",
+            "texture_index": 15
+        }
+    }
+  }
+}

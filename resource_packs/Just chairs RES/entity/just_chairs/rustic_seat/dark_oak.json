@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:dark_oak_rustic_seat",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/outdoor_chair/dark_oak"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.rustic_seat"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 132
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

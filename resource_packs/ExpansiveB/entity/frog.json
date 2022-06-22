@@ -1,0 +1,39 @@
+//bridge-file-version: #37
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "korbon:frog",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/frog"
+			},
+			"geometry": {
+				"default": "geometry.frog"
+			},
+			"animations": {
+				"move": "animation.frog.move",
+				"look_at_target": "animation.common.look_at_target",
+				"frog_idle": "animation.frog.idle",
+				"frog_swim": "animation.frog.swim"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#1C5319",
+				"overlay_color": "#4E6641"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.frog.move"
+				},
+				{
+					"frog_idle": "controller.animation.frog.idle"
+				}
+			]
+		}
+	}
+}

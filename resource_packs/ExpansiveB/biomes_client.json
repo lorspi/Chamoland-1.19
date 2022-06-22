@@ -1,0 +1,116 @@
+//bridge-file-version: #63
+{
+	"biomes": {
+		"default": {
+			"water_surface_color": "#44AFF5",
+			"water_surface_transparency": 0.65,
+			"water_fog_color": "#44AFF5",
+			"water_fog_distance": 15
+		},
+		"bog_swamp": {
+			"water_surface_color": "#466C4C",
+			"water_fog_color": "#466C4C",
+			"water_fog_distance": 3,
+			"fog_identifier": "korbon:bog_swamp_fog",
+			"water_surface_transparency": 1
+		},
+		"lush_desert": {
+			"fog_identifier": "korbon:lush_desert_fog"
+		},
+		"spruce_pine_forest": {
+			"fog_identifier": "korbon:spruce_pine_forest_fog",
+			"water_surface_color": "#246277"
+		},
+		"spruce_pine_forest_clearing": {
+			"fog_identifier": "korbon:spruce_pine_forest_fog",
+			"water_surface_color": "#246277"
+		},
+		"mushroom_forest": {
+			"water_surface_color": "#A3A2A2",
+			"fog_identifier": "korbon:mushroom_forest_fog",
+			"water_surface_transparency": 1
+		},
+		"cold_spruce_pine_forest": {
+			"fog_identifier": "korbon:cold_spruce_pine_forest_fog",
+			"water_surface_color": "#246277"
+		},
+		"cold_spruce_pine_forest_clearing": {
+			"fog_identifier": "korbon:cold_spruce_pine_forest_fog",
+			"water_surface_color": "#246277"
+		},
+		"volcanic": {
+			"water_surface_color": "#2A2A2A",
+			"water_surface_transparency": 1,
+			"fog_identifier": "korbon:volcanic_fog"
+		},
+		"cherry_blossom_grove": {
+			"fog_identifier": "korbon:cherry_blossom_fog"
+		},
+		"dunes": {
+			"fog_identifier": "korbon:dunes_fog",
+			"water_surface_color": "#FFFED5",
+			"water_surface_transparency": 1
+		},
+		"dunes_valley": {
+			"fog_identifier": "korbon:dunes_fog",
+			"water_surface_color": "#FFFED5",
+			"water_surface_transparency": 1
+		},
+		"pine_forest": {
+			"fog_identifier": "korbon:pine_forest_normal_fog",
+			"water_surface_color": "#44AFF5",
+			"water_surface_transparency": 0.65,
+			"water_fog_distance": 15
+		},
+		"pine_forest_hills": {
+			"fog_identifier": "korbon:pine_forest_normal_fog",
+			"water_surface_color": "#44AFF5",
+			"water_surface_transparency": 0.65,
+			"water_fog_distance": 15
+		},
+		"cold_pine_forest": {
+			"fog_identifier": "korbon:cold_spruce_pine_forest_fog",
+			"water_surface_color": "#246277"
+		},
+		"cold_pine_forest_hills": {
+			"fog_identifier": "korbon:cold_spruce_pine_forest_fog",
+			"water_surface_color": "#246277"
+		},
+		"frozen_mountain": {
+			"fog_identifier": "korbon:frozen_mountain_fog"
+		},
+		"frozen_mountain_peak": {
+			"fog_identifier": "korbon:frozen_mountain_fog"
+		},
+		"redwood_forest": {
+			"fog_identifier": "korbon:redwood_forest_fog"
+		},
+		"redwood_forest_hills": {
+			"fog_identifier": "korbon:redwood_forest_fog"
+		},
+		"black_sand_shore": {
+			"water_surface_color": "#2A2A2A",
+			"water_surface_transparency": 1,
+			"fog_identifier": "korbon:volcanic_fog"
+		},
+		"scorched_forest": {
+			"fog_identifier": "korbon:volcanic_fog",
+			"water_surface_color": "#2A2A2A",
+			"water_surface_transparency": 1
+		},
+		"autumn_forest": {
+			"fog_identifier": "korbon:autumn_forest_fog"
+		},
+		"autumn_forest_hills": {
+			"fog_identifier": "korbon:autumn_forest_fog"
+		},
+		"birch_wetland": {
+			"water_surface_color": "#54677A",
+			"water_surface_transparency": 1,
+			"fog_identifier": "korbon:birch_wetland_fog"
+		},
+		"frozen_desert": {
+			"fog_identifier": "korbon:frozen_desert_fog"
+		}
+	}
+}

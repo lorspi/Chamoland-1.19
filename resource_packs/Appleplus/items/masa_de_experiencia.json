@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "appleplus:masa_de_experiencia",
+      "category": "Items",
+      "register_to_creative_menu": true
+    },
+    "components": {
+      "minecraft:icon": "masa_de_experiencia",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

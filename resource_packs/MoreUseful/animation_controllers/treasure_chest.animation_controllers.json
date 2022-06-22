@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.treasure_chest.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"closed"
+					],
+					"transitions": [
+						{
+							"pre_open": "query.mark_variant == 101"
+						}
+					]
+				},
+				"pre_open": {
+					"animations": [
+						"opening"
+					],
+					"transitions": [
+						{
+							"opened": "query.mark_variant == 102"
+						}
+					]
+				},
+				"opened": {
+					"animations": [
+						"opened"
+					]
+				}
+			}
+		},
+		"controller.animation.treasure_chest.particles": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"particles_dust": "query.variant == 1"
+						},
+						{
+							"particles_gold_sparkles": "query.variant == 2"
+						}
+					]
+				},
+				"particles_dust": {
+					"particle_effects": [
+						{
+							"effect": "dust"
+						}
+					]
+				},
+				"particles_gold_sparkles": {
+					"particle_effects": [
+						{
+							"effect": "gold_sparkles"
+						}
+					]
+				}
+			}
+		}
+	}
+}

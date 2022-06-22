@@ -1,0 +1,102 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.safe.r_1": {
+			"loop": true,
+			"bones": {
+				"safe": {
+					"rotation": [ 0, -90, 0 ]
+				}
+			}
+		},
+		"animation.safe.r_2": {
+			"loop": true,
+			"bones": {
+				"safe": {
+					"rotation": [ 0, -180, 0 ]
+				}
+			}
+		},
+		"animation.safe.r_3": {
+			"loop": true,
+			"bones": {
+				"safe": {
+					"rotation": [ 0, -270, 0 ]
+				}
+			}
+		},
+		"animation.safe.r_4": {
+			"loop": true,
+			"bones": {
+				"safe": {
+					"rotation": [ 0, -360, 0 ]
+				}
+			}
+		},
+
+		"animation.safe.unlocking": {
+			"animation_length": 1.0,
+			"bones": {
+				"door": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"0.2": [ 0, 0, 0 ],
+						"0.5": [ 0, 35, 0 ],
+						"0.7": [ 0, 40, 0 ],
+						"1.0": [ 0, 45, 0 ]
+					}
+				},
+				"lock": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"0.2": [ 0, 0, -90 ],
+						"1.0": [ 0, 0, -90 ]
+					}
+				}
+			}
+		},
+		"animation.safe.unlocked": {
+			"loop": true,
+			"bones": {
+				"door": {
+					"rotation": [ 0, 45, 0 ]
+				},
+				"lock": {
+					"rotation": [ 0, 0, -90 ]
+				}
+			}
+		},
+		"animation.safe.locking": {
+			"animation_length": 1.0,
+			"bones": {
+				"door": {
+					"rotation": {
+						"0.0": [ 0, 45, 0 ],
+						"0.2": [ 0, 22.5, 0 ],
+						"0.5": [ 0, 0, 0 ],
+						"0.7": [ 0, 0, 0 ],
+						"1.0": [ 0, 0, 0 ]
+					}
+				},
+				"lock": {
+					"rotation": {
+						"0.0": [ 0, 0, -90 ],
+						"0.5": [ 0, 0, -90 ],
+						"1.0": [ 0, 0, 0 ]
+					}
+				}
+			}
+		},
+		"animation.safe.locked": {
+			"loop": true,
+			"bones": {
+				"door": {
+					"rotation": [ 0, 0, 0 ]
+				},
+				"lock": {
+					"rotation": [ 0, 0, 0 ]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+    "format_version": [ 1, 1, 0 ],
+
+    "potopo_plush:lucky_box": {
+        "textures": {
+            "up": "lucky_box_top",
+            "down": "lucky_box_down",
+            "side": "lucky_box_side"
+        },
+        "sound": "wood"
+    },
+    "potopo_plush:lucky_box_purple": {
+        "textures": {
+            "up": "lucky_box_top",
+            "down": "lucky_box_down",
+            "side": "lucky_box_side_purple"
+        },
+        "sound": "wood"
+    },
+    "potopo_plush:lucky_box_red": {
+        "textures": {
+            "up": "lucky_box_top",
+            "down": "lucky_box_down",
+            "side": "lucky_box_side_heroes"
+        },
+        "sound": "wood"
+    },
+    "potopo_plush:stuffed_container": {
+        "textures": {
+            "up": "lucky_box_top",
+            "down": "lucky_box_down",
+            "side": "stuffed_container"
+        },
+        "sound": "wood"
+    },
+    "potopo_plush:test_box": {
+        "textures": {
+            "up": "lucky_box_top",
+            "down": "lucky_box_down",
+            "side": "test_box_side"
+        },
+        "sound": "wood"
+    },
+
+    "potopo_plush:halloween_plushies_box": {
+        "textures": {
+            "up": "lucky_box_top",
+            "down": "lucky_box_down",
+            "side": "halloween_box_side"
+        },
+        "sound": "wood"
+    },
+    "potopo_plush:halloween_candy_box": {
+		"sound" : "wood",
+		"textures" : {
+		   "down" : "halloween_candy_box_bottom",
+		   "up" : "halloween_candy_top",
+		   "north" : "halloween_candy_box_face",
+		   "south" : "halloween_candy_box_face",
+		   "west" : "halloween_candy_box_side",
+		   "east" : "halloween_candy_box_side"
+		}
+	},
+
+    "potopo_plush:seasson_3_lucky_box": {
+        "textures": {
+            "up": "lucky_box_top",
+            "down": "lucky_box_down",
+            "side": "seasson_3_lucky_box_side"
+        },
+        "sound": "wood"
+    }
+}

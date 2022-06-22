@@ -1,0 +1,29 @@
+//bridge-file-version: #17
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "korbon:birch_wetland_fog"
+		},
+		"distance": {
+			"air": {
+				"fog_start": 1,
+				"fog_end": 232,
+				"fog_color": "#485A4B",
+				"render_distance_type": "fixed"
+			},
+			"water": {
+				"fog_start": 1,
+				"fog_end": 15,
+				"fog_color": "#485A4B",
+				"render_distance_type": "fixed"
+			},
+			"weather": {
+				"fog_start": 3,
+				"fog_end": 96,
+				"fog_color": "#2C362D",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

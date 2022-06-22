@@ -1,0 +1,37 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.door_open",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 32, 3],
+							"pivot": [0, 0, 0],
+							"rotation": [0, -90, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 64]},
+								"east": {"uv": [0, 0], "uv_size": [6, 64]},
+								"south": {"uv": [32, 0], "uv_size": [-32, 64]},
+								"west": {"uv": [32, 0], "uv_size": [-6, 64]},
+								"up": {"uv": [32, 64], "uv_size": [-32, -6]},
+								"down": {"uv": [32, 58], "uv_size": [-32, 6]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

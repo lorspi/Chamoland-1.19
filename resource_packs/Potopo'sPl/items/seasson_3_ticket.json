@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "potopo_plush:seasson_3_ticket",
+            "category": "Items"
+        },
+
+        "components": {
+            "minecraft:icon": "seasson_3_ticket",
+            "minecraft:render_offsets": "miscellaneous"
+        }
+    }
+}

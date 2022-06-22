@@ -1,0 +1,10 @@
+pack.name=Recursos del complemento de mochila
+pack.description=Usar con el paquete de comportamiento
+
+entity.unknown.name=  
+entity.entity:backpack.name=Mochila
+item.spawn_egg.entity.entity:backpack.name=Mochila Spawn
+item.item:backpack.name=Mochila
+
+
+

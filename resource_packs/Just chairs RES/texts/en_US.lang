@@ -1,0 +1,743 @@
+﻿entity.raigen:oak_simple_chair.name=Simple chair (oak)
+action.hint.exit.raigen:oak_simple_chair=Sneak to exit
+item.spawn_egg.entity.raigen:oak_simple_chair.name=Simple chair (oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:spruce_simple_chair.name=Simple chair (spruce)
+action.hint.exit.raigen:spruce_simple_chair=Sneak to exit
+item.spawn_egg.entity.raigen:spruce_simple_chair.name=Simple chair (spruce) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:birch_simple_chair.name=Simple chair (birch)
+action.hint.exit.raigen:birch_simple_chair=Sneak to exit
+item.spawn_egg.entity.raigen:birch_simple_chair.name=Simple chair (birch) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:jungle_simple_chair.name=Simple chair (jungle)
+action.hint.exit.raigen:jungle_simple_chair=Sneak to exit
+item.spawn_egg.entity.raigen:jungle_simple_chair.name=Simple chair (jungle) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:acacia_simple_chair.name=Simple chair (acacia)
+action.hint.exit.raigen:acacia_simple_chair=Sneak to exit
+item.spawn_egg.entity.raigen:acacia_simple_chair.name=Simple chair (acacia) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:dark_oak_simple_chair.name=Simple chair (dark oak)
+action.hint.exit.raigen:dark_oak_simple_chair=Sneak to exit
+item.spawn_egg.entity.raigen:dark_oak_simple_chair.name=Simple chair (dark oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:black_small_sofa.name=Small sofa (black)
+action.hint.exit.raigen:black_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:black_small_sofa.name=Small sofa (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_small_sofa.name=Small sofa (blue)
+action.hint.exit.raigen:blue_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:blue_small_sofa.name=Small sofa (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_small_sofa.name=Small sofa (brown)
+action.hint.exit.raigen:brown_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:brown_small_sofa.name=Small sofa (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_small_sofa.name=Small sofa (cyan)
+action.hint.exit.raigen:cyan_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_small_sofa.name=Small sofa (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_small_sofa.name=Small sofa (gray)
+action.hint.exit.raigen:gray_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:gray_small_sofa.name=Small sofa (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_small_sofa.name=Small sofa (green)
+action.hint.exit.raigen:green_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:green_small_sofa.name=Small sofa (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_small_sofa.name=Small sofa (light blue)
+action.hint.exit.raigen:light_blue_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_small_sofa.name=Small sofa (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_small_sofa.name=Small sofa (lime)
+action.hint.exit.raigen:lime_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:lime_small_sofa.name=Small sofa (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_small_sofa.name=Small sofa (magenta)
+action.hint.exit.raigen:magenta_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_small_sofa.name=Small sofa (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_small_sofa.name=Small sofa (orange)
+action.hint.exit.raigen:orange_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:orange_small_sofa.name=Small sofa (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_small_sofa.name=Small sofa (pink)
+action.hint.exit.raigen:pink_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:pink_small_sofa.name=Small sofa (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_small_sofa.name=Small sofa (purple)
+action.hint.exit.raigen:purple_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:purple_small_sofa.name=Small sofa (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_small_sofa.name=Small sofa (red)
+action.hint.exit.raigen:red_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:red_small_sofa.name=Small sofa (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_small_sofa.name=Small sofa (silver)
+action.hint.exit.raigen:silver_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:silver_small_sofa.name=Small sofa (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_small_sofa.name=Small sofa (white)
+action.hint.exit.raigen:white_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:white_small_sofa.name=Small sofa (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_small_sofa.name=Small sofa (yellow)
+action.hint.exit.raigen:yellow_small_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_small_sofa.name=Small sofa (yellow) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:black_big_sofa.name=Big sofa (black)
+action.hint.exit.raigen:black_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:black_big_sofa.name=Big sofa (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_big_sofa.name=Big sofa (blue)
+action.hint.exit.raigen:blue_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:blue_big_sofa.name=Big sofa (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_big_sofa.name=Big sofa (brown)
+action.hint.exit.raigen:brown_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:brown_big_sofa.name=Big sofa (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_big_sofa.name=Big sofa (cyan)
+action.hint.exit.raigen:cyan_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_big_sofa.name=Big sofa (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_big_sofa.name=Big sofa (gray)
+action.hint.exit.raigen:gray_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:gray_big_sofa.name=Big sofa (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_big_sofa.name=Big sofa (green)
+action.hint.exit.raigen:green_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:green_big_sofa.name=Big sofa (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_big_sofa.name=Big sofa (light blue)
+action.hint.exit.raigen:light_blue_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_big_sofa.name=Big sofa (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_big_sofa.name=Big sofa (lime)
+action.hint.exit.raigen:lime_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:lime_big_sofa.name=Big sofa (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_big_sofa.name=Big sofa (magenta)
+action.hint.exit.raigen:magenta_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_big_sofa.name=Big sofa (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_big_sofa.name=Big sofa (orange)
+action.hint.exit.raigen:orange_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:orange_big_sofa.name=Big sofa (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_big_sofa.name=Big sofa (pink)
+action.hint.exit.raigen:pink_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:pink_big_sofa.name=Big sofa (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_big_sofa.name=Big sofa (purple)
+action.hint.exit.raigen:purple_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:purple_big_sofa.name=Big sofa (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_big_sofa.name=Big sofa (red)
+action.hint.exit.raigen:red_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:red_big_sofa.name=Big sofa (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_big_sofa.name=Big sofa (silver)
+action.hint.exit.raigen:silver_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:silver_big_sofa.name=Big sofa (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_big_sofa.name=Big sofa (white)
+action.hint.exit.raigen:white_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:white_big_sofa.name=Big sofa (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_big_sofa.name=Big sofa (yellow)
+action.hint.exit.raigen:yellow_big_sofa=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_big_sofa.name=Big sofa (yellow) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:oak_simple_stool.name=Simple stool (oak)
+action.hint.exit.raigen:oak_simple_stool=Sneak to exit
+item.spawn_egg.entity.raigen:oak_simple_stool.name=Simple stool (oak) §r§d§l§o::§r§b Just stools
+
+entity.raigen:spruce_simple_stool.name=Simple stool (spruce)
+action.hint.exit.raigen:spruce_simple_stool=Sneak to exit
+item.spawn_egg.entity.raigen:spruce_simple_stool.name=Simple stool (spruce) §r§d§l§o::§r§b Just stools
+
+entity.raigen:birch_simple_stool.name=Simple stool (birch)
+action.hint.exit.raigen:birch_simple_stool=Sneak to exit
+item.spawn_egg.entity.raigen:birch_simple_stool.name=Simple stool (birch) §r§d§l§o::§r§b Just stools
+
+entity.raigen:jungle_simple_stool.name=Simple stool (jungle)
+action.hint.exit.raigen:jungle_simple_stool=Sneak to exit
+item.spawn_egg.entity.raigen:jungle_simple_stool.name=Simple stool (jungle) §r§d§l§o::§r§b Just stools
+
+entity.raigen:acacia_simple_stool.name=Simple stool (acacia)
+action.hint.exit.raigen:acacia_simple_stool=Sneak to exit
+item.spawn_egg.entity.raigen:acacia_simple_stool.name=Simple stool (acacia) §r§d§l§o::§r§b Just stools
+
+entity.raigen:dark_oak_simple_stool.name=Simple stool (dark oak)
+action.hint.exit.raigen:dark_oak_simple_stool=Sneak to exit
+item.spawn_egg.entity.raigen:dark_oak_simple_stool.name=Simple stool (dark oak) §r§d§l§o::§r§b Just stools
+
+entity.raigen:black_office_chair.name=Office chair (black)
+action.hint.exit.raigen:black_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:black_office_chair.name=Office chair (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_office_chair.name=Office chair (blue)
+action.hint.exit.raigen:blue_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:blue_office_chair.name=Office chair (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_office_chair.name=Office chair (brown)
+action.hint.exit.raigen:brown_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:brown_office_chair.name=Office chair (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_office_chair.name=Office chair (cyan)
+action.hint.exit.raigen:cyan_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_office_chair.name=Office chair (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_office_chair.name=Office chair (gray)
+action.hint.exit.raigen:gray_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:gray_office_chair.name=Office chair (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_office_chair.name=Office chair (green)
+action.hint.exit.raigen:green_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:green_office_chair.name=Office chair (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_office_chair.name=Office chair (light blue)
+action.hint.exit.raigen:light_blue_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_office_chair.name=Office chair (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_office_chair.name=Office chair (lime)
+action.hint.exit.raigen:lime_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:lime_office_chair.name=Office chair (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_office_chair.name=Office chair (magenta)
+action.hint.exit.raigen:magenta_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_office_chair.name=Office chair (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_office_chair.name=Office chair (orange)
+action.hint.exit.raigen:orange_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:orange_office_chair.name=Office chair (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_office_chair.name=Office chair (pink)
+action.hint.exit.raigen:pink_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:pink_office_chair.name=Office chair (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_office_chair.name=Office chair (purple)
+action.hint.exit.raigen:purple_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:purple_office_chair.name=Office chair (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_office_chair.name=Office chair (red)
+action.hint.exit.raigen:red_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:red_office_chair.name=Office chair (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_office_chair.name=Office chair (silver)
+action.hint.exit.raigen:silver_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:silver_office_chair.name=Office chair (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_office_chair.name=Office chair (white)
+action.hint.exit.raigen:white_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:white_office_chair.name=Office chair (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_office_chair.name=Office chair (yellow)
+action.hint.exit.raigen:yellow_office_chair=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_office_chair.name=Office chair (yellow) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:black_gaming_chair.name=Gaming chair (black)
+action.hint.exit.raigen:black_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:black_gaming_chair.name=Gaming chair (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_gaming_chair.name=Gaming chair (blue)
+action.hint.exit.raigen:blue_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:blue_gaming_chair.name=Gaming chair (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_gaming_chair.name=Gaming chair (brown)
+action.hint.exit.raigen:brown_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:brown_gaming_chair.name=Gaming chair (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_gaming_chair.name=Gaming chair (cyan)
+action.hint.exit.raigen:cyan_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_gaming_chair.name=Gaming chair (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_gaming_chair.name=Gaming chair (gray)
+action.hint.exit.raigen:gray_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:gray_gaming_chair.name=Gaming chair (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_gaming_chair.name=Gaming chair (green)
+action.hint.exit.raigen:green_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:green_gaming_chair.name=Gaming chair (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_gaming_chair.name=Gaming chair (light blue)
+action.hint.exit.raigen:light_blue_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_gaming_chair.name=Gaming chair (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_gaming_chair.name=Gaming chair (lime)
+action.hint.exit.raigen:lime_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:lime_gaming_chair.name=Gaming chair (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_gaming_chair.name=Gaming chair (magenta)
+action.hint.exit.raigen:magenta_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_gaming_chair.name=Gaming chair (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_gaming_chair.name=Gaming chair (orange)
+action.hint.exit.raigen:orange_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:orange_gaming_chair.name=Gaming chair (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_gaming_chair.name=Gaming chair (pink)
+action.hint.exit.raigen:pink_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:pink_gaming_chair.name=Gaming chair (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_gaming_chair.name=Gaming chair (purple)
+action.hint.exit.raigen:purple_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:purple_gaming_chair.name=Gaming chair (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_gaming_chair.name=Gaming chair (red)
+action.hint.exit.raigen:red_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:red_gaming_chair.name=Gaming chair (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_gaming_chair.name=Gaming chair (silver)
+action.hint.exit.raigen:silver_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:silver_gaming_chair.name=Gaming chair (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_gaming_chair.name=Gaming chair (white)
+action.hint.exit.raigen:white_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:white_gaming_chair.name=Gaming chair (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_gaming_chair.name=Gaming chair (yellow)
+action.hint.exit.raigen:yellow_gaming_chair=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_gaming_chair.name=Gaming chair (yellow) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:oak_outdoor_chair.name=Outdoor chair (oak)
+action.hint.exit.raigen:oak_outdoor_chair=Sneak to exit
+item.spawn_egg.entity.raigen:oak_outdoor_chair.name=Outdoor chair (oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:spruce_outdoor_chair.name=Outdoor chair (spruce)
+action.hint.exit.raigen:spruce_outdoor_chair=Sneak to exit
+item.spawn_egg.entity.raigen:spruce_outdoor_chair.name=Outdoor chair (spruce) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:birch_outdoor_chair.name=Outdoor chair (birch)
+action.hint.exit.raigen:birch_outdoor_chair=Sneak to exit
+item.spawn_egg.entity.raigen:birch_outdoor_chair.name=Outdoor chair (birch) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:jungle_outdoor_chair.name=Outdoor chair (jungle)
+action.hint.exit.raigen:jungle_outdoor_chair=Sneak to exit
+item.spawn_egg.entity.raigen:jungle_outdoor_chair.name=Outdoor chair (jungle) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:acacia_outdoor_chair.name=Outdoor chair (acacia)
+action.hint.exit.raigen:acacia_outdoor_chair=Sneak to exit
+item.spawn_egg.entity.raigen:acacia_outdoor_chair.name=Outdoor chair (acacia) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:dark_oak_outdoor_chair.name=Outdoor chair (dark oak)
+action.hint.exit.raigen:dark_oak_outdoor_chair=Sneak to exit
+item.spawn_egg.entity.raigen:dark_oak_outdoor_chair.name=Outdoor chair (dark oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:oak_outdoor_bench.name=Outdoor bench (oak)
+action.hint.exit.raigen:oak_outdoor_bench=Sneak to exit
+item.spawn_egg.entity.raigen:oak_outdoor_bench.name=Outdoor bench (oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:spruce_outdoor_bench.name=Outdoor bench (spruce)
+action.hint.exit.raigen:spruce_outdoor_bench=Sneak to exit
+item.spawn_egg.entity.raigen:spruce_outdoor_bench.name=Outdoor bench (spruce) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:birch_outdoor_bench.name=Outdoor bench (birch)
+action.hint.exit.raigen:birch_outdoor_bench=Sneak to exit
+item.spawn_egg.entity.raigen:birch_outdoor_bench.name=Outdoor bench (birch) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:jungle_outdoor_bench.name=Outdoor bench (jungle)
+action.hint.exit.raigen:jungle_outdoor_bench=Sneak to exit
+item.spawn_egg.entity.raigen:jungle_outdoor_bench.name=Outdoor bench (jungle) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:acacia_outdoor_bench.name=Outdoor bench (acacia)
+action.hint.exit.raigen:acacia_outdoor_bench=Sneak to exit
+item.spawn_egg.entity.raigen:acacia_outdoor_bench.name=Outdoor bench (acacia) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:dark_oak_outdoor_bench.name=Outdoor bench (dark oak)
+action.hint.exit.raigen:dark_oak_outdoor_bench=Sneak to exit
+item.spawn_egg.entity.raigen:dark_oak_outdoor_bench.name=Outdoor bench (dark oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:black_cloth_stool.name=Cloth stool (black)
+action.hint.exit.raigen:black_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:black_cloth_stool.name=Cloth stool (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_cloth_stool.name=Cloth stool (blue)
+action.hint.exit.raigen:blue_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:blue_cloth_stool.name=Cloth stool (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_cloth_stool.name=Cloth stool (brown)
+action.hint.exit.raigen:brown_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:brown_cloth_stool.name=Cloth stool (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_cloth_stool.name=Cloth stool (cyan)
+action.hint.exit.raigen:cyan_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_cloth_stool.name=Cloth stool (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_cloth_stool.name=Cloth stool (gray)
+action.hint.exit.raigen:gray_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:gray_cloth_stool.name=Cloth stool (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_cloth_stool.name=Cloth stool (green)
+action.hint.exit.raigen:green_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:green_cloth_stool.name=Cloth stool (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_cloth_stool.name=Cloth stool (light blue)
+action.hint.exit.raigen:light_blue_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_cloth_stool.name=Cloth stool (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_cloth_stool.name=Cloth stool (lime)
+action.hint.exit.raigen:lime_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:lime_cloth_stool.name=Cloth stool (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_cloth_stool.name=Cloth stool (magenta)
+action.hint.exit.raigen:magenta_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_cloth_stool.name=Cloth stool (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_cloth_stool.name=Cloth stool (orange)
+action.hint.exit.raigen:orange_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:orange_cloth_stool.name=Cloth stool (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_cloth_stool.name=Cloth stool (pink)
+action.hint.exit.raigen:pink_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:pink_cloth_stool.name=Cloth stool (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_cloth_stool.name=Cloth stool (purple)
+action.hint.exit.raigen:purple_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:purple_cloth_stool.name=Cloth stool (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_cloth_stool.name=Cloth stool (red)
+action.hint.exit.raigen:red_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:red_cloth_stool.name=Cloth stool (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_cloth_stool.name=Cloth stool (silver)
+action.hint.exit.raigen:silver_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:silver_cloth_stool.name=Cloth stool (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_cloth_stool.name=Cloth stool (white)
+action.hint.exit.raigen:white_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:white_cloth_stool.name=Cloth stool (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_cloth_stool.name=Cloth stool (yellow)
+action.hint.exit.raigen:yellow_cloth_stool=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_cloth_stool.name=Cloth stool (yellow) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:oak_stump_seat.name=Stump seat (oak)
+action.hint.exit.raigen:oak_stump_seat=Sneak to exit
+item.spawn_egg.entity.raigen:oak_stump_seat.name=Stump seat (oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:spruce_stump_seat.name=Stump seat (spruce)
+action.hint.exit.raigen:spruce_stump_seat=Sneak to exit
+item.spawn_egg.entity.raigen:spruce_stump_seat.name=Stump seat (spruce) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:birch_stump_seat.name=Stump seat (birch)
+action.hint.exit.raigen:birch_stump_seat=Sneak to exit
+item.spawn_egg.entity.raigen:birch_stump_seat.name=Stump seat (birch) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:jungle_stump_seat.name=Stump seat (jungle)
+action.hint.exit.raigen:jungle_stump_seat=Sneak to exit
+item.spawn_egg.entity.raigen:jungle_stump_seat.name=Stump seat (jungle) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:acacia_stump_seat.name=Stump seat (acacia)
+action.hint.exit.raigen:acacia_stump_seat=Sneak to exit
+item.spawn_egg.entity.raigen:acacia_stump_seat.name=Stump seat (acacia) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:dark_oak_stump_seat.name=Stump seat (dark oak)
+action.hint.exit.raigen:dark_oak_stump_seat=Sneak to exit
+item.spawn_egg.entity.raigen:dark_oak_stump_seat.name=Stump seat (dark oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:black_retro_seat.name=Retro seat (black)
+action.hint.exit.raigen:black_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:black_retro_seat.name=Retro seat (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_retro_seat.name=Retro seat (blue)
+action.hint.exit.raigen:blue_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:blue_retro_seat.name=Retro seat (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_retro_seat.name=Retro seat (brown)
+action.hint.exit.raigen:brown_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:brown_retro_seat.name=Retro seat (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_retro_seat.name=Retro seat (cyan)
+action.hint.exit.raigen:cyan_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_retro_seat.name=Retro seat (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_retro_seat.name=Retro seat (gray)
+action.hint.exit.raigen:gray_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:gray_retro_seat.name=Retro seat (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_retro_seat.name=Retro seat (green)
+action.hint.exit.raigen:green_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:green_retro_seat.name=Retro seat (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_retro_seat.name=Retro seat (light blue)
+action.hint.exit.raigen:light_blue_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_retro_seat.name=Retro seat (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_retro_seat.name=Retro seat (lime)
+action.hint.exit.raigen:lime_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:lime_retro_seat.name=Retro seat (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_retro_seat.name=Retro seat (magenta)
+action.hint.exit.raigen:magenta_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_retro_seat.name=Retro seat (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_retro_seat.name=Retro seat (orange)
+action.hint.exit.raigen:orange_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:orange_retro_seat.name=Retro seat (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_retro_seat.name=Retro seat (pink)
+action.hint.exit.raigen:pink_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:pink_retro_seat.name=Retro seat (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_retro_seat.name=Retro seat (purple)
+action.hint.exit.raigen:purple_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:purple_retro_seat.name=Retro seat (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_retro_seat.name=Retro seat (red)
+action.hint.exit.raigen:red_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:red_retro_seat.name=Retro seat (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_retro_seat.name=Retro seat (silver)
+action.hint.exit.raigen:silver_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:silver_retro_seat.name=Retro seat (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_retro_seat.name=Retro seat (white)
+action.hint.exit.raigen:white_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:white_retro_seat.name=Retro seat (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_retro_seat.name=Retro seat (yellow)
+action.hint.exit.raigen:yellow_retro_seat=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_retro_seat.name=Retro seat (yellow) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:oak_rustic_seat.name=Rustic seat (oak)
+action.hint.exit.raigen:oak_rustic_seat=Sneak to exit
+item.spawn_egg.entity.raigen:oak_rustic_seat.name=Rustic seat (oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:spruce_rustic_seat.name=Rustic seat (spruce)
+action.hint.exit.raigen:spruce_rustic_seat=Sneak to exit
+item.spawn_egg.entity.raigen:spruce_rustic_seat.name=Rustic seat (spruce) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:birch_rustic_seat.name=Rustic seat (birch)
+action.hint.exit.raigen:birch_rustic_seat=Sneak to exit
+item.spawn_egg.entity.raigen:birch_rustic_seat.name=Rustic seat (birch) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:jungle_rustic_seat.name=Rustic seat (jungle)
+action.hint.exit.raigen:jungle_rustic_seat=Sneak to exit
+item.spawn_egg.entity.raigen:jungle_rustic_seat.name=Rustic seat (jungle) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:acacia_rustic_seat.name=Rustic seat (acacia)
+action.hint.exit.raigen:acacia_rustic_seat=Sneak to exit
+item.spawn_egg.entity.raigen:acacia_rustic_seat.name=Rustic seat (acacia) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:dark_oak_rustic_seat.name=Rustic seat (dark oak)
+action.hint.exit.raigen:dark_oak_rustic_seat=Sneak to exit
+item.spawn_egg.entity.raigen:dark_oak_rustic_seat.name=Rustic seat (dark oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:black_acrylic_chair.name=Acrylic chair (black)
+action.hint.exit.raigen:black_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:black_acrylic_chair.name=Acrylic chair (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_acrylic_chair.name=Acrylic chair (blue)
+action.hint.exit.raigen:blue_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:blue_acrylic_chair.name=Acrylic chair (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_acrylic_chair.name=Acrylic chair (brown)
+action.hint.exit.raigen:brown_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:brown_acrylic_chair.name=Acrylic chair (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_acrylic_chair.name=Acrylic chair (cyan)
+action.hint.exit.raigen:cyan_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_acrylic_chair.name=Acrylic chair (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_acrylic_chair.name=Acrylic chair (gray)
+action.hint.exit.raigen:gray_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:gray_acrylic_chair.name=Acrylic chair (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_acrylic_chair.name=Acrylic chair (green)
+action.hint.exit.raigen:green_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:green_acrylic_chair.name=Acrylic chair (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_acrylic_chair.name=Acrylic chair (light blue)
+action.hint.exit.raigen:light_blue_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_acrylic_chair.name=Acrylic chair (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_acrylic_chair.name=Acrylic chair (lime)
+action.hint.exit.raigen:lime_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:lime_acrylic_chair.name=Acrylic chair (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_acrylic_chair.name=Acrylic chair (magenta)
+action.hint.exit.raigen:magenta_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_acrylic_chair.name=Acrylic chair (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_acrylic_chair.name=Acrylic chair (orange)
+action.hint.exit.raigen:orange_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:orange_acrylic_chair.name=Acrylic chair (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_acrylic_chair.name=Acrylic chair (pink)
+action.hint.exit.raigen:pink_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:pink_acrylic_chair.name=Acrylic chair (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_acrylic_chair.name=Acrylic chair (purple)
+action.hint.exit.raigen:purple_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:purple_acrylic_chair.name=Acrylic chair (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_acrylic_chair.name=Acrylic chair (red)
+action.hint.exit.raigen:red_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:red_acrylic_chair.name=Acrylic chair (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_acrylic_chair.name=Acrylic chair (silver)
+action.hint.exit.raigen:silver_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:silver_acrylic_chair.name=Acrylic chair (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_acrylic_chair.name=Acrylic chair (white)
+action.hint.exit.raigen:white_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:white_acrylic_chair.name=Acrylic chair (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_acrylic_chair.name=Acrylic chair (yellow)
+action.hint.exit.raigen:yellow_acrylic_chair=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_acrylic_chair.name=Acrylic chair (yellow) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:oak_modern_chair.name=Modern chair (oak)
+action.hint.exit.raigen:oak_modern_chair=Sneak to exit
+item.spawn_egg.entity.raigen:oak_modern_chair.name=Modern chair (oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:spruce_modern_chair.name=Modern chair (spruce)
+action.hint.exit.raigen:spruce_modern_chair=Sneak to exit
+item.spawn_egg.entity.raigen:spruce_modern_chair.name=Modern chair (spruce) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:birch_modern_chair.name=Modern chair (birch)
+action.hint.exit.raigen:birch_modern_chair=Sneak to exit
+item.spawn_egg.entity.raigen:birch_modern_chair.name=Modern chair (birch) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:jungle_modern_chair.name=Modern chair (jungle)
+action.hint.exit.raigen:jungle_modern_chair=Sneak to exit
+item.spawn_egg.entity.raigen:jungle_modern_chair.name=Modern chair (jungle) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:acacia_modern_chair.name=Modern chair (acacia)
+action.hint.exit.raigen:acacia_modern_chair=Sneak to exit
+item.spawn_egg.entity.raigen:acacia_modern_chair.name=Modern chair (acacia) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:dark_oak_modern_chair.name=Modern chair (dark oak)
+action.hint.exit.raigen:dark_oak_modern_chair=Sneak to exit
+item.spawn_egg.entity.raigen:dark_oak_modern_chair.name=Modern chair (dark oak) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:black_wooly_chair.name=Wooly chair (black)
+action.hint.exit.raigen:black_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:black_wooly_chair.name=Wooly chair (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_wooly_chair.name=Wooly chair (blue)
+action.hint.exit.raigen:blue_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:blue_wooly_chair.name=Wooly chair (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_wooly_chair.name=Wooly chair (brown)
+action.hint.exit.raigen:brown_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:brown_wooly_chair.name=Wooly chair (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_wooly_chair.name=Wooly chair (cyan)
+action.hint.exit.raigen:cyan_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_wooly_chair.name=Wooly chair (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_wooly_chair.name=Wooly chair (gray)
+action.hint.exit.raigen:gray_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:gray_wooly_chair.name=Wooly chair (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_wooly_chair.name=Wooly chair (green)
+action.hint.exit.raigen:green_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:green_wooly_chair.name=Wooly chair (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_wooly_chair.name=Wooly chair (light blue)
+action.hint.exit.raigen:light_blue_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_wooly_chair.name=Wooly chair (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_wooly_chair.name=Wooly chair (lime)
+action.hint.exit.raigen:lime_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:lime_wooly_chair.name=Wooly chair (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_wooly_chair.name=Wooly chair (magenta)
+action.hint.exit.raigen:magenta_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_wooly_chair.name=Wooly chair (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_wooly_chair.name=Wooly chair (orange)
+action.hint.exit.raigen:orange_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:orange_wooly_chair.name=Wooly chair (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_wooly_chair.name=Wooly chair (pink)
+action.hint.exit.raigen:pink_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:pink_wooly_chair.name=Wooly chair (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_wooly_chair.name=Wooly chair (purple)
+action.hint.exit.raigen:purple_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:purple_wooly_chair.name=Wooly chair (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_wooly_chair.name=Wooly chair (red)
+action.hint.exit.raigen:red_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:red_wooly_chair.name=Wooly chair (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_wooly_chair.name=Wooly chair (silver)
+action.hint.exit.raigen:silver_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:silver_wooly_chair.name=Wooly chair (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_wooly_chair.name=Wooly chair (white)
+action.hint.exit.raigen:white_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:white_wooly_chair.name=Wooly chair (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_wooly_chair.name=Wooly chair (yellow)
+action.hint.exit.raigen:yellow_wooly_chair=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_wooly_chair.name=Wooly chair (yellow) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:black_garden_chair.name=Garden chair (black)
+action.hint.exit.raigen:black_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:black_garden_chair.name=Garden chair (black) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:blue_garden_chair.name=Garden chair (blue)
+action.hint.exit.raigen:blue_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:blue_garden_chair.name=Garden chair (blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:brown_garden_chair.name=Garden chair (brown)
+action.hint.exit.raigen:brown_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:brown_garden_chair.name=Garden chair (brown) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:cyan_garden_chair.name=Garden chair (cyan)
+action.hint.exit.raigen:cyan_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:cyan_garden_chair.name=Garden chair (cyan) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:gray_garden_chair.name=Garden chair (gray)
+action.hint.exit.raigen:gray_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:gray_garden_chair.name=Garden chair (gray) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:green_garden_chair.name=Garden chair (green)
+action.hint.exit.raigen:green_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:green_garden_chair.name=Garden chair (green) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:light_blue_garden_chair.name=Garden chair (light blue)
+action.hint.exit.raigen:light_blue_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:light_blue_garden_chair.name=Garden chair (light blue) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:lime_garden_chair.name=Garden chair (lime)
+action.hint.exit.raigen:lime_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:lime_garden_chair.name=Garden chair (lime) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:magenta_garden_chair.name=Garden chair (magenta)
+action.hint.exit.raigen:magenta_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:magenta_garden_chair.name=Garden chair (magenta) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:orange_garden_chair.name=Garden chair (orange)
+action.hint.exit.raigen:orange_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:orange_garden_chair.name=Garden chair (orange) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:pink_garden_chair.name=Garden chair (pink)
+action.hint.exit.raigen:pink_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:pink_garden_chair.name=Garden chair (pink) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:purple_garden_chair.name=Garden chair (purple)
+action.hint.exit.raigen:purple_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:purple_garden_chair.name=Garden chair (purple) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:red_garden_chair.name=Garden chair (red)
+action.hint.exit.raigen:red_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:red_garden_chair.name=Garden chair (red) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:silver_garden_chair.name=Garden chair (silver)
+action.hint.exit.raigen:silver_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:silver_garden_chair.name=Garden chair (silver) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:white_garden_chair.name=Garden chair (white)
+action.hint.exit.raigen:white_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:white_garden_chair.name=Garden chair (white) §r§d§l§o::§r§b Just chairs
+
+entity.raigen:yellow_garden_chair.name=Garden chair (yellow)
+action.hint.exit.raigen:yellow_garden_chair=Sneak to exit
+item.spawn_egg.entity.raigen:yellow_garden_chair.name=Garden chair (yellow) §r§d§l§o::§r§b Just chairs

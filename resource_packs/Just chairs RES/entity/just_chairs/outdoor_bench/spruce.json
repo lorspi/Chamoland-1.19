@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:spruce_outdoor_bench",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/outdoor_chair/spruce"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.outdoor_bench"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 84
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

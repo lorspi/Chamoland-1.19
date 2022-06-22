@@ -1,0 +1,18 @@
+{
+   "format_version" : 2,
+   "header" : {
+      "description" : "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+      "name" : "Just chairs §a§l§o::§r§b RES",
+      "uuid" : "52816887-2ebd-4680-abe1-00dcb011040f",
+      "version" : [ 1, 0, 0 ],
+	  "min_engine_version": [ 1, 13, 0 ]
+   },
+   "modules" : [
+      {
+         "description" : "§bBy CodanRaigen21, @real_cr21. §9Support and follow me on twitter for more great add-ons!",
+         "type" : "resources",
+         "uuid" : "df670175-88a4-4a53-a1a2-1729d776f083",
+         "version" : [ 1, 0, 0 ]
+      }
+   ]
+}

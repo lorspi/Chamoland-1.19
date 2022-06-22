@@ -1,0 +1,89 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tool.rotations": {
+			"states": {
+				"default": {
+					"animations": [
+						"r_1"
+					],
+					"transitions": [
+						{
+							"r_2": "query.variant == 2"
+						}
+					]
+				},
+				"r_2": {
+					"animations": [
+						"r_2"
+					],
+					"transitions": [
+						{
+							"r_3": "query.variant == 3"
+						}
+					]
+				},
+				"r_3": {
+					"animations": [
+						"r_3"
+					],
+					"transitions": [
+						{
+							"r_4": "query.variant == 4"
+						}
+					]
+				},
+				"r_4": {
+					"animations": [
+						"r_4"
+					],
+					"transitions": [
+						{
+							"r_5": "query.variant == 5"
+						}
+					]
+				},
+				"r_5": {
+					"animations": [
+						"r_5"
+					],
+					"transitions": [
+						{
+							"r_6": "query.variant == 6"
+						}
+					]
+				},
+				"r_6": {
+					"animations": [
+						"r_6"
+					],
+					"transitions": [
+						{
+							"r_7": "query.variant == 7"
+						}
+					]
+				},
+				"r_7": {
+					"animations": [
+						"r_7"
+					],
+					"transitions": [
+						{
+							"r_8": "query.variant == 8"
+						}
+					]
+				},
+				"r_8": {
+					"animations": [
+						"r_8"
+					],
+					"transitions": [
+						{
+							"default": "query.variant == 1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

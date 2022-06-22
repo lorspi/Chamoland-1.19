@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.composter_chest.opening": {
+			"animation_length": 1.0,
+			"bones": {
+				"shutter": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0": [ -60, 0, 0 ]
+					}
+				}
+			}
+		},
+		"animation.composter_chest.opened": {
+			"loop": true,
+			"bones": {
+				"shutter": {
+					"rotation": [ -60, 0, 0 ]
+				}
+			}
+		},
+		"animation.composter_chest.closing": {
+			"animation_length": 1.0,
+			"bones": {
+				"upper": {
+					"rotation": {
+						"0.0": [ -60, 0, 0 ],
+						"1.0": [ 0, 0, 0 ]
+					}
+				}
+			}
+		},
+		"animation.composter_chest.closed": {
+			"loop": true,
+			"bones": {
+				"upper": {
+					"rotation": [ 0, 0, 0 ]
+				}
+			}
+		}
+	}
+}

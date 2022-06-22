@@ -1,0 +1,13 @@
+{
+  "materials": {
+    "version": "1.0.0",
+
+    "boy1:entity_alphatest": {},
+    "boy2:entity_alphatest": {},
+    "boy3:entity_alphatest": {},
+    "girl1:entity_alphatest": {},
+    "girl2:entity_alphatest": {},
+    "girl3:entity_alphatest": {},
+    "lake:entity_alphatest": {}
+  }
+}

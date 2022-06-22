@@ -1,0 +1,40 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.composter_chest",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "composter_chest",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "body",
+					"parent": "composter_chest",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 2, -8], "size": [16, 10, 16], "uv": [0, 0]},
+						{"origin": [-8, 4, -8], "size": [16, 2, 16], "inflate": 0.4, "uv": [48, 48]},
+						{"origin": [-8, 8, -8], "size": [16, 2, 16], "inflate": 0.4, "uv": [0, 44]},
+						{"origin": [7, 0, -8], "size": [1, 14, 1], "inflate": 0.5, "uv": [12, 0]},
+						{"origin": [-8, 0, -8], "size": [1, 14, 1], "inflate": 0.5, "uv": [8, 0]},
+						{"origin": [-8, 0, 7], "size": [1, 14, 1], "inflate": 0.5, "uv": [4, 0]},
+						{"origin": [7, 0, 7], "size": [1, 14, 1], "inflate": 0.5, "uv": [0, 0]},
+						{"origin": [7, 12, -8], "size": [1, 2, 16], "inflate": 0.4, "uv": [48, 28]},
+						{"origin": [-8, 12, -8], "size": [1, 2, 16], "inflate": 0.4, "uv": [48, 10]},
+						{"origin": [-6.5, 12, -8], "size": [13, 2, 1], "inflate": 0.4, "uv": [48, 3]},
+						{"origin": [-6.5, 12, 7], "size": [13, 2, 1], "inflate": 0.4, "uv": [48, 0]},
+						{"origin": [-8, 0, -8], "size": [16, 2, 16], "inflate": 0.4, "uv": [0, 26]}
+					]
+				}
+			]
+		}
+	]
+}

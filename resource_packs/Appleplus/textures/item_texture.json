@@ -1,0 +1,57 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "casa": {
+      "textures": "textures/items/perla-verde"
+    },
+    "cianita": {
+      "textures": "textures/items/gema-azul"
+    },
+    "peridoto": {
+      "textures": "textures/items/gema-verde"
+    },
+    "masa_de_experiencia": {
+      "textures": "textures/items/experiencia"
+    },
+    "cluster_de_almas": {
+      "textures": "textures/items/cluster"
+    },
+    "espinela": {
+      "textures": "textures/items/gema-roja"
+    },
+    "alma": {
+      "textures": "textures/items/alma"
+    },
+    "llave": {
+      "textures": "textures/items/llave"
+    },
+    "peachcoin": {
+      "textures": "textures/items/peachcoin"
+    },
+    "moneda": {
+      "textures": "textures/items/moneda"
+    },
+    "pila_moneda": {
+      "textures": "textures/items/pila_monedas"
+    },
+    "cherrycoin": {
+      "textures": "textures/items/cherrycoin"
+    },
+    "aldea": {
+      "textures": "textures/items/perlanegra"
+    },
+    "amuleto": {
+      "textures": "textures/items/amuleto"
+    },
+    "applelandia": {
+      "textures": "textures/items/perla-roja"
+    },
+    "bolsa_moneda": {
+      "textures": "textures/items/bolsa_monedas"
+    },
+    "applecoin": {
+      "textures": "textures/items/applecoin"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.treasure_chest": {
+			"geometry": "Geometry.default",
+			"textures": [ "Texture.default" ],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		}
+	}
+}

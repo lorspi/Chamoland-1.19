@@ -1,0 +1,298 @@
+//bridge-file-version: #49
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"mob.mossy_skeleton.death": {
+			"__use_legacy_max_distance": true,
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/skeleton/death"
+			]
+		},
+		"mob.mossy_skeleton.hurt": {
+			"__use_legacy_max_distance": true,
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/skeleton/hurt1",
+				"sounds/mob/skeleton/hurt2",
+				"sounds/mob/skeleton/hurt3",
+				"sounds/mob/skeleton/hurt4"
+			]
+		},
+		"mob.mossy_skeleton.say": {
+			"__use_legacy_max_distance": true,
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/skeleton/say1",
+				"sounds/mob/skeleton/say2",
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/mob/skeleton/say3"
+				}
+			]
+		},
+		"mob.mossy_skeleton.step": {
+			"__use_legacy_max_distance": true,
+			"category": "hostile",
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/mob/skeleton/step1"
+				},
+				"sounds/mob/skeleton/step2",
+				"sounds/mob/skeleton/step3",
+				"sounds/mob/skeleton/step4"
+			]
+		},
+		"volcano.erupt": {
+			"sounds": [
+				"sounds/volcano/erupt1"
+			],
+			"category": "ui"
+		},
+		"ambient.forest": {
+			"category": "ui",
+			"sounds": [
+				{
+					"volume": 0.1,
+					"name": "sounds/ambient/forest/forest1"
+				},
+				{
+					"volume": 0.1,
+					"name": "sounds/ambient/forest/forest2"
+				},
+				{
+					"volume": 0.1,
+					"name": "sounds/ambient/forest/forest3"
+				},
+				{
+					"volume": 0.1,
+					"name": "sounds/ambient/forest/forest4"
+				}
+			]
+		},
+		"ambient.bog": {
+			"category": "ui",
+			"sounds": [
+				{
+					"name": "sounds/ambient/bog/bog1",
+					"volume": 0.3
+				},
+				{
+					"name": "sounds/ambient/bog/bog2",
+					"volume": 0.1
+				},
+				{
+					"name": "sounds/ambient/bog/bog3",
+					"volume": 0.1
+				}
+			]
+		},
+		"mob.crocodile.death": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mob/crocodile/death1"
+				}
+			]
+		},
+		"mob.crocodile.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mob/crocodile/idle1"
+				},
+				{
+					"name": "sounds/mob/crocodile/idle2"
+				},
+				"sounds/mob/crocodile/idle3"
+			]
+		},
+		"mob.crocodile.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mob/crocodile/hurt2"
+				},
+				{
+					"name": "sounds/mob/crocodile/hurt3"
+				},
+				{
+					"name": "sounds/mob/crocodile/hurt1"
+				}
+			]
+		},
+		"mob.frog.say": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/frog/idle1",
+				"sounds/mob/frog/idle2",
+				"sounds/mob/frog/idle3"
+			]
+		},
+		"mob.frog.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/frog/idle1",
+				"sounds/mob/frog/idle2",
+				"sounds/mob/frog/idle3"
+			]
+		},
+		"mob.frog.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/frog/idle1",
+				"sounds/mob/frog/idle2",
+				"sounds/mob/frog/idle3"
+			]
+		},
+		"mob.grizzly_bear.death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/bear/death1",
+				"sounds/mob/bear/death2",
+				"sounds/mob/bear/death3"
+			]
+		},
+		"mob.grizzly_bear.hurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/bear/hurt1",
+				"sounds/mob/bear/hurt2",
+				"sounds/mob/bear/hurt3"
+			]
+		},
+		"mob.grizzly_bear.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/bear/idle1",
+				"sounds/mob/bear/idle2",
+				"sounds/mob/bear/idle3"
+			]
+		},
+		"mob.grizzly_bear.step": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/polarbear/step1",
+				"sounds/mob/polarbear/step2",
+				"sounds/mob/polarbear/step3",
+				"sounds/mob/polarbear/step4"
+			]
+		},
+		"mob.grizzly_bear.warning": {
+			"sounds": {
+				"0": "sounds/mob/bear/warning1",
+				"1": "sounds/mob/bear/warning2",
+				"2": "sounds/mob/bear/warning3",
+				"3": "sounds/mob/bear/warning4",
+				"category": "hostile"
+			}
+		},
+		"mob.grizzly_bear_baby.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/bear_baby/idle1",
+				"sounds/mob/bear_baby/idle2",
+				"sounds/mob/bear_baby/idle3"
+			]
+		},
+		"mob.black_bear.death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/bear/death1",
+				"sounds/mob/bear/death2",
+				"sounds/mob/bear/death3"
+			]
+		},
+		"mon.black_bear.hurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/bear/hurt1",
+				"sounds/mob/bear/hurt2",
+				"sounds/mob/bear/hurt3"
+			]
+		},
+		"mob.black_bear.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/bear/idle1",
+				"sounds/mob/bear/idle2",
+				"sounds/mob/bear/idle3"
+			]
+		},
+		"mob.black_bear.step": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/polarbear/step1",
+				"sounds/mob/polarbear/step2",
+				"sounds/mob/polarbear/step3",
+				"sounds/mob/polarbear/step4"
+			]
+		},
+		"mob.black_bear.warning": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/bear/warning1",
+				"sounds/mob/bear/warning2",
+				"sounds/mob/bear/warning3",
+				"sounds/mob/bear/warning4"
+			]
+		},
+		"mob.black_bear_baby.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/bear_baby/idle1",
+				"sounds/mob/bear_baby/idle2",
+				"sounds/mob/bear_baby/idle3"
+			]
+		},
+		"mob.vibranium_skeleton_death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/vibranium_skeleton/clang1",
+				"sounds/mob/vibranium_skeleton/clang2",
+				"sounds/mob/vibranium_skeleton/clang3",
+				"sounds/mob/vibranium_skeleton/clang4",
+				"sounds/mob/vibranium_skeleton/clang5"
+			]
+		},
+		"mob.vibranium_skeleton.hurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/vibranium_skeleton/clang1",
+				"sounds/mob/vibranium_skeleton/clang2",
+				"sounds/mob/vibranium_skeleton/clang3",
+				"sounds/mob/vibranium_skeleton/clang4",
+				"sounds/mob/vibranium_skeleton/clang5"
+			]
+		},
+		"mob.skeleton.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/step/netherite1"
+				},
+				"sounds/step/netherite2",
+				"sounds/step/netherite3",
+				"sounds/step/netherite4",
+				"sounds/step/netherite5",
+				"sounds/step/netherite6"
+			]
+		},
+		"mob.vibranium_skeleton.step": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/step/netherite1"
+				},
+				"sounds/step/netherite2",
+				"sounds/step/netherite3",
+				"sounds/step/netherite4",
+				"sounds/step/netherite5",
+				"sounds/step/netherite6"
+			]
+		}
+	}
+}

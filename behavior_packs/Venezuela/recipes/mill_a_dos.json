@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "venezuela:mill_a_dos"
+    },
+    "groups": [
+      "venezuela"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "venezuela:un_millon"
+      }
+    ],
+    "result": {
+      "item": "venezuela:doscientos_mil",
+      "count": 5
+    }
+  }
+}

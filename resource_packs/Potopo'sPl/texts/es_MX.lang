@@ -1,0 +1,163 @@
+//ITEMS:
+
+item.potopo_plush:stuffed.name=Relleno de peluche
+
+item.potopo_plush:candy_corn.name=Maíz de dulce
+
+item.potopo_plush:seasson_3_ticket.name=Ticket (temporada 3)
+
+//Spawn Egg: ---------------------------------------------------------
+
+//Server
+item.spawn_egg.entity.potopo_plush:plushies_seller.name=Huevo de vendedor de peluches
+
+//Comun
+item.spawn_egg.entity.potopo_plush:llama_brown_plush.name=Peluche de llama cafe
+item.spawn_egg.entity.potopo_plush:llama_purple_plush.name=Peluche de llama crema
+item.spawn_egg.entity.potopo_plush:classic_creeper_plush.name=Peluche de creeper clásico
+item.spawn_egg.entity.potopo_plush:polar_bear_plush.name=Peluche de oso polar
+item.spawn_egg.entity.potopo_plush:spider_plush.name=Peluche de araña
+item.spawn_egg.entity.potopo_plush:ghast_plush.name=Peluche de Ghast
+
+//Poco comun
+item.spawn_egg.entity.potopo_plush:llama_white_plush.name=§aPeluche de llama blanca§a
+item.spawn_egg.entity.potopo_plush:slime_plush.name=§aPeluche de slime§a
+item.spawn_egg.entity.potopo_plush:nitwit_villager_plush.name=§aPeluche de aldeano simplón§a
+item.spawn_egg.entity.potopo_plush:hoglin_plush.name=§aPeluche de hoglin§a
+item.spawn_egg.entity.potopo_plush:wolf_plush.name=§aPeluche de lobo§a
+item.spawn_egg.entity.potopo_plush:mooshroom_plush.name=§aPeluche de champiñaca§a
+item.spawn_egg.entity.potopo_plush:brown_mooshroom_plush.name=§aPeluche de champiñaca café §a
+
+//Raro
+item.spawn_egg.entity.potopo_plush:zombie_plush.name=§3Peluche de zombie§3
+item.spawn_egg.entity.potopo_plush:llama_enderman_plush.name=§3Peluche de llama enderman§3
+item.spawn_egg.entity.potopo_plush:llama_creeper_plush.name=§3Peluche de llama creeper§3
+item.spawn_egg.entity.potopo_plush:strider_plush.name=§3Peluche de strider§3
+item.spawn_egg.entity.potopo_plush:wandering_trader_plush.name=§3Peluche de vendedor errante§3
+item.spawn_egg.entity.potopo_plush:brown_trader_llama_plush.name=§3Peluche de llama vendedora cafe§3
+item.spawn_egg.entity.potopo_plush:creamy_trader_llama_plush.name=§3Peluche de llama vendedora crema§3
+item.spawn_egg.entity.potopo_plush:steve_plush.name=§3Peluche de Steve§3
+item.spawn_egg.entity.potopo_plush:alex_plush.name=§3Peluche de Alex§3
+item.spawn_egg.entity.potopo_plush:pligin_zombified_plush.name=§3Peluche de piglin zombificado§3
+item.spawn_egg.entity.potopo_plush:wither_plush.name=§3Peluche de Wither§3
+
+//Maravilloso
+item.spawn_egg.entity.potopo_plush:enderman_plush.name=§9Peluche de enderman§9
+item.spawn_egg.entity.potopo_plush:creeper_plush.name=§9Peluche de creeper§9
+item.spawn_egg.entity.potopo_plush:sticky_bee_plush.name=§9Peluche de abeja pegajosa§9
+item.spawn_egg.entity.potopo_plush:zombi_pigman_plush.name=§9Peluche de pigman zombie§9
+item.spawn_egg.entity.potopo_plush:axolotl_in_a_bucket.name=§9Ajolote en un balde§9
+
+//Extraordinario
+item.spawn_egg.entity.potopo_plush:sailor_chicken.name=§dPeluche de pollito marinero§d
+item.spawn_egg.entity.potopo_plush:herobrine_plush.name=§dPeluche Herobrine§d
+item.spawn_egg.entity.potopo_plush:llama_plush_axololt_costume.name=§dPeluche de llama (disfraz de ajolote)§d
+
+//Potopezco
+item.spawn_egg.entity.potopo_plush:llama_llama_plush.name=§6Peluche de Llama llama§6
+
+//Heroes:
+item.spawn_egg.entity.potopo_plush:heroes_potopo_ann_plush.name=§7Héroe: Peluche de Potopo Ann§7
+item.spawn_egg.entity.potopo_plush:heroes_dagadax_plush.name=§7Héroe: Peluche de DAGADAX§7
+item.spawn_egg.entity.potopo_plush:heroes_arya_plush.name=§7Héroe: Peluche de Arya§7
+item.spawn_egg.entity.potopo_plush:heroes_talon_plush.name=§7Héroe: Peluche de Talon§7
+item.spawn_egg.entity.potopo_plush:heroes_king_plush.name=§7Héroe: Peluche King§7
+item.spawn_egg.entity.potopo_plush:heroes_johnny5_plush.name=§7Héroe: Peluche Johnny5§7
+item.spawn_egg.entity.potopo_plush:heroes_midnight_plush.name=§7Héroe: Peluche de MidNight§7
+item.spawn_egg.entity.potopo_plush:heroes_skammander_plush.name=§7Héroe: Peluche de Skammander§7
+item.spawn_egg.entity.potopo_plush:heroes_ghibekjodkins_plush.name=§7Héroe: Peluche de Ghibek Jodkins§7
+
+//Eventos ------------
+
+//Halloween 2020
+item.spawn_egg.entity.potopo_plush:halloween_llama_plush_80s_robot.name=§cPeluche de Llama robot de los 80s (Halloween 2020)§c
+item.spawn_egg.entity.potopo_plush:halloween_llama_plush_frankenstein's_monster.name=§cPeluche de Llama monstruo de Frankenstein (Halloween 2020)§c
+item.spawn_egg.entity.potopo_plush:halloween_llama_plush_astronaut.name=§cPeluche de Llama astronauta (Halloween 2020)§c
+item.spawn_egg.entity.potopo_plush:halloween_llama_plush_pumpkin_face.name=§cPeluche de Llama con cabeza de calbaza (Halloween 2020)§c
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//BLOQUES:
+tile.potopo_plush:lucky_box.name=Caja de sorpresas
+tile.potopo_plush:lucky_box_purple.name=§dCaja de sorpresas raras§d
+tile.potopo_plush:lucky_box_red.name=§7Caja de sorpresas de héroe§7
+tile.potopo_plush:test_box.name=Caja de prueba
+
+tile.potopo_plush:stuffed_container.name=Contenedor de relleno
+
+tile.potopo_plush:halloween_plushies_box.name=§cCaja de sorpresas de Halloween§c
+tile.potopo_plush:halloween_candy_box.name=Caja de dulces
+
+tile.potopo_plush:seasson_3_lucky_box.name=Caja de sorpresas (temporada 3)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//ENTIDADES:
+
+//Entity: ----------------------------------------------------------------
+
+//SERVER:
+entity.potopo_plush:plushies_seller.name=Vendedor de peluches
+
+//COMUN:
+entity.potopo_plush:llama_brown_plush.name=Peluche de llama cafe
+entity.potopo_plush:llama_purple_plush.name=Peluche de llama morada
+entity.potopo_plush:classic_creeper_plush.name=Peluche de creeper clásico
+entity.potopo_plush:polar_bear_plush.name=Peluche de oso polar
+entity.potopo_plush:spider_plush.name=Peluche de araña
+entity.potopo_plush:ghast_plush.name=Peluche de Ghast
+
+//POCO COMUN:
+entity.potopo_plush:llama_white_plush.name=Peluche de llama blanca
+entity.potopo_plush:slime_plush.name=Peluche de slime
+entity.potopo_plush:nitwit_villager_plush.name=Peluche de aldeano simplón
+entity.potopo_plush:hoglin_plush.name=Peluche de hoglin
+entity.potopo_plush:wolf_plush.name=Peluche de lobo
+entity.potopo_plush:mooshroom_plush.name=Peluche de champiñaca
+entity.potopo_plush:brown_mooshroom_plush.name=Peluche de champiñaca café
+
+//RARO:
+entity.potopo_plush:zombie_plush.name=Peluche de zombie
+entity.potopo_plush:llama_enderman_plush.name=Peluche de llama enderman
+entity.potopo_plush:llama_creeper_plush.name=Peluche de llama creeper
+entity.potopo_plush:strider_plush.name=Peluche de strider
+entity.potopo_plush:wandering_trader_plush=Peluche de vendedor errante
+entity.potopo_plush:brown_trader_llama_plush.name=Peluche de llama vendedora cafe
+entity.potopo_plush:creamy_trader_llama_plush.name=Peluche de llama vendedora crema
+entity.potopo_plush:steve_plush.name=Peluche de Steve
+entity.potopo_plush:alex_plush.name=Peluche de Alex
+entity.potopo_plush:pligin_zombified_plush.name=Peluche de piglin zombificado
+entity.potopo_plush:wither_plush.name=Peluche de Wither
+
+
+//Maravilloso
+entity.potopo_plush:enderman_plush.name=Peluche de enderman
+entity.potopo_plush:creeper_plush.name=Peluche de creeper
+entity.potopo_plush:sticky_bee_plush.name=Peluche de abeja pegajosa
+entity.potopo_plush:zombi_pigman_plush.name=Peluche de pigman zombie
+entity.potopo_plush:axolotl_in_a_bucket.name=Ajolote en un balde
+
+//Extraordinario
+entity.potopo_plush:sailor_chicken.name=Peluche de pollito marinero
+entity.potopo_plush:herobrine_plush.name=Peluche de Herobrine
+entity.potopo_plush:llama_plush_axololt_costume.name=Peluche de llama (disfraz de ajolote)
+
+//Potopezco
+entity.potopo_plush:llama_llama_plush.name=Peluche de Llama llama
+
+//HEROES
+entity.potopo_plush:heroes_potopo_ann_plush.name=Héroe: Peluche de Potopo Ann
+entity.potopo_plush:heroes_dagadax_plush.name=Héroe: Peluche de DAGADAX
+entity.potopo_plush:heroes_arya_plush.name=Héroe: Peluche de Arya
+entity.potopo_plush:heroes_talon_plush.name=Héroe: Peluche de Talon
+entity.potopo_plush:heroes_king_plush.name=Héroe: Peluche de King
+entity.potopo_plush:heroes_johnny5 _plush.name=Héroe: Peluche de Johnny5
+entity.potopo_plush:heroes_midnight_plush.name=Héroe: Peluche de MidNight
+entity.potopo_plush:heroes_skammander_plush.name=Héroe: Peluche de Skammander
+entity.potopo_plush:heroes_ghibekjodkins_plush.name=Héroe: Peluche de Ghibek Jodkins
+
+//Eventos ------------
+
+//Halloween 2020
+entity.potopo_plush:halloween_llama_plush_80s_robot.name=Peluche de Llama robot de los 80s (Halloween 2020)
+entity.potopo_plush:halloween_llama_plush_frankenstein's_monster.name=Peluche de Llama monstruo de Frankenstein (Halloween 2020)
+entity.potopo_plush:halloween_llama_plush_astronaut.name=Peluche de Llama astronauta (Halloween 2020)
+entity.potopo_plush:halloween_llama_plush_pumpkin_face.name=Peluche de Llama con cabeza de calbaza (Halloween 2020)

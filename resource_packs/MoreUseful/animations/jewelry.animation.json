@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.jewelry.unlocking": {
+			"animation_length": 1.0,
+			"bones": {
+				"diamond": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"0.2": [ 0, 45, 0 ],
+						"0.5": [ 0, 60, 0 ],
+						"0.7": [ 0, 90, 0 ],
+						"1.0": [ 0, 180, 0 ]
+					}
+				}
+			}
+		},
+		"animation.jewelry.unlocked": {
+			"loop": true,
+			"bones": {
+				"diamond": {
+					"rotation": [ 0, 180, 0 ]
+				}
+			}
+		},
+		"animation.jewelry.locking": {
+			"animation_length": 1.0,
+			"bones": {
+				"diamond": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"0.2": [ 0, -45, 0 ],
+						"0.5": [ 0, -60, 0 ],
+						"0.7": [ 0, -90, 0 ],
+						"1.0": [ 0, -180, 0 ]
+					}
+				}
+			}
+		},
+		"animation.jewelry.locked": {
+			"loop": true,
+			"bones": {
+				"diamond": {
+					"rotation": [ 0, 0, 0 ]
+				}
+			}
+		}
+	}
+}

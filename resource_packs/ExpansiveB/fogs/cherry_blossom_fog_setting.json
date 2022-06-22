@@ -1,0 +1,29 @@
+//bridge-file-version: #16
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "korbon:cherry_blossom_fog"
+		},
+		"distance": {
+			"air": {
+				"fog_start": 1,
+				"fog_end": 1,
+				"fog_color": "#FFD7F0",
+				"render_distance_type": "render"
+			},
+			"water": {
+				"fog_start": 8,
+				"fog_end": 15,
+				"fog_color": "#44AFF5",
+				"render_distance_type": "fixed"
+			},
+			"weather": {
+				"fog_start": 80,
+				"fog_end": 128,
+				"fog_color": "#9F8896",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

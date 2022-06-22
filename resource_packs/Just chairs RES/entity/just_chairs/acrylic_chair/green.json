@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:green_acrylic_chair",
+      "materials": {
+	    "default": "glass",
+		"invisible": "glow_glass_blender"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/acrylic_chair/green"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.acrylic_chair"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 138
+      },
+      "render_controllers": [ "controller.render.glass" ]
+    }
+  }
+}

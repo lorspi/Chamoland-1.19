@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "entity:backpack",
+            "materials": {
+                "default": "skeleton"
+            },
+            "textures": {
+                "undyed": "textures/entity/backpack/backpack_leather",
+                "white": "textures/entity/backpack/backpack_white",
+                "orange": "textures/entity/backpack/backpack_orange",
+                "magenta": "textures/entity/backpack/backpack_magenta",
+                "light_blue": "textures/entity/backpack/backpack_light_blue",
+                "yellow": "textures/entity/backpack/backpack_yellow",
+                "lime": "textures/entity/backpack/backpack_lime",
+                "pink": "textures/entity/backpack/backpack_pink",
+                "gray": "textures/entity/backpack/backpack_gray",
+                "silver": "textures/entity/backpack/backpack_silver",
+                "cyan": "textures/entity/backpack/backpack_cyan",
+                "purple": "textures/entity/backpack/backpack_purple",
+                "blue": "textures/entity/backpack/backpack_blue",
+                "brown": "textures/entity/backpack/backpack_brown",
+                "green": "textures/entity/backpack/backpack_green",
+                "red": "textures/entity/backpack/backpack_red",
+                "black": "textures/entity/backpack/backpack_black"
+            },
+            "geometry": {
+                "default": "geometry.backpack"
+            },
+            "spawn_egg": {
+                "texture": "backpack",
+                "texture_index": 0
+            },
+            "render_controllers": [
+                "controller.render.backpack"
+            ]
+        }
+    }
+}

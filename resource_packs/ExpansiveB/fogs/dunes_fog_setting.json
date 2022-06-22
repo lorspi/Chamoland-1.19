@@ -1,0 +1,29 @@
+//bridge-file-version: #11
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "korbon:dunes_fog"
+		},
+		"distance": {
+			"air": {
+				"fog_start": 128,
+				"fog_end": 250,
+				"fog_color": "#A0A0A0",
+				"render_distance_type": "fixed"
+			},
+			"water": {
+				"fog_start": 1,
+				"fog_end": 15,
+				"fog_color": "#A0A0A0",
+				"render_distance_type": "fixed"
+			},
+			"weather": {
+				"fog_start": 3,
+				"fog_end": 96,
+				"fog_color": "#ADA276",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "by §4Lake §r§lMCPEDL.com §rİnstagram: _resul_0128",
+        "name": "§5Npc Friends Resource",
+        "uuid": "01334532-462a-9c36-34b0-251658105093",
+        "version": [0, 0, 24]
+    },
+    "modules": [
+        {
+            "description": "by §4Lake §r§lMCPEDL.com §rİnstagram: _resul_0128",
+            "type": "resources",
+            "uuid": "013f6099-5323-44b6-b326-398005028808",
+            "version": [0, 0, 8]
+        }
+    ]
+}

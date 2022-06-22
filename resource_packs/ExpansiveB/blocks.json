@@ -1,0 +1,193 @@
+//bridge-file-version: #65
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"korbon:mud_block": {
+		"textures": "mud_block",
+		"sound": "honey_block"
+	},
+	"korbon:small_cactus": {
+		"textures": "small_cactus",
+		"sound": "vines"
+	},
+	"korbon:coconut_block": {
+		"textures": "coconut_block",
+		"sound": "stone"
+	},
+	"korbon:heated_stone": {
+		"textures": "heated_stone"
+	},
+	"korbon:eruption_starter": {
+		"textures": "eruption_starter"
+	},
+	"korbon:black_sand": {
+		"textures": "black_sand",
+		"sound": "sand"
+	},
+	"korbon:cherry_blossom_leaves": {
+		"textures": "cherry_blossom_leaves",
+		"sound": "grass"
+	},
+	"korbon:lavender_flower": {
+		"textures": "lavender_flower",
+		"sound": "grass"
+	},
+	"korbon:jacaranda_leaves": {
+		"textures": "jacaranda_leaves",
+		"sound": "grass"
+	},
+	"korbon:jacaranda_log": {
+		"sound": "wood"
+	},
+	"korbon:collision_north": {
+		"sound": "wood",
+		"textures": "collision_north"
+	},
+	"korbon:collision_south": {
+		"sound": "wood",
+		"textures": "collision_south"
+	},
+	"korbon:collision_east": {
+		"sound": "wood",
+		"textures": "collision_east"
+	},
+	"korbon:collision_west": {
+		"sound": "wood",
+		"textures": "collision_west"
+	},
+	"korbon:jacaranda_door": {
+		"textures": "jacaranda_door",
+		"sound": "wood"
+	},
+	"korbon:jacaranda_planks": {
+		"textures": "jacaranda_planks",
+		"sound": "wood"
+	},
+	"korbon:cherry_blossom_door": {
+		"textures": "cherry_blossom_door",
+		"sound": "wood"
+	},
+	"korbon:cherry_blossom_log": {
+		"sound": "wood"
+	},
+	"korbon:cherry_blossom_planks": {
+		"sound": "wood",
+		"textures": "cherry_blossom_planks"
+	},
+	"korbon:dune_grass": {
+		"textures": "dune_grass",
+		"sound": "grass"
+	},
+	"korbon:eruption_event": {
+		"textures": "eruption_starter"
+	},
+	"korbon:forest_ambient": {
+		"textures": "forest_ambient"
+	},
+	"korbon:bog_ambient": {
+		"textures": "bog_ambient"
+	},
+	"korbon:hard_dirt": {
+		"textures": "hard_dirt",
+		"sound": "gravel"
+	},
+	"korbon:burning_log": {
+		"sound": "wood"
+	},
+	"korbon:smoldering_grass_block": {
+		"sound": "grass",
+		"textures": {
+			"up": "smoldering_grass_block_top",
+			"down": "smoldering_grass_block_bottom",
+			"side": "smoldering_grass_block_side"
+		}
+	},
+	"korbon:scorched_grass_block": {
+		"sound": "grass",
+		"textures": {
+			"up": "scorched_grass_block_top",
+			"down": "smoldering_grass_block_bottom",
+			"side": "smoldering_grass_block_side"
+		}
+	},
+	"korbon:scorched_leaves": {
+		"sound": "grass",
+		"textures": "scorched_leaves"
+	},
+	"korbon:autumn_oak_leaves": {
+		"textures": "autumn_oak_leaves",
+		"sound": "grass"
+	},
+	"korbon:autumn_birch_leaves": {
+		"sound": "grass",
+		"textures": "autumn_birch_leaves"
+	},
+	"korbon:cherry_blossom_sapling_block": {
+		"sound": "grass",
+		"textures": "cherry_blossom_sapling_block"
+	},
+	"korbon:jacaranda_sapling_block": {
+		"textures": "jacaranda_sapling_block",
+		"sound": "grass"
+	},
+	"korbon:autumn_oak_leaf_pile": {
+		"sound": "grass",
+		"textures": "autumn_oak_leaf_pile"
+	},
+	"korbon:autumn_birch_leaf_pile": {
+		"textures": "autumn_birch_leaf_pile",
+		"sound": "grass"
+	},
+	"korbon:vibranium_ore": {
+		"sound": "stone",
+		"textures": "vibranium_ore"
+	},
+	"korbon:vibrant_dripstone_small_up": {
+		"textures": "vibrant_dripstone_tip_up",
+		"sound": "basalt"
+	},
+	"korbon:vibrant_dripstone_small_down": {
+		"textures": "vibrant_dripstone_small_down",
+		"sound": "basalt"
+	},
+	"korbon:vibrant_dripstone_big_down_tip": {
+		"textures": "vibrant_dripstone_big_down",
+		"sound": "basalt"
+	},
+	"korbon:vibrant_dripstone_big_down_base": {
+		"textures": "vibrant_dripstone_big_down_base",
+		"sound": "basalt"
+	},
+	"korbon:vibrancy_stone": {
+		"textures": "korbon:vibrancy_stone",
+		"sound": "stone"
+	},
+	"korbon:spawner_block_trapper": {
+		"textures": "spawner_trapper"
+	},
+	"korbon:maple_log_syrup": {
+		"sound": "wood"
+	},
+	"korbon:maple_log_syrup_empty": {
+		"sound": "wood"
+	},
+	"korbon:maple_leaves": {
+		"textures": "maple_leaves",
+		"sound": "grass"
+	},
+	"korbon:maple_sapling_block": {
+		"textures": "maple_sapling_block",
+		"sound": "grass"
+	},
+	"korbon:syrup_block": {
+		"textures": "syrup_block",
+		"sound": "honey_block"
+	},
+	"korbon:vibranium_ore_deepslate": {
+		"textures": "vibranium_ore_deepslate",
+		"sound": "deepslate"
+	}
+}

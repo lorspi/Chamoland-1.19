@@ -1,0 +1,15 @@
+{
+   "entity_sounds" : {
+      "entities" : {
+         "npc:maduro" : {
+            "events" : {
+               "ambient" : "mob.maduro.say",
+               "death" : "mob.maduro.death",
+               "hurt" : "mob.maduro.hit"
+            },
+            "pitch" : [ 1.00, 1.00 ],
+            "volume" : 1.0
+         }
+      }
+   }
+}

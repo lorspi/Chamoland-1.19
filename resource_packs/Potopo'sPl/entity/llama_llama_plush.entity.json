@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+        "identifier": "potopo_plush:llama_llama_plush",
+        "materials": {
+            "default": "cat"
+        },
+        "textures": {
+            "default": "textures/entity/llama_llama/llama_llama_plush_season_2"
+        },
+        "geometry": {
+            "default": "geometry.llama_llama_plush_toteta"
+        },
+        "render_controllers": [
+            "controller.render.llama_llama_plush"
+        ],
+        "spawn_egg": {
+            "texture": "plush_eggs",
+            "texture_index": 7
+        }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+## HUEVOS
+item.spawn_egg.entity.muc:safe.name=Caja fuerte
+item.spawn_egg.entity.muc:chest_driver.name=Caja ambulante
+
+
+## ITEMS
+item.muc:item_j.name=Jewelry
+item.muc:item_lc.name=Locked Chest
+item.muc:item_s.name=Safe
+item.muc:item_thc.name=Trash Chest
+item.muc:item_cc.name=Composter Chest
+item.muc:item_cd.name=Chest Driver
+
+item.muc:key.name=Llave
+item.muc:crowbar.name=Palanca
+item.muc:wrench.name=Herramienta
+item.muc:resize_tool.name=Dimensionador
+
+
+
+
+
+## ENTITIES
+entity.muc:jewelry.name=Jewelry
+entity.muc:locked_chest.name=Locked Chest
+entity.muc:safe.name=Safe
+entity.muc:trash_chest.name=Trash Chest
+entity.muc:treasure_chest.name=Treasure Chest
+entity.muc:composter_chest.name=Composter Chest
+entity.muc:chest_driver.name=Chest Driver
+
+entity.muc:hologram_jewelry.name=Hologram
+entity.muc:hologram_locked_chest.name=Hologram
+entity.muc:hologram_safe.name=Hologram
+entity.muc:hologram_trash_chest.name=Hologram
+entity.muc:hologram_composter_chest.name=Hologram
+entity.muc:hologram_chest_driver.name=Hologram
+
+entity.muc:treasure_normal.name=Treasure Normal
+entity.muc:treasure_valuable.name=Treasure Valuable
+
+
+
+
+
+## UI
+entity.unknown.name=Chest
+action.interact.place=Place Here
+action.interact.rotate=Rotate
+action.interact.resize=Resize
+
+action.interact.jewelry.unlock=Unlock
+action.interact.jewelry.lock=Lock
+action.interact.jewelry.break=Break
+
+action.interact.locked_chest.open=Open Chest
+action.interact.locked_chest.close=Close Chest
+
+action.interact.safe.unlock=Unlock
+action.interact.safe.lock=Lock
+
+action.interact.trash_chest.open=Open
+action.interact.trash_chest.close=Close
+
+action.interact.treasure_chest.open=Open Treasure
+action.interact.treasure_chest.open2=Open
+action.interact.treasure_chest.close=Close
+
+action.interact.composter_chest.compost=Compost
+
+action.interact.chest_driver.open=Open
+action.interact.chest_driver.close=Close
+action.interact.chest_driver.off=Turn Off
+action.interact.chest_driver.on=Turn On
+
+
+
+
+
+## ADDON GUIDE
+menu.howToPlay=§aGu�a de Overgy§f
+hbui.mainMenu.HelpModal.howToPlayButton=§aGu�a de Overgy§f
+accessibility.screenName.howToPlay=§aAddon Guide§f
+menu.howToPlay.generalMessage=Custom addon guide for More Useful Chests.
+howtoplay.category.placeholder1= 
+howtoplay.category.placeholder2= 
+howtoplay.category.placeholder3= 
+howtoplay.category.muc_title=§aMore Useful Chests Guide§f
+
+howtoplay.category.important_info=Important Info
+howtoplay.addon_info=Addon Info
+howtoplay.addon_info.title=Addon Info
+mucguide.addon_info.header=- Addon Info -
+mucguide.addon_info.text1=Ever wondered if chests can have better functionalities? Or even more chests? This addon does all that and even better.
+mucguide.addon_info.text2=More Useful Chests addon adds 7 new chests to your game! With more and better functionalities. Want a chest that other players can't open it? We gotcha!  Chests that follows you? We gotcha covered!!
+mucguide.addon_info.subtitle1=Addon Stats
+mucguide.addon_info.text3=Current version : §ev1.0§f
+mucguide.addon_info.text4=Compatible with Minecraft versions : §e1.12.x - §lNot recommended with 1.13 beta§f
+mucguide.addon_info.text5=§eThis addon is compatible in survival mode and requires §lExperimental Gameplay§f
+
+howtoplay.credit=Credit
+howtoplay.credit.title=Credit
+mucguide.credit.header=- Credit -
+mucguide.credit.text1=This Addon was developed by §aEnely§f and §6Arexon§f
+mucguide.credit.text2=By §aEnely§f : Textures, models, and sounds. Creator of the addon's concept
+mucguide.credit.text3=By §6Arexon§f : Some textures, sounds, and animations. Coder of the addon
+mucguide.credit.text4=§eWe both put effort and work into this addon to bring you a quality content piece. We hope you enjoy our work - and for further support you can support us §b@Enely_§e & §b@RealArexon§f
+
+
+howtoplay.category.addon_guide=Gu�a de Overgy
+howtoplay.htu=How to Use
+howtoplay.htu.title=How to Use
+mucguide.htu.header=- How to Use -
+mucguide.htu.text1=To place chests : §eHold the "chest item" in your hand then sneak, a hologram chest will apear, (DO NOT UN SNEAK) look around and it will move to where you're looking at, when you find a good spot - long press or right click on the chest.§f
+mucguide.htu.text2=To remove chests : §eYou need a Wrench (crafting recipe shown in Tools section). Hold it and sneak then hit the chest.§f
+mucguide.htu.text3=To change a chest rotation : §eHold a Wrench then long press or right click on the chest.§f
+mucguide.htu.text4=To resize chests : §eHold a Resizing Tool then long press or right click on the chest.§f
+mucguide.htu.text_notice=§eNOTICE : For further information on how to use the chests go to a chest section.§f
+
+howtoplay.muc_tools=Tools
+howtoplay.muc_tools.title=Tools
+mucguide.muc_tools.header=- Tools -
+mucguide.muc_tools.header_key=- Key -
+mucguide.muc_tools.header_wrench=- Wrench -
+mucguide.muc_tools.header_crowbar=- Crowbar -
+mucguide.muc_tools.header_resize_tool=- Resize Tool -
+mucguide.muc_tools.text1=These multi-purpose tools always come in handy. You can use them to open/close chests or remove chests or even resize a chest if you want!
+mucguide.muc_tools.text_key=The §eKey§f is used for opening/closing chests, and taming the Jewelry and Safe.
+mucguide.muc_tools.text_wrench=The §eWrench§f is used for removing chests and rotating them.
+mucguide.muc_tools.text_crowbar=§eCrowbar§f is specifically used to break a locked Jewelry.
+mucguide.muc_tools.text_resize_tool=As the name says. It's used for resizing chests.
+mucguide.muc_tools.text_notice=§eNOTICE : For further information about how to use tools go to How to Use section, or a chest section.§f
+
+howtoplay.jewelry=Jewelry
+howtoplay.jewelry.title=Jewelry
+mucguide.jewelry.header=- Jewelry -
+mucguide.jewelry.text1=The §eJewelry§f is really useful to safe your important items from other players. It needs to be tamed for it to be useable, only the owner can lock/unlock it without a key. But be careful, other players can break it using a Crowbar!
+mucguide.jewelry.subtitle1=- Crafting Recipe -
+mucguide.jewelry.subtitle2=- How to Use it? -
+mucguide.jewelry.text2=To tame it : §eHold a Key in your hand then long press or right click on the chest�f
+mucguide.jewelry.text3=To unlock or lock the Jewelry : §eSneak then long press or right click on the chest�f
+mucguide.jewelry.text4=To "break" the Jewelry : §eHold the Crowbar then long press or right click on the chest. §l(You only can break it if it's locked).§f
+
+howtoplay.safe=Safe
+howtoplay.safe.title=Safe
+mucguide.safe.header=- Safe -
+mucguide.safe.text1=The §eSafe§f has the same functionality as the Jewelry. Unlike the Jewelry, it cannot be broken by other players, so it has the best safety upon other chests.
+mucguide.safe.subtitle1=- Crafting Recipe -
+mucguide.safe.subtitle2=- How to Use it? -
+mucguide.safe.text2=To tame it : §eHold a Key in your hand then long press or right click on the chest�f
+mucguide.safe.text3=To unlock/lock it : §eSneak then long press or right click on the chest.�r
+
+howtoplay.locked_chest=Locked Chest
+howtoplay.locked_chest.title=Locked Chest
+mucguide.locked_chest.header=- Locked Chest -
+mucguide.locked_chest.text1=The §eLocked Chest§f can store items and be locked. Only players that have a Key can open it.§f
+mucguide.locked_chest.subtitle1=- Crafting Recipe -
+mucguide.locked_chest.subtitle2=- How to Use it? -
+mucguide.locked_chest.text2=To open/close the chest : §eHold a Key in your hand and sneak then long press or right click on the chest.
+
+howtoplay.treasure_chest=Treasure Chest
+howtoplay.treasure_chest.title=Treasure Chest
+mucguide.treasure_chest.header=- Treasure Chest -
+mucguide.treasure_chest.text1=The §eTreasure Chest§f Can be found naturally on beaches, desert, and mesa.
+mucguide.treasure_chest.subtitle=- How to Use it? -
+mucguide.treasure_chest.text2=To unlock it : §eHold a Key and sneak then long press on the chest.§f
+
+howtoplay.composter_chest=Composter Chest
+howtoplay.composter_chest.title=Composter Chest
+mucguide.composter_chest.header=- Composter Chest -
+mucguide.composter_chest.text1=The §eComposter Chest§f works the same as the default Minecraft Composter, but with a faster and much efficient way. 1 plant/seed/crop equals 1 - 3 Bone Meal.§f
+mucguide.composter_chest.subtitle1=- Crafting Recipe -
+mucguide.composter_chest.subtitle2=- How to Use it? -
+mucguide.composter_chest.text2=To compost : §eHold a plant/seed/crop then long press or right click on the chest. There's also 2 seconds cooldown.§f
+
+howtoplay.trash_chest=Trash Chest
+howtoplay.trash_chest.title=Trash Chest
+mucguide.trash_chest.header=- Trash Chest -
+mucguide.trash_chest.text1=The §eTrash Chest§f allows you to get rid of any items/blocks you want.
+mucguide.trash_chest.subtitle1=- Crafting Recipe -
+mucguide.trash_chest.subtitle2=- How to Use it? -
+mucguide.trash_chest.text2=To open/close it : §eSneak then long press or right click on the chest.
+mucguide.trash_chest.text3=§eYou can a also throw items on the chest when it's opened and they fall inside it.§f
+mucguide.trash_chest.text4=To clear items inside : §eSneak then hit the chest. §l(Only works if the chest is opened).§f
+
+howtoplay.chest_driver=Chest Driver
+howtoplay.chest_driver.title=Chest Driver
+mucguide.chest_driver.header=- Chest Driver -
+mucguide.chest_driver.text1=The §eChest Driver§f is a moving chest that follows its owner wherever the owner goes.§f
+mucguide.chest_driver.text1_1=§eLeashable, Healable, Sittable, Nameable.§f
+mucguide.chest_driver.subtitle1=- Crafting Table -
+mucguide.chest_driver.subtitle2=- How to Use it? -
+mucguide.chest_driver.text2=To tame it : §eHold a Redstone Dust and sneak then long press or right click on the chest.§f
+mucguide.chest_driver.text3=To open/close the chest : §eHold a Key and sneak then long press or right click on the chest.§f
+mucguide.chest_driver.text4=To heal it : §eUse Redstone Dust.§f
+mucguide.chest_driver.text5=To turn it on/off : §eSneak then long press or right click on the chest.§f
+mucguide.chest_driver.text6=To leash/unleash it : §eHold a Lead then long press or right click on the chest.§f

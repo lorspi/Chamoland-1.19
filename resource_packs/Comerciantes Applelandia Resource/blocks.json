@@ -1,0 +1,12 @@
+//bridge-file-version: #18
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"npc:adalita_block": {
+		"textures": "adalita_block",
+		"sound": "stone"
+	}
+}

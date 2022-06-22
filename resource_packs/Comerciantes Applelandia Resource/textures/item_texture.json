@@ -1,0 +1,19 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "npc": {
+      "textures": [
+    "textures/items/boy1", //0
+    "textures/items/boy2", //1
+    "textures/items/maduro", //2
+    "textures/items/girl2" //3
+      ]
+    },
+    "adalita": {
+      "textures": [
+    "textures/items/adalita"
+      ]
+    }
+  }
+}

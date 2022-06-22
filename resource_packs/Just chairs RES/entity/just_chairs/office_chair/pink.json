@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:pink_office_chair",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/office_chair/pink"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.office_chair"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 55
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

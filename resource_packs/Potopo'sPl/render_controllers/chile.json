@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.chile": {
+	  "arrays": {
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.stage_0",
+		    "Texture.stage_1",
+		    "Texture.stage_2",
+		    "Texture.stage_3"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "korbon:black_bear",
+			"materials": {
+				"default": "polar_bear"
+			},
+			"textures": {
+				"default": "textures/entity/bears/black_bear"
+			},
+			"geometry": {
+				"default": "geometry.black_bear"
+			},
+			"animations": {
+				"walk": "animation.quadruped.walk",
+				"move": "animation.polarbear.move",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.polarbear.baby_transform"
+			},
+			"scripts": {
+				"scale": 1.2
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.polarbear.move"
+				},
+				{
+					"baby": "controller.animation.polarbear.baby"
+				}
+			],
+			"render_controllers": [
+				"controller.render.polarbear"
+			],
+			"spawn_egg": {
+				"base_color": "#0C0D0E",
+				"overlay_color": "#191812"
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+
+[
+	
+	{
+		"file_version" : 2
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : [ "IvLqW+tBqx6+SUhr4JMK6a++aka0uqimEAFpx/3f1kw=" ],
+		"path" : "behavior_packs/vanilla_gametest",
+		"uuid" : "00000000-0000-0000-0000-000000000000",
+		"version" : "0.0.0"
+	}
+]

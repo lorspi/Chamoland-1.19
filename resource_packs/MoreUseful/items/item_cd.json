@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "muc:item_cd",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:icon": "chest_driver",
+			"minecraft:render_offsets": "miscellaneous"
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "muc:jewelry",
+			"geometry": {
+				"default": "geometry.jewelry"
+			},
+			"textures": {
+				"default": "textures/muc_textures/jewelry/jewelry"
+			},
+			"materials": {
+				"default": "muc_default",
+				"alpha": "muc_alpha"
+			},
+			"render_controllers": [ "controller.render.jewelry" ],
+			"animations": {
+				"locked": "animation.jewelry.locked",
+				"unlocking": "animation.jewelry.unlocking",
+				"unlocked": "animation.jewelry.unlocked",
+				"locking": "animation.jewelry.locking",
+
+				"general": "controller.animation.jewelry.general"
+			},
+			"scripts": {
+				"animate": [ "general" ]
+			}
+		}
+	}
+}

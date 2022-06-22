@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.composter_chest": {
+			"arrays": {
+				"textures": {
+					"Array.types": [
+						"Texture.empty",
+						"Texture.filled"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"textures": [ "Array.types[query.is_saddled]" ],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		}
+	}
+}

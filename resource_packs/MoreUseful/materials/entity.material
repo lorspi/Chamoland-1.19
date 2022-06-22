@@ -1,0 +1,17 @@
+{
+	"materials": {
+		"version": "1.0.0",
+		"muc_default:entity": {
+		},
+		"muc_alpha:entity_alphatest": {
+		},
+		"muc_glow:entity_emissive_alpha": {
+		},
+		"muc_translucent:entity": {
+			"+states": [ "Blending" ]
+		},
+		"muc_glow_translucent:entity_emissive_alpha": {
+			"+defines": [ "USE_ONLY_EMISSIVE" ]
+		}
+	}
+}

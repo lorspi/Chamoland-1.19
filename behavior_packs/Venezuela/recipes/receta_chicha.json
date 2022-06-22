@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "venezuela:receta_chicha"
+    },
+    "groups": [
+      "venezuela"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:wheat"
+      },
+      {
+        "item": "minecraft:bucket",
+        "data": 1
+      }
+    ],
+    "result": {
+      "item": "venezuela:chicha",
+      "count": 3
+    }
+  }
+}

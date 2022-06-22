@@ -1,0 +1,83 @@
+{
+	"jewelry.alert": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/jewelry",
+				"volume": 1.0
+			}
+		]
+	},
+	"locked_chest.lock": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/locked_chest",
+				"volume": 1.0
+			}
+		]
+	},
+	"safe.door": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/safe",
+				"volume": 1.0
+			}
+		]
+	},
+	"trash_chest.clear": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/trash_chest",
+				"volume": 1.0
+			}
+		]
+	},
+	"treasure_chest.open": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/treasure_chest",
+				"volume": 1.0
+			}
+		]
+	},
+	"chest_driver.moving": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/chest_driver",
+				"volume": 1.0
+			}
+		]
+	},
+	"chest_driver.lock": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/locked_chest",
+				"volume": 1.0
+			}
+		]
+	},
+	"chest_driver.on": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/chest_driver_on",
+				"volume": 1.0
+			}
+		]
+	},
+	"chest_driver.off": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/muc_sounds/chest_driver_off",
+				"volume": 1.0
+			}
+		]
+	}
+}

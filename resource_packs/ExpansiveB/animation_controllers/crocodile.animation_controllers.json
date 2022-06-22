@@ -1,0 +1,81 @@
+//bridge-file-version: #74
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.crocodile.attack": {
+			"initial_state": "default",
+			"states": {
+				"chase_target": {
+					"animations": [
+						"crocodile_attack"
+					],
+					"transitions": [
+						{
+							"default": "!variable.has_target"
+						},
+						{
+							"biting": "query.is_delayed_attacking"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"chase_target": "variable.has_target"
+						}
+					]
+				},
+				"biting": {
+					"animations": [
+						"crocodile_bite"
+					],
+					"transitions": [
+						{
+							"chase_target": "!query.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.crocodile.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"swimming": "query.is_in_water && !query.is_on_ground"
+						},
+						{
+							"walking": "!query.is_in_water && query.is_on_ground"
+						}
+					]
+				},
+				"swimming": {
+					"animations": [
+						"crocodile_swim",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"walking": "!query.is_in_water && query.is_on_ground"
+						}
+					]
+				},
+				"walking": {
+					"animations": [
+						"move",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"swimming": "query.is_in_water && !query.is_on_ground"
+						}
+					]
+				}
+			}
+		}
+	}
+}

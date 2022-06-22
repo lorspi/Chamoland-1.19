@@ -1,0 +1,34 @@
+//bridge-file-version: #17
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "korbon:grizzly_bear_pelt_chestplate",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/models/armor/grizzly_bear_chestplate",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.chestplate1"
+			},
+			"animations": {
+				"default_controller": "controller.animation.cape.default",
+				"default": "animation.cape.default",
+				"move": "animation.cape.move"
+			},
+			"scripts": {
+				"parent_setup": "variable.chest_layer_visible = 0.0;",
+				"animate": [
+					"default_controller"
+				]
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}

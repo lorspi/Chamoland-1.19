@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "potopo_plush:candy_corn",
+            "category": "Items"
+        },
+
+        "components": {
+            "minecraft:icon": "candy_corn",
+            "minecraft:render_offsets": "miscellaneous"
+        }
+    }
+}

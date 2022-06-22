@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+        "identifier": "potopo_plush:llama_plush_axololt_costume",
+        "materials": {
+            "default": "zombie"
+        },
+        "textures": {
+            "default": "textures/entity/llama_plush_axololt_costume"
+        },
+        "geometry": {
+            "default": "geometry.llama_plush_axololt_costume"
+        },
+        "render_controllers": [
+            "controller.render.zombie_plush"
+        ],
+        "spawn_egg": {
+            "texture": "plush_eggs",
+            "texture_index": 31
+        }
+    }
+  }
+}

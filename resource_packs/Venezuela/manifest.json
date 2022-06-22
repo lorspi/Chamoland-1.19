@@ -1,0 +1,36 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Addon para Chamoland.",
+    "name": "Venezuela",
+    "uuid": "d7bcfc6b-78fd-37d1-88d9-816f337b61ad",
+    "version": [
+      1,
+      3,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Addon para Chamoland.",
+      "type": "resources",
+      "uuid": "1ffe656a-8885-36bc-92e2-8af72856b3ea",
+      "version": [
+        1,
+        3,
+        0
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "lorspi"
+    ],
+    "url": "https://lorspi.com"
+  }
+}

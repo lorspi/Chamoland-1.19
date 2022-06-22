@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "paz:3205_blue",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/car/3205_blue"
+			},
+			"geometry": {
+				"default": "geometry.3205"
+			},
+			"animations": {
+				"rotate": "animation.1111.rotate"
+			},
+			"scripts": {
+				"animate": [
+					{"rotate": "query.modified_distance_moved"}
+				]
+			},
+			"spawn_egg": {
+        "texture": "egg_3205",
+        "texture_index": 0
+			},
+			"render_controllers": ["controller.render.car"]
+		}
+	}
+}

@@ -1,0 +1,212 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "just_chairs": {
+      "textures": [
+        "textures/just_chairs/items/item_ground_just_chairs", //0
+        "textures/just_chairs/items/oak_simple_chair", //1
+        "textures/just_chairs/items/spruce_simple_chair", //2
+        "textures/just_chairs/items/birch_simple_chair", //3
+        "textures/just_chairs/items/jungle_simple_chair", //4
+        "textures/just_chairs/items/acacia_simple_chair", //5
+        "textures/just_chairs/items/dark_oak_simple_chair", //6
+		
+        "textures/just_chairs/items/black_small_sofa", //7
+        "textures/just_chairs/items/blue_small_sofa", //8
+        "textures/just_chairs/items/brown_small_sofa", //9
+        "textures/just_chairs/items/cyan_small_sofa", //10
+        "textures/just_chairs/items/gray_small_sofa", //11
+        "textures/just_chairs/items/green_small_sofa", //12
+        "textures/just_chairs/items/light_blue_small_sofa", //13
+        "textures/just_chairs/items/lime_small_sofa", //14
+        "textures/just_chairs/items/magenta_small_sofa", //15
+        "textures/just_chairs/items/orange_small_sofa", //16
+        "textures/just_chairs/items/pink_small_sofa", //17
+        "textures/just_chairs/items/purple_small_sofa", //18
+        "textures/just_chairs/items/red_small_sofa", //19
+        "textures/just_chairs/items/silver_small_sofa", //20
+        "textures/just_chairs/items/white_small_sofa", //21
+        "textures/just_chairs/items/yellow_small_sofa", //22
+		
+        "textures/just_chairs/items/black_big_sofa", //23
+        "textures/just_chairs/items/blue_big_sofa", //24
+        "textures/just_chairs/items/brown_big_sofa", //25
+        "textures/just_chairs/items/cyan_big_sofa", //26
+        "textures/just_chairs/items/gray_big_sofa", //27
+        "textures/just_chairs/items/green_big_sofa", //28
+        "textures/just_chairs/items/light_blue_big_sofa", //29
+        "textures/just_chairs/items/lime_big_sofa", //30
+        "textures/just_chairs/items/magenta_big_sofa", //31
+        "textures/just_chairs/items/orange_big_sofa", //32
+        "textures/just_chairs/items/pink_big_sofa", //33
+        "textures/just_chairs/items/purple_big_sofa", //34
+        "textures/just_chairs/items/red_big_sofa", //35
+        "textures/just_chairs/items/silver_big_sofa", //36
+        "textures/just_chairs/items/white_big_sofa", //37
+        "textures/just_chairs/items/yellow_big_sofa", //38
+		
+        "textures/just_chairs/items/oak_simple_stool", //39
+        "textures/just_chairs/items/spruce_simple_stool", //40
+        "textures/just_chairs/items/birch_simple_stool", //41
+        "textures/just_chairs/items/jungle_simple_stool", //42
+        "textures/just_chairs/items/acacia_simple_stool", //43
+        "textures/just_chairs/items/dark_oak_simple_stool", //44
+		
+        "textures/just_chairs/items/black_office_chair", //45
+        "textures/just_chairs/items/blue_office_chair", //46
+        "textures/just_chairs/items/brown_office_chair", //47
+        "textures/just_chairs/items/cyan_office_chair", //48
+        "textures/just_chairs/items/gray_office_chair", //49
+        "textures/just_chairs/items/green_office_chair", //50
+        "textures/just_chairs/items/light_blue_office_chair", //51
+        "textures/just_chairs/items/lime_office_chair", //52
+        "textures/just_chairs/items/magenta_office_chair", //53
+        "textures/just_chairs/items/orange_office_chair", //54
+        "textures/just_chairs/items/pink_office_chair", //55
+        "textures/just_chairs/items/purple_office_chair", //56
+        "textures/just_chairs/items/red_office_chair", //57
+        "textures/just_chairs/items/silver_office_chair", //58
+        "textures/just_chairs/items/white_office_chair", //59
+        "textures/just_chairs/items/yellow_office_chair", //60
+		
+        "textures/just_chairs/items/black_gaming_chair", //61
+        "textures/just_chairs/items/blue_gaming_chair", //62
+        "textures/just_chairs/items/brown_gaming_chair", //63
+        "textures/just_chairs/items/cyan_gaming_chair", //64
+        "textures/just_chairs/items/gray_gaming_chair", //65
+        "textures/just_chairs/items/green_gaming_chair", //66
+        "textures/just_chairs/items/light_blue_gaming_chair", //67
+        "textures/just_chairs/items/lime_gaming_chair", //68
+        "textures/just_chairs/items/magenta_gaming_chair", //69
+        "textures/just_chairs/items/orange_gaming_chair", //70
+        "textures/just_chairs/items/pink_gaming_chair", //71
+        "textures/just_chairs/items/purple_gaming_chair", //72
+        "textures/just_chairs/items/red_gaming_chair", //73
+        "textures/just_chairs/items/silver_gaming_chair", //74
+        "textures/just_chairs/items/white_gaming_chair", //75
+        "textures/just_chairs/items/yellow_gaming_chair", //76
+		
+        "textures/just_chairs/items/oak_outdoor_chair", //77
+        "textures/just_chairs/items/spruce_outdoor_chair", //78
+        "textures/just_chairs/items/birch_outdoor_chair", //79
+        "textures/just_chairs/items/jungle_outdoor_chair", //80
+        "textures/just_chairs/items/acacia_outdoor_chair", //81
+        "textures/just_chairs/items/dark_oak_outdoor_chair", //82
+		
+        "textures/just_chairs/items/oak_outdoor_bench", //83
+        "textures/just_chairs/items/spruce_outdoor_bench", //84
+        "textures/just_chairs/items/birch_outdoor_bench", //85
+        "textures/just_chairs/items/jungle_outdoor_bench", //86
+        "textures/just_chairs/items/acacia_outdoor_bench", //87
+        "textures/just_chairs/items/dark_oak_outdoor_bench", //88
+		
+        "textures/just_chairs/items/black_cloth_stool", //89
+        "textures/just_chairs/items/blue_cloth_stool", //90
+        "textures/just_chairs/items/brown_cloth_stool", //91
+        "textures/just_chairs/items/cyan_cloth_stool", //92
+        "textures/just_chairs/items/gray_cloth_stool", //93
+        "textures/just_chairs/items/green_cloth_stool", //94
+        "textures/just_chairs/items/light_blue_cloth_stool", //95
+        "textures/just_chairs/items/lime_cloth_stool", //96
+        "textures/just_chairs/items/magenta_cloth_stool", //97
+        "textures/just_chairs/items/orange_cloth_stool", //98
+        "textures/just_chairs/items/pink_cloth_stool", //99
+        "textures/just_chairs/items/purple_cloth_stool", //100
+        "textures/just_chairs/items/red_cloth_stool", //101
+        "textures/just_chairs/items/silver_cloth_stool", //102
+        "textures/just_chairs/items/white_cloth_stool", //103
+        "textures/just_chairs/items/yellow_cloth_stool", //104
+		
+        "textures/just_chairs/items/oak_stump_seat", //105
+        "textures/just_chairs/items/spruce_stump_seat", //106
+        "textures/just_chairs/items/birch_stump_seat", //107
+        "textures/just_chairs/items/jungle_stump_seat", //108
+        "textures/just_chairs/items/acacia_stump_seat", //109
+        "textures/just_chairs/items/dark_oak_stump_seat", //110
+		
+        "textures/just_chairs/items/black_retro_seat", //111
+        "textures/just_chairs/items/blue_retro_seat", //112
+        "textures/just_chairs/items/brown_retro_seat", //113
+        "textures/just_chairs/items/cyan_retro_seat", //114
+        "textures/just_chairs/items/gray_retro_seat", //115
+        "textures/just_chairs/items/green_retro_seat", //116
+        "textures/just_chairs/items/light_blue_retro_seat", //117
+        "textures/just_chairs/items/lime_retro_seat", //118
+        "textures/just_chairs/items/magenta_retro_seat", //119
+        "textures/just_chairs/items/orange_retro_seat", //120
+        "textures/just_chairs/items/pink_retro_seat", //121
+        "textures/just_chairs/items/purple_retro_seat", //122
+        "textures/just_chairs/items/red_retro_seat", //123
+        "textures/just_chairs/items/silver_retro_seat", //124
+        "textures/just_chairs/items/white_retro_seat", //125
+        "textures/just_chairs/items/yellow_retro_seat", //126
+		
+        "textures/just_chairs/items/oak_rustic_seat", //127
+        "textures/just_chairs/items/spruce_rustic_seat", //128
+        "textures/just_chairs/items/birch_rustic_seat", //129
+        "textures/just_chairs/items/jungle_rustic_seat", //130
+        "textures/just_chairs/items/acacia_rustic_seat", //131
+        "textures/just_chairs/items/dark_oak_rustic_seat", //132
+		
+        "textures/just_chairs/items/black_acrylic_chair", //133
+        "textures/just_chairs/items/blue_acrylic_chair", //134
+        "textures/just_chairs/items/brown_acrylic_chair", //135
+        "textures/just_chairs/items/cyan_acrylic_chair", //136
+        "textures/just_chairs/items/gray_acrylic_chair", //137
+        "textures/just_chairs/items/green_acrylic_chair", //138
+        "textures/just_chairs/items/light_blue_acrylic_chair", //139
+        "textures/just_chairs/items/lime_acrylic_chair", //140
+        "textures/just_chairs/items/magenta_acrylic_chair", //141
+        "textures/just_chairs/items/orange_acrylic_chair", //142
+        "textures/just_chairs/items/pink_acrylic_chair", //143
+        "textures/just_chairs/items/purple_acrylic_chair", //144
+        "textures/just_chairs/items/red_acrylic_chair", //145
+        "textures/just_chairs/items/silver_acrylic_chair", //146
+        "textures/just_chairs/items/white_acrylic_chair", //147
+        "textures/just_chairs/items/yellow_acrylic_chair", //148
+		
+        "textures/just_chairs/items/black_wooly_chair", //149
+        "textures/just_chairs/items/blue_wooly_chair", //150
+        "textures/just_chairs/items/brown_wooly_chair", //151
+        "textures/just_chairs/items/cyan_wooly_chair", //152
+        "textures/just_chairs/items/gray_wooly_chair", //153
+        "textures/just_chairs/items/green_wooly_chair", //154
+        "textures/just_chairs/items/light_blue_wooly_chair", //155
+        "textures/just_chairs/items/lime_wooly_chair", //156
+        "textures/just_chairs/items/magenta_wooly_chair", //157
+        "textures/just_chairs/items/orange_wooly_chair", //158
+        "textures/just_chairs/items/pink_wooly_chair", //159
+        "textures/just_chairs/items/purple_wooly_chair", //160
+        "textures/just_chairs/items/red_wooly_chair", //161
+        "textures/just_chairs/items/silver_wooly_chair", //162
+        "textures/just_chairs/items/white_wooly_chair", //163
+        "textures/just_chairs/items/yellow_wooly_chair", //164
+		
+        "textures/just_chairs/items/black_garden_chair", //165
+        "textures/just_chairs/items/blue_garden_chair", //166
+        "textures/just_chairs/items/brown_garden_chair", //167
+        "textures/just_chairs/items/cyan_garden_chair", //168
+        "textures/just_chairs/items/gray_garden_chair", //169
+        "textures/just_chairs/items/green_garden_chair", //170
+        "textures/just_chairs/items/light_blue_garden_chair", //171
+        "textures/just_chairs/items/lime_garden_chair", //172
+        "textures/just_chairs/items/magenta_garden_chair", //173
+        "textures/just_chairs/items/orange_garden_chair", //174
+        "textures/just_chairs/items/pink_garden_chair", //175
+        "textures/just_chairs/items/purple_garden_chair", //176
+        "textures/just_chairs/items/red_garden_chair", //177
+        "textures/just_chairs/items/silver_garden_chair", //178
+        "textures/just_chairs/items/white_garden_chair", //179
+        "textures/just_chairs/items/yellow_garden_chair", //180
+		
+        "textures/just_chairs/items/oak_modern_chair", //181
+        "textures/just_chairs/items/spruce_modern_chair", //182
+        "textures/just_chairs/items/birch_modern_chair", //183
+        "textures/just_chairs/items/jungle_modern_chair", //184
+        "textures/just_chairs/items/acacia_modern_chair", //185
+        "textures/just_chairs/items/dark_oak_modern_chair" //186
+      ]
+    }
+  }
+}

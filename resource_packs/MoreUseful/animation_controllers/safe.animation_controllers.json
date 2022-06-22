@@ -1,0 +1,93 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.safe.rotations": {
+			"states": {
+				"default": {
+					"animations": [
+						"r_1"
+					],
+					"transitions": [
+						{
+							"r_2": "query.variant == 2"
+						}
+					]
+				},
+				"r_2": {
+					"animations": [
+						"r_2"
+					],
+					"transitions": [
+						{
+							"r_3": "query.variant == 3"
+						}
+					]
+				},
+				"r_3": {
+					"animations": [
+						"r_3"
+					],
+					"transitions": [
+						{
+							"r_4": "query.variant == 4"
+						}
+					]
+				},
+				"r_4": {
+					"animations": [
+						"r_4"
+					],
+					"transitions": [
+						{
+							"default": "query.variant == 1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.safe.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"locked"
+					],
+					"transitions": [
+						{
+							"pre_unlock": "query.mark_variant == 102"
+						}
+					]
+				},
+				"pre_unlock": {
+					"animations": [
+						"unlocking"
+					],
+					"transitions": [
+						{
+							"unlocked": "query.mark_variant == 103"
+						}
+					]
+				},
+				"unlocked": {
+					"animations": [
+						"unlocked"
+					],
+					"transitions": [
+						{
+							"pre_lock": "query.mark_variant == 104"
+						}
+					]
+				},
+				"pre_lock": {
+					"animations": [
+						"locking"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant == 101"
+						}
+					]
+				}
+			}
+		}
+	}
+}

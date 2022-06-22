@@ -1,0 +1,10 @@
+pack.name=Backpack Addon Resources
+pack.description=Use With The Behavior Pack
+
+entity.unknown.name=  
+entity.entity:backpack.name=Backpack
+item.spawn_egg.entity.entity:backpack.name=Spawn Backpack
+item.item:backpack.name=Backpack
+
+
+

@@ -1,0 +1,72 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+            "description": {
+                "identifier": "geometry.enderman_plush",
+                "texture_width": 64,
+                "texture_height": 64,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2,
+                "visible_bounds_offset": [ 0, 1, 0 ]
+            },
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 38, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-4, 2, -2], "size": [8, 12, 4], "uv": [28, 28], "mirror": false}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [0, 24, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-4, 25, -4], "size": [8, 8, 8], "uv": [0, 16], "mirror": false}
+					]
+				},
+				{
+					"name": "cube",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 14, -4], "size": [8, 8, 8], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "rightArm",
+					"pivot": [3, 36, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [4, 8, -1], "size": [2, 17, 2], "uv": [8, 32], "mirror": false}
+					]
+				},
+				{
+					"name": "leftArm",
+					"pivot": [-5, 36, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-6, 8, -1], "size": [2, 17, 2], "uv": [0, 32], "mirror": false}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"pivot": [2, 26, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [1, -13, -2], "size": [2, 15, 2], "pivot": [0, 0, 0], "rotation": [-90, 0, 0], "uv": [32, 0], "mirror": false}
+					]
+				},
+				{
+					"name": "leftLeg",
+					"pivot": [-2, 26, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3, -13, -2], "size": [2, 15, 2], "pivot": [0, 0, 0], "rotation": [-90, 0, 0], "uv": [16, 32], "mirror": false}
+					]
+				}
+			]
+		}
+	]
+}

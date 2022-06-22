@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+        "identifier": "potopo_plush:ghast_plush",
+        "materials": {
+            "default": "zombie"
+        },
+        "textures": {
+            "default": "textures/entity/ghast_plush"
+        },
+        "geometry": {
+            "default": "geometry.ghast_plush"
+        },
+        "render_controllers": [
+            "controller.render.zombie_plush"
+        ],
+        "spawn_egg": {
+            "texture": "plush_eggs",
+            "texture_index": 32
+        }
+    }
+  }
+}

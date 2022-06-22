@@ -1,0 +1,58 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.strider_plush",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "tentacles_8",
+					"pivot": [-6.3, 1, 5],
+					"mirror": true,
+					"cubes": [
+						{"origin": [0.95, 0, -1.5], "size": [3, 10, 3], "uv": [12, 38], "mirror": false}
+					]
+				},
+				{
+					"name": "tentacles_2",
+					"pivot": [-6.3, 1, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-4.05, 0, -1.5], "size": [3, 10, 3], "uv": [0, 38], "mirror": false}
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [0, 8, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-6, 9, -6], "size": [12, 12, 12], "uv": [0, 0], "mirror": false}
+					]
+				},
+				{
+					"name": "hair_1",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-11.5, 20.25, -3], "size": [6, 1, 6], "pivot": [-5.5, 20.25, -1], "rotation": [0, 0, -45], "uv": [24, 31]},
+						{"origin": [-11.5, 19, -3], "size": [6, 1, 6], "pivot": [-5.5, 19, -1], "rotation": [0, 0, -45], "uv": [0, 31]}
+					]
+				},
+				{
+					"name": "hair_2",
+					"pivot": [0, 8, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-9.90901, 19.59099, -3], "size": [6, 1, 6], "pivot": [-5.5, 18, -1], "rotation": [0, 0, -45], "uv": [24, 24]},
+						{"origin": [-11, 18.86603, -3], "size": [6, 1, 6], "pivot": [-5.5, 18, -1], "rotation": [0, 0, -45], "uv": [0, 24]}
+					]
+				}
+			]
+		}
+	]
+}

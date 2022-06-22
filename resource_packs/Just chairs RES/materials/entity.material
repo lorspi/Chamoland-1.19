@@ -1,0 +1,27 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "glow:entity_emissive_alpha": {
+	},
+    "glow_glass_blender:entity_emissive_alpha": {
+      "+defines": [ "USE_ONLY_EMISSIVE" ]
+    },
+    "translucence:entity_alphatest": {},
+    "glass:entity": {
+      "+states": [ "Blending" ]
+    },
+    "glow_glass:entity_emissive_alpha": {
+      "+states": [ "Blending" ]
+    },
+    "charged:entity_emissive_alpha": {
+	  "+states": [ "Blending", "DisableCulling" ],
+      "blendSrc": "One",
+      "blendDst": "One"
+	},
+    "part_charged:entity_emissive_alpha": {
+	  "+states": [ "Blending", "DisableCulling" ],
+      "blendSrc": "One"
+	},
+	"glint:entity_glint": {}
+  }
+}

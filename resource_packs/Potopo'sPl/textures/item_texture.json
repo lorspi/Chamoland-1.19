@@ -1,0 +1,91 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+    "texture_data": {
+        
+        "plush_eggs": {
+            "textures": [
+
+                "textures/items/egg_enderman_plush", 
+                "textures/items/egg_llama_brown_plush", //1
+                "textures/items/egg_llama_creeper_plush", //2
+                "textures/items/egg_llama_enderman_plush", //3
+                "textures/items/egg_llama_purple_plush", //4
+                "textures/items/egg_llama_white_plush", //5
+                "textures/items/egg_zombie_plush", //6
+                "textures/items/egg_llama_llama_plush", //7
+                "textures/items/egg_creeper_plush", //8
+                "textures/items/egg_slime_plush", //9
+                "textures/items/egg_strider_plush", //10
+                "textures/items/egg_sailor_chicken", //11
+                "textures/items/egg_nitwit_villager_plush", //12
+                "textures/items/egg_wandering_trader_plush", //13
+                "textures/items/egg_brown_trader_llama_plush", //14
+                "textures/items/egg_creamy_trader_llama_plush", //15
+                "textures/items/egg_hoglin_plush", //16
+                "textures/items/egg_sticky_bee_plush", //17
+                "textures/items/egg_steve_plush", //18
+                "textures/items/egg_alex_plush", //19
+                "textures/items/egg_herobrine_plush", //20
+                "textures/items/egg_wolf_plush", //21
+                "textures/items/egg_zombie_pigman_plush", //22
+                "textures/items/egg_piglin_zombified_plush", //23
+                "textures/items/mooshroom_plush", //24
+                "textures/items/egg_brown_mooshroom_plush", //25
+                "textures/items/egg_classic_creeper_plush", //26
+                "textures/items/egg_polar_bear_plush", //27
+                "textures/items/egg_wither_plush", //28
+                "textures/items/egg_axolotl_in_a_bucket", //29
+                "textures/items/egg_spider_plush", //30
+                "textures/items/egg_llama_plush_axololt_costume", //31
+                "textures/items/egg_ghast_plush" //32
+
+
+            ]
+        },
+
+        "heroes_plush_eggs": {
+            "textures": [
+
+                "textures/items/heroes/temporada_1/egg_heroes_potopo_ann_plush", //0
+                "textures/items/heroes/temporada_1/egg_heroes_dagadax_plush", //1
+                "textures/items/heroes/temporada_1/egg_heroes_arya_plush", //2
+                "textures/items/heroes/temporada_1/egg_heroes_talon_plush", //3
+                "textures/items/heroes/temporada_1/egg_heroes_king_plush", //4
+                "textures/items/heroes/temporada_1/egg_heroes_johnny5_plush", //5
+                "textures/items/heroes/temporada_1/egg_heroes_midnight_plush", //6
+                "textures/items/heroes/temporada_1/egg_heroes_skammander_plush", //7
+                "textures/items/heroes/temporada_1/egg_heroes_ghibekjodkins_plush" //8
+            ]
+        },
+
+        "sever_eggs": {
+            "textures": [
+                "textures/items/server/egg_plushies_seller" //0
+            ]
+        },
+
+        "event_plush_eggs": {
+            "textures":[
+
+                //Event Halloween 2020
+                "textures/items/events/halloween/egg_llama_plush_80s_robot", //0
+                "textures/items/events/halloween/egg_llama_plush_astronaut", //1
+                "textures/items/events/halloween/egg_llama_plush_frankenstein's_monster", //2
+                "textures/items/events/halloween/egg_llama_plush_pumpkin_face" //3
+            ]
+        },
+
+        "stuffed": {
+            "textures": "textures/items/items/stuffed"
+        },
+        "candy_corn": {
+            "textures": "textures/items/items/candy_corn"
+        },
+
+        "seasson_3_ticket": {
+            "textures": "textures/items/items/seasson_3_ticket"
+        }
+
+    }
+}

@@ -1,0 +1,17 @@
+item.spawn_egg.entity.npc:boy1.name=Comerciante comida
+item.spawn_egg.entity.npc:boy2.name=Comerciante cosas
+item.spawn_egg.entity.npc:maduro.name=Maduro
+
+entity.npc:maduro.name=Maburro
+
+entity.trader_apple.nombre=Comerciante
+entity.trader_lorspi.nombre=Comerciante
+
+entity.hovertext:hovertext.name=Hovertext
+
+item.spawn_egg.entity.npc:girl1.name=Viajar a casa
+item.spawn_egg.entity.npc:girl2.name=Viajar a la aldea
+
+
+item.npc:adalita.name=Adalita
+tile.npc:adalita_block.name=Bloque de adalita

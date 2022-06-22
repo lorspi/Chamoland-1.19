@@ -1,0 +1,37 @@
+{
+	"resource_pack_name": "more_useful_chests",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"jewelry": {
+			"textures": "textures/muc_items/jewelry"
+		},
+		"locked_chest": {
+			"textures": "textures/muc_items/locked_chest"
+		},
+		"safe": {
+			"textures": "textures/muc_items/safe"
+		},
+		"trash_chest": {
+			"textures": "textures/muc_items/trash_chest"
+		},
+		"composter_chest": {
+			"textures": "textures/muc_items/composter_chest"
+		},
+		"chest_driver": {
+			"textures": "textures/muc_items/chest_driver"
+		},
+
+		"key": {
+			"textures": "textures/muc_items/tools/key"
+		},
+		"crowbar": {
+			"textures": "textures/muc_items/tools/crowbar"
+		},
+		"wrench": {
+			"textures": "textures/muc_items/tools/wrench"
+		},
+		"resize_tool": {
+			"textures": "textures/muc_items/tools/resize_tool"
+		}
+	}
+}

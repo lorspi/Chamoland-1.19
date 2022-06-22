@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "muc:hologram_locked_chest",
+			"geometry": {
+				"default": "geometry.locked_chest"
+			},
+			"textures": {
+				"default": "textures/muc_textures/hologram"
+			},
+			"materials": {
+				"default": "muc_glow"
+			},
+			"render_controllers": [ "controller.render.hologram" ]
+		}
+	}
+}

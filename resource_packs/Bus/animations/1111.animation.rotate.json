@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.1111.rotate": {
+			"loop": true,
+			"bones": {
+				"wheel_1": {
+					"rotation": [180, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wheel_2": {
+					"rotation": [180, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wheel_3": {
+					"rotation": [180, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wheel_4": {
+				    "rotation": [180, 0, 0],
+				    "position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

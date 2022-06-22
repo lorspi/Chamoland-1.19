@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:jungle_rustic_seat",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/outdoor_chair/jungle"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.rustic_seat"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 130
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

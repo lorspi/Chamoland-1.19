@@ -1,0 +1,29 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§bExpansive Biomes §fv1.1.2 by §eiKorbon§f - §2RP",
+		"description": "Adds more biomes to the game!",
+		"uuid": "27f80554-ecd5-4af0-b943-f92077e3e9bc",
+		"version": [
+			1,
+			0,
+			4
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "90edd3bf-a275-4fec-8728-4958fefd2c28",
+			"version": [
+				1,
+				0,
+				4
+			]
+		}
+	]
+}

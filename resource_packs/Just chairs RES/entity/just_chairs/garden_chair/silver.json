@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:silver_garden_chair",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/blocks/concrete_silver"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.garden_chair"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 178
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

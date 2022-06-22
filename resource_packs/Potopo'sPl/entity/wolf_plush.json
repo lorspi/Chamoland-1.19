@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+        "identifier": "potopo_plush:wolf_plush",
+        "materials": {
+            "default": "zombie"
+        },
+        "textures": {
+            "default": "textures/entity/wolf_plush"
+        },
+        "geometry": {
+            "default": "geometry.wolf_plush"
+        },
+        "render_controllers": [
+            "controller.render.zombie_plush"
+        ],
+        "spawn_egg": {
+            "texture": "plush_eggs",
+            "texture_index": 21
+        }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:silver_big_sofa",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/entity/bed/silver"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.big_sofa"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 36
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

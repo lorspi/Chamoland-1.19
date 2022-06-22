@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:purple_cloth_stool",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/just_chairs/cloth_stool/purple"
+      },
+      "geometry": {
+        "default": "geometry.just_chairs.cloth_stool"
+      },
+      "spawn_egg": {
+        "texture": "just_chairs",
+        "texture_index": 100
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

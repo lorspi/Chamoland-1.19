@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+        "identifier": "potopo_plush:zombi_pigman_plush",
+        "materials": {
+            "default": "zombie"
+        },
+        "textures": {
+            "default": "textures/entity/zombi_pigman_plush"
+        },
+        "geometry": {
+            "default": "geometry.human_man_plush"
+        },
+        "render_controllers": [
+            "controller.render.zombie_plush"
+        ],
+        "spawn_egg": {
+            "texture": "plush_eggs",
+            "texture_index": 22
+        }
+    }
+  }
+}

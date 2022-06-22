@@ -1,0 +1,33 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "chicha": {
+      "textures": "textures/items/chicha"
+    },
+    "un_millon": {
+      "textures": "textures/items/1millon"
+    },
+    "hallaca": {
+      "textures": "textures/items/hallaca"
+    },
+    "quinientos_mil": {
+      "textures": "textures/items/500mil"
+    },
+    "arepa": {
+      "textures": "textures/items/arepa"
+    },
+    "tequeno": {
+      "textures": "textures/items/tequeno"
+    },
+    "maltin_polar": {
+      "textures": "textures/items/maltin"
+    },
+    "doscientos_mil": {
+      "textures": "textures/items/200mil"
+    },
+    "frescolita": {
+      "textures": "textures/items/frescolita"
+    }
+  }
+}

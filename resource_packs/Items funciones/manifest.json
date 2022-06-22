@@ -1,0 +1,40 @@
+{
+  "format_version" : 2,
+  "header" : {
+    "version" : [
+      0,
+      0,
+      12
+    ],
+    "min_engine_version" : [
+      1,
+      14,
+      0
+    ],
+    "description" : "Items funciones",
+    "name" : "Items funciones",
+    "uuid" : "96F5CD3D-54B5-4CAE-9CDB-B992C425A4FF"
+  },
+  "dependencies" : [
+    {
+      "version" : [
+        0,
+        0,
+        4
+      ],
+      "uuid" : "4E77EF67-8B7E-4615-80E8-D562661D247C"
+    }
+  ],
+  "modules" : [
+    {
+      "version" : [
+        0,
+        0,
+        1
+      ],
+      "description" : "Example vanilla resource pack",
+      "type" : "resources",
+      "uuid" : "11E20090-95FF-4128-98DC-650F2C332993"
+    }
+  ]
+}

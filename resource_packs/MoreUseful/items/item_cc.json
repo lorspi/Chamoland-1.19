@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "muc:item_cc",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:icon": "composter_chest",
+			"minecraft:render_offsets": "miscellaneous"
+		}
+	}
+}

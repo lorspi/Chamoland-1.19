@@ -1,0 +1,8 @@
+{
+  "allowed_modules": [
+    "mojang-gametest",
+    "mojang-minecraft",
+    "mojang-minecraft-ui",
+    "mojang-minecraft-server-admin"
+  ]
+}

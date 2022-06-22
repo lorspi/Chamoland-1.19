@@ -1,0 +1,65 @@
+{
+   "format_version" : "1.14.0",
+   "sound_definitions" : {
+      "mob.maduro.death" : {
+         "category" : "hostile",
+         "sounds" : [
+            "sounds/mob/maduro/asi-como-aparecio-desaparecio"
+         ]
+      },
+      "mob.maduro.hit" : {
+         "category" : "hostile",
+         "sounds" : [
+            "sounds/mob/maduro/con-venezuela-no-te-metas",
+            "sounds/mob/maduro/no-that-way",
+            "sounds/mob/maduro/intervencionismo-en-venezuela-no",
+            "sounds/mob/maduro/ni-un-milimetro-de-segundo",
+            "sounds/mob/maduro/que-quieres-tu-que-yo-haga",
+            "sounds/mob/maduro/te-confiezo-que-no-estoy-actualizado-sobre-ese-tema",
+            "sounds/mob/maduro/vos-no-sos-venezuela"
+         ]
+      },
+      "mob.maduro.say" : {
+         "category" : "hostile",
+         "sounds" : [
+            "sounds/mob/maduro/especulan-y-roban-como-nosotros",
+            "sounds/mob/maduro/hay-que-hacer-como-los-delfines-y-las-delfinas",
+            "sounds/mob/maduro/los-penes",
+            "sounds/mob/maduro/si-cultivas-pollo-por-ejemplo",
+            "sounds/mob/maduro/vamos-a-empezar-la-entrega-de-libros-y-libras",
+            "sounds/mob/maduro/y-de-repente-entro-un-pajarito-chiquitico",
+            "sounds/mob/maduro/me-visitan-las-mariposas-debe-ser-que-me-reconocen-como-un-mariposon"
+         ]
+      },
+      "sonidos.atrapada" : {
+         "category" : "ambient",
+         "sounds" : [
+            "sounds/sonidos/atrapada"
+         ]
+      },
+      "sonidos.conchetumadre" : {
+         "category" : "ambient",
+         "sounds" : [
+            "sounds/sonidos/conchetumadre"
+         ]
+      },
+      "sonidos.darkness" : {
+         "category" : "ambient",
+         "sounds" : [
+            "sounds/sonidos/darkness"
+         ]
+      },
+      "sonidos.puerta" : {
+         "category" : "ambient",
+         "sounds" : [
+            "sounds/sonidos/puerta"
+         ]
+      },
+      "sonidos.nothatway" : {
+         "category" : "ambient",
+         "sounds" : [
+            "sounds/mob/maduro/no-that-way"
+         ]
+      }
+   }
+}

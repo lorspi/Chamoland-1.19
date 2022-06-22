@@ -1,0 +1,172 @@
+//bridge-file-version: #30
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"korbon:mud_bucket": {
+			"textures": [
+				"textures/items/bucket_mud"
+			]
+		},
+		"korbon:small_cactus": {
+			"textures": [
+				"textures/items/small_cactus"
+			]
+		},
+		"korbon:coconut": {
+			"textures": [
+				"textures/items/coconut"
+			]
+		},
+		"korbon:coconut_open": {
+			"textures": [
+				"textures/items/coconut_open"
+			]
+		},
+		"korbon:lavender": {
+			"textures": [
+				"textures/items/lavender_flower"
+			]
+		},
+		"korbon:dune_grass": {
+			"textures": [
+				"textures/items/dune_grass"
+			]
+		},
+		"korbon:cherry": {
+			"textures": [
+				"textures/items/cherry"
+			]
+		},
+		"korbon:crocodile_meat_raw": {
+			"textures": [
+				"textures/items/crocodile_meat_raw"
+			]
+		},
+		"korbon:crocodile_meat_cooked": {
+			"textures": [
+				"textures/items/crocodile_meat_cooked"
+			]
+		},
+		"korbon:frog_leg_raw": {
+			"textures": [
+				"textures/items/frog_leg_raw"
+			]
+		},
+		"korbon:frog_leg_cooked": {
+			"textures": [
+				"textures/items/frog_leg_cooked"
+			]
+		},
+		"grizzly_bear": {
+			"textures": [
+				"textures/items/grizzly_bear"
+			]
+		},
+		"grizzly_bear_pelt": {
+			"textures": [
+				"textures/items/grizzly_bear_pelt"
+			]
+		},
+		"black_bear_pelt": {
+			"textures": [
+				"textures/items/black_bear_pelt"
+			]
+		},
+		"grizzly_bear_pelt_chestplate": {
+			"textures": [
+				"textures/items/grizzly_bear_pelt_chestplate"
+			]
+		},
+		"grizzly_bear_pelt_leggings": {
+			"textures": [
+				"textures/items/grizzly_bear_pelt_leggings"
+			]
+		},
+		"grizzly_bear_pelt_boots": {
+			"textures": [
+				"textures/items/grizzly_bear_pelt_boots"
+			]
+		},
+		"grizzly_bear_pelt_helmet": {
+			"textures": [
+				"textures/items/grizzly_bear_pelt_helmet"
+			]
+		},
+		"korbon:cherry_blossom_sapling_item": {
+			"textures": [
+				"textures/items/cherry_blossom_sapling"
+			]
+		},
+		"korbon:jacaranda_sapling_item": {
+			"textures": [
+				"textures/items/jacaranda_sapling"
+			]
+		},
+		"vibranium_chestplate": {
+			"textures": [
+				"textures/items/vibranium_chestplate"
+			]
+		},
+		"vibranium_leggings": {
+			"textures": [
+				"textures/items/vibranium_leggings"
+			]
+		},
+		"vibranium_boots": {
+			"textures": [
+				"textures/items/vibranium_boots"
+			]
+		},
+		"vibranium_helmet": {
+			"textures": [
+				"textures/items/vibranium_helmet"
+			]
+		},
+		"korbon:vibranium": {
+			"textures": [
+				"textures/items/vibranium"
+			]
+		},
+		"korbon:vibranium_sword": {
+			"textures": [
+				"textures/items/vibranium_sword"
+			]
+		},
+		"korbon:vibranium_pickaxe": {
+			"textures": [
+				"textures/items/vibranium_pickaxe"
+			]
+		},
+		"korbon:large_vibrant_dripstone_down": {
+			"textures": [
+				"textures/items/vibrant_dripstone_big_down"
+			]
+		},
+		"korbon:vibranium_ingot": {
+			"textures": [
+				"textures/items/vibranium_ingot"
+			]
+		},
+		"korbon:vibranium_axe": {
+			"textures": [
+				"textures/items/vibranium_axe"
+			]
+		},
+		"korbon:vibranium_shovel": {
+			"textures": [
+				"textures/items/vibranium_shovel"
+			]
+		},
+		"syrup_bottle": {
+			"textures": [
+				"textures/items/syrup_bottle"
+			]
+		},
+		"maple_sapling_item": {
+			"textures": [
+				"textures/items/maple_sapling"
+			]
+		}
+	}
+}
