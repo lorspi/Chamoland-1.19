@@ -1,0 +1,1 @@
+playsound treasure_chest.open @a ~ ~ ~

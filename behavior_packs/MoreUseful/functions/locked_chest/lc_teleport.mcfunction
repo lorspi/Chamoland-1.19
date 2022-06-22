@@ -1,0 +1,1 @@
+execute @s ~~~ tp @e[type=muc:hologram_locked_chest] ^ ^ ^3

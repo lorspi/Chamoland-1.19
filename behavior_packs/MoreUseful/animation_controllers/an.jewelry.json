@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.j_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"j_summon": "query.mark_variant == 101"
+						}
+					]
+				},
+				"j_summon": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 100"
+						}
+					],
+					"on_entry": [
+						"/function jewelry/j_summon"
+					]
+				}
+			}
+		},
+		"controller.animation.j_teleport": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"j_teleport": "query.mark_variant == 101"
+						}
+					]
+				},
+				"j_teleport": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 101"
+						}
+					],
+					"on_entry": [
+						"/function jewelry/j_teleport"
+					]
+				}
+			}
+		},
+		"controller.animation.when_transformed_j": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"transformed": "query.is_sheared"
+						}
+					]
+				},
+				"transformed": {
+					"on_entry": [
+						"/function jewelry/jewelry_transformed"
+					]
+				}
+			}
+		}
+	}
+}

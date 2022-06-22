@@ -1,0 +1,65 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "muc:treasure_normal",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"muc:normal": {
+				"minecraft:transformation": {
+					"into": "minecraft:areaeffectcloud",
+					"drop_equipment": true
+				},
+				"minecraft:equipment": {
+					"table": "loot_tables/muc_chests/treasure_chest/normal.json"
+				}
+			}
+		},
+		"components": {
+			"minecraft:identifier": {
+				"id": "muc:treasure_normal"
+			},
+			"minecraft:type_family": {
+				"family": [ "treasure_normal" ]
+			},
+			"minecraft:collision_box": {
+				"width": 0.0,
+				"height": 0.0
+			},
+			"minecraft:is_stackable": {
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:fall_damage": {
+				"value": 0.0
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1.0,
+				"max": 1.0
+			},
+			"minecraft:damage_sensor": [
+				{
+					"cause": "any",
+					"deals_damage": false
+				}
+			]
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [ "muc:normal" ]
+				}
+			}
+		}
+	}
+}

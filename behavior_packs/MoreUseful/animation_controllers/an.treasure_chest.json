@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.summon_treasure": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"summon_normal": "query.variant == 1"
+						},
+						{
+							"summon_valuable": "query.variant == 2"
+						}
+					]
+				},
+				"summon_normal": {
+					"on_entry": [
+						"/function treasure_chest/s_normal"
+					]
+				},
+				"summon_valuable": {
+					"on_entry": [
+						"/function treasure_chest/s_valuable"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "frozen_lake"
+		},
+		"components": {
+			"minecraft:overworld_height": {
+				"noise_type": "river"
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 15,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:climate": {
+				"downfall": 0.4,
+				"snow_accumulation": [
+					0.125,
+					0.5
+				],
+				"temperature": -0.5
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"frozen",
+						1
+					]
+				]
+			},
+			"overworld": {},
+			"river": {},
+			"lake": {},
+			"monster": {}
+		}
+	}
+}

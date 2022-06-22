@@ -1,0 +1,11 @@
+//bridge-file-version: #17
+{
+	"format_version": "1.16.100",
+	"minecraft:cave_carver_feature": {
+		"description": {
+			"identifier": "korbon:big_cave_feature"
+		},
+		"fill_with": "minecraft:air",
+		"width_modifier": 3.3
+	}
+}

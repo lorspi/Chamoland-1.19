@@ -1,0 +1,36 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:forest_ambient"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "eruption_event",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:ticking": {
+				"range": [
+					20,
+					20
+				],
+				"looping": true,
+				"on_tick": {
+					"event": "play"
+				}
+			}
+		},
+		"events": {
+			"play": {
+				"run_command": {
+					"command": [
+						"playsound ambient.forest @a[r=400]"
+					]
+				}
+			}
+		}
+	}
+}

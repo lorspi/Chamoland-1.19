@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "dungeon:basic_dungeon_scatter_feature"
+    },
+    "places_feature": "dungeon:basic_dungeon_feature",
+    "iterations": 1,
+    "scatter_chance": 100.0,
+    "x": {
+      "distribution": "uniform",
+      "extent": [
+        -200,
+        200
+      ]
+    },
+    "y": "query.heightmap(variable.worldx, variable.worldz)",
+    "z": {
+      "distribution": "uniform",
+      "extent": [
+        -200,
+        200
+      ]
+    }
+  }
+}

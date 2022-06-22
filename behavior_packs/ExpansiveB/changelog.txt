@@ -1,0 +1,53 @@
+v1.1
+
+-added new biomes, Lush Mountain, Scorched Forest, Autumn Forest, Autumn Forest Hills, Tropical Island, Wakandan Plains, Wakandan Forest, Birch Wetlands, Maple Woods, Maple Woods Hills
+-added new mobs, Crocodile, Frog, Grizzly Bear, Black Bear, Vibranium Skeleton, Trapper Pillager
+-added new blocks, Vibranium Ore, Vibrant Stone, Vibrant Dripstone (large and small variants), Smoldering Log, Scorched Leaves, Scorched Grass Block, Smoldering Grass Block, Autumn Oak Leaves, Autumn Birch Leaves, Autumn Oak Leaf Pile, Autumn Birch Leaf Pile, Maple Leaves, Maple Oak Syrup Log
+-added new items, Grizzly Bear Pelt, Black Bear Pelt, Vibranium Crystal, Vibranium Ingot
+-added new weapons/tools, Vibranium Sword, Vibranium Pickaxe, Vibranium Axe, Vibranium Shovel
+-added new armor, Grizzly Bear Armor, Vibranium Armor
+-added new food, Crocodile Meat, Frog Legs
+-added new structure, Hunter Cabin
+-added new saplings, Cherry Blossom Sapling, Jacaranda Sapling, Maple Sapling
+-improved how water is scattered on the surface of the Bog biome and Marsh biomes
+-imrpoved how lava is scattered on the surface of the Volcanic biome
+-lowered Frozen Mountain spawn rate a bit
+-added seagrass to Bog and Marsh biomes
+-added fog to Frozen Desert
+-improved Marsh surface
+-Volcanic biome will only spawn as a mutation of Dune biomes
+-lowered the amount of grass in Marsh biome
+-lowered the amount of vines in Bog biome
+-added bamboo to Cherry Blossom Grove
+-added pandas to Cherry Blossom Grove
+-added lilypads to Cherry Blossom Grove
+-Mushroom Forest will now only be found in Mooshroom Island biomes
+-Cherry Blossom Leaves and Jacaranda Leaves are now flammable
+-Cherry Blossom Leaves and Jacaranda Leaves will now drop sticks and saplings
+-updated textures of Cherry Blossom Leaves
+-updated textures of Jacaranda Leaves
+-Pumpkin Plains will now only be found as a mutation of the Autumn Forest
+-added new splash texts
+-added map colors for some blocks
+-updated Mossy Skeleton spawn egg texture
+-updated Mossy Zombie spawn egg texture
+
+v1.1.2
+-updated ore generation for 1.17
+-changed the name of addon to Expansive Biomes
+-updated logo
+-added new block, Deepslate Vibranium Ore
+-goats will now spawn in Lush Mountains, Frozen Mountains, and Alps biomes
+-powder snow will now spawn in Frozen Mountains, and Frozen Desert biomes
+-Vibranium Ore and Vibrancy Stone will now spawn in Wakandan biomes again
+-caves and minerals can now be found in all biomes
+-increased spawn rate of Vibranium Ore
+-removed ash and spores from the Volcanic, Gaint Mushroom Forest, and Bog biomes temporarily
+-lowered the spawn rate of the Hunter Cabin structure
+-lowered the spawn rate of Black Bear
+-lowered the spawn rate of Grizzly Bear
+-fixed a typo for Mossy Skeleton spawn egg
+-fixed the name for Autumn Oak Leaf Pile
+-podzol will now be found in Redwood forests
+-added Hungarian language (credit to Nargoth from Discord)
+-added French language (credit to Skycubb73 from Discord)

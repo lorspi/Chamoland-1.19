@@ -1,0 +1,30 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "antique_blocks:cuckoo_clockx"
+    },
+    "components": {
+		"minecraft:block_light_absorption": 1,
+	  "minecraft:display_name": "Cuckoo Clock",
+      "minecraft:destroy_time": 1,
+	  "minecraft:geometry": "geometry.cuckoo_clock",
+	  	"minecraft:material_instances" : {
+		"*": {
+      "texture": "cuckoo_clock",
+      "render_method" : "alpha_test"
+		}
+		},
+	"minecraft:entity_collision": {
+		"origin": [-8, 0, -2.55],
+		"size": [16, 15.6, 10.5]
+	  },
+	  "minecraft:pick_collision": {
+		"origin": [-8, 0, -2.55],
+		"size": [16, 15.6, 10.5]
+	  }
+    },
+	"events":{
+	}
+  }
+}

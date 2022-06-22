@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.key_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"summon_key": "query.mark_variant == 201"
+						}
+					]
+				},
+				"summon_key": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 100"
+						}
+					],
+					"on_entry": [
+						"/function tools/key_summon"
+					]
+				}
+			}
+		},
+		"controller.animation.key_teleport": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"teleport_key": "query.mark_variant == 201"
+						}
+					]
+				},
+				"teleport_key": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 201"
+						}
+					],
+					"on_entry": [
+						"/function tools/key_teleport"
+					]
+				}
+			}
+		},
+		"controller.animation.when_summoned_key": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"summoned": "query.is_sheared"
+						}
+					]
+				},
+				"summoned": {
+					"on_entry": [
+						"/function tools/key_summoned"
+					]
+				}
+			}
+		}
+	}
+}

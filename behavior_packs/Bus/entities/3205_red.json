@@ -1,0 +1,95 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "paz:3205_red",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "car" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 1,
+        "suffocateTime": 0
+      },
+  "minecraft:scale": {
+        "value": 1.7
+      },
+      "minecraft:collision_box": {
+        "width": 1.4,
+        "height": 2
+      },
+     "minecraft:movement": {
+        "value": 0.25
+        },
+        "minecraft:movement.basic": {
+
+        },
+        "minecraft:jump.static": {
+        },
+      "minecraft:health": {
+        "value": 40,
+        "max": 40
+      },
+      "minecraft:nameable": {
+      },
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+
+        "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+	  "minecraft:rideable": {
+        "priority": 0,
+		"seat_count": 5,
+		"crouching_skip_interact": true,
+		"interact_text": "Drive",
+        "family_types": [
+          "player",
+		  "zombie"
+        ],
+        "seats": [
+          {
+            "position": [ 0.3, 0.4, 0.7],
+            "min_rider_count": 0,
+            "max_rider_count": 0
+          },
+          {
+           "position": [ 0.3, 0.4, -0.8],
+            "min_rider_count": 2,
+            "max_rider_count": 5
+          },        
+          {
+           "position": [ -0.3, 0.4, -0.8],
+            "min_rider_count": 2,
+            "max_rider_count": 5
+          },         
+          {
+           "position": [ -0.3, 0.4, -0.2],
+
+            "min_rider_count": 2,
+            "max_rider_count": 5
+          },
+          {
+           "position": [ 0.3, 0.4, -0.2],
+
+            "min_rider_count": 2,
+            "max_rider_count": 5
+          }
+        ]
+      },
+      "minecraft:input_ground_controlled": {
+      },
+      
+
+      "minecraft:physics": {
+      }
+    }
+  }
+}

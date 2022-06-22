@@ -1,0 +1,30 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:grasslands_surface_springs_feature",
+			"places_feature": "minecraft:legacy:springs_feature"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "grassland"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 15,
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	}
+}

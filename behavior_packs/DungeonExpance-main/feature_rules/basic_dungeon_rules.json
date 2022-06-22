@@ -1,0 +1,75 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "dungeon:basic_dungeon_rules",
+			"places_feature": "dungeon:basic_dungeon_scatter_feature"
+		},
+		"conditions": {
+			"placement_pass": "before_underground_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "plains"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "desert"
+						},
+						{
+							"all_of": [
+								{
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "taiga"
+								},
+								{
+									"test": "has_biome_tag",
+									"operator": "!=",
+									"value": "hills"
+								}
+							]
+						},
+						{
+							"all_of": [
+								{
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "savanna"
+								},
+								{
+									"test": "has_biome_tag",
+									"operator": "!=",
+									"value": "plateau"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"scatter_chance": 100,
+			"iterations": 1,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					-200,
+					200
+				]
+			},
+			"y": 0,
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					-200,
+					200
+				]
+			}
+		}
+	}
+}

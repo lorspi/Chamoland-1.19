@@ -1,0 +1,214 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "muc:treasure_chest",
+			"runtime_identifier": "minecraft:shulker",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"soundeffect_tc": "controller.animation.soundeffect_tc",
+				"summon_treasure": "controller.animation.summon_treasure"
+			},
+			"scripts": {
+				"animate": [ "soundeffect_tc", "summon_treasure" ]
+			}
+		},
+		"component_groups": {
+			"muc:unopened": {
+				"minecraft:interact": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_sneaking",
+										"subject": "other",
+										"value": true
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "muc:key"
+									}
+								]
+							},
+							"event": "remove_entity"
+						},
+						"use_item": true,
+						"interact_text": "action.interact.treasure_chest.open"
+					}
+				],
+				"minecraft:damage_sensor": {
+					"cause": "any",
+					"deals_damage": false
+				}
+			},
+
+			"muc:opened_treasure": {
+				"minecraft:inventory": {
+					"container_type": "inventory",
+					"inventory_size": 27
+				},
+				"minecraft:item_hopper": {
+				}
+			},
+
+			"muc:treasure_normal": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"muc:treasure_valuable": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+
+			"muc:opening_anim": {
+				"minecraft:mark_variant": {
+					"value": 101
+				},
+				"minecraft:timer": {
+					"time": 0.9,
+					"looping": false,
+					"time_down_event": {
+						"event": "opened_anim",
+						"target": "self"
+					}
+				}
+			},
+			"muc:opened_anim": {
+				"minecraft:mark_variant": {
+					"value": 102
+				}
+			},
+
+			"muc:removing_component": {
+				"minecraft:damage_sensor": [
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_sneaking",
+										"subject": "other",
+										"value": true
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "muc:wrench"
+									}
+								]
+							},
+							"event": "remove_entity"
+						},
+						"deals_damage": false
+					},
+					{
+						"cause": "any",
+						"deals_damage": false
+					}
+				]
+			},
+			"muc:unopened_no_damage": {
+				"minecraft:damage_sensor": {
+					"cause": "any",
+					"deals_damage": false
+				}
+			},
+			"muc:remove_entity": {
+				"minecraft:transformation": {
+					"into": "minecraft:areaeffectcloud",
+					"drop_equipment": true
+				},
+				"minecraft:equipment": {
+					"table": "loot_tables/muc_chests/treasure_chest/tesoros.json"
+				}
+			}
+		},
+		"components": {
+			"minecraft:identifier": {
+				"id": "muc:treasure_chest"
+			},
+			"minecraft:type_family": {
+				"family": [ "treasure_chest" ]
+			},
+			"minecraft:collision_box": {
+				"width": 0.5,
+				"height": 0.5
+			},
+			"minecraft:is_stackable": {
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:fall_damage": {
+				"value": 0.0
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1.0,
+				"max": 1.0
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [ "muc:unopened", "muc:unopened_no_damage" ]
+				}
+			},
+			"open": {
+				"randomize": [
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [ "muc:opened_treasure", "muc:treasure_normal", "muc:opening_anim", "muc:gold_sparkles_particles", "muc:removing_component" ]
+						},
+						"remove": {
+							"component_groups": [ "muc:unopened", "muc:unopened_no_damage" ]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [ "muc:opened_treasure", "muc:treasure_valuable", "muc:opening_anim", "muc:dust_particles", "muc:removing_component" ]
+						},
+						"remove": {
+							"component_groups": [ "muc:unopened", "muc:unopened_no_damage" ]
+						}
+					}
+				]
+			},
+			"opened_anim": {
+				"add": {
+					"component_groups": [ "muc:opened_anim" ]
+				}
+			},
+			"remove_entity": {
+				"add": {
+					"component_groups": [ "muc:remove_entity" ]
+				}
+			}
+		}
+	}
+}

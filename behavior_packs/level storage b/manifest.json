@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Made By: Dewdimpple",
+        "name": "Levels Storage B",
+        "uuid": "585acd8d-4248-4b8e-8785-b8d32a5feebe",
+        "version": [ 0, 0, 1 ],
+        "min_engine_version": [ 1, 16, 210 ]
+    },
+    "modules": [
+        {
+            "description": "Example vanilla behavior pack",
+            "type": "data",
+            "uuid": "fa6e90c8-c925-460f-8155-c8a60b753caa",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "5ab8fe94-e5e6-45a6-8474-a6b887ecc184",
+            "version": [0, 0, 1]
+        }
+    ]
+}

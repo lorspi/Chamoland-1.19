@@ -1,0 +1,1 @@
+playsound trash_chest.clear @a ~ ~ ~

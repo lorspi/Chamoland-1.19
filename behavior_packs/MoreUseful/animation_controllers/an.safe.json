@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.s_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"s_summon": "query.mark_variant == 103"
+						}
+					]
+				},
+				"s_summon": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 100"
+						}
+					],
+					"on_entry": [
+						"/function safe/s_summon"
+					]
+				}
+			}
+		},
+		"controller.animation.s_teleport": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"s_teleport": "query.mark_variant == 103"
+						}
+					]
+				},
+				"s_teleport": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 103"
+						}
+					],
+					"on_entry": [
+						"/function safe/s_teleport"
+					]
+				}
+			}
+		},
+		"controller.animation.when_transformed_s": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"transformed": "query.is_sheared"
+						}
+					]
+				},
+				"transformed": {
+					"on_entry": [
+						"/function safe/safe_transformed"
+					]
+				}
+			}
+		}
+	}
+}

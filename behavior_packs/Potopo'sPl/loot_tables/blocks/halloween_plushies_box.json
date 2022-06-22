@@ -1,0 +1,93 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+        "entries": [
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:halloween_llama_plush_80s_robot" //Robot
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:halloween_llama_plush_frankenstein's_monster" //Franki
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:halloween_llama_plush_astronaut" //Astronaut
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:halloween_llama_plush_pumpkin_face" //Pumpkin
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    }
+  ]
+}

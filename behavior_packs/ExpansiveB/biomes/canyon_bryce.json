@@ -1,0 +1,71 @@
+//bridge-file-version: #72
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "canyon_bryce"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 2
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "korbon:hard_dirt",
+				"top_material": "korbon:hard_dirt",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					0.145,
+					0
+				]
+			},
+			"minecraft:overworld_generation_rules": {
+				"river_transformation": [
+					"canyon_valley"
+				]
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": "minecraft:grass"
+						},
+						"noise_range": [
+							-0.1,
+							0.1
+						],
+						"noise_frequency_scale": 0.5
+					}
+				]
+			},
+			"minecraft:mesa_surface": {
+				"bryce_pillars": true,
+				"has_forest": false,
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "korbon:hard_dirt",
+				"top_material": {
+					"name": "minecraft:hard_dirt"
+				},
+				"sea_material": "minecraft:water",
+				"clay_material": "korbon:hard_dirt",
+				"hard_clay_material": "minecraft:stone"
+			},
+			"animal": {},
+			"monster": {},
+			"canyon": {},
+			"canyon_bryce": {},
+			"overworld": {}
+		}
+	}
+}

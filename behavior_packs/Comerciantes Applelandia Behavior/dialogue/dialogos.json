@@ -1,0 +1,197 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [{
+            "scene_tag": "inicial",
+            "npc_name": "Lola",
+            "text": "¡Hola! ¿En qué puedo ayudarte?",
+            "on_open_commands": [
+                "/scoreboard objectives add UsosNPC dummy",
+                "/scoreboard players add @p UsosNPC 1",
+                "/scoreboard objectives add RegaloInicial dummy",
+                "/scoreboard players add @p RegaloInicial 0",
+                "/scoreboard objectives add TotalXP dummy",
+                "/scoreboard players add @p TotalXP 0",
+                "/scoreboard objectives add PagarXP dummy"
+            ],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Ganar dinero",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p ganar_dinero"]
+            }, {
+                "name": "Viajar",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p viajar"]
+            }, {
+                "name": "Kit de inicio",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p kit_inicio"]
+            }]
+        }, {
+            "scene_tag": "ganar_dinero",
+            "npc_name": "Lola",
+            "text": "Para ganar dinero tenes que ganar experiencia. Por cada 15 niveles de experiencia te daré 5 monedas.",
+            "on_open_commands": ["/scoreboard players set @p PagarXP 0","/execute @p[lm=15] ~ ~ ~ scoreboard players set @s PagarXP 1"],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Recibir dinero",
+                "commands": [
+                    "/execute @p[scores={PagarXP=0}] ~ ~ ~ playsound random.break @s",
+                    "/execute @p[scores={PagarXP=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p dinero_negado",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ give @s appleplus:moneda 5",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ playsound random.levelup @s",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ xp -15l @s",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p dinero_recibido"
+                ]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
+            }]
+        }, {
+            "scene_tag": "dinero_recibido",
+            "npc_name": "Lola",
+            "text": "§l§2¡Buen trabajo! Toma tu pago.",
+            "on_open_commands": ["/scoreboard players add @p TotalXP 1"],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Cerrar",
+                "commands": ["*"]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p ganar_dinero"]
+            }]
+        }, {
+            "scene_tag": "dinero_negado",
+            "npc_name": "Lola",
+            "text": "§l§4No has trabajado lo suficiente. §rRecuerda que recibirás 5 monedas por cada 15 niveles de experiencia.",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Cerrar",
+                "commands": ["*"]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p ganar_dinero"]
+            }]
+        }, {
+            "scene_tag": "viajar",
+            "npc_name": "Lola",
+            "text": "Puedes viajar a estos destinos. Estaré actualizando los destinos con nuevos lugares descubiertos por ustedes.",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Hogar",
+                "commands": ["/tp @p @e[type=hovertext:warp,name=kzjopw]"]
+            }, {
+                "name": "Arena PVE",
+                "commands": ["/tp @p @e[type=hovertext:warp,name=updoie]"]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
+            }]
+        }, {
+            "scene_tag": "kit_inicio",
+            "npc_name": "Lola",
+            "text": "Si es tu primera vez por aquí, puedes recibir una caja llena de cosas útiles para iniciar tu aventura. §l§4¡SOLO PUEDES RECIBIRLO UNA VEZ!",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Recibir kit",
+                "commands": [
+                    "/execute @p[scores={RegaloInicial=0}] ~ ~ ~ give @s thelake:lucky_block_vene",
+                    "/execute @p[scores={RegaloInicial=0}] ~ ~ ~ playsound random.levelup @s",
+                    "/execute @p[scores={RegaloInicial=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p kit_recibido",
+                    "/execute @p[scores={RegaloInicial=1}] ~ ~ ~ playsound random.break @s",
+                    "/execute @p[scores={RegaloInicial=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p kit_negado"
+                ]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
+            }]
+        }, {
+            "scene_tag": "kit_recibido",
+            "npc_name": "Lola",
+            "text": "§l§2¡Recibiste tu kit de inicio!",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Cerrar",
+                "commands": ["*"]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p kit_inicio","/scoreboard players set @p RegaloInicial 1"]
+            }]
+        }, {
+            "scene_tag": "kit_negado",
+            "npc_name": "Lola",
+            "text": "§l§4Ya has reclamado tu kit de inicio. §rRecuerda que sólo puedes reclamarlo una vez.",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Cerrar",
+                "commands": ["*"]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p kit_inicio"]
+            }]
+        }, {
+            "scene_tag": "emergencia",
+            "npc_name": "Lola",
+            "text": "¿Tienes alguna emergencia? Yo te puedo ayudar. Elige lo que quieres que haga por tí. §l§4Recuerda que este objeto es de un sólo uso. §rSi no necesitas ayuda, cancela para regresarte tu §lInvocador de ayuda.",
+            "on_open_commands": ["/scoreboard objectives add UsosEmergencia dummy", "/scoreboard players add @p UsosEmergencia 0"],
+            "on_close_commands": ["/kill @s" ,"/effect @p clear"],
+            "buttons": [{
+                "name": "Llévame a casa",
+                "commands": [
+                    "/tp @p @e[type=hovertext:warp,name=kzjopw]",
+                    "/title @p actionbar §a¡Has sido transportado a casa!",
+                    "/particle minecraft:totem_particle ~ ~1 ~",
+                    "/playsound random.levelup @p",
+                    "/scoreboard players add @p UsosEmergencia 1"
+                ]
+            },{
+                "name": "Dame comida",
+                "commands": [
+                    "/give @p cooked_porkchop 10",
+                    "/title @p actionbar §a¡Has recibido alimento!",
+                    "/particle minecraft:totem_particle ~ ~1 ~",
+                    "/playsound random.levelup @p",
+                    "/scoreboard players add @p UsosEmergencia 1"
+                ]
+            },{
+                "name": "Kit de hierro",
+                "commands": [
+                    "/give @p iron_helmet",
+                    "/give @p iron_chestplate",
+                    "/give @p iron_leggings",
+                    "/give @p iron_boots",
+                    "/give @p iron_sword",
+                    "/give @p iron_pickaxe",
+                    "/title @p actionbar §a¡Has recibido tu kit de hierro!",
+                    "/particle minecraft:totem_particle ~ ~1 ~",
+                    "/playsound random.levelup @p",
+                    "/scoreboard players add @p UsosEmergencia 1"
+                ]
+            },{
+                "name": "Sáname",
+                "commands": [
+                    "/effect @p instant_health 5",
+                    "/title @p actionbar §a¡Has sido sanado!",
+                    "/particle minecraft:totem_particle ~ ~1 ~",
+                    "/playsound random.levelup @p",
+                    "/scoreboard players add @p UsosEmergencia 1"
+                ]
+            },{
+                "name": "Mátame",
+                "commands": [
+                    "/kill @p",
+                    "/scoreboard players add @p UsosEmergencia 1"
+                ]
+            },{
+                "name": "Cancelar",
+                "commands": [
+                    "/give @p if:emergencia",
+                    "/kill @s"
+                ]
+            }]
+        }]
+    }
+}

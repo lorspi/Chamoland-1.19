@@ -1,0 +1,1180 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "muc:composter_chest",
+			"runtime_identifier": "minecraft:shulker",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"soundeffect_cc": "controller.animation.soundeffect_cc",
+				"when_transformed": "controller.animation.when_transformed_cc"
+			},
+			"scripts": {
+				"animate": [ "soundeffect_cc", "when_transformed" ]
+			}
+		},
+		"component_groups": {
+			"muc:remove_item": {
+				"minecraft:is_sheared": {
+				},
+				"minecraft:timer": {
+					"time": 0.1,
+					"looping": false,
+					"time_down_event": {
+						"event": "x_remove_item"
+					}
+				}
+			},
+
+			"muc:size_normal": {
+				"minecraft:scale": {
+					"value": 1.0
+				},
+				"minecraft:type_family": {
+					"family": [ "normal" ]
+				}
+			},
+			"muc:size_medium": {
+				"minecraft:scale": {
+					"value": 0.8
+				},
+				"minecraft:type_family": {
+					"family": [ "medium" ]
+				}
+			},
+			"muc:size_small": {
+				"minecraft:scale": {
+					"value": 0.6
+				},
+				"minecraft:type_family": {
+					"family": [ "small" ]
+				}
+			},
+
+			"muc:compost_controller": {
+				"minecraft:interact": [
+					{
+						"on_interact": {
+							"filters": {
+								"any_of": [
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "beetroot"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "beetroot_seeds"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "dried_kelp_block"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "dried_kelp"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "tallgrass:1"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "tallgrass:2"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "grass"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "leaves"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "melon_seeds"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "melon_block"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "melon"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "carved_pumpkin"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "pumpkin"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "pumpkin_pie"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "pumpkin_seeds"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "sapling"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "seagrass"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "sweet_berries"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "wheat_seeds"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "wheat"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "hay_block"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "bread"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "cactus"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "reeds"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "double_plant:1"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "double_plant:2"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "vine"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "apple"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "carrot"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "dye:3"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "red_flower"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "yellow_flower"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "potato"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "baked_potato"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "cookie"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "brown_mushroom_block"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "red_mushroom_block"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "is_family",
+												"subject": "other",
+												"value": "player"
+											},
+											{
+												"test": "is_sneaking",
+												"subject": "other",
+												"value": false
+											},
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "cake"
+											}
+										]
+									}
+								]
+							},
+							"event": "composting"
+						},
+						"use_item": true,
+						"add_items": {
+							"table": "loot_tables/muc_chests/composter_chest/bone_meal.json"
+						},
+						"interact_text": "action.interact.composter_chest.compost"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_sneaking",
+										"subject": "other",
+										"value": false
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "muc:resize_tool"
+									},
+									{
+										"test": "is_family",
+										"subject": "self",
+										"value": "normal"
+									}
+								]
+							},
+							"event": "size_medium"
+						},
+						"interact_text": "action.interact.resize"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_sneaking",
+										"subject": "other",
+										"value": false
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "muc:resize_tool"
+									},
+									{
+										"test": "is_family",
+										"subject": "self",
+										"value": "medium"
+									}
+								]
+							},
+							"event": "size_small"
+						},
+						"interact_text": "action.interact.resize"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_sneaking",
+										"subject": "other",
+										"value": false
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "muc:resize_tool"
+									},
+									{
+										"test": "is_family",
+										"subject": "self",
+										"value": "small"
+									}
+								]
+							},
+							"event": "size_normal"
+						},
+						"interact_text": "action.interact.resize"
+					}
+				]
+			},
+			"muc:compost_function": {
+				"minecraft:is_saddled": {
+				},
+				"minecraft:timer": {
+					"time": 2.0,
+					"looping": false,
+					"time_down_event": {
+						"event": "composted",
+						"target": "self"
+					}
+				}
+			},
+
+			"muc:rt_1": {
+				"minecraft:scale": {
+					"value": 0.9
+				},
+				"minecraft:timer": {
+					"time": 0.03,
+					"looping": false,
+					"time_down_event": {
+						"event": "rt_2",
+						"target": "self"
+					}
+				}
+			},
+			"muc:rt_2": {
+				"minecraft:scale": {
+					"value": 0.8
+				},
+				"minecraft:timer": {
+					"time": 0.03,
+					"looping": false,
+					"time_down_event": {
+						"event": "rt_3",
+						"target": "self"
+					}
+				}
+			},
+			"muc:rt_3": {
+				"minecraft:scale": {
+					"value": 0.7
+				},
+				"minecraft:timer": {
+					"time": 0.03,
+					"looping": false,
+					"time_down_event": {
+						"event": "rt_4",
+						"target": "self"
+					}
+				}
+			},
+			"muc:rt_4": {
+				"minecraft:scale": {
+					"value": 0.5
+				},
+				"minecraft:timer": {
+					"time": 0.02,
+					"looping": false,
+					"time_down_event": {
+						"event": "rt_5",
+						"target": "self"
+					}
+				}
+			},
+			"muc:rt_5": {
+				"minecraft:scale": {
+					"value": 0.3
+				},
+				"minecraft:timer": {
+					"time": 0.02,
+					"looping": false,
+					"time_down_event": {
+						"event": "remove_entity",
+						"target": "self"
+					}
+				}
+			},
+
+			"muc:remove_entity": {
+				"minecraft:transformation": {
+					"into": "minecraft:areaeffectcloud",
+					"drop_equipment": true
+				},
+				"minecraft:equipment": {
+					"table": "loot_tables/muc_chests/composter_chest/item.json"
+				}
+			}
+		},
+		"components": {
+			"minecraft:identifier": {
+				"id": "muc:composter_chest"
+			},
+			"minecraft:collision_box": {
+				"width": 0.5,
+				"height": 0.5
+			},
+			"minecraft:is_stackable": {
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:fall_damage": {
+				"value": 0.0
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1.0,
+				"max": 1.0
+			},
+			"minecraft:damage_sensor": [
+				{
+					"on_damage": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_sneaking",
+									"subject": "other",
+									"value": true
+								},
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "muc:wrench"
+								}
+							]
+						},
+						"event": "rt_1"
+					},
+					"deals_damage": false
+				},
+				{
+					"cause": "any",
+					"deals_damage": false
+				}
+			]
+		},
+		"events": {
+			"minecraft:entity_transformed": {
+				"add": {
+					"component_groups": [ "muc:size_normal", "muc:compost_controller", "muc:remove_item" ]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [ "muc:size_normal", "muc:compost_controller" ]
+				}
+			},
+
+			"x_remove_item": {
+				"remove": {
+					"component_groups": [ "muc:remove_item" ]
+				}
+			},
+
+			"size_normal": {
+				"add": {
+					"component_groups": [ "muc:size_normal" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:size_small" ]
+				}
+			},
+			"size_medium": {
+				"add": {
+					"component_groups": [ "muc:size_medium" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:size_normal" ]
+				}
+			},
+			"size_small": {
+				"add": {
+					"component_groups": [ "muc:size_small" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:size_medium" ]
+				}
+			},
+
+			"composting": {
+				"add": {
+					"component_groups": [ "muc:compost_function" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:compost_controller" ]
+				}
+			},
+			"composted": {
+				"add": {
+					"component_groups": [ "muc:compost_controller" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:compost_function" ]
+				}
+			},
+
+			"rt_1": {
+				"add": {
+					"component_groups": [ "muc:rt_1" ]
+				}
+			},
+			"rt_2": {
+				"add": {
+					"component_groups": [ "muc:rt_2" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:rt_1" ]
+				}
+			},
+			"rt_3": {
+				"add": {
+					"component_groups": [ "muc:rt_3" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:rt_2" ]
+				}
+			},
+			"rt_4": {
+				"add": {
+					"component_groups": [ "muc:rt_4" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:rt_3" ]
+				}
+			},
+			"rt_5": {
+				"add": {
+					"component_groups": [ "muc:rt_5" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:rt_4" ]
+				}
+			},
+
+			"remove_entity": {
+				"add": {
+					"component_groups": [ "muc:remove_entity" ]
+				}
+			}
+		}
+	}
+}

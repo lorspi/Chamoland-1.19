@@ -1,0 +1,209 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.soundeffect_j": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"soundeffect_j": "query.mark_variant == 2001"
+						}
+					]
+				},
+				"soundeffect_j": {
+					"on_entry": [
+						"/function jewelry/soundeffect_j"
+					]
+				}
+			}
+		},
+
+		"controller.animation.soundeffect_lc": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"triggerer": "query.mark_variant == 102"
+						}
+					]
+				},
+				"triggerer": {
+					"transitions": [
+						{
+							"soundeffect_lc": "query.is_baby"
+						}
+					]
+				},
+				"soundeffect_lc": {
+					"transitions": [
+						{
+							"triggerer": "query.is_saddled"
+						}
+					],
+					"on_entry": [
+						"/function locked_chest/soundeffect_lc"
+					],
+					"on_exit": [
+						"/function locked_chest/soundeffect_lc"
+					]
+				}
+			}
+		},
+
+		"controller.animation.soundeffect_s": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"triggerer": "query.mark_variant == 102"
+						}
+					]
+				},
+				"triggerer": {
+					"transitions": [
+						{
+							"soundeffect_s": "query.is_baby"
+						}
+					]
+				},
+				"soundeffect_s": {
+					"transitions": [
+						{
+							"triggerer": "query.is_saddled"
+						}
+					],
+					"on_entry": [
+						"/function safe/soundeffect_s"
+					],
+					"on_exit": [
+						"/function safe/soundeffect_s"
+					]
+				}
+			}
+		},
+
+		"controller.animation.soundeffect_tc": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"soundeffect_tc": "query.mark_variant == 101"
+						}
+					]
+				},
+				"soundeffect_tc": {
+					"on_entry": [
+						"/function treasure_chest/soundeffect_tc"
+					]
+				}
+			}
+		},
+
+		"controller.animation.soundeffect_thc": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"soundeffect_thc": "query.is_shaking"
+						}
+					]
+				},
+				"soundeffect_thc": {
+					"transitions": [
+						{
+							"default": "!query.is_shaking"
+						}
+					],
+					"on_entry": [
+						"/function trash_chest/soundeffect_thc"
+					]
+				}
+			}
+		},
+
+		"controller.animation.soundeffect_cc": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"soundeffect_cc": "query.is_saddled"
+						}
+					]
+				},
+				"soundeffect_cc": {
+					"transitions": [
+						{
+							"default": "!query.is_saddled"
+						}
+					],
+					"on_entry": [
+						"/function composter_chest/soundeffect_cc"
+					]
+				}
+			}
+		},
+
+		"controller.animation.soundeffect_cd": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"triggerer": "query.mark_variant == 102"
+						}
+					]
+				},
+				"triggerer": {
+					"transitions": [
+						{
+							"soundeffect_cd": "query.is_baby"
+						}
+					]
+				},
+				"soundeffect_cd": {
+					"transitions": [
+						{
+							"triggerer": "query.is_saddled"
+						}
+					],
+					"on_entry": [
+						"/function chest_driver/soundeffect_cd"
+					],
+					"on_exit": [
+						"/function chest_driver/soundeffect_cd"
+					]
+				}
+			}
+		},
+		"controller.animation.soundeffect_cd_2": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"off": "query.variant == 2"
+						}
+					]
+				},
+				"off": {
+					"transitions": [
+						{
+							"on": "query.variant == 1"
+						}
+					],
+					"on_entry": [
+						"/function chest_driver/soundeffect_cd_off"
+					]
+				},
+				"on": {
+					"transitions": [
+						{
+							"off": "query.variant == 2"
+						}
+					],
+					"on_entry": [
+						"/function chest_driver/soundeffect_cd_on"
+					]
+				}
+			}
+		}
+	}
+}

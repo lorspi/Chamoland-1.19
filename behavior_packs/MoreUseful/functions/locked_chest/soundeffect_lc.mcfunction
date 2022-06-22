@@ -1,0 +1,1 @@
+playsound locked_chest.lock @a ~ ~ ~

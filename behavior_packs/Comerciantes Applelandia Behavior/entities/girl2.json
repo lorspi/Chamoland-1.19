@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "npc:girl2",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/entities/girl2.json"
+        },
+        "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+        },
+        "minecraft:scale": {
+        "value": 0.001
+        },
+        "minecraft:type_family": {
+        "family": ["inanimate","hovertext"]
+        },
+        "minecraft:nameable": {
+        "alwaysShow": false,
+            "allow_name_tag_renaming": false
+        },
+        "minecraft:collision_box": {
+        "width": 0.001,
+        "height": 0.001
+        },
+        "minecraft:movement": {
+        "value": 0
+        },
+        "minecraft:movement.basic": {
+        },
+        "minecraft:damage_sensor": [
+          {
+          "cause": "any",
+          "deals_damage": false
+        }
+        ],
+        "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+        },
+        "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      }
+    }
+  }
+}

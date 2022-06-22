@@ -1,0 +1,53 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "craftable_portals_tiny_addons:end_portal"
+    },
+    "groups": [
+      "craftable_portals_tiny_addons"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "012",
+      "345",
+      "678"
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:ender_eye"
+      },
+      "1": {
+        "item": "minecraft:ender_eye"
+      },
+      "2": {
+        "item": "minecraft:ender_eye"
+      },
+      "3": {
+        "item": "minecraft:ender_eye"
+      },
+      "4": {
+        "item": "minecraft:bucket",
+        "data": 10
+      },
+      "5": {
+        "item": "minecraft:ender_eye"
+      },
+      "6": {
+        "item": "minecraft:ender_eye"
+      },
+      "7": {
+        "item": "minecraft:ender_eye"
+      },
+      "8": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "result": {
+      "item": "minecraft:end_portal",
+      "count": 1
+    }
+  }
+}

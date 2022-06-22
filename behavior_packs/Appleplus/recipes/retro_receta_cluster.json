@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "appleplus:retro_receta_cluster"
+    },
+    "groups": [
+      "appleplus"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "appleplus:cluster_de_almas"
+      }
+    ],
+    "result": {
+      "item": "appleplus:alma",
+      "count": 9
+    }
+  }
+}

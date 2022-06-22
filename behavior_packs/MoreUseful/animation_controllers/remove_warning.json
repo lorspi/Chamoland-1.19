@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.remove_warning": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"remove_warning": "query.is_chested"
+						}
+					]
+				},
+				"remove_warning": {
+					"transitions": [
+						{
+							"default": "!query.is_chested"
+						}
+					],
+					"on_entry": [
+						"/function remove_warning_message"
+					]
+				}
+			}
+		}
+	}
+}

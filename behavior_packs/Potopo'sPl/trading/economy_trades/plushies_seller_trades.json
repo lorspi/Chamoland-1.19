@@ -1,0 +1,98 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 4,
+            "trades": [
+                {
+                    "max_uses": 99999999,
+                    "wants": [
+                        {
+                            "item": "appleplus:pila_moneda",
+                            "quantity": 2
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "potopo_plush:lucky_box"
+                        }
+                    ]
+                },
+                {
+                    "max_uses": 99999999,
+                    "wants": [
+                        {
+                            "item": "appleplus:pila_moneda",
+                            "quantity": 4
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "potopo_plush:lucky_box_purple"
+                        }
+                    ]
+                },
+                {
+                    "max_uses": 99999999,
+                    "wants": [
+                        {
+                            "item": "appleplus:pila_moneda",
+                            "quantity": 5
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "potopo_plush:lucky_box_red"
+                        }
+                    ]
+                },
+                {
+                    "max_uses": 99999999,
+                    "wants": [
+                        {
+                            "item": "appleplus:pila_moneda",
+                            "quantity": 5
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "potopo_plush:seasson_3_lucky_box"
+                        }
+                    ]
+                },
+                {
+                    "max_uses": 99999999,
+                    "wants": [
+                        {
+                            "item": "appleplus:pila_moneda",
+                            "quantity": 4
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "thelake:lucky_block"
+                        }
+                    ]
+                },
+                {
+                    "max_uses": 99999999,
+                    "wants": [
+                        {
+                            "item": "appleplus:pila_moneda",
+                            "quantity": 4
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "potopo_plush:halloween_plushies_box"
+                        }
+                    ]
+                }
+                           
+            ]
+        }     
+      ]
+    }
+  ]
+}

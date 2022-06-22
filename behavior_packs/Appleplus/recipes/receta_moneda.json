@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "appleplus:receta_moneda"
+    },
+    "groups": [
+      "appleplus"
+    ],
+    "tags": [
+      "furnace"
+    ],
+    "input": {
+      "item": "minecraft:gold_ingot"
+    },
+    "output": {
+      "item": "appleplus:moneda"
+    }
+  }
+}

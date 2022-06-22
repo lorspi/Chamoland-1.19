@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.cc_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"cc_summon": "query.mark_variant == 106"
+						}
+					]
+				},
+				"cc_summon": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 100"
+						}
+					],
+					"on_entry": [
+						"/function composter_chest/cc_summon"
+					]
+				}
+			}
+		},
+		"controller.animation.cc_teleport": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"cc_teleport": "query.mark_variant == 106"
+						}
+					]
+				},
+				"cc_teleport": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 106"
+						}
+					],
+					"on_entry": [
+						"/function composter_chest/cc_teleport"
+					]
+				}
+			}
+		},
+		"controller.animation.when_transformed_cc": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"transformed": "query.is_sheared"
+						}
+					]
+				},
+				"transformed": {
+					"on_entry": [
+						"/function composter_chest/composter_chest_transformed"
+					]
+				}
+			}
+		}
+	}
+}

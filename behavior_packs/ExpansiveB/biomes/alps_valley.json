@@ -1,0 +1,46 @@
+//bridge-file-version: #39
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "alps_valley"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.7,
+				"snow_accumulation": [
+					0.125,
+					0.5
+				],
+				"temperature": -0.5
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:snow",
+				"top_material": "minecraft:snow",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					1.073,
+					0.445
+				]
+			},
+			"minecraft:overworld_generation_rules": {
+				"river_transformation": [
+					"alps_valley"
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"overworld": {},
+			"alps": {},
+			"cold": {},
+			"mountain": {},
+			"taiga": {},
+			"spawn_goats": {}
+		}
+	}
+}

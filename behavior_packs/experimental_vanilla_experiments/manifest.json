@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Experimental behavior pack for future vanilla content",
+        "name": "experimental future vanilla content",
+        "uuid": "32b2f234-9e44-46fe-a600-54712c051d20",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Experimental behavior pack for future vanilla content",
+            "type": "data",
+            "uuid": "bce3143e-161a-488f-911b-ff429054fbe5",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}

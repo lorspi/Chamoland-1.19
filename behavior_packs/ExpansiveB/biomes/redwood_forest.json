@@ -1,0 +1,62 @@
+//bridge-file-version: #25
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "redwood_forest"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.4,
+				"snow_accumulation": [
+					0,
+					0.20000000000000004
+				],
+				"temperature": 0.5
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"medium",
+						1
+					]
+				],
+				"hills_transformation": [
+					"redwood_forest_hills"
+				]
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					0,
+					0.1
+				]
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": "minecraft:podzol"
+						},
+						"noise_frequency_scale": 0.0625,
+						"noise_range": [
+							-0.115,
+							0.212
+						]
+					}
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"overworld": {},
+			"redwood": {}
+		}
+	}
+}

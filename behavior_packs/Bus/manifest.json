@@ -1,0 +1,23 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "PAZ 3205",
+        "description": "Addon by §aMcfl0wer§r. Special for mcpedl.com, another distribution prohibited. All rights reserved",
+        "uuid": "daf71faf-3f87-4a6d-b254-4d4cf9e2c12c",
+        "version": [1, 0, 0]
+    },
+    "modules": [
+        {
+            "description": "Addon by §aMcfl0wer",
+            "type": "data",
+            "uuid": "787f2da1-c400-33e1-803c-1ef1724d77e7",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "74005f1b-d378-4027-8ecc-0aa5970f223d",
+            "version": [0, 0, 1]
+        }
+    ]
+}

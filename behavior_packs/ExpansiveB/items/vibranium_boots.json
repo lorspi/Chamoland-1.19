@@ -1,0 +1,54 @@
+//bridge-file-version: #19
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "korbon:vibranium_boots",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 14,
+				"slot": "armor_feet"
+			},
+			"minecraft:durability": {
+				"max_durability": 713,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:icon": {
+				"texture": "vibranium_boots"
+			},
+			"minecraft:armor": {
+				"protection": 4
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet"
+			},
+			"minecraft:display_name": {
+				"value": "Vibranium Boots"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.boots"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"korbon:vibranium_ingot"
+						],
+						"repair_amount": 1000
+					}
+				]
+			},
+			"minecraft:render_offsets": "boots",
+			"minecraft:knockback_resistance": {
+				"protection": 0.2
+			}
+		},
+		"events": {}
+	}
+}

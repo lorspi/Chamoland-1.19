@@ -1,0 +1,23 @@
+{
+	"format_version": 1,
+	"header": {
+		"description": "§fAdds more useful chests to your survival world! - By: §aEnely§f &§e Arexon§f -§b @Enely_ @RealArexon§r",
+		"name": "§eMore Useful Chests -§l v1.0§r",
+		"uuid": "c7c8c864-932e-47b6-9105-b3f5474ed58e",
+		"version": [ 1, 0, 1 ],
+		"min_engine_version": [ 1, 12, 0 ]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "200681b2-0a48-4ad4-bc13-f0ada29f1905",
+			"version": [ 1, 0, 0 ]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "01addeca-2289-4c29-9acd-51cce4728ee1",
+			"version": [ 1, 0, 0 ]
+		}
+	]
+}

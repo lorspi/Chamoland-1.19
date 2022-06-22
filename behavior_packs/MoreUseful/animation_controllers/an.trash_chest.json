@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.thc_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"thc_summon": "query.mark_variant == 104"
+						}
+					]
+				},
+				"thc_summon": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 100"
+						}
+					],
+					"on_entry": [
+						"/function trash_chest/thc_summon"
+					]
+				}
+			}
+		},
+		"controller.animation.thc_teleport": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"thc_teleport": "query.mark_variant == 104"
+						}
+					]
+				},
+				"thc_teleport": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 104"
+						}
+					],
+					"on_entry": [
+						"/function trash_chest/thc_teleport"
+					]
+				}
+			}
+		},
+		"controller.animation.when_transformed_thc": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"transformed": "query.is_sheared"
+						}
+					]
+				},
+				"transformed": {
+					"on_entry": [
+						"/function trash_chest/trash_chest_transformed"
+					]
+				}
+			}
+		}
+	}
+}

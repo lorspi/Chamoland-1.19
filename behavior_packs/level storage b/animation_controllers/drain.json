@@ -1,0 +1,72 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.drain": {
+		"initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+		  {
+			"overload": "v.p>1" 
+		  },
+		  {
+			"drain": "v.xp>0 && v.p == 1" 
+		  },
+		  {
+			"repeat": "1" 
+		  }
+		  ],
+		  "on_entry":[
+		  "v.xp = 0; for_each(v.player, query.get_nearby_entities(1, 'minecraft:player'), {v.xp = v.xp+v.player->query.player_level;});",
+		  "v.p = 0; for_each(v.player, query.get_nearby_entities(1, 'minecraft:player'), {v.p = v.p+query.is_alive;});"
+		  ]
+        },
+		 "drain": {
+          "transitions": [
+		  {
+			"overload": "v.p>1" 
+		  },
+		  {
+			  "repeat2": "v.xp>0"
+		  },
+		  {
+			  "default": "1"
+		  }
+		  ],
+		  "on_entry":[
+		  "v.p = 0; for_each(v.player, query.get_nearby_entities(1, 'minecraft:player'), {v.p = v.p+query.is_alive;});"
+		  ]
+        },
+		 "overload": {
+          "transitions": [
+		  {
+			  "default": "1"
+		  }
+		  ],
+		  "on_entry":[
+		  "/title @p[x=~,y=~1,z=~,r=1] actionbar Exp Drain Overload"
+		  ]
+        },
+		"repeat": {
+          "transitions": [
+		  {
+			  "default": "1"
+		  }
+		  ]
+		},
+		"repeat2": {
+          "transitions": [
+		  {
+			  "drain": "1"
+		  }
+		  ],
+		  "on_entry":[
+		  "/xp -1L @p[r=1,tag=xp_drain]",
+		  "v.xp = v.xp-1;",
+		  "/scoreboard players add @p[r=1,c=1,tag=xp_drain] xps_exp 1"
+		  ]
+		}
+      }
+    }
+  }
+}

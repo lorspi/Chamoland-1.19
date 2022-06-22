@@ -1,0 +1,26 @@
+//bridge-file-version: #3
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "npc:adalita"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "npc:adalita_block"
+			}
+		},
+		"result": [
+			{
+				"item": "npc:adalita",
+				"count": 9
+			}
+		]
+	}
+}

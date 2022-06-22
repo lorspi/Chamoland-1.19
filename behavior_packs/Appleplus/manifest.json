@@ -1,0 +1,46 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Elementos adicionales para Applelandia.",
+    "name": "Appleplus",
+    "uuid": "d62135c3-30bb-3e26-b678-5e84919a8855",
+    "version": [
+      1,
+      0,
+      13
+    ],
+    "min_engine_version": [
+      1,
+      14,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Elementos adicionales para Applelandia.",
+      "type": "data",
+      "uuid": "7cec5b00-be85-3b73-8e45-73f4293ebdd3",
+      "version": [
+        1,
+        0,
+        13
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "fd9bb1b9-70c6-35e0-bb4a-06561d89f9c3",
+      "version": [
+        1,
+        0,
+        13
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "lorspi"
+    ],
+    "url": "http://lorspi.com"
+  }
+}

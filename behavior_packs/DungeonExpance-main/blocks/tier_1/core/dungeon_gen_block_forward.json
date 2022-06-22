@@ -1,0 +1,390 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "dungeon:gen_block_forward"
+		},
+		"components": {
+			"minecraft:ticking": {
+				"looping": false,
+				"range": [
+					90000,
+					90000
+				],
+				"on_tick": {
+					"event": "generate_dungeon_room",
+					"target": "self"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "generate_dungeon_room",
+				"target": "self"
+			}
+		},
+		"events": {
+			"generate_dungeon_room": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon dungeon:helper ~ ~ ~"
+							]
+						}
+					},
+					{
+						"randomize": [
+							{
+								//Instersections
+								"weight": 18,
+								"randomize": [
+									{
+										"weight": 60,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/intersection/f\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"randomize": [
+											{
+												"weight": 25,
+												"run_command": {
+													"command": [
+														"structure load \"dungeon:tier_1/intersection/d_f\" ~-6 ~ ~1"
+													]
+												},
+												"set_block": {
+													"block_type": "minecraft:stonebrick"
+												}
+											},
+											{
+												"weight": 25,
+												"run_command": {
+													"command": [
+														"structure load \"dungeon:tier_1/intersection/lush_d_f\" ~-6 ~ ~1"
+													]
+												},
+												"set_block": {
+													"block_type": "minecraft:stonebrick"
+												}
+											}
+										]
+									},
+									{
+										"weight": 50,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/intersection/3_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									}
+								]
+							},
+							{
+								//Hallways
+								"weight": 75,
+								"randomize": [
+									{
+										"weight": 75,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/hallway/f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/hallway/s_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 50,
+										"randomize": [
+											{
+												"weight": 50,
+												"run_command": {
+													"command": [
+														"structure load \"dungeon:tier_1/hallway/1_s_f\" ~-6 ~-5 ~1"
+													]
+												},
+												"set_block": {
+													"block_type": "minecraft:stonebrick"
+												}
+											},
+											{
+												"weight": 50,
+												"run_command": {
+													"command": [
+														"structure load \"dungeon:tier_1/hallway/blockade_1_s_f\" ~-6 ~-5 ~1"
+													]
+												},
+												"set_block": {
+													"block_type": "minecraft:stonebrick"
+												}
+											}
+										]
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/hallway/mineshaft_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 15,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/hallway/long_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									}
+								]
+							},
+							{
+								//Feature Rooms
+								"weight": 20,
+								"randomize": [
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/features/s_f\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 35,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/features/spider_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/features/drowned_f\" ~-6 ~-4 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 20,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/features/witch_slime_f\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 20,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/features/catacombs_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 20,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/features/lush_tree_f\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									}
+								]
+							},
+							{
+								//Trap Rooms
+								"weight": 15,
+								"randomize": [
+									{
+										"weight": 20,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/traps/pitfall_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/traps/string_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/traps/sand_f\" ~-6 ~-10 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									}
+								]
+							},
+							{
+								//Dead-ends
+								"weight": 20,
+								"randomize": [
+									{
+										"weight": 100,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/dead_end/wall\" ~ ~1 ~ 0_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									}
+								]
+							},
+							{
+								//Goal Room
+								"weight": 10,
+								"randomize": [
+									{
+										"weight": 25,
+										"randomize": [
+											{
+												"weight": 25,
+												"run_command": {
+													"command": [
+														"structure load \"dungeon:tier_1/goals/spawner\" ~-6 ~-5 ~1"
+													]
+												},
+												"set_block": {
+													"block_type": "minecraft:stonebrick"
+												}
+											},
+											{
+												"weight": 25,
+												"run_command": {
+													"command": [
+														"structure load \"dungeon:tier_1/goals/spawner_z\" ~-6 ~-5 ~1"
+													]
+												},
+												"set_block": {
+													"block_type": "minecraft:stonebrick"
+												}
+											}
+										]
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/goals/redstone_vault\" ~-6 ~-5 ~1 180_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/goals/library\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/goals/cake\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/goals/geode\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_1/goals/house\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:stonebrick"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

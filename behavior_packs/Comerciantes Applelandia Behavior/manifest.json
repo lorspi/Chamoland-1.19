@@ -1,0 +1,17 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "by §4Lake §r§lMCPEDL.com",
+        "name": "§1Npc Friends Behavior",
+        "uuid": "bcbd2957-df3c-416f-5edf-8d8c90a2c687",
+        "version": [0, 0, 6]
+    },
+    "modules": [
+        {
+            "description": "by §4Lake §r§lMCPEDL.com",
+            "type": "data",
+            "uuid": "3c7a4ff3-a5b9-43f4-a542-409c12c80a06",
+            "version": [0, 0, 1]
+        }
+    ]
+}

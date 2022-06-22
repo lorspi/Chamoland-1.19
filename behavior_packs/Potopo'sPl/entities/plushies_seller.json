@@ -1,0 +1,235 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+        "identifier": "potopo_plush:plushies_seller",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false
+    },
+
+    "component_groups": {
+      "managed": {
+        "minecraft:managed_wandering_trader": {}
+      },
+
+      "minecraft:self_despawn": {
+        "minecraft:damage_sensor": {
+            "triggers": [
+                {
+                    "cause": "magic",
+                    "deals_damage": true
+                },
+                {
+                    "deals_damage": false
+                }
+            ]
+        },
+        "minecraft:spell_effects": {
+            "add_effects": [
+                {
+                    "effect": "invisibility",
+                    "amplifier": 1,
+                    "visible": false,
+                    "duration": 9999
+                },
+                {
+                    "effect": "instant_damage",
+                    "amplifier": 250,
+                    "visible": false,
+                    "duration": 9999
+                }
+            ]
+        }
+    }
+
+    },
+
+    "components": {
+        "minecraft:type_family": {
+            "family": [ "potopo_seller", "mob" ]
+        },
+        "minecraft:is_hidden_when_invisible": {
+        },
+        "minecraft:economy_trade_table": {
+            "display_name": "entity.potopo_plush:plushies_seller.name",
+            "table": "trading/economy_trades/plushies_seller_trades.json",
+            "new_screen": true
+        },
+        "minecraft:breathable": {
+            "total_supply": 15,
+            "suffocate_time": 0
+        },
+        "minecraft:health": {
+            "value": 20,
+            "max": 20
+        },
+        "minecraft:hurt_on_condition": {
+            "damage_conditions": [
+                {
+                    "filters": {
+                        "test": "in_lava",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": true
+                    },
+                    "cause": "lava",
+                    "damage_per_tick": 4
+                }
+            ]
+        },
+        "minecraft:collision_box": {
+            "width": 0.6,
+            "height": 1.9
+        },
+        "minecraft:movement": {
+            "value": 0.5
+        },
+        "minecraft:navigation.walk": {
+            "can_path_over_water": true,
+            "can_pass_doors": true,
+            "can_open_doors": true,
+            "avoid_water": true
+        },
+        "minecraft:movement.basic": {
+        },
+        "minecraft:jump.static": {
+        },
+        "minecraft:can_climb": {
+        },
+        "minecraft:behavior.float": {
+            "priority": 0
+        },
+        "minecraft:behavior.trade_with_player": {
+            "priority": 1
+        },
+        "minecraft:behavior.trade_interest": {
+            "priority": 3,
+            "within_radius": 6.0,
+            "interest_time": 45.0,
+            "remove_item_time": 1.0,
+            "carried_item_switch_time": 2.0,
+            "cooldown": 2.0
+        },
+        "minecraft:behavior.look_at_trading_player": {
+            "priority": 4
+        },
+        "minecraft:behavior.panic": {
+            "priority": 1,
+            "speed_multiplier": 0.6
+        },
+
+        "minecraft:damage_sensor": {
+          "triggers": [
+              {
+                  "on_damage": {
+                      "filters": {
+                          "all_of": [
+                              {
+                                  "test": "is_family",
+                                  "subject": "other",
+                                  "value": "player"
+                              }
+                          ]
+                      }
+                  },
+                  "deals_damage": false
+              },
+              {
+                  "deals_damage": false
+              }
+          ]
+        },
+        "minecraft:interact": {
+            "interactions": [
+                {
+                    "on_interact": {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "player"
+                                },
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "hand",
+                                    "subject": "other",
+                                    "value": "potopo_coin:remove_entity"
+                                }
+                            ]
+                        },
+                        "event": "minecraft:remove"
+                    },
+                    "use_item": false,
+                    "interact_text": "action.interact.remove"
+                }
+            ]
+        },
+
+        "minecraft:nameable": {
+        },
+
+        "minecraft:behavior.restrict_open_door": {
+            "priority": 5
+        },
+        "minecraft:behavior.open_door": {
+            "priority": 6,
+            "close_door_after": true
+        },
+        "minecraft:behavior.move_towards_restriction": {
+            "priority": 7,
+            "speed_multiplier": 0.6
+        },
+        "minecraft:behavior.look_at_player": {
+            "priority": 8,
+            "look_distance": 8,
+            "probability": 0.6
+        },
+        "minecraft:physics": {
+        },
+        "minecraft:pushable": {
+            "is_pushable": false,
+            "is_pushable_by_piston": true
+        }
+    },
+    "events": {
+      "minecraft:scheduled": {
+        "add": {
+          "component_groups": [
+            "managed"
+          ]
+        }
+      },
+      "minecraft:start_despawn": {
+        "add": {
+          "component_groups": [
+            "despawning"
+          ]
+        }
+      },
+      "minecraft:become_scared": {
+        "add": {
+          "component_groups": [
+            "minecraft:scared"
+          ]
+        }
+      },
+      "minecraft:become_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:scared"
+          ]
+        }
+      },
+      "minecraft:remove": {
+        "add": {
+            "component_groups": [
+                "minecraft:self_despawn"
+              ]
+          }
+      }
+
+    }
+  }
+}

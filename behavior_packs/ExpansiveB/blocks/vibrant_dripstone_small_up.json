@@ -1,0 +1,48 @@
+//bridge-file-version: #13
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:vibrant_dripstone_small_up"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "vibrant_dripstone_small_up",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:geometry": "geometry.plantv3",
+			"minecraft:entity_collision": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:stone",
+							"korbon:vibrancy_stone"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:block_light_emission": 0.3,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					12,
+					8
+				]
+			}
+		},
+		"events": {}
+	}
+}

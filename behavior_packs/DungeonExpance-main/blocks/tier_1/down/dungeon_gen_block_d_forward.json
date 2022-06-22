@@ -1,0 +1,64 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "dungeon:gen_block_d_forward"
+		},
+		"components": {
+			"minecraft:ticking": {
+				"looping": false,
+				"range": [
+					90000,
+					90000
+				],
+				"on_tick": {
+					"event": "generate_dungeon_room",
+					"target": "self"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "generate_dungeon_room",
+				"target": "self"
+			}
+		},
+		"events": {
+			"generate_dungeon_room": {
+				"randomize": [
+					{
+						"weight": 50,
+						"run_command": {
+							"command": [
+								"structure load \"dungeon:tier_2/stairs_f\" ~-3 ~-15 ~-3"
+							]
+						},
+						"set_block": {
+							"block_type": "minecraft:stonebrick"
+						}
+					},
+					{
+						"weight": 50,
+						"run_command": {
+							"command": [
+								"structure load \"dungeon:tier_2/dark_stairs_f\" ~-3 ~-15 ~-3"
+							]
+						},
+						"set_block": {
+							"block_type": "minecraft:stonebrick"
+						}
+					},
+					{
+						"weight": 50,
+						"run_command": {
+							"command": [
+								"structure load \"dungeon:tier_2/deep_dark_stairs_f\" ~-3 ~-15 ~-3"
+							]
+						},
+						"set_block": {
+							"block_type": "minecraft:stonebrick"
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+//bridge-file-version: #12
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "pumpkin_plains"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.1,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 0.4
+			},
+			"minecraft:multinoise_generation_rules": {
+				"target_temperature": 0,
+				"target_humidity": 0,
+				"target_altitude": 0,
+				"target_weirdness": 0,
+				"weight": 0.4
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "lowlands"
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": {
+								"name": "minecraft:dirt",
+								"states": {
+									"dirt_type": "coarse"
+								}
+							}
+						},
+						"noise_range": [
+							-0.1,
+							0.1
+						],
+						"noise_frequency_scale": 0.9
+					}
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"overworld": {},
+			"pumpkin_plains": {}
+		}
+	}
+}

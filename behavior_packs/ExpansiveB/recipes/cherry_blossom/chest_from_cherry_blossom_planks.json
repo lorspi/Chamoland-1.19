@@ -1,0 +1,26 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "korbon:chest_from_cherry_blossom_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "A A",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "korbon:cherry_blossom_planks"
+            }
+        },
+        "result": {
+            "item": "chest",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

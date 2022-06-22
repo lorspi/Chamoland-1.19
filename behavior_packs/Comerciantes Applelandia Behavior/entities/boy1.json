@@ -1,0 +1,139 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "npc:boy1",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "managed": {
+        "minecraft:managed_wandering_trader": {}
+      },
+      "minecraft:green": {
+        "minecraft:variant": {
+          "value": 3
+        },
+        "minecraft:economy_trade_table": {
+        "display_name": "entity.trader_apple.nombre",
+        "table": "trading/economy_trades/trader_apple.json",
+        "new_screen": true
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "wandering_trader", "mob" ]
+      },
+      "minecraft:damage_sensor": [
+        {
+        "cause": "any",
+        "deals_damage": false
+      }
+      ],
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/boy1.json"
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.trade_with_player": {
+        "priority": 1
+      },
+      "minecraft:behavior.trade_interest": {
+          "priority": 3,
+          "within_radius": 6.0,
+          "interest_time": 45.0,
+          "remove_item_time": 1.0,
+          "carried_item_switch_time": 2.0,
+          "cooldown": 2.0
+      },
+      "minecraft:behavior.look_at_trading_player": {
+        "priority": 4
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 7,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 8,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "minecraft:scheduled": {
+        "add": {
+          "component_groups": [
+            "managed"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 10,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "minecraft:green"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:start_despawn": {
+        "add": {
+          "component_groups": [
+            "despawning"
+          ]
+        }
+      },
+      "minecraft:become_scared": {
+        "add": {
+          "component_groups": [
+            "minecraft:scared"
+          ]
+        }
+      },
+      "minecraft:become_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:scared"
+          ]
+        }
+      }
+    }
+  }
+}

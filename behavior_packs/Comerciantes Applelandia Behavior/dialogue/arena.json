@@ -1,0 +1,56 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [{
+            "scene_tag": "arena",
+            "npc_name": "Eduardo",
+            "text": "§a§l¡Bienvenido guerrero! §rHemos creado este lugar para que entrenes tus habilidades de combate y ganes recompensas. Para entrar a la arena de batalla necesitas un §lClúster de almas§r. Al entrar te enfrentarás a 3 rondas de enemigos. Cada ronda vencida te da una recompensa mejor que la anterior.",
+            "on_open_commands": ["scoreboard objectives add TieneArena dummy", "scoreboard objectives add NivelArena dummy"],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Pelear",
+                "commands": [
+                    "/execute @p[scores={TieneArena=0}] ~ ~ ~ playsound random.break @s",
+                    "/execute @p[scores={TieneArena=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p arena_negado",
+                    "/execute @p[scores={TieneArena=1}] ~ ~ ~ playsound random.levelup @s",
+                    "/execute @p[scores={TieneArena=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p entrada_arena"
+                ]
+            }]
+        }, {
+            "scene_tag": "entrada_arena",
+            "npc_name": "Eduardo",
+            "text": "§l¿Estás preparado? §rAl darle §oEmpezar§r serás dirigido al interior de la arena para iniciar tu combate.",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Empezar",
+                "commands": [
+                    "execute @e[name=Puntos,scores={NivelArena=0}] ~ ~ ~ clear @p appleplus:cluster_de_almas 0 1",
+                    "execute @e[name=Puntos,scores={NivelArena=0}] ~ ~ ~ summon zombie §4Esbirro 2041 82 -2947",
+                    "execute @e[name=Puntos,scores={NivelArena=0}] ~ ~ ~ summon zombie §4Esbirro 2064 82 -2944",
+                    "execute @e[name=Puntos,scores={NivelArena=0}] ~ ~ ~ tp @p 2052 85 -2931",
+                    "execute @e[name=Puntos,scores={NivelArena=0}] ~ ~ ~ title @p title §4§l¡RONDA 1!",
+                    "execute @e[name=Puntos,scores={NivelArena=0}] ~ ~ ~ playsound mob.wither.spawn @p",
+                    "execute @e[name=Puntos,scores={NivelArena=1}] ~ ~ ~ title @p title §c§l¡Combate en progreso!",
+                    "execute @e[name=Puntos,scores={NivelArena=2}] ~ ~ ~ title @p title §c§l¡Combate en progreso!",
+                    "execute @e[name=Puntos,scores={NivelArena=3}] ~ ~ ~ title @p title §c§l¡Combate en progreso!",
+                    "execute @e[name=Puntos,scores={NivelArena=4}] ~ ~ ~ title @p title §c§l¡Combate en progreso!",
+                    "execute @e[name=Puntos,scores={NivelArena=0}] ~ ~ ~ scoreboard players add @e[name=Puntos] NivelArena 1"
+                ]
+            }, {
+                "name": "Cancelar",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p arena"]
+            }]
+        }, {
+            "scene_tag": "arena_negado",
+            "npc_name": "Eduardo",
+            "text": "Necesitas un §lClúster de almas§r para entrar en la arena. Puedes recolectar las almas de criaturas hostiles y juntarlas para obtener uno de estos.",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p arena"]
+            }]
+        }]
+    }
+}

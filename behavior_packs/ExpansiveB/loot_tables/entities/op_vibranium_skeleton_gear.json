@@ -1,0 +1,100 @@
+//bridge-file-version: #8
+{
+	"pools": [
+		{
+			"rolls": 5,
+			"entries": [
+				{
+					"type": "item",
+					"name": "korbon:vibranium_sword",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "enchant_random_gear",
+							"chance": 0.1
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "korbon:vibranium_helmet",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "enchant_random_gear",
+							"chance": 0.1
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "korbon:vibranium_chestplate",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "enchant_random_gear",
+							"chance": 0.1
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "korbon:vibranium_leggings",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "enchant_random_gear",
+							"chance": 0.1
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "korbon:vibranium_boots",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "enchant_random_gear",
+							"chance": 0.1
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,48 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.backpack": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "backpack": "query.is_using_item && query.get_equipped_item_name('main_hand') == 'backpack'"
+                        }
+                    ]
+                },
+                "backpack": {
+                    "transitions": [
+                        {
+                            "default": "!query.is_using_item && query.get_equipped_item_name('main_hand') != 'backpack'"
+                        }
+                    ],
+                    "on_entry": [
+                        "/execute @s ~~~ summon entity:backpack ~~~",
+                        "/clear @s item:backpack 0 1"
+                    ]
+                }
+            }
+        },
+        "controller.animation.backpack_off": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "backpack_off": "(query.is_sneaking) && (variable.attack_time > 0)"
+                        }
+                    ]
+                },
+                "backpack_off": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "@s minecraft:set_not_rideable"
+                    ]
+                }
+            }
+        }
+    }
+}

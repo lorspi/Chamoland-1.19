@@ -1,0 +1,14 @@
+//bridge-file-version: #2
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "npc:adalita"
+		},
+		"components": {
+			"minecraft:use_duration": 32,
+			"minecraft:max_stack_size": 64,
+			"minecraft:stacked_by_data": true
+		}
+	}
+}

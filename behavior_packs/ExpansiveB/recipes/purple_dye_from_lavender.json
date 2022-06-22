@@ -1,0 +1,22 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "korbon:purple_dye_from_lavender"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "korbon:lavender_flower_item"
+			}
+		],
+		"result": {
+			"item": "minecraft:dye",
+			"data": 5,
+			"count": 2
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "muc:crowbar"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			"I",
+			"N",
+			"N"
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"N": {
+				"item": "minecraft:iron_nugget"
+			}
+		},
+		"result": {
+			"item": "muc:crowbar",
+			"count": 1
+		}
+	}
+}

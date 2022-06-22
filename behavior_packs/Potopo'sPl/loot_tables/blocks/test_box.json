@@ -1,0 +1,52 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                //----------------------------------------------------------------- TEST
+                {
+                    "conditions": [
+                        {
+                            "condition": "random_chance_with_looting",
+                            "chance": 0.95
+                        }
+                    ],
+                    "type": "item",
+                    "name": "minecraft:spawn_egg",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_actor_id",
+                            "id": "potopo_plush:brown_trader_llama_plush" //Llama trader cafe
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "conditions": [
+                        {
+                            "condition": "random_chance_with_looting",
+                            "chance": 0.95
+                        }
+                    ],
+                    "type": "item",
+                    "name": "minecraft:spawn_egg",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_actor_id",
+                            "id": "potopo_plush:creamy_trader_llama_plush" //Llama trader crema
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

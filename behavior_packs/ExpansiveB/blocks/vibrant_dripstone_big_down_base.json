@@ -1,0 +1,84 @@
+//bridge-file-version: #47
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:vibrant_dripstone_big_down_base"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "vibrant_dripstone_big_down_base",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:geometry": "geometry.plantv3",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:stone",
+							"korbon:vibrancy_stone"
+						],
+						"allowed_faces": [
+							"down"
+						]
+					}
+				]
+			},
+			"minecraft:block_light_emission": 0.3,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:on_placed": {
+				"event": "double"
+			},
+			"minecraft:loot": "loot_tables/blocks/break.json",
+			"minecraft:on_player_destroyed": {
+				"event": "break"
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					11,
+					16,
+					11
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					7,
+					16,
+					6
+				]
+			}
+		},
+		"events": {
+			"double": {
+				"run_command": {
+					"command": [
+						"fill ~~-1~ ~~-1~ korbon:vibrant_dripstone_big_down_tip"
+					]
+				}
+			},
+			"break": {
+				"run_command": {
+					"command": [
+						"fill ~~-1~ ~~-1~ air"
+					]
+				},
+				"spawn_loot": {
+					"table": "loot_tables/blocks/vibrant_dripstone_big_down.json"
+				}
+			}
+		}
+	}
+}

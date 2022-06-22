@@ -1,0 +1,21 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:black_sand"
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:explosion_resistance": 0.3,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "black_sand",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:map_color": "#1D1E1F"
+		},
+		"events": {}
+	}
+}

@@ -1,0 +1,55 @@
+//bridge-file-version: #43
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:autumn_birch_leaf_pile"
+		},
+		"components": {
+			"minecraft:destroy_time": 0.2,
+			"minecraft:map_color": "#BBAE77",
+			"minecraft:explosion_resistance": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "autumn_birch_leaf_pile",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:on_player_destroyed": {
+				"event": "shear",
+				"condition": "query.get_equipped_item_name('main_hand') == 'shears'"
+			},
+			"minecraft:flammable": {
+				"flame_odds": 8,
+				"burn_odds": 8
+			},
+			"minecraft:geometry": "geometry.leaf_pile",
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:block_light_absorption": 0
+		},
+		"events": {
+			"shear": {
+				"sequence": [
+					{
+						"spawn_loot": {
+							"table": "loot_tables/blocks/autumn_birch_leaf_pile.json"
+						}
+					}
+				]
+			}
+		}
+	}
+}

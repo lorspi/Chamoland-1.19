@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.cd_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"cd_summon": "query.mark_variant == 105"
+						}
+					]
+				},
+				"cd_summon": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 100"
+						}
+					],
+					"on_entry": [
+						"/function chest_driver/cd_summon"
+					]
+				}
+			}
+		},
+		"controller.animation.cd_teleport": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"cd_teleport": "query.mark_variant == 105"
+						}
+					]
+				},
+				"cd_teleport": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 105"
+						}
+					],
+					"on_entry": [
+						"/function chest_driver/cd_teleport"
+					]
+				}
+			}
+		},
+		"controller.animation.when_transformed_cd": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"transformed": "query.is_sheared"
+						}
+					]
+				},
+				"transformed": {
+					"on_entry": [
+						"/function chest_driver/chest_driver_transformed"
+					]
+				}
+			}
+		}
+	}
+}

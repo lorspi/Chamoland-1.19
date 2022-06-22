@@ -1,0 +1,69 @@
+//bridge-file-version: #20
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "cold_spruce_pine_forest"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.4,
+				"snow_accumulation": [
+					0.125,
+					0.5
+				],
+				"temperature": -0.5
+			},
+			"minecraft:multinoise_generation_rules": {
+				"target_temperature": 0,
+				"target_humidity": -0.4,
+				"target_altitude": 0,
+				"target_weirdness": 0,
+				"weight": 0.1
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "default"
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"frozen",
+						1
+					]
+				],
+				"hills_transformation": [
+					"cold_spruce_pine_forest_clearing"
+				]
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": "minecraft:podzol"
+						},
+						"noise_range": [
+							0.6,
+							1
+						],
+						"noise_frequency_scale": 0.1
+					}
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"overworld": {},
+			"pine_forest": {},
+			"taiga": {},
+			"cold": {},
+			"frozen": {}
+		}
+	}
+}

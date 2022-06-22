@@ -1,0 +1,28 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "minecraft:vibranium_ore_feature"
+		},
+		"count": 5,
+		"replace_rules": [
+			{
+				"places_block": "korbon:vibranium_ore",
+				"may_replace": [
+					{
+						"name": "minecraft:stone"
+					}
+				]
+			},
+			{
+				"places_block": "korbon:vibranium_ore_deepslate",
+				"may_replace": [
+					{
+						"name": "minecraft:deepslate"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,344 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "dungeon:gen_block_tier_2_right"
+		},
+		"components": {
+			"minecraft:ticking": {
+				"looping": false,
+				"range": [
+					90000,
+					90000
+				],
+				"on_tick": {
+					"event": "generate_dungeon_room",
+					"target": "self"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "generate_dungeon_room",
+				"target": "self"
+			}
+		},
+		"events": {
+			"generate_dungeon_room": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon dungeon:helper ~ ~ ~"
+							]
+						}
+					},
+					{
+						"randomize": [
+							{
+								//Intersections
+								"weight": 18,
+								"randomize": [
+									{
+										"weight": 60,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/intersection/obsidian_r\" ~-15 ~ ~-6"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/intersection/d_r\" ~-15 ~ ~-6"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"randomize": [
+											{
+												"weight": 50,
+												"run_command": {
+													"command": [
+														"structure load \"dungeon:tier_2/intersection/3_r\" ~-15 ~-5 ~-6"
+													]
+												},
+												"set_block": {
+													"block_type": "minecraft:nether_brick"
+												}
+											},
+											{
+												"weight": 50,
+												"run_command": {
+													"command": [
+														"structure load \"dungeon:tier_2/intersection/dark_3_r\" ~-15 ~-5 ~-6"
+													]
+												},
+												"set_block": {
+													"block_type": "minecraft:nether_brick"
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								//Hallways
+								"weight": 75,
+								"randomize": [
+									{
+										"weight": 50,
+										"randomize": [
+											{
+												"randomize": [
+													{
+														"weight": 50,
+														"run_command": {
+															"command": [
+																"structure load \"dungeon:tier_2/hallway/cross_r\" ~-15 ~-5 ~-6"
+															]
+														},
+														"set_block": {
+															"block_type": "minecraft:nether_brick"
+														}
+													},
+													{
+														"weight": 50,
+														"run_command": {
+															"command": [
+																"structure load \"dungeon:tier_2/hallway/dark_cross_r\" ~-15 ~-5 ~-6"
+															]
+														},
+														"set_block": {
+															"block_type": "minecraft:nether_brick"
+														}
+													}
+												]
+											},
+											{
+												"weight": 50,
+												"randomize": [
+													{
+														"weight": 50,
+														"run_command": {
+															"command": [
+																"structure load \"dungeon:tier_2/hallway/1_r\" ~-15 ~-5 ~-6"
+															]
+														},
+														"set_block": {
+															"block_type": "minecraft:nether_brick"
+														}
+													},
+													{
+														"weight": 50,
+														"run_command": {
+															"command": [
+																"structure load \"dungeon:tier_2/hallway/blockade_1_r\" ~-15 ~-5 ~-6"
+															]
+														},
+														"set_block": {
+															"block_type": "minecraft:nether_brick"
+														}
+													},
+													{
+														"weight": 50,
+														"run_command": {
+															"command": [
+																"structure load \"dungeon:tier_2/hallway/dark_1_r\" ~-15 ~-5 ~-6"
+															]
+														},
+														"set_block": {
+															"block_type": "minecraft:nether_brick"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/hallway/s_r\" ~-15 ~-5 ~-6"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 5,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/hallway/wart_r\" ~-15 ~ ~-6"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									}
+								]
+							},
+							{
+								//Feature Rooms
+								"weight": 18,
+								"randomize": [
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/features/s_r\" ~-15 ~ ~-6"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/features/spec_r\" ~-15 ~ ~-6"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 18,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/features/bastion_r\" ~-15 ~-4 ~-6 90_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									}
+								]
+							},
+							{
+								//Trap Rooms
+								"weight": 15,
+								"randomize": [
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/traps/pitfall_r\" ~-15 ~-5 ~-6"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/traps/chest_drop_r\" ~-15 ~-6 ~-6"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									}
+								]
+							},
+							{
+								//Dead End
+								"weight": 20,
+								"randomize": [
+									{
+										"weight": 100,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/dead_end/wall\" ~ ~1 ~ 0_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									}
+								]
+							},
+							{
+								//Goal Rooms
+								"weight": 10,
+								"randomize": [
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/goals/spawner\" ~-15 ~-5 ~-6 90_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/goals/enchant\" ~-15 ~-5 ~-6 90_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/goals/cake\" ~-15 ~-2 ~-6 90_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/goals/redstone_vault\" ~-15 ~-5 ~-6 90_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_2/goals/blaze\" ~-15 ~ ~-6 90_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:nether_brick"
+										}
+									},
+									{
+										"weight": 9,
+										"set_block": {
+											"block_type": "dungeon:gen_block_tier_2_special_right"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

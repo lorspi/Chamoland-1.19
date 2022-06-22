@@ -1,0 +1,37 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "dungeon:gen_block_tier_2_special_backward"
+		},
+		"components": {
+			"minecraft:ticking": {
+				"looping": false,
+				"range": [
+					8,
+					8
+				],
+				"on_tick": {
+					"event": "generate_dungeon_room",
+					"target": "self"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "generate_dungeon_room",
+				"target": "self"
+			}
+		},
+		"events": {
+			"generate_dungeon_room": {
+				"run_command": {
+					"command": [
+						"structure load \"dungeon:tier_2/goals/wither_temple\" ~-23 ~ ~-45 180_degrees"
+					]
+				},
+				"set_block": {
+					"block_type": "minecraft:nether_brick"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "craftable_portals_tiny_addons:nether_portal"
+    },
+    "groups": [
+      "craftable_portals_tiny_addons"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "012",
+      "345",
+      "678"
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:obsidian"
+      },
+      "1": {
+        "item": "minecraft:obsidian"
+      },
+      "2": {
+        "item": "minecraft:obsidian"
+      },
+      "3": {
+        "item": "minecraft:obsidian"
+      },
+      "4": {
+        "item": "minecraft:flint_and_steel"
+      },
+      "5": {
+        "item": "minecraft:obsidian"
+      },
+      "6": {
+        "item": "minecraft:obsidian"
+      },
+      "7": {
+        "item": "minecraft:obsidian"
+      },
+      "8": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    "result": {
+      "item": "minecraft:portal",
+      "count": 1
+    }
+  }
+}

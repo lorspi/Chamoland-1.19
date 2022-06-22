@@ -1,0 +1,46 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "d0107ae8-9cbe-4c67-8330-61356312151e",
+        "platform_locked": false,
+        "min_engine_version": [
+            1,
+            9,
+            0
+        ],
+        "version": [
+            0,
+            0,
+            6
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "ec6442a5-9106-44f9-a60a-3f2483f63582",
+            "version": [
+                0,
+                0,
+                6
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "d0107ae8-9cbe-4c67-8330-61356327551e",
+            "version": [
+                0,
+                0,
+                6
+            ]
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "ArticStudios"
+        ],
+        "url": "https://twitter.com/ArticStudiosMC"
+    }
+}

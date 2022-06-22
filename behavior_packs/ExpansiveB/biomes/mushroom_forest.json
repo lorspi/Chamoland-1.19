@@ -1,0 +1,33 @@
+//bridge-file-version: #28
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "mushroom_forest"
+		},
+		"components": {
+			"minecraft:climate": {
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"downfall": 1,
+				"temperature": 0.9
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "default"
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 10,
+				"sea_floor_material": "minecraft:sand",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"sea_material": "minecraft:water",
+				"top_material": "minecraft:mycelium"
+			},
+			"overworld": {},
+			"mushroom_forest": {},
+			"mooshroom_island": {}
+		}
+	}
+}

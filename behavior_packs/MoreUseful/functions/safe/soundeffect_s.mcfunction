@@ -1,0 +1,1 @@
+playsound safe.door @a ~ ~ ~

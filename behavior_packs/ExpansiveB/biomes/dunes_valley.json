@@ -1,0 +1,42 @@
+//bridge-file-version: #56
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "dunes_valley"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 2
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:sandstone",
+				"top_material": "minecraft:sand",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					0.145,
+					0
+				]
+			},
+			"minecraft:overworld_generation_rules": {
+				"river_transformation": [
+					"dunes_valley"
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"dune_valley": {},
+			"overworld": {}
+		}
+	}
+}

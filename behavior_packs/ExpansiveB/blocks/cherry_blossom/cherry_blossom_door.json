@@ -1,0 +1,372 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:cherry_blossom_door",
+			"register_to_creative_menu": true,
+			"properties": {
+				"korbon:facing_direction": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				],
+				"korbon:open": [
+					0,
+					1
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:open') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.door_open",
+					"minecraft:entity_collision": {
+						"origin": [
+							5,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							32,
+							16
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							5,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							32,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:open') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.door",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							3
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							3
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:entity_collision": {
+				"origin": [
+					5,
+					0,
+					-8
+				],
+				"size": [
+					3,
+					32,
+					16
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					5,
+					0,
+					-8
+				],
+				"size": [
+					3,
+					32,
+					16
+				]
+			},
+			"minecraft:destroy_time": 1,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:geometry": "geometry.door_open",
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test",
+					"texture": "cherry_blossom_door"
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "update_facing_direction"
+			},
+			"minecraft:on_interact": {
+				"event": "open"
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "destroy_collision"
+			},
+			"minecraft:breakonpush": true,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:map_color": "#A38BA1"
+		},
+		"events": {
+			"update_facing_direction": {
+				"set_block_property": {
+					"korbon:facing_direction": "query.cardinal_player_facing"
+				},
+				"trigger": {
+					"event": "collision",
+					"target": "self"
+				}
+			},
+			"destroy_collision": {
+				"set_block_at_pos": {
+					"block_offset": [
+						0,
+						1,
+						0
+					],
+					"block_type": "air"
+				}
+			},
+			"open": {
+				"sequence": [
+					{
+						"condition": "q.block_property('korbon:open') == 0",
+						"set_block_property": {
+							"korbon:open": 1
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_close @a[r=5] ~ ~ ~ 0.4 1.0"
+							]
+						},
+						"trigger": {
+							"event": "collision",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 1",
+						"set_block_property": {
+							"korbon:open": 0
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_close @a[r=5] ~ ~ ~ 0.4 1.0"
+							]
+						},
+						"trigger": {
+							"event": "collision",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"collision": {
+				"sequence": [
+					{
+						"condition": "q.block_property('korbon:open') == 0 && q.block_property('korbon:facing_direction') == 0",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_east"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 1 && q.block_property('korbon:facing_direction') == 0",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_north"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 0 && q.block_property('korbon:facing_direction') == 1",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_east"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 1 && q.block_property('korbon:facing_direction') == 1",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_north"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 0 && q.block_property('korbon:facing_direction') == 2",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_south"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 1 && q.block_property('korbon:facing_direction') == 2",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_east"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 0 && q.block_property('korbon:facing_direction') == 3",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_north"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 1 && q.block_property('korbon:facing_direction') == 3",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_west"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 0 && q.block_property('korbon:facing_direction') == 4",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_west"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 1 && q.block_property('korbon:facing_direction') == 4",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_south"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 0 && q.block_property('korbon:facing_direction') == 5",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_east"
+						}
+					},
+					{
+						"condition": "q.block_property('korbon:open') == 1 && q.block_property('korbon:facing_direction') == 5",
+						"set_block_at_pos": {
+							"block_offset": [
+								0,
+								1,
+								0
+							],
+							"block_type": "korbon:collision_north"
+						}
+					}
+				]
+			}
+		}
+	}
+}

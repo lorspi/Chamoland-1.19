@@ -1,0 +1,28 @@
+//bridge-file-version: #30
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "korbon:dune_grass_item",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:hand_equipped": false,
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"texture": "korbon:dune_grass"
+			},
+			"minecraft:display_name": {
+				"value": "Dune Grass"
+			},
+			"minecraft:block_placer": {
+				"block": "korbon:dune_grass"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.natureMisc"
+			}
+		},
+		"events": {}
+	}
+}

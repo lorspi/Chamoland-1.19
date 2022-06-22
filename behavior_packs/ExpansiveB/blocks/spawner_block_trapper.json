@@ -1,0 +1,40 @@
+//bridge-file-version: #16
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:spawner_block_trapper"
+		},
+		"components": {
+			"minecraft:destroy_time": 100,
+			"minecraft:explosion_resistance": 100,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "spawner_trapper",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:immovable": true,
+			"minecraft:ticking": {
+				"range": [
+					0,
+					1
+				],
+				"on_tick": {
+					"event": "spawn",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"spawn": {
+				"run_command": {
+					"command": [
+						"summon korbon:pillager_trapper ~~~",
+						"fill ~~~ ~~~ air"
+					]
+				}
+			}
+		}
+	}
+}

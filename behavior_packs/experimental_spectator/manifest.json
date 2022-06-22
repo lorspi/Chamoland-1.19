@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Experimental internal behavior pack for spectator mode work",
+        "name": "experimental spectator internal",
+        "uuid": "4bde72a9-966d-426b-8402-2a27965a27cb",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Experimental internal behavior pack for spectator mode work",
+            "type": "data",
+            "uuid": "9baf5c7b-0cd8-4230-a977-c22cd3ba4760",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}

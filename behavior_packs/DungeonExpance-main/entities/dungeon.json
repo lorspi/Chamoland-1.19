@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeon:helper",
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"dungeon:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:tick_world": {
+				"never_despawn": true,
+				"radius": 1
+			},
+            "minecraft:timer": {
+				"time_down_event": {
+					"event": "dungeon:despawn"
+				},
+				"time": 1
+			}
+		},
+		"events": {
+			"dungeon:despawn": {
+				"add": {
+					"component_groups": [
+						"dungeon:despawn"
+					]
+				}
+			}
+		}
+	}
+}

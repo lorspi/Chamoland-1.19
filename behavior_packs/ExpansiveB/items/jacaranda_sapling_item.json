@@ -1,0 +1,27 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "korbon:jacaranda_sapling_item",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sapling"
+			},
+			"minecraft:max_stack_size": 64,
+			"minecraft:block_placer": {
+				"block": "korbon:jacaranda_sapling_block",
+				"use_block_description": true
+			},
+			"minecraft:display_name": {
+				"value": "Jacaranda Sapling"
+			},
+			"minecraft:icon": {
+				"texture": "korbon:jacaranda_sapling_item"
+			}
+		},
+		"events": {}
+	}
+}

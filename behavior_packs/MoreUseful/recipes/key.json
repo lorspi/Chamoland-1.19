@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "muc:key"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			"N",
+			"I"
+		],
+		"key": {
+			"N": {
+				"item": "minecraft:gold_nugget"
+			},
+			"I": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"result": {
+			"item": "muc:key",
+			"count": 1
+		}
+	}
+}

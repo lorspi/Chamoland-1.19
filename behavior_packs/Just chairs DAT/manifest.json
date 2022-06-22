@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+        "name": "Just chairs §a§l§o::§r§c DAT",
+        "uuid": "ff3a10ac-74a6-4b05-ad57-357ef0e97040",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 13, 0 ]
+    },
+    "modules": [
+        {
+            "description": "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+            "type": "data",
+            "uuid": "b03eb89b-bb60-4a63-9d88-66602d321afc",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "52816887-2ebd-4680-abe1-00dcb011040f",
+            "version": [1, 0, 0]
+        }
+    ]
+}

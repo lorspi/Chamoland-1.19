@@ -1,0 +1,19 @@
+//bridge-file-version: #27
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "minecraft:autumn_birch_leaf_pile_feature"
+		},
+		"places_block": {
+			"name": "korbon:autumn_birch_leaf_pile"
+		},
+		"enforce_survivability_rules": true,
+		"enforce_placement_rules": true,
+		"may_replace": [
+			{
+				"name": "minecraft:air"
+			}
+		]
+	}
+}

@@ -1,0 +1,188 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "dungeon:gen_block_tier_3_forward"
+		},
+		"components": {
+			"minecraft:ticking": {
+				"looping": false,
+				"range": [
+					90000,
+					90000
+				],
+				"on_tick": {
+					"event": "generate_dungeon_room",
+					"target": "self"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "generate_dungeon_room",
+				"target": "self"
+			}
+		},
+		"events": {
+			"generate_dungeon_room": {
+				"sequence": [
+					{
+						"run_command": {
+							"command":[
+								"summon dungeon:helper ~ ~ ~"
+							]
+						}
+					},
+					{
+						"randomize": [
+							{
+								//Instersections
+								"weight": 10,
+								"randomize": [
+									{
+										"weight": 50,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/intersection/3_s_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									}
+								]
+							},
+							{
+								//Hallway
+								"weight": 50,
+								"randomize": [
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/hallway/f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/hallway/cross_s_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									},
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/hallway/s_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									}
+								]
+							},
+							{
+								//Feature Rooms
+								"weight": 15,
+								"randomize": [
+									{
+										"weight": 50,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/features/maze_f\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									},
+									{
+										"weight": 50,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/features/shulker_f\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									}
+								]
+							},
+							{
+								//Trap Rooms
+								"weight": 0,
+								"randomize": [
+									{
+										"weight": 5,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/traps/pitfall_f\" ~-6 ~-5 ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									}
+								]
+							},
+							{
+								//Dead-ends
+								"weight": 15,
+								"randomize": [
+									{
+										"weight": 25,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/dead_end/wall\" ~ ~1 ~ 270_degrees"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									}
+								]
+							},
+							{
+								//Goal Room
+								"weight": 10,
+								"randomize": [
+									{
+										"weight": 15,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/goals/portal_room\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									},
+									{
+										"weight": 75,
+										"run_command": {
+											"command": [
+												"structure load \"dungeon:tier_3/goals/redstone_vault\" ~-6 ~ ~1"
+											]
+										},
+										"set_block": {
+											"block_type": "minecraft:end_bricks"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

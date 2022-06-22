@@ -1,0 +1,40 @@
+//bridge-file-version: #11
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:bog_ambient"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "eruption_event",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:ticking": {
+				"range": [
+					20,
+					20
+				],
+				"looping": true,
+				"on_tick": {
+					"event": "play"
+				}
+			},
+			"minecraft:pick_collision": false,
+			"minecraft:entity_collision": false,
+			"minecraft:explosion_resistance": 100,
+			"minecraft:block_light_absorption": 0
+		},
+		"events": {
+			"play": {
+				"run_command": {
+					"command": [
+						"playsound ambient.bog @a[r=32]"
+					]
+				}
+			}
+		}
+	}
+}

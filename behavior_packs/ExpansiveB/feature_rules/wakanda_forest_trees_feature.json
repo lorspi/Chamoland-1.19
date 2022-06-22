@@ -1,0 +1,31 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:wakanda_forest_trees_feature",
+			"places_feature": "minecraft:legacy:forest_tree_feature"
+		},
+		"conditions": {
+			"placement_pass": "before_surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "wakanda_forest"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"scatter_chance": 85,
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	}
+}

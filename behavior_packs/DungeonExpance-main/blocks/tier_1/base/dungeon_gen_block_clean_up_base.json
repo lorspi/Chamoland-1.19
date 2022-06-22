@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "dungeon:gen_block_clean_up_base"
+		},
+		"components": {
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					8,
+					8
+				],
+				"on_tick": {
+					"event": "generate_base_cleanup",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"generate_base_cleanup": {
+				"run_command": {
+					"command":[
+						"structure load \"dungeon:tier_1/clean_up_base\" ~-7 ~-15 ~-7"
+					]
+				},
+				"set_block": {
+					"block_type": "minecraft:stonebrick"
+				}
+			}
+		}
+	}
+}

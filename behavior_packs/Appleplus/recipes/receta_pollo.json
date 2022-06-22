@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "appleplus:receta_pollo"
+    },
+    "groups": [
+      "appleplus"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "minecraft:egg"
+      }
+    ],
+    "result": {
+      "item": "minecraft:spawn_egg",
+      "data": 10,
+      "count": 1
+    }
+  }
+}

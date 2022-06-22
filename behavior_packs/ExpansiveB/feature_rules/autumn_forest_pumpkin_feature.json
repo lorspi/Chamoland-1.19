@@ -1,0 +1,53 @@
+//bridge-file-version: #12
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:autumn_forest_pumpkin_feature",
+			"places_feature": "minecraft:pumpkin_feature"
+		},
+		"conditions": {
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "autumn_forest"
+						}
+					]
+				}
+			],
+			"placement_pass": "first_pass"
+		},
+		"distribution": {
+			"scatter_chance": {
+				"numerator": 38,
+				"denominator": 48
+			},
+			"iterations": 4,
+			"coordinate_eval_order": "zxy",
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					"query.heightmap(variable.worldx, variable.worldz)"
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

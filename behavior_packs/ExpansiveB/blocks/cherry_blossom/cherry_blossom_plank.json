@@ -1,0 +1,26 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:cherry_blossom_planks"
+		},
+		"components": {
+			"minecraft:flammable": {
+				"burn_odds": 20,
+				"flame_odds": 5
+			},
+			"minecraft:loot": "loot_tables/blocks/planks_cherry_blossom.json",
+			"minecraft:unit_cube": {},
+			"minecraft:destroy_time": 1,
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "opaque",
+					"texture": "cherry_blossom_planks"
+				}
+			},
+			"minecraft:map_color": "#A38BA1"
+		},
+		"events": {}
+	}
+}

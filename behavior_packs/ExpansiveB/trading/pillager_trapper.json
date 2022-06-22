@@ -1,0 +1,163 @@
+//bridge-file-version: #19
+{
+	"tiers": [
+		{
+			"groups": [
+				{
+					"num_to_select": 4,
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "minecraft:rabbit_hide",
+									"quantity": 8,
+									"price_multiplier": 0.05
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							],
+							"trader_exp": 2,
+							"max_uses": 16,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:leather",
+									"quantity": 4,
+									"price_multiplier": 0.15
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							],
+							"trader_exp": 2,
+							"max_uses": 16,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "korbon:black_bear_pelt",
+									"quantity": 7,
+									"price_multiplier": 0.16
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 2
+								}
+							],
+							"trader_exp": 2,
+							"max_uses": 16,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "korbon:grizzly_bear_pelt",
+									"quantity": 7,
+									"price_multiplier": 0.2
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"trader_exp": 2,
+							"max_uses": 16,
+							"reward_exp": true
+						}
+					]
+				},
+				{
+					"num_to_select": 4,
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1,
+									"price_multiplier": 0.13
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:rabbit_hide",
+									"quantity": 1
+								}
+							],
+							"trader_exp": 1,
+							"max_uses": 12,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1,
+									"price_multiplier": 0.13
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:leather",
+									"quantity": 1
+								}
+							],
+							"trader_exp": 1,
+							"max_uses": 12,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1,
+									"price_multiplier": 0.17
+								}
+							],
+							"gives": [
+								{
+									"item": "korbon:black_bear_pelt",
+									"quantity": 1
+								}
+							],
+							"trader_exp": 1,
+							"max_uses": 12,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1,
+									"price_multiplier": 0.2
+								}
+							],
+							"gives": [
+								{
+									"item": "korbon:grizzly_bear_pelt",
+									"quantity": 1
+								}
+							],
+							"trader_exp": 1,
+							"max_uses": 12,
+							"reward_exp": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

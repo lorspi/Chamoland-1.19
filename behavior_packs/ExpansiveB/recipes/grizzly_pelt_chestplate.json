@@ -1,0 +1,28 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "korbon:grizzly_pelt_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"#X#",
+			"###"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_chestplate"
+			},
+			"#": {
+				"item": "korbon:grizzly_bear_pelt"
+			}
+		},
+		"result": {
+			"item": "korbon:grizzly_bear_pelt_chestplate"
+		}
+	}
+}

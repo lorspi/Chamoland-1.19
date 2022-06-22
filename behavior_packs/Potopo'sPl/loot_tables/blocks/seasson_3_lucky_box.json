@@ -1,0 +1,114 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+        "entries": [
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:wither_plush"
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:axolotl_in_a_bucket"
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:spider_plush"
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.5
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:llama_plush_axololt_costume"
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:ghast_plush"
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    }
+  ]
+}

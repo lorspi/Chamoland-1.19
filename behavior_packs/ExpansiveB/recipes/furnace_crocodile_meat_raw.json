@@ -1,0 +1,17 @@
+//bridge-file-version: #0
+{
+	"format_version": 1.12,
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "korbon:crocodile_meat_raw"
+		},
+		"tags": [
+			"furnace",
+			"smoker",
+			"campfire",
+			"soul_campfire"
+		],
+		"input": "korbon:crocodile_meat_raw",
+		"output": "korbon:crocodile_meat_cooked"
+	}
+}

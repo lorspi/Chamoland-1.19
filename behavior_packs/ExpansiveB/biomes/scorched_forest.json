@@ -1,0 +1,49 @@
+//bridge-file-version: #40
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "scorched_forest"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 2,
+				"white_ash": 2
+			},
+			"minecraft:multinoise_generation_rules": {
+				"target_temperature": -0.5,
+				"target_humidity": 0,
+				"target_altitude": 0,
+				"target_weirdness": 0,
+				"weight": 0.175
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"sea_material": "minecraft:water",
+				"mid_material": "minecraft:dirt",
+				"top_material": "korbon:scorched_grass_block"
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "lowlands"
+			},
+			"minecraft:overworld_generation_rules": {
+				"shore_transformation": [
+					"black_sand_shore"
+				],
+				"river_transformation": [
+					"scorched_forest"
+				]
+			},
+			"monster": {},
+			"scorched_forest": {},
+			"overworld": {}
+		}
+	}
+}

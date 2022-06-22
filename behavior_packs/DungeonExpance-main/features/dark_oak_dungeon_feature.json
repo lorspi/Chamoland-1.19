@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "dungeon:dark_oak_dungeon_feature"
+		},
+		"structure_name": "dungeon:dark_oak_forest_entrance",
+		"adjustment_radius": 0,
+		"facing_direction": "south",
+		"constraints": {
+			"grounded": {}
+		}
+	}
+}

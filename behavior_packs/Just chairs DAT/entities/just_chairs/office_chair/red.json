@@ -1,0 +1,74 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:red_office_chair",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+    "components": {
+	  "minecraft:despawn": {
+	    "filters": {
+		  "all_of": [
+		    { "test": "is_family", "subject": "self", "value": "despawncito" }
+		  ]
+		}
+	  },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "avoid_water": false,
+        "avoid_portals": true
+      },
+      "minecraft:movement.basic": {}, "minecraft:input_ground_controlled": {},
+	  "minecraft:movement": {
+	    "value": 0.02
+	  },
+	  "minecraft:loot": {
+	    "table": "loot_tables/just_chairs/office_chair/red.json"
+	  },
+      "minecraft:type_family": {
+        "family": [ "inanimate" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.6
+      },
+	  "minecraft:push_through": {
+	    "value": 1
+	  },
+	  "minecraft:rideable": {
+	    "seat_count": 1,
+		"family_types": [ "player" ],
+		"interact_text": "action.interact.sit",
+		"seats": [
+		  {
+		    "position": [0.0, 0.6, 0.0]
+		  }
+		]
+	  },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+	  "minecraft:health": {
+	    "value": 1,
+		"max": 1
+	  },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+	  "minecraft:physics": {
+	  }
+    },
+	
+	"events": {
+	  "minecraft:event_despawn": {
+	    "add": { "component_groups": [ "minecraft:despawn" ] }
+	  }
+	}
+  }
+}

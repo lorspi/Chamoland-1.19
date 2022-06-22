@@ -1,0 +1,708 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+        "entries": [
+            //----------------------------------------------------------------- LOOT COMUN
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:llama_brown_plush" //Llama cafe
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:llama_purple_plush" //Llama morada / crema
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:classic_creeper_plush" //Creeper clasico
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:polar_bear_plush" //Oso Polar
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:spider_plush" //Arana
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.95
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:ghast_plush" //Ghast
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            //----------------------------------------------------------------- LOOT POCO COMUN
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:llama_white_plush" //Llama blanca
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:slime_plush" //Slime
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:nitwit_villager_plush" //Nitwit Villager
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:hoglin_plush" //Hoglin
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:wolf_plush" //Wolf
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:mooshroom_plush" //Champinaca roja
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:brown_mooshroom_plush" //Champinaca cafe
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            //----------------------------------------------------------------- LOOT RARO
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:zombie_plush" //Zombie
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:llama_enderman_plush" //Llama ender
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:llama_creeper_plush" //Llama creeper
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:strider_plush" //Strider
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:wandering_trader_plush" //Wandering trader
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:brown_trader_llama_plush" //Llama trader cafe
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:creamy_trader_llama_plush" //Llama trader crema
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:steve_plush" //Steve
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:alex_plush" //Alex
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:pligin_zombified_plush" //Piglin Zombified
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.50
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:wither_plush" //Whither
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            //----------------------------------------------------------------- LOOT Wonderful
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.20
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:enderman_plush" //Ender
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.20
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:creeper_plush" //Creeper
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.20
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:sticky_bee_plush" //Sticky bee
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.20
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:zombi_pigman_plush" //Zombi Pigmen
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.20
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:axolotl_in_a_bucket" //Ajolote en balde
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            //----------------------------------------------------------------- LOOT Extraordinary
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.05
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:sailor_chicken" //Pollo marinero
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.05
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:herobrine_plush" //Herobrine
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.05
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:llama_plush_axololt_costume" //Llama Ajolote
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            }, 
+            //----------------------------------------------------------------- LOOT Potopezco
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.001
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:llama_llama_plush" //Llama llama
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    }
+  ]
+}

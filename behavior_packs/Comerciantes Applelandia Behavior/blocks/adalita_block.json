@@ -1,0 +1,22 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "npc:adalita_block",
+			"register_to_creative_menu": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/blocks/adalita_block.json",
+			"minecraft:destroy_time": 3,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#FFBB00",
+			"minecraft:explosion_resistance": 1200,
+			"minecraft:flammable": {
+				"flame_odds": 0,
+				"burn_odds": 0
+			}
+		}
+	}
+}

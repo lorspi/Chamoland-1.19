@@ -1,0 +1,53 @@
+//bridge-file-version: #13
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:vibrancy_dripstone_down_small_feature_rule",
+			"places_feature": "minecraft:vibrant_dripstone_down_small_feature"
+		},
+		"conditions": {
+			"placement_pass": "underground_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "wakanda"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "wakanda_forest"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 256,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					35
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

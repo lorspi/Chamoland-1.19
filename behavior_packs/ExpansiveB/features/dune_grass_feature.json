@@ -1,0 +1,17 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "minecraft:dune_grass_feature"
+		},
+		"places_block": {
+			"name": "korbon:dune_grass"
+		},
+		"enforce_survivability_rules": true,
+		"enforce_placement_rules": false,
+		"may_replace": [
+			"minecraft:air"
+		]
+	}
+}

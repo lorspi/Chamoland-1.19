@@ -1,0 +1,74 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "xps:xp_gain",
+	  "properties": {
+				"xps:gain": [0,1]
+	  		}
+    },
+    "components": {
+		"minecraft:block_light_absorption": 1,
+	  "minecraft:display_name": "Exp Gain",
+      "minecraft:destroy_time": 1,
+	  "minecraft:geometry":"geometry.xps",
+	  	"minecraft:material_instances" : {
+		"*": {
+      "texture": "gain",
+      "render_method" : "alpha_test"
+		}
+		},
+	"minecraft:entity_collision": true,
+	  "minecraft:pick_collision": true,
+	  "minecraft:on_step_on": {
+				"event": "on_step",
+				"target": "self"
+	  		},
+		"minecraft:on_interact": {
+      "event": "see_exp",
+      "target": "self"
+	}
+    },
+	"events":{		
+		"see_exp":{
+			"run_command":{
+				"command": "function gain"
+			}
+		},
+		"on_step":{
+			"set_block_property": {
+			"xps:gain": 1
+			}	
+		},
+		"end_gain":{
+			"set_block_property": {
+			"xps:gain": 0
+			}	
+		},
+		"on_gain":{
+			"run_command":{
+				"command":["execute @p[scores={xps_exp=1..},c=1,r=2] ~ ~ ~ xp 1L @s","execute @p[scores={xps_exp=1..},c=1,r=2] ~ ~ ~ scoreboard players remove @s xps_exp 1"]
+			}
+		}
+	},
+	"permutations":[
+	{
+		"condition": "query.block_property('xps:gain') == 1",
+		"components": {
+		 "minecraft:ticking": {
+		"looping": true,
+		"range": [0.3,0.3],
+		"on_tick": {
+    		"event": "on_gain",
+    		"target": "self"
+				}
+			},
+			"minecraft:on_step_off": {
+      "event": "end_gain",
+      "target": "self"
+			}
+		}
+	}
+	]
+  }
+}

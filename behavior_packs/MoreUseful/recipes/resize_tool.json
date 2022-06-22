@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "muc:resize_tool"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			"sss",
+			"s s",
+			"sss"
+		],
+		"key": {
+			"s": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "muc:resize_tool",
+			"count": 1
+		}
+	}
+}

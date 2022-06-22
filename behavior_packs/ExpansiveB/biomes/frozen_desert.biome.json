@@ -1,0 +1,107 @@
+//bridge-file-version: #17
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "frozen_desert"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0,
+				"snow_accumulation": [
+					0.25,
+					1
+				],
+				"temperature": 0
+			},
+			"minecraft:multinoise_generation_rules": {
+				"target_temperature": -1,
+				"target_humidity": 1,
+				"target_altitude": 0.2,
+				"target_weirdness": 1,
+				"weight": 0
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "lowlands"
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:stone",
+				"top_material": "minecraft:snow",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"frozen",
+						3
+					]
+				],
+				"hills_transformation": [
+					"frozen_desert"
+				]
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": "minecraft:gravel"
+						},
+						"noise_range": [
+							0.212,
+							1
+						],
+						"noise_frequency_scale": 0.08
+					},
+					{
+						"materials": {
+							"top_material": "minecraft:snow"
+						},
+						"noise_range": [
+							0.212,
+							1
+						],
+						"noise_frequency_scale": 0.08
+					},
+					{
+						"materials": {
+							"top_material": "minecraft:packed_ice"
+						},
+						"noise_range": [
+							-0.1,
+							0.1
+						],
+						"noise_frequency_scale": 0.5
+					},
+					{
+						"materials": {
+							"top_material": {
+								"name": "minecraft:powder_snow"
+							}
+						},
+						"noise_range": [
+							0.6,
+							1
+						],
+						"noise_frequency_scale": 0.3
+					},
+					{
+						"materials": {
+							"top_material": "minecraft:powder_snow"
+						},
+						"noise_range": [
+							0.4,
+							1
+						],
+						"noise_frequency_scale": 0.2
+					}
+				]
+			},
+			"frozen": {},
+			"overworld": {},
+			"frozen_desert": {}
+		}
+	}
+}

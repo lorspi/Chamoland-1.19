@@ -1,0 +1,199 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+        "entries": [
+            //----------------------------------------------------------------- HEROES
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_potopo_ann_plush" //Potopo Ann
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_dagadax_plush" //Dagadax
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_arya_plush" //Arya
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_talon_plush" //Talon
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_king_plush" //King
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_johnny5_plush" //Johnny5
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_midnight_plush" //MidNight
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_skammander_plush" //Skammander
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "conditions": [
+                    {
+                        "condition": "random_chance_with_looting",
+                        "chance": 0.75
+                    }
+                ],
+                "type": "item",
+                "name": "minecraft:spawn_egg",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_actor_id",
+                        "id": "potopo_plush:heroes_ghibekjodkins_plush"
+                    },
+                    {
+                        "function": "set_count",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    }
+  ]
+}

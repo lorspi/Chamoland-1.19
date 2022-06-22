@@ -1,0 +1,57 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:collision_east"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.collision_east",
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test",
+					"texture": "collision_east"
+				}
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					5,
+					0,
+					-8
+				],
+				"size": [
+					3,
+					16,
+					16
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					5,
+					0,
+					-8
+				],
+				"size": [
+					3,
+					16,
+					16
+				]
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "destroy_door"
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:destroy_time": 1
+		},
+		"events": {
+			"destroy_door": {
+				"run_command": {
+					"command": [
+						"setblock ~ ~-1 ~ air 0 destroy"
+					]
+				}
+			}
+		}
+	}
+}

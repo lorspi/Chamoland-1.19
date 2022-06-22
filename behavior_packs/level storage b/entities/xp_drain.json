@@ -1,0 +1,61 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "xps:drain",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ "drain" ]
+	  },
+	  "animations": {
+	    "drain": "controller.animation.drain"
+	  }
+    },
+    "component_groups": {
+		"despawn":{
+			"minecraft:instant_despawn":{}
+		}
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "*",
+          "deals_damage": false
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:health": {
+        "value": 6,
+        "max": 6
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+    "events": {
+		"despawn":{
+		"add":{"component_groups":["despawn"]}
+		}
+    }
+  }
+}

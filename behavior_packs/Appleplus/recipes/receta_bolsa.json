@@ -1,0 +1,52 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "appleplus:receta_bolsa"
+    },
+    "groups": [
+      "appleplus"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "012",
+      "345",
+      "678"
+    ],
+    "key": {
+      "0": {
+        "item": "appleplus:pila_moneda"
+      },
+      "1": {
+        "item": "appleplus:pila_moneda"
+      },
+      "2": {
+        "item": "appleplus:pila_moneda"
+      },
+      "3": {
+        "item": "appleplus:pila_moneda"
+      },
+      "4": {
+        "item": "appleplus:pila_moneda"
+      },
+      "5": {
+        "item": "appleplus:pila_moneda"
+      },
+      "6": {
+        "item": "appleplus:pila_moneda"
+      },
+      "7": {
+        "item": "appleplus:pila_moneda"
+      },
+      "8": {
+        "item": "appleplus:pila_moneda"
+      }
+    },
+    "result": {
+      "item": "appleplus:bolsa_moneda",
+      "count": 1
+    }
+  }
+}

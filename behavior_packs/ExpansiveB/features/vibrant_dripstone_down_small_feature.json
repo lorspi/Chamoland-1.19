@@ -1,0 +1,21 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "minecraft:vibrant_dripstone_down_small_feature"
+		},
+		"places_block": {
+			"name": "korbon:vibrant_dripstone_small_down"
+		},
+		"enforce_survivability_rules": false,
+		"enforce_placement_rules": false,
+		"may_attach_to": {
+			"min_sides_must_attach": 1,
+			"top": [
+				"minecraft:stone",
+				"korbon:vibrancy_stone"
+			]
+		}
+	}
+}

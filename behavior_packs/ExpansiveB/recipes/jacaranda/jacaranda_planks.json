@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "korbon:jacaranda_planks"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "korbon:jacaranda_log"
+      }
+    },
+    "result": {
+      "item": "korbon:jacaranda_planks",
+      "count": 4
+    }
+  }
+}

@@ -1,0 +1,3 @@
+title @a subtitle §7§oLa historia comienza...
+title @a title §e§lCHA§1§lMOL§4§lAND
+playsound random.levelup @a

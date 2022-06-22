@@ -1,0 +1,31 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:hard_dirt"
+		},
+		"components": {
+			"minecraft:destroy_time": 0.3,
+			"minecraft:map_color": "#524639",
+			"minecraft:explosion_resistance": 0.3,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "hard_dirt",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:on_player_destroyed": {
+				"event": "loot"
+			}
+		},
+		"events": {
+			"loot": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/hard_dirt.json"
+				}
+			}
+		}
+	}
+}

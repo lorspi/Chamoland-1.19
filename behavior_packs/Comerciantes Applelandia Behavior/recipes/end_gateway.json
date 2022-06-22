@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "craftable_portals_tiny_addons:end_gateway"
+    },
+    "groups": [
+      "craftable_portals_tiny_addons"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "0"
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:end_portal"
+      }
+    },
+    "result": {
+      "item": "minecraft:end_gateway",
+      "count": 1
+    }
+  }
+}

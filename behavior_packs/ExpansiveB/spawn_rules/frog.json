@@ -1,0 +1,36 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.8.0",
+	"minecraft:spawn_rules": {
+		"description": {
+			"identifier": "korbon:frog",
+			"population_control": "animal"
+		},
+		"conditions": [
+			{
+				"minecraft:spawns_on_surface": {},
+				"minecraft:brightness_filter": {
+					"min": 1,
+					"max": 15,
+					"adjust_for_weather": false
+				},
+				"minecraft:weight": {
+					"default": 300
+				},
+				"minecraft:herd": {
+					"min_size": 2,
+					"max_size": 3
+				},
+				"minecraft:biome_filter": {
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "spawn_frogs"
+				},
+				"minecraft:spawns_on_block_filter": [
+					"minecraft:grass",
+					"minecraft:waterlily"
+				]
+			}
+		]
+	}
+}

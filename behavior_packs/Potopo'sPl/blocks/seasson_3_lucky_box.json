@@ -1,0 +1,19 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:block": {
+        "description": {
+            "identifier": "potopo_plush:seasson_3_lucky_box",
+            "register_to_creative_menu": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:destroy_time": 0.55,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:map_color": "#818186",
+            "minecraft:block_light_emission": 0,
+            "minecraft:loot": "loot_tables/blocks/seasson_3_lucky_box.json"
+            
+        }
+	}
+}

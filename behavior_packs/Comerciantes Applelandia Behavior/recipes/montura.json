@@ -1,0 +1,49 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "venezuela:montura"
+    },
+    "groups": [
+      "venezuela"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "012",
+      "345",
+      "6 8"
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:leather"
+      },
+      "1": {
+        "item": "minecraft:leather"
+      },
+      "2": {
+        "item": "minecraft:leather"
+      },
+      "3": {
+        "item": "minecraft:leather"
+      },
+      "4": {
+        "item": "minecraft:iron_ingot"
+      },
+      "5": {
+        "item": "minecraft:leather"
+      },
+      "6": {
+        "item": "minecraft:iron_ingot"
+      },
+      "8": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "minecraft:saddle",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "dungeon:dark_oak_dungeon_rules",
+			"places_feature": "dungeon:dark_oak_dungeon_scatter_feature"
+		},
+		"conditions": {
+			"placement_pass": "before_underground_pass",
+			"minecraft:biome_filter": [
+				{
+					"all_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "forest"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "!=",
+							"value": "mountain"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "!=",
+							"value": "hills"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"scatter_chance": 100,
+			"iterations": 1,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					-100,
+					100
+				]
+			},
+			"y": 0,
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					-100,
+					100
+				]
+			}
+		}
+	}
+}

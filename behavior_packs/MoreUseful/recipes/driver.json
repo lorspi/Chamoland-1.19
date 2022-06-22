@@ -1,0 +1,31 @@
+{
+  "minecraft:recipe_shaped" : {
+    "result": {
+            "item": "spawn_egg",
+            "data": "query.get_actor_info_id('muc:chest_driver')"
+        },
+    "tags" : [
+      "crafting_table"
+    ],
+    "key" : {
+      "A" : {
+        "item" : "minecraft:iron_block"
+      },
+      "B" : {
+        "item" : "minecraft:chest"
+      },
+      "C" : {
+        "item" : "minecraft:minecart"
+      }
+    },
+    "pattern" : [
+      "AAA",
+      "ABA",
+      "ACA"
+    ],
+    "description" : {
+      "identifier" : "receta:driver"
+    }
+  },
+  "format_version" : "1.10"
+}

@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.lc_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"lc_summon": "query.mark_variant == 102"
+						}
+					]
+				},
+				"lc_summon": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 100"
+						}
+					],
+					"on_entry": [
+						"/function locked_chest/lc_summon"
+					]
+				}
+			}
+		},
+		"controller.animation.lc_teleport": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"lc_teleport": "query.mark_variant == 102"
+						}
+					]
+				},
+				"lc_teleport": {
+					"transitions": [
+						{
+							"default": "query.mark_variant == 102"
+						}
+					],
+					"on_entry": [
+						"/function locked_chest/lc_teleport"
+					]
+				}
+			}
+		},
+		"controller.animation.when_transformed_lc": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"transformed": "query.is_sheared"
+						}
+					]
+				},
+				"transformed": {
+					"on_entry": [
+						"/function locked_chest/locked_chest_transformed"
+					]
+				}
+			}
+		}
+	}
+}

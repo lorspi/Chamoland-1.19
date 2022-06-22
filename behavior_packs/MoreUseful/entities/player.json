@@ -1,0 +1,387 @@
+{
+	"format_version": "1.11.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:player",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false,
+			"animations": {
+				"j_teleport": "controller.animation.j_teleport",
+				"j_summon": "controller.animation.j_summon",
+				"lc_teleport": "controller.animation.lc_teleport",
+				"lc_summon": "controller.animation.lc_summon",
+				"s_teleport": "controller.animation.s_teleport",
+				"s_summon": "controller.animation.s_summon",
+				"cc_teleport": "controller.animation.cc_teleport",
+				"cc_summon": "controller.animation.cc_summon",
+				"thc_teleport": "controller.animation.thc_teleport",
+				"thc_summon": "controller.animation.thc_summon",
+				"cd_teleport": "controller.animation.cd_teleport",
+				"cd_summon": "controller.animation.cd_summon"
+			},
+			"scripts": {
+				"animate": [
+					"j_teleport",
+					"j_summon",
+					"lc_teleport",
+					"lc_summon",
+					"s_teleport",
+					"s_summon",
+					"cc_teleport",
+					"cc_summon",
+					"thc_teleport",
+					"thc_summon",
+					"cd_teleport",
+					"cd_summon"
+				]
+			}
+		},
+		"component_groups": {
+			"muc:default": {
+				"minecraft:mark_variant": {
+					"value": 100
+				}
+			},
+			"muc:summon_j": {
+				"minecraft:mark_variant": {
+					"value": 101
+				}
+			},
+			"muc:summon_lc": {
+				"minecraft:mark_variant": {
+					"value": 102
+				}
+			},
+			"muc:summon_s": {
+				"minecraft:mark_variant": {
+					"value": 103
+				}
+			},
+			"muc:summon_thc": {
+				"minecraft:mark_variant": {
+					"value": 104
+				}
+			},
+			"muc:summon_cd": {
+				"minecraft:mark_variant": {
+					"value": 105
+				}
+			},
+			"muc:summon_cc": {
+				"minecraft:mark_variant": {
+					"value": 106
+				}
+			},
+
+			"minecraft:add_bad_omen": {
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "bad_omen",
+							"duration": 6000,
+							"display_on_screen_animation": true
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [ 0.0, 0.0 ],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:clear_add_bad_omen",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:clear_bad_omen_spell_effect": {
+				"minecraft:spell_effects": {
+				}
+			},
+			"minecraft:raid_trigger": {
+				"minecraft:raid_trigger": {
+					"triggered_event": {
+						"event": "minecraft:remove_raid_trigger",
+						"target": "self"
+					}
+				},
+				"minecraft:spell_effects": {
+					"remove_effects": "bad_omen"
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "player" ]
+			},
+			"minecraft:is_hidden_when_invisible": {
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.8
+			},
+			"minecraft:can_climb": {
+			},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:attack": {
+				"damage": 1
+			},
+			"minecraft:player.saturation": {
+				"value": 20
+			},
+			"minecraft:player.exhaustion": {
+				"value": 0,
+				"max": 4
+			},
+			"minecraft:player.level": {
+				"value": 0,
+				"max": 24791
+			},
+			"minecraft:player.experience": {
+				"value": 0,
+				"max": 1
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": -1,
+				"inhaleTime": 3.75,
+				"generatesBubbles": false
+			},
+			"minecraft:nameable": {
+				"alwaysShow": true,
+				"allowNameTagRenaming": false
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:insomnia": {
+				"days_until_insomnia": 3
+			},
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"family_types": [ "parrot_tame" ],
+				"pull_in_entities": true,
+				"seats": [
+					{
+						"position": [ 0.4, -0.15, 0.04 ],
+						"min_rider_count": 0,
+						"max_rider_count": 0,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [ -0.4, -0.15, 0.04 ],
+						"min_rider_count": 1,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 0
+					}
+				]
+			},
+			"minecraft:scaffolding_climber": {
+			},
+			"minecraft:environment_sensor": [
+				{
+					"filters": {
+						"all_of": [
+							{
+								"test": "has_mob_effect",
+								"subject": "self",
+								"value": "bad_omen"
+							},
+							{
+								"test": "is_in_village",
+								"subject": "self",
+								"value": true
+							}
+						]
+					},
+					"event": "minecraft:trigger_raid"
+				},
+
+				{
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_sneaking",
+								"subject": "self",
+								"value": false
+							}
+						]
+					},
+					"event": "x_summon"
+				},
+				{
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_sneaking",
+								"subject": "self",
+								"value": true
+							},
+							{
+								"test": "has_equipment",
+								"subject": "self",
+								"domain": "hand",
+								"value": "muc:item_j"
+							}
+						]
+					},
+					"event": "summon_j"
+				},
+				{
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_sneaking",
+								"subject": "self",
+								"value": true
+							},
+							{
+								"test": "has_equipment",
+								"subject": "self",
+								"domain": "hand",
+								"value": "muc:item_lc"
+							}
+						]
+					},
+					"event": "summon_lc"
+				},
+				{
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_sneaking",
+								"subject": "self",
+								"value": true
+							},
+							{
+								"test": "has_equipment",
+								"subject": "self",
+								"domain": "hand",
+								"value": "muc:item_s"
+							}
+						]
+					},
+					"event": "summon_s"
+				},
+				{
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_sneaking",
+								"subject": "self",
+								"value": true
+							},
+							{
+								"test": "has_equipment",
+								"subject": "self",
+								"domain": "hand",
+								"value": "muc:item_thc"
+							}
+						]
+					},
+					"event": "summon_thc"
+				},
+				{
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_sneaking",
+								"subject": "self",
+								"value": true
+							},
+							{
+								"test": "has_equipment",
+								"subject": "self",
+								"domain": "hand",
+								"value": "muc:item_cd"
+							}
+						]
+					},
+					"event": "summon_cd"
+				},
+				{
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_sneaking",
+								"subject": "self",
+								"value": true
+							},
+							{
+								"test": "has_equipment",
+								"subject": "self",
+								"domain": "hand",
+								"value": "muc:item_cc"
+							}
+						]
+					},
+					"event": "summon_cc"
+				}
+			]
+		},
+		"events": {
+			"x_summon": {
+				"add": {
+					"component_groups": [ "muc:default" ]
+				}
+			},
+			"summon_j": {
+				"add": {
+					"component_groups": [ "muc:summon_j" ]
+				}
+			},
+			"summon_lc": {
+				"add": {
+					"component_groups": [ "muc:summon_lc" ]
+				}
+			},
+			"summon_s": {
+				"add": {
+					"component_groups": [ "muc:summon_s" ]
+				}
+			},
+			"summon_thc": {
+				"add": {
+					"component_groups": [ "muc:summon_thc" ]
+				}
+			},
+			"summon_cd": {
+				"add": {
+					"component_groups": [ "muc:summon_cd" ]
+				}
+			},
+			"summon_cc": {
+				"add": {
+					"component_groups": [ "muc:summon_cc" ]
+				}
+			},
+
+			"minecraft:gain_bad_omen": {
+				"add": {
+					"component_groups": [ "minecraft:add_bad_omen" ]
+				}
+			},
+			"minecraft:clear_add_bad_omen": {
+				"remove": {
+					"component_groups": [ "minecraft:add_bad_omen" ]
+				},
+				"add": {
+					"component_groups": [ "minecraft:clear_bad_omen_spell_effect" ]
+				}
+			},
+			"minecraft:trigger_raid": {
+				"add": {
+					"component_groups": [ "minecraft:raid_trigger" ]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [ "minecraft:raid_trigger" ]
+				}
+			}
+		}
+	}
+}

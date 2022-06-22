@@ -1,0 +1,45 @@
+//bridge-file-version: #55
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "lush_mountain_peak"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.4,
+				"snow_accumulation": [
+					0,
+					0.20000000000000004
+				],
+				"temperature": 0.5
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					2.5,
+					1.5
+				]
+			},
+			"minecraft:overworld_generation_rules": {
+				"river_transformation": [
+					"lush_mountain"
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"overworld": {},
+			"lush_mountain": {},
+			"pine_normal": {},
+			"taiga": {},
+			"spawn_goats": {}
+		}
+	}
+}

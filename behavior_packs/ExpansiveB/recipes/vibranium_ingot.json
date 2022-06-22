@@ -1,0 +1,33 @@
+//bridge-file-version: #10
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "korbon:vibranium_ingot"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" I ",
+			" V ",
+			" N "
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"V": {
+				"item": "korbon:vibranium"
+			},
+			"N": {
+				"item": "minecraft:netherite_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "korbon:vibranium_ingot"
+			}
+		]
+	}
+}

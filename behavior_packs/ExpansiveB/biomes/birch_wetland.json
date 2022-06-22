@@ -1,0 +1,49 @@
+//bridge-file-version: #30
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "birch_wetland"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.2,
+				"snow_accumulation": [
+					0,
+					0.20000000000000004
+				],
+				"temperature": 0.7
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"medium",
+						1
+					]
+				],
+				"hills_transformation": [
+					"birch_wetland"
+				]
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					0,
+					0
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"birch_wetland": {},
+			"spawn_frogs": {},
+			"overworld": {}
+		}
+	}
+}

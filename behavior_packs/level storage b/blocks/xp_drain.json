@@ -1,0 +1,106 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "xps:xp_drain",
+	  "properties": {
+				"xps:drain": [0,1],
+				"xps:modes": [0,1]
+	  		}
+    },
+    "components": {
+		"minecraft:block_light_absorption": 1,
+	  "minecraft:display_name": "Exp Drain",
+      "minecraft:destroy_time": 1,
+	  "minecraft:geometry":"geometry.xps",
+	  	"minecraft:material_instances" : {
+		"*": {
+      "texture": "drain",
+      "render_method" : "alpha_test"
+		}
+		},
+	"minecraft:entity_collision": true,
+	  "minecraft:pick_collision": true,
+	  "minecraft:on_step_on": {
+				"event": "on_step",
+				"target": "self"
+	  		},
+			"minecraft:on_interact": {
+      "event": "see_exp",
+      "target": "self"
+	}
+    },
+	"events":{
+		"see_exp":{
+			"run_command":{
+				"command": "function gain"
+			}
+		},
+		"switch_modes":{
+			"set_block_property": {
+			"xps:modes": 1
+			}
+		},
+		"on_step":{
+			"set_block_property": {
+			"xps:drain": 1
+			}
+		},		
+		"drain_exp":{
+			"run_command":{
+				"command":["scoreboard objectives add xps_exp dummy xp","scoreboard players add @p[r=2] xps_exp 0","summon xps:drain ~ ~1 ~","tag @p[x=~,y=~1,z=~,r=1] add xp_drain"]
+			}
+		},
+		"end_drain":{
+			"sequence":[
+			{
+			"run_command":{
+				"command": ["event entity @e[x=~,y=~1,z=~,r=1,type=xps:drain] despawn","tag @p[x=~,y=~1,z=~,r=1] remove xp_drain"]
+			}
+			},
+			{
+			"set_block_property": {
+			"xps:drain": 0
+			}	
+			}
+			]
+		}
+	},
+	"permutations":[
+	{
+		"condition": "query.block_property('xps:drain') == 1 && query.block_property('xps:modes') == 0",
+		"components": {
+		 "minecraft:ticking": {
+		"looping": false,
+		"range": [0,0],
+		"on_tick": {
+    		"event": "drain_exp",
+    		"target": "self"
+				}
+			},
+			"minecraft:on_step_off": {
+      "event": "end_drain",
+      "target": "self"
+			}
+		}
+	},
+	{
+		"condition": "query.block_property('xps:modes') == 1",
+		"components": {
+		 "minecraft:ticking": {
+		"looping": false,
+		"range": [0,0],
+		"on_tick": {
+    		"event": "drain_exp",
+    		"target": "self"
+				}
+			},
+			"minecraft:on_step_off": {
+      "event": "end_drain",
+      "target": "self"
+			}
+		}
+	}
+	]
+  }
+}

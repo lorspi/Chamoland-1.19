@@ -1,0 +1,75 @@
+//bridge-file-version: #30
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:vibrant_dripstone_big_down_tip"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "vibrant_dripstone_big_down_tip",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:geometry": "geometry.plantv3",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"korbon:vibrant_dripstone_big_down_base"
+						],
+						"allowed_faces": [
+							"down"
+						]
+					}
+				]
+			},
+			"minecraft:block_light_emission": 0.3,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:on_player_destroyed": {
+				"event": "break",
+				"target": "self"
+			},
+			"minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:breakonpush": true,
+			"minecraft:pick_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					7,
+					16,
+					6
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					7,
+					16,
+					6
+				]
+			}
+		},
+		"events": {
+			"break": {
+				"run_command": {
+					"command": [
+						"fill ~~1~ ~~1~ air"
+					]
+				},
+				"spawn_loot": {
+					"table": "loot_tables/blocks/vibrant_dripstone_big_down.json"
+				}
+			}
+		}
+	}
+}

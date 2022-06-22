@@ -1,0 +1,47 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "appleplus:receta_cluster"
+    },
+    "groups": [
+      "appleplus"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "appleplus:alma"
+      },
+      {
+        "item": "appleplus:alma"
+      }
+    ],
+    "result": {
+      "item": "appleplus:cluster_de_almas",
+      "count": 1
+    }
+  }
+}

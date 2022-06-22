@@ -1,0 +1,32 @@
+{
+  "minecraft:recipe_shaped" : {
+    "result" : {
+      "count" : 1,
+      "data" : 0,
+      "item" : "if:spawn"
+    },
+    "tags" : [
+      "crafting_table"
+    ],
+    "key" : {
+      "A" : {
+        "item" : "minecraft:gold_ingot"
+      },
+      "B" : {
+        "item" : "minecraft:ender_pearl"
+      },
+      "C" : {
+        "item" : "minecraft:stick"
+      }
+    },
+    "pattern" : [
+      "ABA",
+      " C ",
+      " C "
+    ],
+    "description" : {
+      "identifier" : "if:spawn"
+    }
+  },
+  "format_version" : "1.10"
+}

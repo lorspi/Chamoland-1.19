@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Experimental behavior pack for the wild update",
+        "name": "experimental wild update",
+        "uuid": "032705f6-35dd-4761-ba1a-6f559a27cc29",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Experimental behavior pack for the wild update",
+            "type": "data",
+            "uuid": "7451f4e4-3700-4e32-9ff6-a8f8229f851d",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}

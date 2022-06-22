@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "appleplus:retro_receta_pila"
+    },
+    "groups": [
+      "appleplus"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "0"
+    ],
+    "key": {
+      "0": {
+        "item": "appleplus:bolsa_moneda"
+      }
+    },
+    "result": {
+      "item": "appleplus:pila_moneda",
+      "count": 9
+    }
+  }
+}

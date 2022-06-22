@@ -1,0 +1,22 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "minecraft:vibrancy_stone_feature"
+		},
+		"count": 24,
+		"replace_rules": [
+			{
+				"places_block": {
+					"name": "korbon:vibrancy_stone"
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:stone"
+					}
+				]
+			}
+		]
+	}
+}

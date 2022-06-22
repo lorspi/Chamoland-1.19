@@ -1,0 +1,87 @@
+//bridge-file-version: #19
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "lush_desert"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.1,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 2
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": "minecraft:hardened_clay"
+						},
+						"noise_range": [
+							0.212,
+							1
+						],
+						"noise_frequency_scale": 0.08
+					},
+					{
+						"materials": {
+							"top_material": "minecraft:sand"
+						},
+						"noise_range": [
+							0.212,
+							1
+						],
+						"noise_frequency_scale": 0.08
+					},
+					{
+						"materials": {
+							"top_material": "minecraft:grass"
+						},
+						"noise_frequency_scale": 0.0625,
+						"noise_range": [
+							-0.1,
+							0.1
+						]
+					}
+				]
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "default"
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"top_material": {
+					"name": "minecraft:sand",
+					"states": {
+						"sand_type": "red"
+					}
+				},
+				"sea_material": "minecraft:water",
+				"mid_material": {
+					"name": "minecraft:sand",
+					"states": {
+						"sand_type": "red"
+					}
+				},
+				"foundation_material": "minecraft:stone"
+			},
+			"minecraft:overworld_generation_rules": {
+				"mutate_transformation": "desert",
+				"generate_for_climates": [
+					[
+						"warm",
+						1
+					]
+				]
+			},
+			"monster": {},
+			"overworld": {},
+			"lush_desert": {},
+			"desert": {}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+//bridge-file-version: #42
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:smoldering_grass_block",
+			"properties": {
+				"korbon:facing_direction": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 1",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						90
+					]
+				}
+			}
+		],
+		"components": {
+			"minecraft:loot": "loot_tables/blocks/hard_dirt.json",
+			"minecraft:unit_cube": {},
+			"minecraft:destroy_time": 1,
+			"minecraft:on_player_placing": {
+				"event": "set_facing_direction"
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					1,
+					5
+				],
+				"on_tick": {
+					"event": "flame"
+				}
+			},
+			"minecraft:explosion_resistance": 0.3,
+			"minecraft:map_color": "#2B2B21",
+			"minecraft:block_light_emission": 0.2
+		},
+		"events": {
+			"set_facing_direction": {
+				"set_block_property": {
+					"korbon:facing_direction": "math.floor(query.cardinal_block_face_placed_on / 2.0)"
+				}
+			},
+			"flame": {
+				"randomize": [
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_flame_particle ~-0.2~0.6~0.2"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_flame_particle ~0.4~0.6~-0.4"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

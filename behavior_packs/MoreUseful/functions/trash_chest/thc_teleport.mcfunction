@@ -1,0 +1,1 @@
+execute @s ~~~ tp @e[type=muc:hologram_trash_chest] ^ ^ ^3

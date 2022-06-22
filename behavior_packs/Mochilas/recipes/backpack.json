@@ -1,0 +1,25 @@
+{
+    "format_version": "1.13",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "recipe:backpack"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "XXX",
+            "X X",
+            "XXX"
+        ],
+        "key": {
+            "X": {
+                "item": "minecraft:leather"
+            }
+        },
+        "result": {
+            "item": "spawn_egg",
+            "data": "query.get_actor_info_id('entity:backpack')"
+        }
+    }
+}

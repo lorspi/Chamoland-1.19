@@ -1,0 +1,86 @@
+//bridge-file-version: #13
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:burning_log",
+			"properties": {
+				"korbon:facing_direction": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 1",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:facing_direction') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						90
+					]
+				}
+			}
+		],
+		"components": {
+			"minecraft:flammable": {
+				"burn_odds": 5,
+				"flame_odds": 5
+			},
+			"minecraft:loot": "loot_tables/blocks/burning_log.json",
+			"minecraft:unit_cube": {},
+			"minecraft:destroy_time": 1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "burning_log",
+					"render_method": "opaque"
+				},
+				"ends": {
+					"texture": "burning_log_top",
+					"render_method": "opaque"
+				},
+				"up": "ends",
+				"down": "ends"
+			},
+			"minecraft:on_interact": {
+				"condition": "q.get_equipped_item_name=='wooden_axe' || q.get_equipped_item_name=='iron_axe' || q.get_equipped_item_name=='golden_axe' || q.get_equipped_item_name=='stone_axe' || q.get_equipped_item_name=='netherite_axe' || q.get_equipped_item_name=='diamond_axe'",
+				"event": "update_texture"
+			},
+			"minecraft:on_player_placing": {
+				"event": "set_facing_direction"
+			},
+			"minecraft:explosion_resistance": 0.5,
+			"minecraft:map_color": "#2B2B21",
+			"minecraft:block_light_emission": 0.2
+		},
+		"events": {
+			"set_facing_direction": {
+				"set_block_property": {
+					"korbon:facing_direction": "math.floor(query.cardinal_block_face_placed_on / 2.0)"
+				}
+			}
+		}
+	}
+}

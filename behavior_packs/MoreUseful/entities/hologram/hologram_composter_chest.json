@@ -1,0 +1,220 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "muc:hologram_composter_chest",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"muc:at_1": {
+				"minecraft:scale": {
+					"value": 0.3
+				},
+				"minecraft:timer": {
+					"time": 0.03,
+					"looping": false,
+					"time_down_event": {
+						"event": "at_2",
+						"target": "self"
+					}
+				}
+			},
+			"muc:at_2": {
+				"minecraft:scale": {
+					"value": 0.5
+				},
+				"minecraft:timer": {
+					"time": 0.03,
+					"looping": false,
+					"time_down_event": {
+						"event": "at_3",
+						"target": "self"
+					}
+				}
+			},
+			"muc:at_3": {
+				"minecraft:scale": {
+					"value": 0.7
+				},
+				"minecraft:timer": {
+					"time": 0.03,
+					"looping": false,
+					"time_down_event": {
+						"event": "at_4",
+						"target": "self"
+					}
+				}
+			},
+			"muc:at_4": {
+				"minecraft:scale": {
+					"value": 0.8
+				},
+				"minecraft:timer": {
+					"time": 0.02,
+					"looping": false,
+					"time_down_event": {
+						"event": "at_5",
+						"target": "self"
+					}
+				}
+			},
+			"muc:at_5": {
+				"minecraft:scale": {
+					"value": 1.1
+				},
+				"minecraft:timer": {
+					"time": 0.02,
+					"looping": false,
+					"time_down_event": {
+						"event": "at_6",
+						"target": "self"
+					}
+				}
+			},
+			"muc:at_6": {
+				"minecraft:scale": {
+					"value": 0.9
+				},
+				"minecraft:timer": {
+					"time": 0.02,
+					"looping": false,
+					"time_down_event": {
+						"event": "at_complete",
+						"target": "self"
+					}
+				}
+			},
+			"muc:at_complete": {
+				"minecraft:scale": {
+					"value": 1.0
+				}
+			},
+			"muc:remove_entity": {
+				"minecraft:transformation": {
+					"into": "muc:composter_chest"
+				}
+			}
+		},
+		"components": {
+			"minecraft:identifier": {
+				"id": "muc:hologram_composter_chest"
+			},
+			"minecraft:type_family": {
+				"family": [ "hologram" ]
+			},
+			"minecraft:collision_box": {
+				"width": 0.5,
+				"height": 2.0
+			},
+			"minecraft:is_stackable": {
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:fall_damage": {
+				"value": 0.0
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1.0,
+				"max": 1.0
+			},
+			"minecraft:damage_sensor": [
+				{
+					"cause": "any",
+					"deals_damage": false
+				}
+			],
+			"minecraft:interact": [
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_sneaking",
+									"subject": "player",
+									"value": true
+								},
+								{
+									"test": "has_equipment",
+									"subject": "player",
+									"domain": "hand",
+									"value": "muc:item_cc"
+								}
+							]
+						},
+						"event": "remove_entity"
+					},
+					"interact_text": "action.interact.place"
+				}
+			]
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [ "muc:at_1" ]
+				}
+			},
+			"at_2": {
+				"add": {
+					"component_groups": [ "muc:at_2" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:at_1" ]
+				}
+			},
+			"at_3": {
+				"add": {
+					"component_groups": [ "muc:at_3" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:at_2" ]
+				}
+			},
+			"at_4": {
+				"add": {
+					"component_groups": [ "muc:at_4" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:at_3" ]
+				}
+			},
+			"at_5": {
+				"add": {
+					"component_groups": [ "muc:at_5" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:at_4" ]
+				}
+			},
+			"at_6": {
+				"add": {
+					"component_groups": [ "muc:at_6" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:at_5" ]
+				}
+			},
+			"at_complete": {
+				"add": {
+					"component_groups": [ "muc:at_complete" ]
+				},
+				"remove": {
+					"component_groups": [ "muc:at_6" ]
+				}
+			},
+			"remove_entity": {
+				"add": {
+					"component_groups": [ "muc:remove_entity" ]
+				}
+			}
+		}
+	}
+}
