@@ -2,10 +2,10 @@
 
 ## Para correr servidor localmente
 
-* Bajas el archivo necesario y lo pones en la razíz (al lado de _bedrock_server.exe_):
-https://mega.nz/file/Y15wRKxb#vsf0_aPDOsApIVtBdMnssWNDNikW87_QwaRMFNvMJgY
+* Bajas el archivo necesario y lo pones en la raíz (al lado de _bedrock_server.exe_):
+[bedrock_server.pdb](https://mega.nz/file/U95mFCKC#bJmMgBukQoqBvQUOOcLo2OAob7GigVZCayrd6bTbzlU)
 * Ejecutas __bedrock_server.exe__
-* Desde el juego vas _"Jugar"_ a la pestaña _"Servidores"_. Agregas un servidor nuevo. Pones tu IPV4 local y puerto 19132.
+* Desde el juego vas _"Jugar"_ a la pestaña _"Servidores"_. Agregas un servidor nuevo. Pones tu IPV4 local y puerto 25580.
 
 ## Ayuda
 
