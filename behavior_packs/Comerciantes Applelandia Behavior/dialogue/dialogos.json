@@ -8,8 +8,6 @@
             "on_open_commands": [
                 "/scoreboard objectives add UsosNPC dummy",
                 "/scoreboard players add @p UsosNPC 1",
-                "/scoreboard objectives add RegaloInicial dummy",
-                "/scoreboard players add @p RegaloInicial 0",
                 "/scoreboard objectives add TotalXP dummy",
                 "/scoreboard players add @p TotalXP 0",
                 "/scoreboard objectives add PagarXP dummy"
@@ -21,9 +19,6 @@
             }, {
                 "name": "Viajar",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p viajar"]
-            }, {
-                "name": "Kit de inicio",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p kit_inicio"]
             }]
         }, {
             "scene_tag": "ganar_dinero",
@@ -81,56 +76,8 @@
                 "name": "Hogar",
                 "commands": ["/tp @p @e[type=hovertext:warp,name=kzjopw]"]
             }, {
-                "name": "Arena PVE",
-                "commands": ["/tp @p @e[type=hovertext:warp,name=updoie]"]
-            }, {
                 "name": "Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
-            }]
-        }, {
-            "scene_tag": "kit_inicio",
-            "npc_name": "Lola",
-            "text": "Si es tu primera vez por aquí, puedes recibir una caja llena de cosas útiles para iniciar tu aventura. §l§4¡SOLO PUEDES RECIBIRLO UNA VEZ!",
-            "on_open_commands": [""],
-            "on_close_commands": [""],
-            "buttons": [{
-                "name": "Recibir kit",
-                "commands": [
-                    "/execute @p[scores={RegaloInicial=0}] ~ ~ ~ give @s thelake:lucky_block_vene",
-                    "/execute @p[scores={RegaloInicial=0}] ~ ~ ~ playsound random.levelup @s",
-                    "/execute @p[scores={RegaloInicial=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p kit_recibido",
-                    "/execute @p[scores={RegaloInicial=1}] ~ ~ ~ playsound random.break @s",
-                    "/execute @p[scores={RegaloInicial=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p kit_negado"
-                ]
-            }, {
-                "name": "Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
-            }]
-        }, {
-            "scene_tag": "kit_recibido",
-            "npc_name": "Lola",
-            "text": "§l§2¡Recibiste tu kit de inicio!",
-            "on_open_commands": [""],
-            "on_close_commands": [""],
-            "buttons": [{
-                "name": "Cerrar",
-                "commands": ["*"]
-            }, {
-                "name": "Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p kit_inicio","/scoreboard players set @p RegaloInicial 1"]
-            }]
-        }, {
-            "scene_tag": "kit_negado",
-            "npc_name": "Lola",
-            "text": "§l§4Ya has reclamado tu kit de inicio. §rRecuerda que sólo puedes reclamarlo una vez.",
-            "on_open_commands": [""],
-            "on_close_commands": [""],
-            "buttons": [{
-                "name": "Cerrar",
-                "commands": ["*"]
-            }, {
-                "name": "Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p kit_inicio"]
             }]
         }, {
             "scene_tag": "emergencia",
