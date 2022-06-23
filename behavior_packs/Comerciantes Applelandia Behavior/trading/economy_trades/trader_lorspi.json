@@ -125,29 +125,6 @@
             {
               "wants": [
                 {
-                  "item": "appleplus:bolsa_moneda",
-                  "quantity": 5,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "thelake:lucky_block",
-                  "quantity": 1
-                }
-              ],
-              "trader_exp": 2,
-              "max_uses": 99999999,
-              "reward_exp": false
-            }
-          ]
-        },
-        {
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
                   "choice": [
                     {
                       "item": "emerald",
