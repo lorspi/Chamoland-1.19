@@ -102,15 +102,15 @@
             {
               "wants": [
                 {
-                  "item": "appleplus:moneda",
-                  "quantity": 5,
+                  "item": "cobblestone",
+                  "quantity": 64,
                   "price_multiplier": 0.05
                 }
               ],
               "gives": [
                 {
-                  "item": "experience_bottle",
-                  "quantity": 20
+                  "item": "appleplus:moneda",
+                  "quantity": 1
                 }
               ],
               "trader_exp": 2,
@@ -125,15 +125,15 @@
             {
               "wants": [
                 {
-                  "item": "appleplus:bolsa_moneda",
+                  "item": "appleplus:moneda",
                   "quantity": 5,
                   "price_multiplier": 0.05
                 }
               ],
               "gives": [
                 {
-                  "item": "thelake:lucky_block",
-                  "quantity": 1
+                  "item": "experience_bottle",
+                  "quantity": 20
                 }
               ],
               "trader_exp": 2,
