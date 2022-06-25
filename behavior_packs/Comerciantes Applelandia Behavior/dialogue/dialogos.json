@@ -31,9 +31,9 @@
                 "commands": [
                     "/execute @p[scores={PagarXP=0}] ~ ~ ~ playsound random.break @s",
                     "/execute @p[scores={PagarXP=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p dinero_negado",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ give @s appleplus:moneda 5",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ playsound random.levelup @s",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ xp -15l @s",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ give @s[r=4] appleplus:moneda 5",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ playsound random.levelup @s[r=4]",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ xp -15l @s[r=4]",
                     "/execute @p[scores={PagarXP=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p dinero_recibido"
                 ]
             }, {
