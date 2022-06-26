@@ -1,0 +1,32 @@
+{
+  "minecraft:recipe_shaped" : {
+    "result" : {
+      "count" : 1,
+      "data" : 0,
+      "item" : "npc:girl2_spawn_egg"
+    },
+    "tags" : [
+      "crafting_table"
+    ],
+    "key" : {
+      "A" : {
+        "item" : "minecraft:gold_ingot"
+      },
+      "B" : {
+        "item" : "minecraft:ender_pearl"
+      },
+      "C" : {
+        "item" : "minecraft:stick"
+      }
+    },
+    "pattern" : [
+      "ABA",
+      " C ",
+      " C "
+    ],
+    "description" : {
+      "identifier" : "npc:girl2_spawn_egg"
+    }
+  },
+  "format_version" : "1.10"
+}

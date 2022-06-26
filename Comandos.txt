@@ -10,6 +10,15 @@ Sandbox
 
 ------
 
+Avisos
+
+title @a] actionbar §c§l¡Pérdida de inventario activada! - Deshabilitado el objeto de viaje "Spawn".
+
+title @a actionbar §6Pronto se habilitará la pérdida de inventario y dejaran de funcionar los objeto de viaje "Spawn".
+
+
+------
+
 Viajar a Spawn:
 	Rep / Inco / 0
 	testfor @e[type=npc:girl2]
