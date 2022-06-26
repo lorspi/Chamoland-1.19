@@ -133,7 +133,7 @@
               "gives": [
                 {
                   "item": "appleplus:moneda",
-                  "quantity": 10
+                  "quantity": 5
                 }
               ],
               "trader_exp": 2,
@@ -157,6 +157,29 @@
                 {
                   "item": "experience_bottle",
                   "quantity": 25
+                }
+              ],
+              "trader_exp": 2,
+              "max_uses": 99999999,
+              "reward_exp": false
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "appleplus:moneda",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ender_pearl",
+                  "quantity": 1
                 }
               ],
               "trader_exp": 2,

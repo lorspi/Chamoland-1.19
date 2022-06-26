@@ -23,27 +23,27 @@
         }, {
             "scene_tag": "comerciar_experiencia",
             "npc_name": "Lola",
-            "text": "Puedes guardar 30 niveles experiencia en objetos llamados Masa de experiencia. Estos objetos puedes volver a convertirlos en experiencia.",
-            "on_open_commands": ["/scoreboard players set @p PagarXP 0","/execute @p[lm=30] ~ ~ ~ scoreboard players set @s PagarXP 1", "scoreboard objectives add TieneMasa dummy"],
+            "text": "Puedes guardar 15 niveles experiencia en objetos llamados Masa de experiencia. Estos objetos puedes volver a convertirlos en experiencia.",
+            "on_open_commands": ["/scoreboard players set @p PagarXP 0","/execute @p[lm=15] ~ ~ ~ scoreboard players set @s PagarXP 1", "scoreboard objectives add TieneMasa dummy"],
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Guardar experiencia",
                 "commands": [
-                    "/execute @p[scores={PagarXP=0}] ~ ~ ~ playsound random.break @s",
+                    "/execute @p[scores={PagarXP=0}] ~ ~ ~ playsound random.break @s[r=4]",
                     "/execute @p[scores={PagarXP=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_negada",
                     "/execute @p[scores={PagarXP=1}] ~ ~ ~ give @s[r=4] appleplus:masa_de_experiencia 1",
                     "/execute @p[scores={PagarXP=1}] ~ ~ ~ playsound random.levelup @s[r=4]",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ xp -30l @s[r=4]",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ xp -15l @s[r=4]",
                     "/execute @p[scores={PagarXP=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_recibida"
                 ]
             }, {
                 "name": "Cargar experiencia",
                 "commands": [
-                    "/execute @p[scores={TieneMasa=0}] ~ ~ ~ playsound random.break @s",
+                    "/execute @p[scores={TieneMasa=0}] ~ ~ ~ playsound random.break @s[r=4]",
                     "/execute @p[scores={TieneMasa=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_negada",
                     "/execute @p[scores={TieneMasa=1}] ~ ~ ~ clear @p appleplus:masa_de_experiencia 0 1",
                     "/execute @p[scores={TieneMasa=1}] ~ ~ ~ playsound random.levelup @s[r=4]",
-                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ xp 30l @s[r=4]",
+                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ xp 15l @s[r=4]",
                     "/execute @p[scores={TieneMasa=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_recibida"
                 ]
             }, {
@@ -66,7 +66,7 @@
         }, {
             "scene_tag": "masa_negada",
             "npc_name": "Lola",
-            "text": "§l§4No tienes suficiente experiencia para guardar. §rRecuerda que necesitas 30 niveles de experiencia.",
+            "text": "§l§4No tienes suficiente experiencia para guardar. §rRecuerda que necesitas 15 niveles de experiencia.",
             "on_open_commands": [""],
             "on_close_commands": [""],
             "buttons": [{
@@ -79,7 +79,7 @@
         }, {
             "scene_tag": "xp_recibida",
             "npc_name": "Lola",
-            "text": "§l§2¡Has recibido 30 niveles de experiencia!",
+            "text": "§l§2¡Has recibido 15 niveles de experiencia!",
             "on_open_commands": ["/scoreboard players add @p TotalXP 1"],
             "on_close_commands": [""],
             "buttons": [{
@@ -92,7 +92,7 @@
         }, {
             "scene_tag": "xp_negada",
             "npc_name": "Lola",
-            "text": "§l§4No masas de experiencia para cargar. §rNecesitas una para cargar 30 niveles de experiencia.",
+            "text": "§l§4No masas de experiencia para cargar. §rNecesitas una para cargar 15 niveles de experiencia.",
             "on_open_commands": [""],
             "on_close_commands": [""],
             "buttons": [{
