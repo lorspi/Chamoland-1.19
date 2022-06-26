@@ -64,6 +64,24 @@ Abrir y cerrar salida de la arena
 /fill 2043 83 -2930 2043 82 -2932 air
 /fill 2043 83 -2930 2043 82 -2932 nether_brick_fence
 
+------
+
+Validar objeto en inventario
+
+	Rep / Incon / Redstone / 10
+	clear @p[r=60] appleplus:masa_de_experiencia 0 0
+
+	Comparador
+	Repetidor
+	Redstone
+		Antocha redstone invertir:
+		Imp / Incon / Redstone / 0
+		scoreboard players set @p TieneMasa 0
+
+		Señal directa:
+		Imp / Incon / Redstone / 0
+		scoreboard players set @p TieneMasa 1
+
 
 ------
 

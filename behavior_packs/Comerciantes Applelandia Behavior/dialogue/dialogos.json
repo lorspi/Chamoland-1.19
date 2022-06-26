@@ -14,36 +14,46 @@
             ],
             "on_close_commands": [""],
             "buttons": [{
-                "name": "Ganar dinero",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p ganar_dinero"]
+                "name": "Experiencia",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
             }, {
                 "name": "Viajar",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p viajar"]
             }]
         }, {
-            "scene_tag": "ganar_dinero",
+            "scene_tag": "comerciar_experiencia",
             "npc_name": "Lola",
-            "text": "Para ganar dinero tenes que ganar experiencia. Por cada 15 niveles de experiencia te daré 5 monedas.",
-            "on_open_commands": ["/scoreboard players set @p PagarXP 0","/execute @p[lm=15] ~ ~ ~ scoreboard players set @s PagarXP 1"],
+            "text": "Puedes guardar 30 niveles experiencia en objetos llamados Masa de experiencia. Estos objetos puedes volver a convertirlos en experiencia.",
+            "on_open_commands": ["/scoreboard players set @p PagarXP 0","/execute @p[lm=30] ~ ~ ~ scoreboard players set @s PagarXP 1", "scoreboard objectives add TieneMasa dummy"],
             "on_close_commands": [""],
             "buttons": [{
-                "name": "Recibir dinero",
+                "name": "Guardar experiencia",
                 "commands": [
                     "/execute @p[scores={PagarXP=0}] ~ ~ ~ playsound random.break @s",
-                    "/execute @p[scores={PagarXP=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p dinero_negado",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ give @s[r=4] appleplus:moneda 5",
+                    "/execute @p[scores={PagarXP=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_negada",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ give @s[r=4] appleplus:masa_de_experiencia 1",
                     "/execute @p[scores={PagarXP=1}] ~ ~ ~ playsound random.levelup @s[r=4]",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ xp -15l @s[r=4]",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p dinero_recibido"
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ xp -30l @s[r=4]",
+                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_recibida"
+                ]
+            }, {
+                "name": "Cargar experiencia",
+                "commands": [
+                    "/execute @p[scores={TieneMasa=0}] ~ ~ ~ playsound random.break @s",
+                    "/execute @p[scores={TieneMasa=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_negada",
+                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ clear @p appleplus:masa_de_experiencia 0 1",
+                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ playsound random.levelup @s[r=4]",
+                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ xp 30l @s[r=4]",
+                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_recibida"
                 ]
             }, {
                 "name": "Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
             }]
         }, {
-            "scene_tag": "dinero_recibido",
+            "scene_tag": "masa_recibida",
             "npc_name": "Lola",
-            "text": "§l§2¡Buen trabajo! Toma tu pago.",
+            "text": "§l§2¡Has recibido una Masa de experiencia! §rGuárdala en un lugar seguro.",
             "on_open_commands": ["/scoreboard players add @p TotalXP 1"],
             "on_close_commands": [""],
             "buttons": [{
@@ -51,12 +61,12 @@
                 "commands": ["*"]
             }, {
                 "name": "Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p ganar_dinero"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
             }]
         }, {
-            "scene_tag": "dinero_negado",
+            "scene_tag": "masa_negada",
             "npc_name": "Lola",
-            "text": "§l§4No has trabajado lo suficiente. §rRecuerda que recibirás 5 monedas por cada 15 niveles de experiencia.",
+            "text": "§l§4No tienes suficiente experiencia para guardar. §rRecuerda que necesitas 30 niveles de experiencia.",
             "on_open_commands": [""],
             "on_close_commands": [""],
             "buttons": [{
@@ -64,7 +74,33 @@
                 "commands": ["*"]
             }, {
                 "name": "Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p ganar_dinero"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
+            }]
+        }, {
+            "scene_tag": "xp_recibida",
+            "npc_name": "Lola",
+            "text": "§l§2¡Has recibido 30 niveles de experiencia!",
+            "on_open_commands": ["/scoreboard players add @p TotalXP 1"],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Cerrar",
+                "commands": ["*"]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
+            }]
+        }, {
+            "scene_tag": "xp_negada",
+            "npc_name": "Lola",
+            "text": "§l§4No masas de experiencia para cargar. §rNecesitas una para cargar 30 niveles de experiencia.",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
+                "name": "Cerrar",
+                "commands": ["*"]
+            }, {
+                "name": "Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
             }]
         }, {
             "scene_tag": "viajar",

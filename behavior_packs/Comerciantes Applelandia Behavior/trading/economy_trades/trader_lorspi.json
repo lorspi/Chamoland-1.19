@@ -125,6 +125,29 @@
             {
               "wants": [
                 {
+                  "item": "appleplus:masa_de_experiencia",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "appleplus:moneda",
+                  "quantity": 10
+                }
+              ],
+              "trader_exp": 2,
+              "max_uses": 99999999,
+              "reward_exp": false
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
                   "item": "appleplus:moneda",
                   "quantity": 5,
                   "price_multiplier": 0.05
@@ -133,7 +156,7 @@
               "gives": [
                 {
                   "item": "experience_bottle",
-                  "quantity": 20
+                  "quantity": 25
                 }
               ],
               "trader_exp": 2,
