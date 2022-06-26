@@ -221,23 +221,23 @@
                   "choice": [
                     {
                       "item": "emerald",
-                      "quantity": 1
+                      "quantity": 3
                     },
                     {
                       "item": "appleplus:alma",
-                      "quantity": 1
+                      "quantity": 6
                     },
                     {
                       "item": "diamond",
-                      "quantity": 2
+                      "quantity": 12
                     },
                     {
                       "item": "iron_ingot",
-                      "quantity": 10
+                      "quantity": 30
                     },
                     {
                       "item": "gold_ingot",
-                      "quantity": 30
+                      "quantity": 35
                     }
                   ]
                 }
@@ -245,7 +245,7 @@
               "gives": [
                 {
                   "item": "appleplus:pila_moneda",
-                  "quantity": 2
+                  "quantity": 1
                 }
               ],
               "trader_exp": 4,
