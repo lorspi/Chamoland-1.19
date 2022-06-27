@@ -1,0 +1,29 @@
+{
+  "minecraft:recipe_shaped" : {
+    "result" : {
+      "count" : 1,
+      "data" : 0,
+      "item" : "npc:girl2_spawn_egg"
+    },
+    "tags" : [
+      "crafting_table"
+    ],
+    "key" : {
+      "A" : {
+        "item" : "minecraft:gold_ingot"
+      },
+      "B" : {
+        "item" : "npc:talismandes"
+      }
+    },
+    "pattern" : [
+      "   ",
+      "ABA",
+      "   "
+    ],
+    "description" : {
+      "identifier" : "npc:girl2_spawn_egg_dos"
+    }
+  },
+  "format_version" : "1.10"
+}

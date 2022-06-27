@@ -10,8 +10,10 @@ entity.trader_lorspi.nombre=Comerciante
 entity.hovertext:hovertext.name=Hovertext
 
 item.spawn_egg.entity.npc:girl1.name=Viajar a casa
-item.spawn_egg.entity.npc:girl2.name=§l§eViajar a casa
+item.spawn_egg.entity.npc:girl2.name=§l§eTalismán del regreso
 
 
 item.npc:adalita.name=Adalita
 tile.npc:adalita_block.name=Bloque de adalita
+
+item.npc:talismandes.name=§7Talismán del regreso desactivado
