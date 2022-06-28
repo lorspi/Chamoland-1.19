@@ -7,10 +7,6 @@ https://doc.clickup.com/25771820/d/h/rjftc-65/403120106356d2d
 Emojis
 https://wiki.bedrock.dev/concepts/emojis.html
 
-
-Nombres para la vara
-	Talismán del regreso
-
 ------
 
 Avisos
@@ -18,7 +14,6 @@ Avisos
 title @a actionbar §c§l¡Pérdida de inventario activada! §r§c- Deshabilitado el viaje con objeto renombrado "Spawn".
 
 title @a actionbar §6Pronto se habilitará la pérdida de inventario y dejaran de funcionar los objeto de viaje "Spawn".
-
 
 ------
 
