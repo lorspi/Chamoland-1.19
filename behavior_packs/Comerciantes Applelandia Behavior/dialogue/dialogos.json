@@ -29,22 +29,22 @@
             "buttons": [{
                 "name": "Guardar experiencia",
                 "commands": [
-                    "/execute @p[scores={PagarXP=0}] ~ ~ ~ playsound random.break @s[r=4]",
-                    "/execute @p[scores={PagarXP=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_negada",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ give @s[r=4] appleplus:masa_de_experiencia 1",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ playsound random.levelup @s[r=4]",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ xp -15l @s[r=4]",
-                    "/execute @p[scores={PagarXP=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_recibida"
+                    "/execute @p[scores={PagarXP=0},r=4] ~ ~ ~ playsound random.break @s[r=4]",
+                    "/execute @p[scores={PagarXP=0},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_negada",
+                    "/execute @p[scores={PagarXP=1},r=4] ~ ~ ~ give @s[r=4] appleplus:masa_de_experiencia 1",
+                    "/execute @p[scores={PagarXP=1},r=4] ~ ~ ~ playsound random.levelup @s[r=4]",
+                    "/execute @p[scores={PagarXP=1},r=4] ~ ~ ~ xp -15l @s[r=4]",
+                    "/execute @p[scores={PagarXP=1},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_recibida"
                 ]
             }, {
                 "name": "Cargar experiencia",
                 "commands": [
-                    "/execute @p[scores={TieneMasa=0}] ~ ~ ~ playsound random.break @s[r=4]",
-                    "/execute @p[scores={TieneMasa=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_negada",
-                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ clear @p appleplus:masa_de_experiencia 0 1",
-                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ playsound random.levelup @s[r=4]",
-                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ xp 15l @s[r=4]",
-                    "/execute @p[scores={TieneMasa=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_recibida"
+                    "/execute @p[scores={TieneMasa=0},r=4] ~ ~ ~ playsound random.break @s[r=4]",
+                    "/execute @p[scores={TieneMasa=0},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_negada",
+                    "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ clear @p appleplus:masa_de_experiencia 0 1",
+                    "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ playsound random.levelup @s[r=4]",
+                    "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ xp 15l @s[r=4]",
+                    "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_recibida"
                 ]
             }, {
                 "name": "Volver",
