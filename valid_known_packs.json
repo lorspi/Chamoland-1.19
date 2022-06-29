@@ -604,6 +604,15 @@
 	
 	{
 		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : [ "fb9aQ3WP94153bZ/iyRVljX3TBa23vZggVnR5wI2x40=" ],
+		"path" : "resource_packs/.Better_Mob_Animations_v2.0",
+		"uuid" : "d3c62154-bb75-4828-89e9-36183acacf9c",
+		"version" : "2.0.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "behavior_packs/vanilla_1.16.210",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.16.210"
