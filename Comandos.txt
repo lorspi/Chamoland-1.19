@@ -32,6 +32,9 @@ Spawn
 /summon hovertext:warp "kzjopw"
 /tp @p @e[type=hovertext:warp,name=kzjopw]
 
+Base desierto - rabine
+/tp @p -1133 72 363
+
 Base bolsa
 /summon hovertext:warp "rtdfgh"
 

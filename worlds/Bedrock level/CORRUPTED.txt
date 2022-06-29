@@ -1,0 +1,1 @@
+Corruption: not an sstable (bad magic number)

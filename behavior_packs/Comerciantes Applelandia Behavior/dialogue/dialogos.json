@@ -109,8 +109,11 @@
             "on_open_commands": [""],
             "on_close_commands": [""],
             "buttons": [{
-                "name": "Hogar",
+                "name": "Spawn",
                 "commands": ["/tp @p @e[type=hovertext:warp,name=kzjopw]"]
+            }, {
+                "name": "Desierto",
+                "commands": ["/tp @p -1133 72 363"]
             }, {
                 "name": "Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
