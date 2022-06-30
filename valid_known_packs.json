@@ -72,32 +72,6 @@
 		"from_disk" : true,
 		"hashes" : 
 		[
-			"uzBGJOlIJWzwdX5Qmm/yEiu9Ca9VCx2Oqj7lWfO7VdU=",
-			"tY3R6pxlCUTZzb0SmePDqvalBMksLwD4yuRJbldWPuU="
-		],
-		"path" : "behavior_packs/level storage b",
-		"uuid" : "585acd8d-4248-4b8e-8785-b8d32a5feebe",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : 
-		[
-			"8Tzu9vaUNgYiBzTLDuijO8NyhrASjly1+2Mu6KgJdvU=",
-			"0tU/8VNH/4ekQWCVtPHsiNJgnYByvvmXlE+osprT2eE="
-		],
-		"path" : "resource_packs/ExpansiveB",
-		"uuid" : "27f80554-ecd5-4af0-b943-f92077e3e9bc",
-		"version" : "1.0.4"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : 
-		[
 			"kzEvn1fqCxqc7rDfFesGEgxkKmiduZbP4GzUfzBGVs8=",
 			"b0BsBegzhRT1UIHj37U5+TPRuAOuwHCXIB6wc93me9s="
 		],
@@ -541,12 +515,12 @@
 		"from_disk" : true,
 		"hashes" : 
 		[
-			"xsIAoevR2bxdimMb8tFI1XSPXYRe1EnbezQvfhOlg8U=",
-			"aDcTSFl6JQ2kkPZJX7xPkPkx9bSYigca9yU9uIFvRt0="
+			"EeSDZaKcUdGhxjpIanbb5QJhmYEbnjWsC4SZ4Z10sBo=",
+			"86PvrME/T5hjmQ8ugIUSd/J5sfjkGbOO3vWIkSrfRtU="
 		],
-		"path" : "behavior_packs/ExpansiveB",
-		"uuid" : "119e211a-5c12-4f47-bf10-3c4ad4bdb30b",
-		"version" : "1.0.4"
+		"path" : "behavior_packs/Items funciones",
+		"uuid" : "4e77ef67-8b7e-4615-80e8-d562661d247c",
+		"version" : "0.0.4"
 	},
 	
 	{
@@ -554,12 +528,12 @@
 		"from_disk" : true,
 		"hashes" : 
 		[
-			"EeSDZaKcUdGhxjpIanbb5QJhmYEbnjWsC4SZ4Z10sBo=",
-			"86PvrME/T5hjmQ8ugIUSd/J5sfjkGbOO3vWIkSrfRtU="
+			"uzBGJOlIJWzwdX5Qmm/yEiu9Ca9VCx2Oqj7lWfO7VdU=",
+			"tY3R6pxlCUTZzb0SmePDqvalBMksLwD4yuRJbldWPuU="
 		],
-		"path" : "behavior_packs/Items funciones",
-		"uuid" : "4e77ef67-8b7e-4615-80e8-d562661d247c",
-		"version" : "0.0.4"
+		"path" : "behavior_packs/level storage b",
+		"uuid" : "585acd8d-4248-4b8e-8785-b8d32a5feebe",
+		"version" : "0.0.1"
 	},
 	
 	{
@@ -602,6 +576,32 @@
 		"path" : "behavior_packs/test_vanilla_1.12",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.12.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : 
+		[
+			"8Tzu9vaUNgYiBzTLDuijO8NyhrASjly1+2Mu6KgJdvU=",
+			"0tU/8VNH/4ekQWCVtPHsiNJgnYByvvmXlE+osprT2eE="
+		],
+		"path" : "resource_packs/ExpansiveB",
+		"uuid" : "27f80554-ecd5-4af0-b943-f92077e3e9bc",
+		"version" : "1.0.4"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : 
+		[
+			"xsIAoevR2bxdimMb8tFI1XSPXYRe1EnbezQvfhOlg8U=",
+			"aDcTSFl6JQ2kkPZJX7xPkPkx9bSYigca9yU9uIFvRt0="
+		],
+		"path" : "behavior_packs/ExpansiveB",
+		"uuid" : "119e211a-5c12-4f47-bf10-3c4ad4bdb30b",
+		"version" : "1.0.4"
 	},
 	
 	{
