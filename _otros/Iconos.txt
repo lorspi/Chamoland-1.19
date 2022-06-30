@@ -30,12 +30,16 @@ Peuqeños
 
 Grandes
 
-_ = lorspi
-_ = PantallazoAzul
-_ = AngieDi
+ = lorspi
+ = PantallazoAzul
+ = AngieDi
 
 -----
 
 https://cravatar.eu/avatar/pantallazoazul/32
 
 https://lospec.com/pixel-art-scaler/
+
+https://wiki.bedrock.dev/concepts/emojis.html
+
+https://www.fileformat.info/info/unicode/char/e0f2/index.htm
