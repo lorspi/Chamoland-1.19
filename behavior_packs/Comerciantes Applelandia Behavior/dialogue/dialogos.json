@@ -4,7 +4,7 @@
         "scenes": [{
             "scene_tag": "inicial",
             "npc_name": "Lola",
-            "text": "¡Hola! ¿En qué puedo ayudarte?",
+            "text": "¡Hola!\n¿En qué puedo ayudarte?",
             "on_open_commands": [
                 "/scoreboard objectives add UsosNPC dummy",
                 "/scoreboard players add @p UsosNPC 1",
@@ -23,7 +23,7 @@
         }, {
             "scene_tag": "comerciar_experiencia",
             "npc_name": "Lola",
-            "text": "Puedes guardar 15 niveles experiencia en objetos llamados Masa de experiencia. Estos objetos puedes volver a convertirlos en experiencia.",
+            "text": "Puedes guardar 15 niveles experiencia en una  Masa de experiencia.\n\nPuedes convertir una  Masa de experiencia en 15 niveles de experiencia.",
             "on_open_commands": ["/scoreboard players set @p PagarXP 0","/execute @p[lm=15] ~ ~ ~ scoreboard players set @s PagarXP 1", "scoreboard objectives add TieneMasa dummy"],
             "on_close_commands": [""],
             "buttons": [{
@@ -47,33 +47,33 @@
                     "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_recibida"
                 ]
             }, {
-                "name": "Volver",
+                "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
             }]
         }, {
             "scene_tag": "masa_recibida",
             "npc_name": "Lola",
-            "text": "§l§2¡Has recibido una Masa de experiencia! §rGuárdala en un lugar seguro.",
+            "text": "§l§2¡Has recibido una Masa de experiencia!\n\n§rGuárdala en un lugar seguro.",
             "on_open_commands": ["/scoreboard players add @p TotalXP 1"],
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Cerrar",
                 "commands": ["*"]
             }, {
-                "name": "Volver",
+                "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
             }]
         }, {
             "scene_tag": "masa_negada",
             "npc_name": "Lola",
-            "text": "§l§4No tienes suficiente experiencia para guardar. §rRecuerda que necesitas 15 niveles de experiencia.",
+            "text": "§l§4No tienes suficiente experiencia para guardar.\n\n§rRecuerda que necesitas 15 niveles de experiencia.",
             "on_open_commands": [""],
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Cerrar",
                 "commands": ["*"]
             }, {
-                "name": "Volver",
+                "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
             }]
         }, {
@@ -86,26 +86,26 @@
                 "name": "Cerrar",
                 "commands": ["*"]
             }, {
-                "name": "Volver",
+                "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
             }]
         }, {
             "scene_tag": "xp_negada",
             "npc_name": "Lola",
-            "text": "§l§4No masas de experiencia para cargar. §rNecesitas una para cargar 15 niveles de experiencia.",
+            "text": "§l§4No masas de experiencia para cargar.\n\n§rNecesitas una para cargar 15 niveles de experiencia.",
             "on_open_commands": [""],
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Cerrar",
                 "commands": ["*"]
             }, {
-                "name": "Volver",
+                "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
             }]
         }, {
             "scene_tag": "viajar",
             "npc_name": "Lola",
-            "text": "Puedes viajar a estos destinos. Estaré actualizando los destinos con nuevos lugares descubiertos por ustedes.",
+            "text": "Puedes viajar a estos destinos.\n\nEstaré actualizando los destinos con nuevos lugares descubiertos por ustedes.",
             "on_open_commands": [""],
             "on_close_commands": [""],
             "buttons": [{
@@ -115,7 +115,7 @@
                 "name": "Desierto",
                 "commands": ["/tp @p -1133 72 363"]
             }, {
-                "name": "Volver",
+                "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
             }]
         }, {
