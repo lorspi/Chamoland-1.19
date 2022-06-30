@@ -1,0 +1,41 @@
+Peuqeños 
+ = :3
+ = Cara de lorspi
+ = Cara Panta
+ = Cara Panta transp
+
+ = Moneda
+ = Pila de monedas 
+ = Bolsa de monedas
+
+ = Talismán
+ = Talismán desactivado
+
+ = Comerciante de mercancía
+ = Comerciante de comida
+
+ = Alma
+ = Cluster
+ = Masa de experiencia
+ = Gema azul
+ = Gema roja
+ = Gema verde
+ = Adalita
+ = Palanca
+ = Llave
+ = Dimensionador 
+ = Herramienta
+
+-----
+
+Grandes
+
+_ = lorspi
+_ = PantallazoAzul
+_ = AngieDi
+
+-----
+
+https://cravatar.eu/avatar/pantallazoazul/32
+
+https://lospec.com/pixel-art-scaler/

@@ -1,0 +1,150 @@
+Casa
+https://www.planetminecraft.com/project/cliff-house-5165859/
+
+Addon clickup
+https://doc.clickup.com/25771820/d/h/rjftc-65/403120106356d2d
+
+Emojis
+https://wiki.bedrock.dev/concepts/emojis.html
+
+------
+
+Avisos
+
+title @a actionbar §c§l¡Pérdida de inventario activada! §r§c- Deshabilitado el viaje con objeto renombrado "Spawn".
+
+title @a actionbar §6Pronto se habilitará la pérdida de inventario y dejaran de funcionar los objeto de viaje "Spawn".
+
+------
+
+Viajar a Spawn:
+	Rep / Inco / 0
+	testfor @e[type=npc:girl2]
+
+
+	Imp / Inco / 0
+	execute @e[type=npc:girl2] ~ ~ ~ tp @p[r=6] @e[type=hovertext:warp,name=kzjopw]
+
+	Cad / Inco / 0
+	kill @e[type=npc:girl2]
+
+Spawn
+/summon hovertext:warp "kzjopw"
+/tp @p @e[type=hovertext:warp,name=kzjopw]
+
+Base desierto - rabine
+/tp @p -1133 72 363
+
+Base bolsa
+/summon hovertext:warp "rtdfgh"
+
+Arena PVE
+/summon hovertext:warp "updoie"
+
+
+Warps invisibles
+Repetir incondicional 1000
+/effect @e[type=hovertext:warp] invisibility 60
+
+Detectar jugador en zona
+	Repetir / Incondicional / Redstone / 10
+	execute @a[x=-1439,y=106,z=122,dx=18,dy=3,dz=20,name=!lorspi] ~ ~ ~ tp @p -1424 112 133
+
+	title @p actionbar §c¡No puedes entrar aquí!
+	playsound mob.blaze.shoot @p
+
+
+Ver scoreboard
+/scoreboard players list @a
+
+Resetear scoreboard
+/scoreboard players reset @a !!!!!!!!!!!!!!!
+
+------
+
+NPCs Vanilla
+/give @p spawn_egg 1 51
+
+/dialogue change @e[type=npc,r=3] inicial
+
+/dialogue change @e[type=npc,r=3] arena
+
+
+Abrir y cerrar salida de la arena
+/fill 2043 83 -2930 2043 82 -2932 air
+/fill 2043 83 -2930 2043 82 -2932 nether_brick_fence
+
+------
+
+Validar objeto en inventario
+
+	Rep / Incon / Redstone / 10
+	clear @p[r=60] appleplus:masa_de_experiencia 0 0
+
+	Comparador
+	Repetidor
+	Redstone
+		Antocha redstone invertir:
+		Imp / Incon / Redstone / 0
+		scoreboard players set @p TieneMasa 0
+
+		Señal directa:
+		Imp / Incon / Redstone / 0
+		scoreboard players set @p TieneMasa 1
+
+
+------
+
+Hologramas
+
+/summon hovertext:hovertext "§l§k§4!!§r§c§l SALIDA §k§4!!"
+
+/summon hovertext:hovertext "§l§k§a!!§r§2§l ENTRADA §k§a!!"
+
+
+------
+
+Compra de experiencia
+	Impulso / Incondicional / Redstone / 0
+	execute @p ~ ~ ~ testfor @s[lm=30]
+
+	Cadena / Condicional / Activo / 0
+	xp -30l @p
+
+	Cadena / Condicional / Activo / 0
+	give @p appleplus:masa_de_experiencia
+
+	Cadena / Condicional / Activo / 0
+	playsound random.orb @p
+
+Venta de experiencia
+	Impulso / Incondicional / Redstone / 0
+	clear @p appleplus:masa_de_experiencia 0 1
+
+	Cadena / Condicional / Activo / 0
+	xp 30l @p
+
+	Cadena / Condicional / Activo / 0
+	playsound random.orb @p
+
+
+------
+------
+
+Define el área que mantendrá cargada en memoria:
+/tickingarea add 1476 90 1209 1557 30 1270 Comandos
+
+
+BORRADOR DE ITEMS EN EL SUELO
+/kill @e[type=item,r=40]
+
+
+------
+
+PROTECCIÓN DE ZONA
+
+Retraso 40
+gamemode s @a[rm=502,m=a]
+
+Retraso 10
+gamemode a @a[r=500,m=s]
