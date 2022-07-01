@@ -3,3 +3,7 @@ Nether
 
 Bastión
 /tp -684 43 -267
+
+
+Ancient city
+/tp -1432 ? 2488

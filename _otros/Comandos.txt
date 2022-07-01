@@ -106,7 +106,6 @@ Hologramas
 /summon hovertext:hovertext "Línea 4" ~ ~-0.9 ~
 
 
-
 ------
 
 Compra de experiencia
