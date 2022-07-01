@@ -13,6 +13,8 @@ Peuqeños
 
  = Comerciante de mercancía
  = Comerciante de comida
+ = Vendedor de peluches
+ = Lola
 
  = Alma
  = Cluster
@@ -25,6 +27,7 @@ Peuqeños
  = Llave
  = Dimensionador 
  = Herramienta
+ = Cama
 
 -----
 
