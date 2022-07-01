@@ -100,6 +100,13 @@ Hologramas
 /summon hovertext:hovertext "§l§k§a!!§r§2§l ENTRADA §k§a!!"
 
 
+/summon hovertext:hovertext "Línea 1" ~ ~ ~
+/summon hovertext:hovertext "Línea 2" ~ ~-0.3 ~
+/summon hovertext:hovertext "Línea 3" ~ ~-0.6 ~
+/summon hovertext:hovertext "Línea 4" ~ ~-0.9 ~
+
+
+
 ------
 
 Compra de experiencia

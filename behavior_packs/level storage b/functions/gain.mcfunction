@@ -1,1 +1,0 @@
-execute @p ~ ~ ~ titleraw @s actionbar { "rawtext" : [ {"text":"§2Your Stored Levels: "},{"text":"§e"},{ "score" : { "name" : "*" , "objective" : "xps_exp"} } ] }
