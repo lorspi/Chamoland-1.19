@@ -6,4 +6,8 @@ Bastión
 
 
 Ancient city
-/tp -1432 ? 2488
+/tp -1432 ~ 2488
+
+
+Templo submarino
+/tp -1416 63 1719
