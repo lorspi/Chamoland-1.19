@@ -4,10 +4,16 @@ Nether
 Bastión
 /tp -684 43 -267
 
+------
 
 Ancient city
 /tp -1432 ~ 2488
 
-
 Templo submarino
 /tp -1416 63 1719
+
+Stronghold
+/tp -350 -17 -910
+
+Mansión
+/tp -4344 ~ 7880
