@@ -17,3 +17,5 @@ item.npc:adalita.name=Adalita
 tile.npc:adalita_block.name=Bloque de adalita
 
 item.npc:talismandes.name=§7Talismán del regreso desactivado
+
+tile.npc:lucky_block.name=§l§gBloque de la suerte

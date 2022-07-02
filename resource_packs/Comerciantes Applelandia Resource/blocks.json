@@ -8,5 +8,9 @@
 	"npc:adalita_block": {
 		"textures": "adalita_block",
 		"sound": "stone"
+	},
+	"npc:lucky_block": {
+		"textures": "lucky_block",
+		"sound": "stone"
 	}
 }

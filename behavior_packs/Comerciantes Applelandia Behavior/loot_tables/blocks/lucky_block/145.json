@@ -1,0 +1,80 @@
+{
+ "pools": [
+    {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "item",
+     "name": "minecraft:basalt",
+     "weight": 1,
+     "functions": [
+      {
+       "function": "set_count",
+       "count": {
+        "min": 8,
+        "max": 32
+       }
+      }
+     ]
+    }
+   ]
+  },
+      {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "item",
+     "name": "minecraft:polished_basalt",
+     "weight": 1,
+     "functions": [
+      {
+       "function": "set_count",
+       "count": {
+        "min": 8,
+        "max": 32
+       }
+      }
+     ]
+    }
+   ]
+  },
+      {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "item",
+     "name": "minecraft:soul_soil",
+     "weight": 1,
+     "functions": [
+      {
+       "function": "set_count",
+       "count": {
+        "min": 8,
+        "max": 32
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "item",
+     "name": "minecraft:shrommlight",
+     "weight": 1,
+     "functions": [
+      {
+       "function": "set_count",
+       "count": {
+        "min": 8,
+        "max": 32
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

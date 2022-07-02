@@ -9,6 +9,11 @@
 			"textures": [
 				"textures/blocks/adalita_block"
 			]
+		},
+		"lucky_block": {
+			"textures": [
+				"textures/blocks/lucky_block"
+			]
 		}
 	}
 }

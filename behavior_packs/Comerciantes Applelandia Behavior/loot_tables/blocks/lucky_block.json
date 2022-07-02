@@ -1,0 +1,750 @@
+{
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/1.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/2.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/3.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/4.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/5.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/6.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/7.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/8.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/9.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/10.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/11.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/12.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/13.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/14.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/15.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/16.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/17.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/18.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/19.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/20.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/21.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/22.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/23.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/24.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/25.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/26.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/27.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/28.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/29.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/30.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/31.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/32.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/33.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/34.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/35.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/36.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/37.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/38.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/39.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/40.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/41.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/42.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/43.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/44.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/45.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/46.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/47.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/48.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/49.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/50.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/51.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/52.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/53.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/54.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/55.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/56.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/57.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/58.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/59.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/60.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/61.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/62.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/63.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/64.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/65.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/66.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/67.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/68.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/69.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/70.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/71.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/72.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/73.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/74.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/75.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/76.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/77.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/78.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/79.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/80.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/81.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/82.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/83.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/84.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/85.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/86.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/87.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/88.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/89.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/90.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/91.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/92.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/93.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/94.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/95.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/96.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/97.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/98.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/99.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/100.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/101.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/102.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/103.json",
+     "weight": 10
+    },
+   	{
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/104.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/105.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/106.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/107.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/108.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/109.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/110.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/111.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/112.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/113.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/114.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/115.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/116.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/117.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/118.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/119.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/120.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/121.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/122.json",
+     "weight": 10
+    },
+   	{
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/123.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/124.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/125.json",
+     "weight": 10
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/126.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/127.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/128.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/129.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/130.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/131.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/132.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/133.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/134.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/135.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/136.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/137.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/138.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/139.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/140.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/141.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/142.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/143.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/144.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/145.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/146.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/147.json",
+     "weight": 9
+    },
+    {
+     "type": "loot_table",
+     "name": "loot_tables/blocks/lucky_block/148.json",
+     "weight": 9
+     }
+    ]
+   }
+  ]
+ }
+}
