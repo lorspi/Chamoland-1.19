@@ -15,6 +15,7 @@ Peuqeños
  = Comerciante de comida
  = Vendedor de peluches
  = Lola
+ = Comerciante de libros y mapas
 
  = Alma
  = Cluster
