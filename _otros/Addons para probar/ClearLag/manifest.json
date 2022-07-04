@@ -1,0 +1,56 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§l§6ClearLag",
+		"description": "§6A clearlag addon. This addon can only be executed by people with the 'staff' tag, it will countdown from 15 seconds until 1 second, then kill all items, snowballs, tnt and arrows. This addon is compatible with any other addon, except for addons requiring the MoLang experiment. This addon can work with any experiment on except for MoLang Features\\n\\n§r§l§dMade By:\\n§aSir§cYak§0Studios§r\\n§gsiryakstudios.com",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			17,
+			0
+		],
+		"uuid": "2fd25356-7458-4d8e-bc34-caf10e9df9b2"
+	},
+	"modules": [
+		{
+			"type": "data",
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+		},
+		{
+			"type": "javascript",
+			"version": [
+				1,
+				0,
+				0
+			],
+			"entry": "scripts/index.js",
+			"uuid": "35859740-5a8a-45a0-8c98-712cbb737d99"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+			"version": [
+				0,
+				1,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.4"
+			]
+		}
+	}
+}

@@ -1,0 +1,404 @@
+{
+	"file_path": "C:\\Users\\jamie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\ClearLag\\manifest.json",
+	"file_type": "manifest_bp",
+	"format_version": 1,
+	"file_uuid": "1f1c1823_fba2_406e_be15_ea8dc810b198",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "2",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "§l§6ClearLag",
+						"description": "§6A clearlag addon. This addon can only be executed by people with the 'staff' tag, it will countdown from 15 seconds until 1 second, then kill all items, snowballs, tnt and arrows. This addon is compatible with any other addon, except for addons requiring the MoLang experiment. This addon can work with any experiment on except for MoLang Features\\n\\n§r§l§dMade By:\\n§aSir§cYak§0Studios§r\\n§gsiryakstudios.com",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						],
+						"uuid": "2fd25356-7458-4d8e-bc34-caf10e9df9b2"
+					},
+					"modules": [
+						{
+							"type": "data",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+						},
+						{
+							"type": "javascript",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"entry": "scripts/index.js",
+							"uuid": "35859740-5a8a-45a0-8c98-712cbb737d99"
+						}
+					],
+					"dependencies": [
+						{
+							"version": [
+								0,
+								1,
+								0
+							],
+							"uuid": "fe33096f-da28-43b3-a630-23c026c92794"
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					}
+				},
+				"key": "header",
+				"is_minified": true,
+				"children": {
+					"name": "§l§6ClearLag",
+					"description": "§6A clearlag addon. This addon can only be executed by people with the 'staff' tag, it will countdown from 15 seconds until 1 second, then kill all items, snowballs, tnt and arrows. This addon is compatible with any other addon, except for addons requiring the MoLang experiment. This addon can work with any experiment on except for MoLang Features\\n\\n§r§l§dMade By:\\n§aSir§cYak§0Studios§r\\n§gsiryakstudios.com",
+					"version": [
+						1,
+						0,
+						0
+					],
+					"min_engine_version": [
+						1,
+						17,
+						0
+					],
+					"uuid": "2fd25356-7458-4d8e-bc34-caf10e9df9b2"
+				}
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "§l§6ClearLag",
+						"description": "§6A clearlag addon. This addon can only be executed by people with the 'staff' tag, it will countdown from 15 seconds until 1 second, then kill all items, snowballs, tnt and arrows. This addon is compatible with any other addon, except for addons requiring the MoLang experiment. This addon can work with any experiment on except for MoLang Features\\n\\n§r§l§dMade By:\\n§aSir§cYak§0Studios§r\\n§gsiryakstudios.com",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						],
+						"uuid": "2fd25356-7458-4d8e-bc34-caf10e9df9b2"
+					},
+					"modules": [
+						{
+							"type": "data",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+						},
+						{
+							"type": "javascript",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"entry": "scripts/index.js",
+							"uuid": "35859740-5a8a-45a0-8c98-712cbb737d99"
+						}
+					],
+					"dependencies": [
+						{
+							"version": [
+								0,
+								1,
+								0
+							],
+							"uuid": "fe33096f-da28-43b3-a630-23c026c92794"
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					}
+				},
+				"key": "modules",
+				"children": [
+					{
+						"open": [
+							{
+								"type": "data",
+								"version": [
+									1,
+									0,
+									0
+								],
+								"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+							},
+							{
+								"type": "javascript",
+								"version": [
+									1,
+									0,
+									0
+								],
+								"entry": "scripts/index.js",
+								"uuid": "35859740-5a8a-45a0-8c98-712cbb737d99"
+							}
+						],
+						"children": [
+							{
+								"open": {
+									"type": "data",
+									"version": [
+										1,
+										0,
+										0
+									],
+									"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+								},
+								"data": "data",
+								"key": "type"
+							},
+							{
+								"open": {
+									"type": "data",
+									"version": [
+										1,
+										0,
+										0
+									],
+									"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+								},
+								"key": "version",
+								"is_minified": true,
+								"children": [
+									1,
+									0,
+									0
+								]
+							},
+							{
+								"data": "d49a6bae-f710-4d84-8c85-74a972bb3253",
+								"key": "uuid"
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"type": "data",
+								"version": [
+									1,
+									0,
+									0
+								],
+								"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+							},
+							{
+								"type": "javascript",
+								"version": [
+									1,
+									0,
+									0
+								],
+								"entry": "scripts/index.js",
+								"uuid": "35859740-5a8a-45a0-8c98-712cbb737d99"
+							}
+						],
+						"is_minified": true,
+						"children": {
+							"type": "javascript",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"entry": "scripts/index.js",
+							"uuid": "35859740-5a8a-45a0-8c98-712cbb737d99"
+						}
+					}
+				]
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "§l§6ClearLag",
+						"description": "§6A clearlag addon. This addon can only be executed by people with the 'staff' tag, it will countdown from 15 seconds until 1 second, then kill all items, snowballs, tnt and arrows. This addon is compatible with any other addon, except for addons requiring the MoLang experiment. This addon can work with any experiment on except for MoLang Features\\n\\n§r§l§dMade By:\\n§aSir§cYak§0Studios§r\\n§gsiryakstudios.com",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						],
+						"uuid": "2fd25356-7458-4d8e-bc34-caf10e9df9b2"
+					},
+					"modules": [
+						{
+							"type": "data",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+						},
+						{
+							"type": "javascript",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"entry": "scripts/index.js",
+							"uuid": "35859740-5a8a-45a0-8c98-712cbb737d99"
+						}
+					],
+					"dependencies": [
+						{
+							"version": [
+								0,
+								1,
+								0
+							],
+							"uuid": "fe33096f-da28-43b3-a630-23c026c92794"
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					}
+				},
+				"key": "dependencies",
+				"children": [
+					{
+						"open": [
+							{
+								"version": [
+									0,
+									1,
+									0
+								],
+								"uuid": "fe33096f-da28-43b3-a630-23c026c92794"
+							}
+						],
+						"is_minified": true,
+						"children": {
+							"version": [
+								0,
+								1,
+								0
+							],
+							"uuid": "fe33096f-da28-43b3-a630-23c026c92794"
+						}
+					}
+				]
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "§l§6ClearLag",
+						"description": "§6A clearlag addon. This addon can only be executed by people with the 'staff' tag, it will countdown from 15 seconds until 1 second, then kill all items, snowballs, tnt and arrows. This addon is compatible with any other addon, except for addons requiring the MoLang experiment. This addon can work with any experiment on except for MoLang Features\\n\\n§r§l§dMade By:\\n§aSir§cYak§0Studios§r\\n§gsiryakstudios.com",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						],
+						"uuid": "2fd25356-7458-4d8e-bc34-caf10e9df9b2"
+					},
+					"modules": [
+						{
+							"type": "data",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "d49a6bae-f710-4d84-8c85-74a972bb3253"
+						},
+						{
+							"type": "javascript",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"entry": "scripts/index.js",
+							"uuid": "35859740-5a8a-45a0-8c98-712cbb737d99"
+						}
+					],
+					"dependencies": [
+						{
+							"version": [
+								0,
+								1,
+								0
+							],
+							"uuid": "fe33096f-da28-43b3-a630-23c026c92794"
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					}
+				},
+				"key": "metadata",
+				"children": [
+					{
+						"open": {
+							"generated_with": {
+								"bridge": [
+									"1.8.4"
+								]
+							}
+						},
+						"key": "generated_with",
+						"is_minified": true,
+						"children": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+}

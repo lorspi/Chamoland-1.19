@@ -23,7 +23,7 @@
         "height": 2
       },
      "minecraft:movement": {
-        "value": 0.25
+        "value": 0.5
         },
         "minecraft:movement.basic": {
 

@@ -1,0 +1,8 @@
+{
+	"file_path": "C:\\Users\\jamie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\ClearLag\\texts\\en_US.lang",
+	"file_type": "lang",
+	"format_version": 0,
+	"file_uuid": "56d708ba_7025_448e_a02f_5c88daa49f38",
+	"file_version": 1,
+	"cache_content": "pack.name=§l§6ClearLag\r\npack.description=§6A clearlag addon. This addon can only be executed by people with the 'staff' tag, it will countdown from 15 seconds until 1 second, then kill all items, snowballs, tnt and arrows. This addon is compatible with any other addon, except for addons requiring the MoLang experiment. This addon can work with any experiment on except for MoLang Features\\n\\n§r§l§dMade By:\\n§aSir§cYak§0Studios§r\\n§gsiryakstudios.com\r\n"
+}

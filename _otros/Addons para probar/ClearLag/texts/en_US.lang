@@ -1,0 +1,3 @@
+##bridge-file-version: #1
+pack.name=§l§6ClearLag
+pack.description=§6A clearlag addon. This addon can only be executed by people with the 'staff' tag, it will countdown from 15 seconds until 1 second, then kill all items, snowballs, tnt and arrows. This addon is compatible with any other addon, except for addons requiring the MoLang experiment. This addon can work with any experiment on except for MoLang Features\n\n§r§l§dMade By:\n§aSir§cYak§0Studios§r\n§gsiryakstudios.com
