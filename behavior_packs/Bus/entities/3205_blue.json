@@ -8,6 +8,9 @@
       "is_experimental": false
     },
     "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/3205_blue.json"
+      },
       "minecraft:type_family": {
         "family": [ "car" ]
       },
