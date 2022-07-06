@@ -11,6 +11,6 @@
 	},
 	"npc:lucky_block": {
 		"textures": "lucky_block",
-		"sound": "stone"
+		"sound": "amethyst_block"
 	}
 }
