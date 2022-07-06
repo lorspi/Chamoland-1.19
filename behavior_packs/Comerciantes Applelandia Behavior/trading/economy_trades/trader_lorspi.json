@@ -228,7 +228,7 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 6,
+              "trader_exp": 15,
               "max_uses": 8,
               "reward_exp": true
             }
@@ -308,16 +308,20 @@
                       "quantity": 35
                     },
                     {
+                      "item": "bamboo",
+                      "quantity": 64
+                    },
+                    {
                       "item": "reeds",
                       "quantity": 64
                     },
                     {
                       "item": "brown_mushroom",
-                      "quantity": 16
+                      "quantity": 10
                     },
                     {
                       "item": "red_mushroom",
-                      "quantity": 16
+                      "quantity": 10
                     }
                   ]
                 }
@@ -392,16 +396,12 @@
                       "quantity": 64
                     },
                     {
-                      "item": "bow",
-                      "quantity": 50
-                    },
-                    {
                       "item": "arrow:0",
-                      "quantity": 42
+                      "quantity": 25
                     },
                     {
                       "item": "gunpowder",
-                      "quantity": 25
+                      "quantity": 15
                     },
                     {
                       "item": "rotten_flesh",
@@ -409,11 +409,11 @@
                     },
                     {
                       "item": "egg",
-                      "quantity": 32
+                      "quantity": 16
                     },
                     {
                       "item": "leather",
-                      "quantity": 2
+                      "quantity": 4
                     },
                     {
                       "item": "string",
@@ -425,10 +425,10 @@
               "gives": [
                 {
                   "item": "appleplus:moneda",
-                  "quantity": 8
+                  "quantity": 4
                 }
               ],
-              "trader_exp": 10,
+              "trader_exp": 20,
               "max_uses": 10,
               "reward_exp": true
             }

@@ -10,7 +10,7 @@
               "wants": [
                 {
                   "item": "minecraft:paper",
-                  "quantity": 8,
+                  "quantity": 4,
                   "price_multiplier": 0.05
                 },
                 {
@@ -169,7 +169,7 @@
       ]
     },
     {
-      "total_exp_required": 15,
+      "total_exp_required": 10,
       "groups": [
         {
           "num_to_select": 1,
