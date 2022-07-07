@@ -37,6 +37,7 @@ Grandes
  = lorspi
  = PantallazoAzul
  = AngieDi
+ = lorspi HD
 
 -----
 
