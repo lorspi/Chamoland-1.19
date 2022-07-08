@@ -17,6 +17,12 @@ Peuqeños
  = Lola
  = Comerciante de libros y mapas
 
+ = Instagram
+ = Facebook
+ = Twitter
+ = Twitch
+ = Tiktok
+
  = Alma
  = Cluster
  = Masa de experiencia
