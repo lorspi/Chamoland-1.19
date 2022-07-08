@@ -28,6 +28,9 @@
     },
     "frescolita": {
       "textures": "textures/items/frescolita"
+    },
+    "panmadre": {
+      "textures": "textures/items/panmadre"
     }
   }
 }

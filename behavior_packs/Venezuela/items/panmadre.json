@@ -1,0 +1,40 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "venezuela:panmadre",
+      "register_to_creative_menu": true
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:use_duration": 64,
+      "minecraft:food": {
+        "nutrition": 10,
+        "nutritionalValue": "normal",
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "is_meat": false,
+        "effects": [
+          {
+            "name": "regeneration",
+            "chance": 1.0,
+            "duration": 10,
+            "amplifier": 4
+          },
+          {
+            "name": "absorption",
+            "chance": 1.0,
+            "duration": 60, // 2 * 60
+            "amplifier": 3
+          },
+          {
+            "name": "resistance", // damage resistance
+            "chance": 1.0,
+            "duration": 60,
+            "amplifier": 0
+          }
+        ]
+      }
+    }
+  }
+}
