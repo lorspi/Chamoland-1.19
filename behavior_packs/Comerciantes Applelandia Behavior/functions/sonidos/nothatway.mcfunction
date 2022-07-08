@@ -1,0 +1,1 @@
+playsound sonidos.nothatway @a

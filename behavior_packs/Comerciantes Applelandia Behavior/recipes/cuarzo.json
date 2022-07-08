@@ -1,0 +1,26 @@
+//bridge-file-version: #3
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "quartz"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "quartz_block"
+			}
+		},
+		"result": [
+			{
+				"item": "quartz",
+				"count": 4
+			}
+		]
+	}
+}
