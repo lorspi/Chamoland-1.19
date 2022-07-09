@@ -23,6 +23,12 @@ Peuqeños
  = Twitch
  = Tiktok
 
+ = Corazón
+ = Medio corazón
+ = Corazón vacío
+ = Carita kawaii
+
+
  = Alma
  = Cluster
  = Masa de experiencia

@@ -287,6 +287,10 @@
                     {
                       "item": "red_mushroom",
                       "quantity": 10
+                    },
+                    {
+                      "item": "nether_wart",
+                      "quantity": 32
                     }
                   ]
                 }

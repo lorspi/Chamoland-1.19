@@ -9,8 +9,8 @@
             {
               "wants": [
                 {
-                  "item": "appleplus:moneda",
-                  "quantity": 16,
+                  "item": "appleplus:pila_moneda",
+                  "quantity": 2,
                   "price_multiplier": 0.05
                 }
               ],
@@ -22,8 +22,9 @@
                     {
                       "function": "set_lore",
                       "lore": [
+                        "§bRegeneración - Absorción - Resistencia",
                         " ",
-                        "§r @migluten"
+                        "§r @migluten\n"
                       ]
                     }
                   ]

@@ -4,64 +4,64 @@
         "scenes": [{
             "scene_tag": "inicial",
             "npc_name": "Lola",
-            "text": "¡Hola!\n¿En qué puedo ayudarte?",
+            "text": "¡Hola!\n\n¿En qué puedo ayudarte?",
             "on_open_commands": [
                 "/scoreboard objectives add UsosNPC dummy",
-                "/scoreboard players add @p UsosNPC 1",
+                "/scoreboard players add @initiator UsosNPC 1",
                 "/scoreboard objectives add TotalXP dummy",
-                "/scoreboard players add @p TotalXP 0",
+                "/scoreboard players add @initiator TotalXP 0",
                 "/scoreboard objectives add PagarXP dummy"
             ],
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Experiencia",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator comerciar_experiencia"]
             }, {
                 "name": "Viajar",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p viajar"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator viajar"]
             }]
         }, {
             "scene_tag": "comerciar_experiencia",
             "npc_name": "Lola",
             "text": "Puedes guardar 15 niveles experiencia en una  Masa de experiencia.\n\nPuedes convertir una  Masa de experiencia en 15 niveles de experiencia.",
-            "on_open_commands": ["/scoreboard players set @p PagarXP 0","/execute @p[lm=15] ~ ~ ~ scoreboard players set @s PagarXP 1", "scoreboard objectives add TieneMasa dummy"],
+            "on_open_commands": ["/scoreboard players set @initiator PagarXP 0","/execute @initiator[lm=15] ~ ~ ~ scoreboard players set @s PagarXP 1", "scoreboard objectives add TieneMasa dummy"],
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Guardar experiencia",
                 "commands": [
-                    "/execute @p[scores={PagarXP=0},r=4] ~ ~ ~ playsound random.break @s[r=4]",
-                    "/execute @p[scores={PagarXP=0},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_negada",
-                    "/execute @p[scores={PagarXP=1},r=4] ~ ~ ~ give @s[r=4] appleplus:masa_de_experiencia 1",
-                    "/execute @p[scores={PagarXP=1},r=4] ~ ~ ~ playsound random.levelup @s[r=4]",
-                    "/execute @p[scores={PagarXP=1},r=4] ~ ~ ~ xp -15l @s[r=4]",
-                    "/execute @p[scores={PagarXP=1},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p masa_recibida"
+                    "/execute @initiator[scores={PagarXP=0}] ~ ~ ~ playsound random.break @s",
+                    "/execute @initiator[scores={PagarXP=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @s masa_negada",
+                    "/execute @initiator[scores={PagarXP=1}] ~ ~ ~ give @s appleplus:masa_de_experiencia 1",
+                    "/execute @initiator[scores={PagarXP=1}] ~ ~ ~ playsound random.levelup @s",
+                    "/execute @initiator[scores={PagarXP=1}] ~ ~ ~ xp -15l @s",
+                    "/execute @initiator[scores={PagarXP=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @s masa_recibida"
                 ]
             }, {
                 "name": "Cargar experiencia",
                 "commands": [
-                    "/execute @p[scores={TieneMasa=0},r=4] ~ ~ ~ playsound random.break @s[r=4]",
-                    "/execute @p[scores={TieneMasa=0},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_negada",
-                    "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ clear @p appleplus:masa_de_experiencia 0 1",
-                    "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ playsound random.levelup @s[r=4]",
-                    "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ xp 15l @s[r=4]",
-                    "/execute @p[scores={TieneMasa=1},r=4] ~ ~ ~ dialogue open @e[type=npc,r=7] @p xp_recibida"
+                    "/execute @initiator[scores={TieneMasa=0}] ~ ~ ~ playsound random.break @s",
+                    "/execute @initiator[scores={TieneMasa=0}] ~ ~ ~ dialogue open @e[type=npc,r=7] @s xp_negada",
+                    "/execute @initiator[scores={TieneMasa=1}] ~ ~ ~ clear @s appleplus:masa_de_experiencia 0 1",
+                    "/execute @initiator[scores={TieneMasa=1}] ~ ~ ~ playsound random.levelup @s",
+                    "/execute @initiator[scores={TieneMasa=1}] ~ ~ ~ xp 15l @s",
+                    "/execute @initiator[scores={TieneMasa=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @s xp_recibida"
                 ]
             }, {
                 "name": "§4< Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator inicial"]
             }]
         }, {
             "scene_tag": "masa_recibida",
             "npc_name": "Lola",
             "text": "§l§2¡Has recibido una Masa de experiencia!\n\n§rGuárdala en un lugar seguro.",
-            "on_open_commands": ["/scoreboard players add @p TotalXP 1"],
+            "on_open_commands": ["/scoreboard players add @initiator TotalXP 1"],
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Cerrar",
                 "commands": ["*"]
             }, {
                 "name": "§4< Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator comerciar_experiencia"]
             }]
         }, {
             "scene_tag": "masa_negada",
@@ -74,20 +74,20 @@
                 "commands": ["*"]
             }, {
                 "name": "§4< Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator comerciar_experiencia"]
             }]
         }, {
             "scene_tag": "xp_recibida",
             "npc_name": "Lola",
             "text": "§l§2¡Has recibido 15 niveles de experiencia!",
-            "on_open_commands": ["/scoreboard players add @p TotalXP 1"],
+            "on_open_commands": ["/scoreboard players add @initiator TotalXP 1"],
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Cerrar",
                 "commands": ["*"]
             }, {
                 "name": "§4< Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator comerciar_experiencia"]
             }]
         }, {
             "scene_tag": "xp_negada",
@@ -100,7 +100,7 @@
                 "commands": ["*"]
             }, {
                 "name": "§4< Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p comerciar_experiencia"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator comerciar_experiencia"]
             }]
         }, {
             "scene_tag": "viajar",
@@ -110,72 +110,72 @@
             "on_close_commands": [""],
             "buttons": [{
                 "name": "Spawn",
-                "commands": ["/tp @p @e[type=hovertext:warp,name=kzjopw]"]
+                "commands": ["/tp @initiator @e[type=hovertext:warp,name=kzjopw]"]
             }, {
                 "name": "Desierto",
-                "commands": ["/tp @p -1133 72 363"]
+                "commands": ["/tp @initiator -1133 72 363"]
             }, {
                 "name": "§4< Volver",
-                "commands": ["/dialogue open @e[type=npc,r=7] @p inicial"]
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator inicial"]
             }]
         }, {
             "scene_tag": "emergencia",
             "npc_name": "Lola",
             "text": "¿Tienes alguna emergencia? Yo te puedo ayudar. Elige lo que quieres que haga por tí. §l§4Recuerda que este objeto es de un sólo uso. §rSi no necesitas ayuda, cancela para regresarte tu §lInvocador de ayuda.",
-            "on_open_commands": ["/scoreboard objectives add UsosEmergencia dummy", "/scoreboard players add @p UsosEmergencia 0"],
-            "on_close_commands": ["/kill @s" ,"/effect @p clear"],
+            "on_open_commands": ["/scoreboard objectives add UsosEmergencia dummy", "/scoreboard players add @initiator UsosEmergencia 0"],
+            "on_close_commands": ["/kill @initiator" ,"/effect @initiator clear"],
             "buttons": [{
                 "name": "Llévame a casa",
                 "commands": [
-                    "/tp @p @e[type=hovertext:warp,name=kzjopw]",
-                    "/title @p actionbar §a¡Has sido transportado a casa!",
+                    "/tp @initiator @e[type=hovertext:warp,name=kzjopw]",
+                    "/title @initiator actionbar §a¡Has sido transportado a casa!",
                     "/particle minecraft:totem_particle ~ ~1 ~",
-                    "/playsound random.levelup @p",
-                    "/scoreboard players add @p UsosEmergencia 1"
+                    "/playsound random.levelup @initiator",
+                    "/scoreboard players add @initiator UsosEmergencia 1"
                 ]
             },{
                 "name": "Dame comida",
                 "commands": [
-                    "/give @p cooked_porkchop 10",
-                    "/title @p actionbar §a¡Has recibido alimento!",
+                    "/give @initiator cooked_porkchop 10",
+                    "/title @initiator actionbar §a¡Has recibido alimento!",
                     "/particle minecraft:totem_particle ~ ~1 ~",
-                    "/playsound random.levelup @p",
-                    "/scoreboard players add @p UsosEmergencia 1"
+                    "/playsound random.levelup @initiator",
+                    "/scoreboard players add @initiator UsosEmergencia 1"
                 ]
             },{
                 "name": "Kit de hierro",
                 "commands": [
-                    "/give @p iron_helmet",
-                    "/give @p iron_chestplate",
-                    "/give @p iron_leggings",
-                    "/give @p iron_boots",
-                    "/give @p iron_sword",
-                    "/give @p iron_pickaxe",
-                    "/title @p actionbar §a¡Has recibido tu kit de hierro!",
+                    "/give @initiator iron_helmet",
+                    "/give @initiator iron_chestplate",
+                    "/give @initiator iron_leggings",
+                    "/give @initiator iron_boots",
+                    "/give @initiator iron_sword",
+                    "/give @initiator iron_pickaxe",
+                    "/title @initiator actionbar §a¡Has recibido tu kit de hierro!",
                     "/particle minecraft:totem_particle ~ ~1 ~",
-                    "/playsound random.levelup @p",
-                    "/scoreboard players add @p UsosEmergencia 1"
+                    "/playsound random.levelup @initiator",
+                    "/scoreboard players add @initiator UsosEmergencia 1"
                 ]
             },{
                 "name": "Sáname",
                 "commands": [
-                    "/effect @p instant_health 5",
-                    "/title @p actionbar §a¡Has sido sanado!",
+                    "/effect @initiator instant_health 5",
+                    "/title @initiator actionbar §a¡Has sido sanado!",
                     "/particle minecraft:totem_particle ~ ~1 ~",
-                    "/playsound random.levelup @p",
-                    "/scoreboard players add @p UsosEmergencia 1"
+                    "/playsound random.levelup @initiator",
+                    "/scoreboard players add @initiator UsosEmergencia 1"
                 ]
             },{
                 "name": "Mátame",
                 "commands": [
-                    "/kill @p",
-                    "/scoreboard players add @p UsosEmergencia 1"
+                    "/kill @initiator",
+                    "/scoreboard players add @initiator UsosEmergencia 1"
                 ]
             },{
                 "name": "Cancelar",
                 "commands": [
-                    "/give @p if:emergencia",
-                    "/kill @s"
+                    "/give @initiator if:emergencia",
+                    "/kill @initiator"
                 ]
             }]
         }]

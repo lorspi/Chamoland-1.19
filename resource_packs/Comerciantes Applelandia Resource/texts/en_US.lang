@@ -5,9 +5,9 @@ item.spawn_egg.entity.npc:maduro.name=Maduro
 
 entity.npc:maduro.name=Maburro
 
-entity.trader_apple.nombre=Comerciante
-entity.trader_lorspi.nombre=Comerciante
-entity.trader_lorspi2.nombre=Comerciante
+entity.trader_apple.nombre=Martina
+entity.trader_lorspi.nombre=Jack
+entity.trader_lorspi2.nombre=Noé
 
 entity.hovertext:hovertext.name=Hovertext
 
