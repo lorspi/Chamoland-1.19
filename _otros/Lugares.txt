@@ -17,3 +17,10 @@ Stronghold
 
 Mansión
 /tp -4344 ~ 7880
+
+------
+
+Campamentos
+
+Península
+/tp @p -5465 64 -3395
