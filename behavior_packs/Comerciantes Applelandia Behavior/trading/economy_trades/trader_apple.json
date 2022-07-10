@@ -73,7 +73,15 @@
               "gives": [
                 {
                   "item": "venezuela:arepa",
-                  "quantity": 1
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§bMuy nutritiva"
+                      ]
+                    }
+                  ]
                 }
               ],
               "trader_exp": 2,
@@ -112,14 +120,22 @@
               "wants": [
                 {
                   "item": "appleplus:moneda",
-                  "quantity": 2,
+                  "quantity": 8,
                   "price_multiplier": 0.05
                 }
               ],
               "gives": [
                 {
                   "item": "venezuela:frescolita",
-                  "quantity": 1
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§bPrisa minera"
+                      ]
+                    }
+                  ]
                 }
               ],
               "trader_exp": 2,

@@ -22,5 +22,8 @@ Mansión
 
 Campamentos
 
+Desierto
+/tp @p -1133 72 363
+
 Península
-/tp @p -5465 64 -3395
+/tp @p -5471 64 -3388

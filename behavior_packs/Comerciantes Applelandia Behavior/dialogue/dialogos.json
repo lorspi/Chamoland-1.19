@@ -115,6 +115,9 @@
                 "name": "Desierto",
                 "commands": ["/tp @initiator -1133 72 363"]
             }, {
+                "name": "Península",
+                "commands": ["/tp @initiator -5471 64 -3388"]
+            }, {
                 "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @initiator inicial"]
             }]
