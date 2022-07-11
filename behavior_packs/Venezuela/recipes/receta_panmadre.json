@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "venezuela:panmadre"
+    },
+
+
+    "tags": ["furnace", "smoker"],
+    "input": "venezuela:pancrudo",
+    "output": "venezuela:panmadre"
+  }
+  
+}

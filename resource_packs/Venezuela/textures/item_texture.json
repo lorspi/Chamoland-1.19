@@ -31,6 +31,12 @@
     },
     "panmadre": {
       "textures": "textures/items/panmadre"
+    },
+    "pancrudo": {
+      "textures": "textures/items/pancrudo"
+    },
+    "masamadre": {
+      "textures": "textures/items/masamadre"
     }
   }
 }

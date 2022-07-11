@@ -209,11 +209,13 @@
 			"Gb0G5uXcNZr1yfNA2USbRxAq7PVonU4c2PXmteUBQcc=",
 			"vSzjtD6MBL8GyoEbZJJGzWdtkQfmbPaa+WvkW1y2mco=",
 			"HDHkBQOWYEhHyTEfem22Prwg1yUEuskeT2BGsMn//6g=",
-			"kO9HX7KpmyTGN7f6UP/ueyKE7LRbh+tp9FltPuub5Uc="
+			"kO9HX7KpmyTGN7f6UP/ueyKE7LRbh+tp9FltPuub5Uc=",
+			"CQnTV+e/Q5JkJkjGFbeckZBV9lXOSs1dqZ9ygnZzz2E=",
+			"nS9xKbVog4qtSgvmgyuwzfDFikbiIvXZN7xYj3V+YXY="
 		],
 		"path" : "resource_packs/Venezuela",
 		"uuid" : "d7bcfc6b-78fd-37d1-88d9-816f337b61ad",
-		"version" : "1.3.5"
+		"version" : "1.3.7"
 	},
 	
 	{
@@ -492,7 +494,8 @@
 			"75iGRwUvleZ681rcjcFslkf5hHj2UIlP3f6p3eARRB0=",
 			"OkB/sM0Nct6hfRV6bRsByKQENeBGISMJ8ci+ImvPDkk=",
 			"xOHe16xznyBExpZYpfOEkFPfZSfX0uR/fsXA4m+QS4c=",
-			"B8RuNYNUbWIEsTt5WNn0MNDWRw5lmKSSYyOb5ckxKn4="
+			"B8RuNYNUbWIEsTt5WNn0MNDWRw5lmKSSYyOb5ckxKn4=",
+			"5a7a1spFWIAqUrIkdQg8aMZ6Ffek3hpeE2Dg5Zr7sFQ="
 		],
 		"path" : "behavior_packs/Comerciantes Applelandia Behavior",
 		"uuid" : "bcbd2957-df3c-416f-5edf-8d8c90a2c687",
@@ -588,7 +591,12 @@
 			"Fim8tfGSQHnoySIpwGRNC8qUSTfLpyhWCd9ZYOj3mDw=",
 			"Qks1Tt7nge6TWqjIiWly4fenSttW2mrOA/LozwLkRwA=",
 			"nUW8Hwvy966aOL0mYbWwHzmpsYlWcS3dRdoM4VbdlKk=",
-			"Ej3qQ5ZkSDWtDFLVV1K8I5ss/XDt8ssB8ZeMWYZDBms="
+			"Ej3qQ5ZkSDWtDFLVV1K8I5ss/XDt8ssB8ZeMWYZDBms=",
+			"jN3qj289mKTUBHZ+cfgpSq05v+hQbh5QYRbJLYqNeN8=",
+			"XwxPFXwE7sj6QMk7OtgnX4OyHYet68avllcjQaxOXy0=",
+			"PG+tstGBV1zkDGO7dpA88npEZawF8KvOXxSrgnXmB6g=",
+			"OWsvYg9FP6MPq2w8Tt4sX0lTDb3njXaEr3xNuZjrROQ=",
+			"0nMHFlhrp2gDSA/RpjA0TumsWFxD4lKEv17aAxUoFyI="
 		],
 		"path" : "behavior_packs/Venezuela",
 		"uuid" : "e65a612a-ab88-36b1-9334-1efa15bba910",
