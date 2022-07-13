@@ -31,6 +31,29 @@
             "sounds/mob/maduro/me-visitan-las-mariposas-debe-ser-que-me-reconocen-como-un-mariposon"
          ]
       },
+      "mob.seyora.death" : {
+         "category" : "hostile",
+         "sounds" : [
+            "sounds/mob/seyora/ay-no"
+         ]
+      },
+      "mob.seyora.hit" : {
+         "category" : "hostile",
+         "sounds" : [
+            "sounds/mob/seyora/eso-estuvo-muy-heavy"
+         ]
+      },
+      "mob.seyora.say" : {
+         "category" : "hostile",
+         "sounds" : [
+            "sounds/mob/seyora/abracito-bai",
+            "sounds/mob/seyora/buenos-dias",
+            "sounds/mob/seyora/en-que-andas",
+            "sounds/mob/seyora/holi",
+            "sounds/mob/seyora/que-chiste-tan-marica",
+            "sounds/mob/seyora/yo-no-se"
+         ]
+      },
       "sonidos.atrapada" : {
          "category" : "ambient",
          "sounds" : [

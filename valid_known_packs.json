@@ -86,13 +86,6 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.17.0",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.17.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
 		"from_disk" : true,
 		"hashes" : 
 		[
@@ -116,11 +109,12 @@
 			"lORSwGzQARrpoDdCp1AcEVYQHhCSXU0wqLand33Wimg=",
 			"UzvcDYM6BVfi+VpoBiovoIp6SP68RtB20hIj8jowsV0=",
 			"3DMMxcIIvp3HFqxliAHEfI+LW7Kc3OQI9LSSbB1cbBk=",
-			"pavFdeTTMRIy1wAwjWxLWjY94sro5yIDH57Vj617AVo="
+			"pavFdeTTMRIy1wAwjWxLWjY94sro5yIDH57Vj617AVo=",
+			"aBgh+ExoYeV6d0R53+BC4Wwto6LNpPxPfWvYpBzy7+E="
 		],
 		"path" : "resource_packs/Comerciantes Applelandia Resource",
 		"uuid" : "01334532-462a-9c36-34b0-251658105093",
-		"version" : "0.2.0"
+		"version" : "0.2.1"
 	},
 	
 	{
@@ -316,6 +310,13 @@
 		"path" : "behavior_packs/vanilla_1.16",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
 		"version" : "1.16.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.17.0",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.17.0"
 	},
 	
 	{

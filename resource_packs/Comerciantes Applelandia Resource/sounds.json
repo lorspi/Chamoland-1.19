@@ -9,6 +9,15 @@
             },
             "pitch" : [ 1.00, 1.00 ],
             "volume" : 1.0
+         },
+         "npc:seyora" : {
+            "events" : {
+               "ambient" : "mob.seyora.say",
+               "death" : "mob.seyora.death",
+               "hurt" : "mob.seyora.hit"
+            },
+            "pitch" : [ 1.00, 1.00 ],
+            "volume" : 1.0
          }
       }
    }
