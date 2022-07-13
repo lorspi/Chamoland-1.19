@@ -8,53 +8,6 @@
             "is_experimental": false
         },
         "component_groups": {
-            "minecraft:backpack_claim": {
-                "minecraft:tameable": {
-                    "probability": 1,
-                    "tameItems": [
-                        "chest"
-                    ],
-                    "tame_event": {
-                        "event": "minecraft:backpack_is_owned",
-                        "target": "self"
-                    }
-                }
-            },
-            "backpack:not_locked": {
-                "minecraft:is_chested": {},
-                "minecraft:is_tamed": {},
-                "minecraft:inventory": {
-                    "inventory_size": 18,
-                    "container_type": "horse",
-                    "restrict_to_owner": false
-                },
-                "minecraft:fire_immune": false,
-                "minecraft:health": {
-                    "value": 20,
-                    "max": 20
-                }
-            },
-            "backpack:is_locked": {
-                "minecraft:is_chested": {},
-                "minecraft:is_tamed": {},
-                "minecraft:inventory": {
-                    "inventory_size": 18,
-                    "container_type": "horse",
-                    "restrict_to_owner": true
-                },
-                "minecraft:damage_sensor": [
-                  {
-                  "cause": "any",
-                  "deals_damage": false
-                }
-                ]
-            },
-            "backpack:locking": {},
-            "color:purple": {
-                "minecraft:variant": {
-                    "value": 5
-                }
-            },
             "color:black": {
                 "minecraft:variant": {
                     "value": 0
@@ -141,45 +94,7 @@
                 "remove": {},
                 "add": {
                     "component_groups": [
-                        "minecraft:backpack_claim",
                         "color:undyed"
-                    ]
-                }
-            },
-            "minecraft:backpack_is_owned": {
-                "remove": {
-                    "component_groups": [
-                        "minecraft:backpack_claim"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "backpack:not_locked",
-                        "backpack:locking"
-                    ]
-                }
-            },
-            "backpack:lock": {
-                "add": {
-                    "component_groups": [
-                        "backpack:is_locked"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "backpack:not_locked"
-                    ]
-                }
-            },
-            "backpack:unlock": {
-                "remove": {
-                    "component_groups": [
-                        "backpack:is_locked"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "backpack:not_locked"
                     ]
                 }
             },
@@ -726,33 +641,16 @@
                     "use_item": true
                 }
             ],
-            "minecraft:equippable": {
-                "slots": [
-                    {
-                        "slot": 0,
-                        "item": "muc:key",
-                        "accepted_items": [
-                            "muc:key"
-                        ],
-                        "on_equip": {
-                            "event": "backpack:lock"
-                        },
-                        "on_unequip": {
-                            "event": "backpack:unlock"
-                        }
-                    }
-                ]
-            },
             "minecraft:type_family": {
                 "family": [
                     "backpack"
                 ]
             },
             "minecraft:inventory": {
-                "inventory_size": 18,
-                "container_type": "horse",
-                "restrict_to_owner": false
-            },
+                "inventory_size": 27,
+                "container_type": "container", 
+                "private": false
+              },
             "minecraft:collision_box": {
                 "width": 0.8,
                 "height": 1
