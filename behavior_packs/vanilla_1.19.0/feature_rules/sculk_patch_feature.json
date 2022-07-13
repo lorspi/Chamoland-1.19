@@ -24,7 +24,7 @@
       "y": {
         "distribution": "uniform",
         "extent": [
-          -63, 256
+          -63, 20
         ]
       },
       "z": {
