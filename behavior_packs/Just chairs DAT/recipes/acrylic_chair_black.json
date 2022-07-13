@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "acrylic_chair_black"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "minecraft:wool",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "raigen:black_acrylic_chair_spawn_egg",
+      "count": 1
+    }
+  }
+}
