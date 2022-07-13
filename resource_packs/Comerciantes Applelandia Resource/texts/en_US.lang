@@ -5,6 +5,9 @@ item.spawn_egg.entity.npc:maduro.name=Maduro
 
 entity.npc:maduro.name=Maburro
 
+item.spawn_egg.entity.npc:seyora.name=Seyora
+entity.npc:seyora.name=Seyora
+
 entity.trader_apple.nombre=Martina
 entity.trader_lorspi.nombre=Jack
 entity.trader_lorspi2.nombre=Noé
