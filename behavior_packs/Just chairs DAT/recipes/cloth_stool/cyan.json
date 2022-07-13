@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "cloth_stool_cyan"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "appleplus:pila_moneda"
+      }
+    ],
+    "result": {
+      "item": "raigen:cyan_cloth_stool_spawn_egg",
+      "count": 1
+    }
+  }
+}

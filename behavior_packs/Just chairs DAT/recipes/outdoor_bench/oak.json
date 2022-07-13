@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "oak_outdoor_bench"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "appleplus:pila_moneda"
+      }
+    ],
+    "result": {
+      "item": "raigen:oak_outdoor_bench_spawn_egg",
+      "count": 1
+    }
+  }
+}

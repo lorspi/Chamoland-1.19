@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gaming_chair_black"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "appleplus:pila_moneda"
+      }
+    ],
+    "result": {
+      "item": "raigen:black_gaming_chair_spawn_egg",
+      "count": 1
+    }
+  }
+}

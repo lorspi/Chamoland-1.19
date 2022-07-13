@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "small_sofa_gray"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "appleplus:pila_moneda"
+      }
+    ],
+    "result": {
+      "item": "raigen:gray_small_sofa_spawn_egg",
+      "count": 1
+    }
+  }
+}
