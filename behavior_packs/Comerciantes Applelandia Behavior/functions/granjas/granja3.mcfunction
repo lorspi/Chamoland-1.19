@@ -3,7 +3,5 @@
 summon creeper -1407 -36 91
 summon creeper -1407 -36 91
 summon creeper -1407 -36 91
-summon creeper -1407 -36 91
-summon creeper -1407 -36 91
-tellraw @p {"rawtext":[{"text":"§aHas invocado 5 creepers debilitados."}]}
+tellraw @p {"rawtext":[{"text":"§aHas invocado 3 creepers debilitados."}]}
 playsound conduit.attack @p

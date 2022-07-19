@@ -5,9 +5,5 @@ summon zombie -1407 -36 91
 summon zombie -1407 -36 91
 summon zombie -1407 -36 91
 summon zombie -1407 -36 91
-summon zombie -1407 -36 91
-summon zombie -1407 -36 91
-summon zombie -1407 -36 91
-summon zombie -1407 -36 91
-tellraw @p {"rawtext":[{"text":"§aHas invocado 9 zombies debilitados."}]}
+tellraw @p {"rawtext":[{"text":"§aHas invocado 5 zombies debilitados."}]}
 playsound conduit.attack @p
