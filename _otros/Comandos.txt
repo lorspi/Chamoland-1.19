@@ -156,3 +156,4 @@ gamemode s @a[rm=502,m=a]
 
 Retraso 10
 gamemode a @a[r=500,m=s]
+
