@@ -112,6 +112,9 @@
                 "name": "Spawn",
                 "commands": ["/tp @initiator @e[type=hovertext:warp,name=kzjopw]"]
             }, {
+                "name": "Zona OP",
+                "commands": ["/tp @initiator -1420 -60 113"]
+            }, {
                 "name": "Desierto",
                 "commands": ["/tp @initiator -1133 72 363"]
             }, {
