@@ -53,12 +53,155 @@
               "reward_exp": true
             }
           ]
-        }
-      ]
-    },
-    {
-      "total_exp_required": 5,
-      "groups": [
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "appleplus:moneda",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                },
+                {
+                  "item": "appleplus:masa_de_experiencia",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_book_for_trading",
+                      "base_cost": 2,
+                      "base_random_cost": 5,
+                      "per_level_random_cost": 10,
+                      "per_level_cost": 3
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 3,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "appleplus:moneda",
+                  "quantity": 10,
+                  "price_multiplier": 0.2
+                },
+                {
+                  "item": "appleplus:masa_de_experiencia",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_book_for_trading",
+                      "base_cost": 2,
+                      "base_random_cost": 5,
+                      "per_level_random_cost": 10,
+                      "per_level_cost": 3
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 12,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "appleplus:moneda",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                },
+                {
+                  "item": "appleplus:masa_de_experiencia",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_book_for_trading",
+                      "base_cost": 2,
+                      "base_random_cost": 5,
+                      "per_level_random_cost": 10,
+                      "per_level_cost": 3
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 3,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "appleplus:moneda",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                },
+                {
+                  "item": "appleplus:masa_de_experiencia",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_book_for_trading",
+                      "base_cost": 2,
+                      "base_random_cost": 5,
+                      "per_level_random_cost": 10,
+                      "per_level_cost": 3
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 3,
+              "reward_exp": true
+            }
+          ]
+        },
         {
           "num_to_select": 1,
           "trades": [
@@ -165,159 +308,6 @@
               "reward_exp": true
             }
           ]
-        }
-      ]
-    },
-    {
-      "total_exp_required": 10,
-      "groups": [
-        {
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "appleplus:moneda",
-                  "quantity": 8,
-                  "price_multiplier": 0.05
-                },
-                {
-                  "item": "appleplus:masa_de_experiencia",
-                  "quantity": 1,
-                  "price_multiplier": 0.2
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:book",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "enchant_book_for_trading",
-                      "base_cost": 2,
-                      "base_random_cost": 5,
-                      "per_level_random_cost": 10,
-                      "per_level_cost": 3
-                    }
-                  ]
-                }
-              ],
-              "trader_exp": 1,
-              "max_uses": 3,
-              "reward_exp": true
-            }
-          ]
-        },
-        {
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "appleplus:moneda",
-                  "quantity": 8,
-                  "price_multiplier": 0.05
-                },
-                {
-                  "item": "appleplus:masa_de_experiencia",
-                  "quantity": 1,
-                  "price_multiplier": 0.2
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:book",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "enchant_book_for_trading",
-                      "base_cost": 2,
-                      "base_random_cost": 5,
-                      "per_level_random_cost": 10,
-                      "per_level_cost": 3
-                    }
-                  ]
-                }
-              ],
-              "trader_exp": 1,
-              "max_uses": 3,
-              "reward_exp": true
-            }
-          ]
-        },
-        {
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "appleplus:moneda",
-                  "quantity": 8,
-                  "price_multiplier": 0.05
-                },
-                {
-                  "item": "appleplus:masa_de_experiencia",
-                  "quantity": 1,
-                  "price_multiplier": 0.2
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:book",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "enchant_book_for_trading",
-                      "base_cost": 2,
-                      "base_random_cost": 5,
-                      "per_level_random_cost": 10,
-                      "per_level_cost": 3
-                    }
-                  ]
-                }
-              ],
-              "trader_exp": 1,
-              "max_uses": 3,
-              "reward_exp": true
-            }
-          ]
-        },
-        {
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "appleplus:moneda",
-                  "quantity": 10,
-                  "price_multiplier": 0.2
-                },
-                {
-                  "item": "appleplus:masa_de_experiencia",
-                  "quantity": 1,
-                  "price_multiplier": 0.2
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:book",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "enchant_book_for_trading",
-                      "base_cost": 2,
-                      "base_random_cost": 5,
-                      "per_level_random_cost": 10,
-                      "per_level_cost": 3
-                    }
-                  ]
-                }
-              ],
-              "trader_exp": 5,
-              "max_uses": 12,
-              "reward_exp": true
-            }
-          ]
         },
         {
           "num_to_select": 1,
@@ -352,6 +342,104 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "total_exp_required": 5,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "appleplus:cianita",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "appleplus:bolsa_moneda",
+                  "quantity": 5
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "appleplus:peridoto",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "appleplus:bolsa_moneda",
+                  "quantity": 5
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "appleplus:espinela",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "appleplus:bolsa_moneda",
+                  "quantity": 5
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "npc:adalita",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "appleplus:bolsa_moneda",
+                  "quantity": 20
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        }
+        
       ]
     }
   ]
