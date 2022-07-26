@@ -15,10 +15,10 @@ import { world } from "mojang-minecraft"
  world.events.beforeItemUse.subscribe(data => {
     let { item, source } = data
     const player = data.source
-    if (item.id == "minecraft:wooden_axe") {  // Item.id is set to dirt currently you can change to any item
+    if (item.id == "minecraft:golden_axe") {  // Item.id is set to dirt currently you can change to any item
       ui(player)
     }
-    if (item.id == "minecraft:wooden_sword") {  // Item.id is set to dirt currently you can change to any item
+    if (item.id == "minecraft:golden_sword") {  // Item.id is set to dirt currently you can change to any item
       player.runCommand(`summon npc:girl2`)
     }
   })
