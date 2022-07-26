@@ -181,6 +181,15 @@
 	{
 		"file_system" : "RawPath",
 		"from_disk" : true,
+		"hashes" : [ "s8WyzT7CcI8nG+bZ+wrKHIW6xCngz3lmJYS1eMi/0Ik=" ],
+		"path" : "resource_packs/Open Blocks Elevators - RP",
+		"uuid" : "9f1559fe-f991-4179-b2f6-5aa32c8a0d98",
+		"version" : "1.0.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
 		"hashes" : 
 		[
 			"qeIAG8UdnD/qXFOuKouqE/ji7CRdxBtQAj7at0WWOHE=",
@@ -617,7 +626,8 @@
 			"dsSz8e8T6MkARfnm7vWqzo+tJA13VxAfRrfIMyVR34c=",
 			"3tUKN5YcmKu7E3aRndwKC32QpIDchC+iKn1StzxUkoE=",
 			"NfuKJtUF0wlys1MQpQYcxFUbWWlnMQ6wZB7SdJv5Izg=",
-			"5TOA5YlkmaIVxyTIkjIuy+1YDyiI06LL/qW9Slj0qe0="
+			"5TOA5YlkmaIVxyTIkjIuy+1YDyiI06LL/qW9Slj0qe0=",
+			"TtDp15ddP0Z9Z4oRcyGhgJJAqLCpXr7vnB7AsKQZPUg="
 		],
 		"path" : "behavior_packs/Comerciantes Applelandia Behavior",
 		"uuid" : "bcbd2957-df3c-416f-5edf-8d8c90a2c687",
@@ -669,6 +679,15 @@
 		"path" : "behavior_packs/Mochilas",
 		"uuid" : "d0107ae8-9cbe-4c67-8330-61356312151e",
 		"version" : "0.0.6"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : [ "mgCJnPw+N9Ehh8r134fVYkogpo6pKAVPEZrvau0H1II=" ],
+		"path" : "behavior_packs/Open Blocks Elevators - BP",
+		"uuid" : "67743ad1-85d2-4958-a5e5-31180f43716f",
+		"version" : "1.0.0"
 	},
 	
 	{

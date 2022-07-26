@@ -1,0 +1,20 @@
+pack.name=§bOpen Blocks Elevators RP
+pack.description=§3§lNuevos Elevadores para tu mundo. Mod original creado por VsnGarcia y porteado a Minecraft Bedrock por DaKs
+
+##Blocks
+tile.elevatorid:elevator_white.name=Ascensor Blanco
+tile.elevatorid:elevator_black.name=Ascensor Negro
+tile.elevatorid:elevator_blue.name=Ascensor Azul
+tile.elevatorid:elevator_brown.name=Ascensor Marrón
+tile.elevatorid:elevator_cyan.name=Ascensor Cian
+tile.elevatorid:elevator_gray.name=Ascensor Gris
+tile.elevatorid:elevator_green.name=Ascensor Verde
+tile.elevatorid:elevator_light_blue.name=Ascensor Azul Claro
+tile.elevatorid:elevator_light_gray.name=Ascensor Gris Claro
+tile.elevatorid:elevator_lime.name=Ascensor Verde Lima
+tile.elevatorid:elevator_magenta.name=Ascensor Magenta
+tile.elevatorid:elevator_orange.name=Ascensor Naranja
+tile.elevatorid:elevator_pink.name=Ascensor Rosa
+tile.elevatorid:elevator_purple.name=Ascensor Morado
+tile.elevatorid:elevator_red.name=Ascensor Rojo
+tile.elevatorid:elevator_yellow.name=Ascensor Amarillo

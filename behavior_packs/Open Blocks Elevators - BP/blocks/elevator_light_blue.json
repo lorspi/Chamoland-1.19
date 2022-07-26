@@ -1,0 +1,1667 @@
+{
+    "format_version":"1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "elevatorid:elevator_light_blue",
+            "properties": {
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "group": "itemGroup.name.wool",
+                "category": "construction"
+            },
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 4.0,
+            "minecraft:friction": 0.6,
+            "minecraft:flammable":{
+                "flame_odds": 50,
+                "burn_odds": 50
+            },
+            "tag:light_blue":{},
+            "minecraft:map_color": "#ffffff",
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_filter": 0.0,
+            "minecraft:on_fall_on": {
+                "condition": "query.is_sneaking || !query.is_sneaking",
+                "min_fall_distance": 0,
+                "event": "teleport",
+                "target": "other"
+            },
+            "minecraft:on_placed": {
+                "event": "command"
+            },
+            "minecraft:on_player_placing": {
+                "event": "command"
+            }
+        },
+        "events": {
+            "teleport": {
+                "sequence":[
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-3,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-3 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-3 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-4,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-4 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-4 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-5,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-5 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-5 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-6,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-6 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-6 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-7,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-7 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-7 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-8,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-8 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-8 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-9,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-9 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-9 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-10,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-10 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-10 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-11,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-11 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-11 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-12,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-12 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-12 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-13,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-13 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-13 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-14,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~-14 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-14 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-15,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-15 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-15 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-16,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-16 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-16 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-17,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-17 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-17 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-18,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-18 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-18 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-19,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-19 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-19 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-20,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-20 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-20 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-21,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-21 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-21 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-22,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-22 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-22 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-23,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-23 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-23 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-24,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-24 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-24 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-25,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-25 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-25 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-26,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-26 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-26 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-27,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-27 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-27 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-28,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-28 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-28 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-29,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-29 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-29 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-30,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-30 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-30 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-31,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-31 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-31 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-32,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-32 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-32 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-33,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-33 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-33 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-34,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-34 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-34 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-35,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-35 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-35 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-36,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-36 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-36 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-37,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-37 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-37 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-38,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-38 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-38 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-39,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-39 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-39 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-40,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-40 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-40 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-41,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-41 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-41 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-42,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-42 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-42 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-43,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-43 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-43 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-44,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-44 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-44 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-45,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-45 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-45 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-46,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-46 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-46 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-47,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-47 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-47 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-48,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-48 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-48 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-49,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-49 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-49 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-50,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-50 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-50 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-51,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-51 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-51 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-52,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-52 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-52 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-53,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-53 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-53 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-54,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-54 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-54 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-55,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-55 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-55 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-56,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-56 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-56 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-57,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-57 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-57 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-58,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-58 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-58 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-59,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-59 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-59 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-60,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-60 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-60 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-61,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-61 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-61 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-62,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-62 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-62 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-63,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-63 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-63 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,-64,0,'light_blue') && query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~-64 ~",
+                                "playsound block.teleport @a[r=7] ~ ~-64 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,3,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~3 ~",
+                                "playsound block.teleport @a[r=7] ~ ~3 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,4,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~4 ~",
+                                "playsound block.teleport @a[r=7] ~ ~4 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,5,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~5 ~",
+                                "playsound block.teleport @a[r=7] ~ ~5 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,6,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~6 ~",
+                                "playsound block.teleport @a[r=7] ~ ~6 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,7,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~7 ~",
+                                "playsound block.teleport @a[r=7] ~ ~7 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,8,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~8 ~",
+                                "playsound block.teleport @a[r=7] ~ ~8 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,9,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~9 ~",
+                                "playsound block.teleport @a[r=7] ~ ~9 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,10,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~10 ~",
+                                "playsound block.teleport @a[r=7] ~ ~10 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,11,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~11 ~",
+                                "playsound block.teleport @a[r=7] ~ ~11 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,12,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~12 ~",
+                                "playsound block.teleport @a[r=7] ~ ~12 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,13,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~13 ~",
+                                "playsound block.teleport @a[r=7] ~ ~13 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,14,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "tp @p[r=1,c=1] ~ ~14 ~",
+                                "playsound block.teleport @a[r=7] ~ ~14 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,15,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~15 ~",
+                                "playsound block.teleport @a[r=7] ~ ~15 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,16,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~16 ~",
+                                "playsound block.teleport @a[r=7] ~ ~16 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,17,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~17 ~",
+                                "playsound block.teleport @a[r=7] ~ ~17 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,18,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~18 ~",
+                                "playsound block.teleport @a[r=7] ~ ~18 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,19,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~19 ~",
+                                "playsound block.teleport @a[r=7] ~ ~19 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,20,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~20 ~",
+                                "playsound block.teleport @a[r=7] ~ ~20 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,21,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~21 ~",
+                                "playsound block.teleport @a[r=7] ~ ~21 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,22,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~22 ~",
+                                "playsound block.teleport @a[r=7] ~ ~22 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,23,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~23 ~",
+                                "playsound block.teleport @a[r=7] ~ ~23 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,24,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~24 ~",
+                                "playsound block.teleport @a[r=7] ~ ~24 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,25,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~25 ~",
+                                "playsound block.teleport @a[r=7] ~ ~25 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,26,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~26 ~",
+                                "playsound block.teleport @a[r=7] ~ ~26 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,27,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~27 ~",
+                                "playsound block.teleport @a[r=7] ~ ~27 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,28,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~28 ~",
+                                "playsound block.teleport @a[r=7] ~ ~28 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,29,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~29 ~",
+                                "playsound block.teleport @a[r=7] ~ ~29 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,30,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~30 ~",
+                                "playsound block.teleport @a[r=7] ~ ~30 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,31,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~31 ~",
+                                "playsound block.teleport @a[r=7] ~ ~31 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,32,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~32 ~",
+                                "playsound block.teleport @a[r=7] ~ ~32 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,33,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~33 ~",
+                                "playsound block.teleport @a[r=7] ~ ~33 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,34,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~34 ~",
+                                "playsound block.teleport @a[r=7] ~ ~34 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,35,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~35 ~",
+                                "playsound block.teleport @a[r=7] ~ ~35 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,36,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~36 ~",
+                                "playsound block.teleport @a[r=7] ~ ~36 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,37,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~37 ~",
+                                "playsound block.teleport @a[r=7] ~ ~37 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,38,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~38 ~",
+                                "playsound block.teleport @a[r=7] ~ ~38 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,39,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~39 ~",
+                                "playsound block.teleport @a[r=7] ~ ~39 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,40,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~40 ~",
+                                "playsound block.teleport @a[r=7] ~ ~40 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,41,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~41 ~",
+                                "playsound block.teleport @a[r=7] ~ ~41 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,42,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~42 ~",
+                                "playsound block.teleport @a[r=7] ~ ~42 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,43,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~43 ~",
+                                "playsound block.teleport @a[r=7] ~ ~43 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,44,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~44 ~",
+                                "playsound block.teleport @a[r=7] ~ ~44 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,45,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~45 ~",
+                                "playsound block.teleport @a[r=7] ~ ~45 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,46,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~46 ~",
+                                "playsound block.teleport @a[r=7] ~ ~45 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,47,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~47 ~",
+                                "playsound block.teleport @a[r=7] ~ ~47 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,48,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~48 ~",
+                                "playsound block.teleport @a[r=7] ~ ~48 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,49,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~49 ~",
+                                "playsound block.teleport @a[r=7] ~ ~49 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,50,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~50 ~",
+                                "playsound block.teleport @a[r=7] ~ ~50 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,51,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~51 ~",
+                                "playsound block.teleport @a[r=7] ~ ~51 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,52,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~52 ~",
+                                "playsound block.teleport @a[r=7] ~ ~52 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,53,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~53 ~",
+                                "playsound block.teleport @a[r=7] ~ ~53 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,54,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~54 ~",
+                                "playsound block.teleport @a[r=7] ~ ~54 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,55,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~55 ~",
+                                "playsound block.teleport @a[r=7] ~ ~55 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,56,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~56 ~",
+                                "playsound block.teleport @a[r=7] ~ ~56 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,57,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~57 ~",
+                                "playsound block.teleport @a[r=7] ~ ~57 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,58,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~58 ~",
+                                "playsound block.teleport @a[r=7] ~ ~58 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,59,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~59 ~",
+                                "playsound block.teleport @a[r=128] ~ ~59 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,60,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~60 ~",
+                                "playsound block.teleport @a[r=128] ~ ~60 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,61,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~61 ~",
+                                "playsound block.teleport @a[r=128] ~ ~61 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,62,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~62 ~",
+                                "playsound block.teleport @a[r=128] ~ ~62 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,63,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~63 ~",
+                                "playsound block.teleport @a[r=128] ~ ~63 ~ 1.0"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,64,0,'light_blue') && !query.is_sneaking",
+                        "run_command":{
+                            "command":[
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "playsound block.teleport @a ~ ~ ~ 1.0",
+                                "tp @p[r=1,c=1] ~ ~64 ~"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "command":{
+                "run_command":{
+                    "command": [
+                        "gamerule sendcommandfeedback false"
+                    ]
+                }
+            }
+          }
+    }
+}

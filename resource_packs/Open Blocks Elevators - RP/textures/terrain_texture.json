@@ -1,0 +1,60 @@
+{
+	"resource_pack_name": "Open Blocks Elevators RP",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"stone":{
+			"textures": "textures/blocks/stone"
+		},
+		"elevator_black":{
+			"textures": "textures/blocks/elevator_black"
+		},
+		"elevator_blue":{
+			"textures": "textures/blocks/elevator_blue"
+		},
+		"elevator_brown":{
+			"textures": "textures/blocks/elevator_brown"
+		},
+		"elevator_cyan":{
+			"textures": "textures/blocks/elevator_cyan"
+		},
+		"elevator_gray":{
+			"textures": "textures/blocks/elevator_gray"
+		},
+		"elevator_green":{
+			"textures": "textures/blocks/elevator_green"
+		},
+		"elevator_light_blue":{
+			"textures": "textures/blocks/elevator_light_blue"
+		},
+		"elevator_light_gray":{
+			"textures": "textures/blocks/elevator_light_gray"
+		},
+		"elevator_lime":{
+			"textures": "textures/blocks/elevator_lime"
+		},
+		"elevator_magenta":{
+			"textures": "textures/blocks/elevator_magenta"
+		},
+		"elevator_orange":{
+			"textures": "textures/blocks/elevator_orange"
+		},
+		"elevator_pink":{
+			"textures": "textures/blocks/elevator_pink"
+		},
+		"elevator_purple":{
+			"textures": "textures/blocks/elevator_purple"
+		},
+		"elevator_red":{
+			"textures": "textures/blocks/elevator_red"
+		},
+		"elevator_white":{
+			"textures": "textures/blocks/elevator_white"
+		},
+		"elevator_yellow":{
+			"textures": "textures/blocks/elevator_yellow"
+		}
+
+    }
+}
