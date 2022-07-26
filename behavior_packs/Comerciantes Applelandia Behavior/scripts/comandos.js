@@ -53,10 +53,19 @@ World.events.beforeChat.subscribe(main => {
                 break
             }
             case ('spawn'): {
+                sender.runCommand('summon npc:girl2')                
+                break
+            }
+            case ('xp'): {
                 try{
-                    sender.runCommand('summon npc:girl2')
-                }catch{
+                    sender.runCommand('xp -15l @s[lm=15]')
+                    sender.runCommand('give @s appleplus:masa_de_experiencia 1')
+                    sender.runCommand('playsound random.levelup @s')
+                    sender.runCommand('tellraw @s {"rawtext":[{"text":"§l§2¡Has recibido una Masa de experiencia!\n§rGuárdala en un lugar seguro.§r"}]}')
                     
+                }catch{
+                    sender.runCommand('tellraw @s {"rawtext":[{"text":"§l§4No tienes suficiente experiencia para guardar.\n§rRecuerda que necesitas 15 niveles de experiencia.§r"}]}')
+                    sender.runCommand('playsound random.break @s')
                 }
                 break
             }

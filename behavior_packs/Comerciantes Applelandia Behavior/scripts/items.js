@@ -18,8 +18,11 @@ import { world } from "mojang-minecraft"
     if (item.id == "minecraft:golden_axe") {  // Item.id is set to dirt currently you can change to any item
       ui(player)
     }
-    if (item.id == "minecraft:golden_sword") {  // Item.id is set to dirt currently you can change to any item
-      player.runCommand(`summon npc:girl2`)
+    if (item.id == "appleplus:masa_de_experiencia") {  // Item.id is set to dirt currently you can change to any item
+      player.runCommand(`clear @s appleplus:masa_de_experiencia 0 1`)
+      player.runCommand(`playsound random.levelup @s`)
+      player.runCommand(`xp 15l @s`)
+      player.runCommand('tellraw @s {"rawtext":[{"text":"§l§2¡Has recibido 15 niveles de experiencia!§r"}]}')
     }
   })
 
