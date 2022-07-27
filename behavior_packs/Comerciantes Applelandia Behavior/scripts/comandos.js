@@ -1,6 +1,7 @@
 //bridge-file-version: #5
 //Imports
 import { world as World } from "mojang-minecraft";
+import "scripts/dependencias/timer.js";
 
 //Consts
 const overworld = World.getDimension("overworld")
@@ -14,23 +15,26 @@ World.events.tick.subscribe(() => {
     if(clearlag>0){
         clearlag = clearlag - 1
     }
+    if(clearlag===300){
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o10 segundos§r§c§l..."}]}')
+    }
     if(clearlag===100){
-        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lClearing all LAG in §o5seconds§r§c§l..."}]}')
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o5 segundos§r§c§l..."}]}')
     }else if(clearlag===80){
-        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lClearing all LAG in §o4seconds§r§c§l..."}]}')
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o4 segundos§r§c§l..."}]}')
     }else if(clearlag===60){
-        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lClearing all LAG in §o3seconds§r§c§l..."}]}')
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o3 segundos§r§c§l..."}]}')
     }else if(clearlag===40){
-        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lClearing all LAG in §o2seconds§r§c§l..."}]}')
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o2 segundos§r§c§l..."}]}')
     }else if(clearlag===20){
-        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lClearing all LAG in §o1seconds§r§c§l..."}]}')
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o1 segundos§r§c§l..."}]}')
     }else if(clearlag===1){
         try{
             var items = overworld.runCommand("testfor @e[type=item,type=tnt,type=snowball,type=arrow]").statusMessage.split(" ").length
             overworld.runCommand("kill @e[type=item,type=arrow,type=tnt,type=snowball]")
-            overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lCleared all server LAG, §o"+items+"§r§c§l items were killed."}]}')
+            overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados §o"+items+"§r§c§l objetos del suelo."}]}')
         }catch{
-        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lCleared all server LAG, §o0§r§c§l items were killed."}]}')
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados §o0§r§c§l objetos del suelo."}]}')
         }
     }
 })
@@ -53,7 +57,23 @@ World.events.beforeChat.subscribe(main => {
                 break
             }
             case ('spawn'): {
-                sender.runCommand('summon npc:girl2')                
+                try{
+                    sender.runCommand('xp -10l @s[lm=10]')
+                    sender.runCommand('tellraw @s {"rawtext":[{"text":"§l§2Preparando viaje...§r"}]}')
+                    sender.runCommand('effect @s blindness 3')
+                    setTimeout(() => {sender.runCommand('tp @s @e[type=hovertext:warp,name=kzjopw]');}, 40);
+                    setTimeout(() => {sender.runCommand('playsound mob.shulker.teleport @p -1427 112 134');}, 42);
+                    setTimeout(() => {sender.runCommand('playsound block.end_portal.spawn @p -1423 112 134 0.5');}, 42);
+                    setTimeout(() => {sender.runCommand('particle minecraft:totem_particle -1425 112 134');}, 42);
+                    setTimeout(() => {sender.runCommand('tellraw @s {"rawtext":[{"text":"§l§2¡Viaje finalizado!§r"}]}');}, 54);  
+                    setTimeout(() => {sender.runCommand('particle minecraft:totem_particle -1425 112 134');}, 54);
+                    setTimeout(() => {sender.runCommand('particle minecraft:totem_particle -1425 112 134');}, 56);
+                    setTimeout(() => {sender.runCommand('particle minecraft:totem_particle -1425 112 134');}, 58);
+                                      
+                }catch{
+                    sender.runCommand('tellraw @s {"rawtext":[{"text":"§l§4No tienes suficiente experiencia para viajar.\n§rNecesitas 15 niveles.§r"}]}')
+                    sender.runCommand('playsound random.break @s')
+                }
                 break
             }
             case ('xp'): {
