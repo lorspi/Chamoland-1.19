@@ -19,6 +19,11 @@
       "textures": [
     "textures/items/talismandes"
       ]
+    },
+    "talisman": {
+      "textures": [
+    "textures/items/talisman"
+      ]
     }
   }
 }

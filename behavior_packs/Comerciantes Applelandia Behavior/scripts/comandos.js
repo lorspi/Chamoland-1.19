@@ -58,7 +58,7 @@ World.events.beforeChat.subscribe(main => {
             }
             case ('spawn'): {
                 try{
-                    sender.runCommand('xp -10l @s[lm=10]')
+                    sender.runCommand('xp -15l @s[lm=15]')
                     sender.runCommand('tellraw @s {"rawtext":[{"text":"§l§2Preparando viaje...§r"}]}')
                     sender.runCommand('effect @s blindness 3')
                     setTimeout(() => {sender.runCommand('tp @s @e[type=hovertext:warp,name=kzjopw]');}, 40);

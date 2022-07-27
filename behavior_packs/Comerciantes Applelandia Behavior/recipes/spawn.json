@@ -3,29 +3,26 @@
     "result" : {
       "count" : 1,
       "data" : 0,
-      "item" : "npc:girl2_spawn_egg"
+      "item" : "npc:talisman"
     },
     "tags" : [
       "crafting_table"
     ],
     "key" : {
       "A" : {
-        "item" : "minecraft:gold_ingot"
+        "item" : "appleplus:masa_de_experiencia"
       },
       "B" : {
-        "item" : "minecraft:ender_pearl"
-      },
-      "C" : {
         "item" : "minecraft:stick"
       }
     },
     "pattern" : [
-      "ABA",
-      " C ",
-      " C "
+      " A ",
+      " B ",
+      " B "
     ],
     "description" : {
-      "identifier" : "npc:girl2_spawn_egg"
+      "identifier" : "npc:talisman"
     }
   },
   "format_version" : "1.10"

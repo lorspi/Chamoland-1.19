@@ -113,14 +113,19 @@
             {
               "wants": [
                 {
-                  "item": "appleplus:bolsa_moneda",
+                  "item": "appleplus:masa_de_experiencia",
                   "quantity": 1,
+                  "price_multiplier": 0.05
+                },
+                {
+                  "item": "appleplus:moneda",
+                  "quantity": 10,
                   "price_multiplier": 0.05
                 }
               ],
               "gives": [
                 {
-                  "item": "npc:talismandes",
+                  "item": "npc:talisman",
                   "quantity": 1
                 }
               ],
