@@ -32,7 +32,6 @@ function encantamientos(player) {
         form.button("§l§5Protección IV\n§r§820 niveles")
         form.button("§l§5Fortuna III\n§r§830 niveles")
         form.button("§l§5Reparación\n§r§860 niveles")
-        form.button("§4Cerrar") 
 
         form.show(player).then((response) => {
             if (response.selection === 0) {

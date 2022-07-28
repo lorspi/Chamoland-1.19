@@ -16,9 +16,6 @@ import "scripts/dependencias/timer.js";
  world.events.beforeItemUse.subscribe(data => {
     let { item, source } = data
     const player = data.source
-    if (item.id == "minecraft:golden_axe") {  // Item.id is set to dirt currently you can change to any item
-      ui(player)
-    }
     if (item.id == "npc:talisman") {  // Item.id is set to dirt currently you can change to any item
         player.runCommand('clear @s npc:talisman 0 1')
         player.runCommand('tellraw @s {"rawtext":[{"text":"§l§2Preparando viaje...§r"}]}')
@@ -44,48 +41,55 @@ import "scripts/dependencias/timer.js";
       player.runCommand(`playsound mob.blaze.shoot @s`)
       player.runCommand('tellraw @s {"rawtext":[{"text":"§l§2¡Se te ha actualizado el talismán!\n§rAhora puedes usarlo sin tocar el suelo.§r"}]}')
     }
+    if (item.id == "appleplus:cluster_de_almas") { 
+      invocar(player)
+    }
   })
 
-/**
- * Show the ui to the player
- * @param {player} player Player to show the ui to
- */
 
-// Page 1
+// Invocador de criaturas
 
-function ui(player) {
+function invocar(player) {
     let form = new ActionFormData()
-        form.title("§l§1GUI Menu Template 1/2") // Title of the GUI
-        form.body("Created by LVRAID3RS#4808") // Body Text Of the GUI
-        form.button(`Button1 `) // Button 1 Text
-        form.button("Button2") // Button 2 Text
-        form.button("Button3") // Button 3 Text
-
+        form.title("§l§1Invocador de criaturas") 
+        form.body("Selecciona las criaturas debilitadas que quieres invocar.\n\nLas criaturas se invocarán a dos bloques hacia el este. (Por donde sale el sol.)") 
+        form.button("5 Zombies") 
+        form.button("5 Esqueletos")
+        form.button("3 Creepers")
+        form.button("2 Esqueletos wither")
 
         form.show(player).then((response) => {
         if (response.selection === 0) {
-            player.runCommand(`function admin/spawn`);  // Runs A command on the player
-    }
+            player.runCommand('summon zombie  ~2 ~1 ~')
+            player.runCommand('summon zombie  ~2 ~1 ~')
+            player.runCommand('summon zombie  ~2 ~1 ~')
+            player.runCommand('summon zombie  ~2 ~1 ~')
+            player.runCommand('summon zombie  ~2 ~1 ~')
+            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
+            setTimeout(() => {player.runCommand('damage @e[name=,r=10] 19');}, 5);
+        }
         if (response.selection === 1) {
-            console.warn("Clicked Button 2") // Sends a Console warn to the player
-    }
-    if(response.selection == 2) return page2(player) // Returns a Second Page to a Player
-        })
-    }
+            player.runCommand('summon skeleton  ~2 ~1 ~')
+            player.runCommand('summon skeleton  ~2 ~1 ~')
+            player.runCommand('summon skeleton  ~2 ~1 ~')
+            player.runCommand('summon skeleton  ~2 ~1 ~')
+            player.runCommand('summon skeleton  ~2 ~1 ~')
+            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
+            setTimeout(() => {player.runCommand('damage @e[name=,r=10] 19');}, 5);
+        }
+        if (response.selection === 2) {
+            player.runCommand('summon creeper  ~2 ~1 ~')
+            player.runCommand('summon creeper  ~2 ~1 ~')
+            player.runCommand('summon creeper  ~2 ~1 ~')
 
-// Page 2
-
-function page2(player) {
-    let temp = new MessageFormData()
-        temp.title("GUI Menu Template 2/2")
-        temp.body("Created by LVRAID3RS#4808")
-        temp.button1(`Confirm`) // Unforunately 'MessageFormData' Can only have 2 button i Suggest using 'ActionFormData'
-        temp.button2(`Cancel`) // Cancels out the UI
-
-        
-        temp.show(player).then((response) => {  
-            if (response.selection === 1) { // ActionFormData GUI's start from 0 While Messageformdata starts at 1
-                player.runCommand(`say Pressed Confirm Button`);
-            }
-        })
-    }
+            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
+            setTimeout(() => {player.runCommand('damage @e[name=,r=10] 19');}, 5);
+        }
+        if (response.selection === 3) {
+            player.runCommand('summon wither_skeleton  ~2 ~1 ~')
+            player.runCommand('summon wither_skeleton  ~2 ~1 ~')
+            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
+            setTimeout(() => {player.runCommand('damage @e[name=,r=10] 19');}, 5);
+        }
+    })
+}
