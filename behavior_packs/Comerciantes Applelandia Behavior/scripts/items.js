@@ -11,8 +11,6 @@ import "scripts/dependencias/timer.js";
  * YouTube: LVRAID3RS
  */
 
-
-
  world.events.beforeItemUse.subscribe(data => {
     let { item, source } = data
     const player = data.source
@@ -66,7 +64,8 @@ function invocar(player) {
             player.runCommand('summon zombie  ~2 ~1 ~')
             player.runCommand('summon zombie  ~2 ~1 ~')
             player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
-            setTimeout(() => {player.runCommand('damage @e[name=,r=10] 19');}, 5);
+            setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
+            setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
         if (response.selection === 1) {
             player.runCommand('summon skeleton  ~2 ~1 ~')
@@ -75,21 +74,22 @@ function invocar(player) {
             player.runCommand('summon skeleton  ~2 ~1 ~')
             player.runCommand('summon skeleton  ~2 ~1 ~')
             player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
-            setTimeout(() => {player.runCommand('damage @e[name=,r=10] 19');}, 5);
+            setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
+            setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
         if (response.selection === 2) {
             player.runCommand('summon creeper  ~2 ~1 ~')
             player.runCommand('summon creeper  ~2 ~1 ~')
             player.runCommand('summon creeper  ~2 ~1 ~')
-
-            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
-            setTimeout(() => {player.runCommand('damage @e[name=,r=10] 19');}, 5);
+            setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
+            setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
         if (response.selection === 3) {
             player.runCommand('summon wither_skeleton  ~2 ~1 ~')
             player.runCommand('summon wither_skeleton  ~2 ~1 ~')
             player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
-            setTimeout(() => {player.runCommand('damage @e[name=,r=10] 19');}, 5);
+            setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
+            setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
     })
 }

@@ -2,11 +2,6 @@ import { ActionFormData, MessageFormData } from "mojang-minecraft-ui"
 import { world } from "mojang-minecraft"
 //import "scripts/dependencias/timer.js";
 
-
-
-
-
-
 world.events.entityHit.subscribe(event => {
 
     if (event.hitEntity && event.hitEntity.id == "npc:boy3") {
@@ -16,7 +11,6 @@ world.events.entityHit.subscribe(event => {
         encantamientos(player)
     }
 })
-
 
 function encantamientos(player) {
     let form = new ActionFormData()
