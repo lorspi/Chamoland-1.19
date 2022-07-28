@@ -1,0 +1,104 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.npc.baby_transform": {
+            "loop": true,
+            "bones": {
+                "head": {
+                    "scale": 1.5
+                }
+            }
+        },
+        "animation.npc.general": {
+            "loop": true,
+            "animation_length": 4,
+            "bones": {
+                "arms": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "2.0": [0, 0, -5],
+                        "4.0": [0, 0, 0]
+                    }
+                },
+                "arms2": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "2.0": [0, 0, 5],
+                        "4.0": [0, 0, 0]
+                    }
+                }
+            }
+        },
+        "animation.npc.get_in_bed": {
+            "loop": true,
+            "bones": {
+                "body": {
+                    "rotation": [-90, 0, 0],
+                    "position": [0, 1, -15]
+                },
+                "leg0": {
+                    "rotation": [-90, 0, 0],
+                    "position": [0, -11, -3]
+                },
+                "rightPants": {
+                    "rotation": [0, 0, 0],
+                    "position": [0, 0, 0]
+                },
+                "leg1": {
+                    "rotation": [-90, 0, 0],
+                    "position": [0, -11, -3]
+                }
+            }
+        },
+        "animation.npc.move": {
+            "loop": true,
+            "animation_length": 8,
+            "anim_time_update": "query.modified_distance_moved",
+            "bones": {
+                "leg0": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "2.0": [20, 0, 0],
+                        "6.0": [-20, 0, 0],
+                        "8.0": [0, 0, 0]
+                    }
+                },
+                "leg1": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "2.0": [-20, 0, 0],
+                        "6.0": [20, 0, 0],
+                        "8.0": [0, 0, 0]
+                    }
+                },
+                "arms": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "2.0": [20, 0, 0],
+                        "6.0": [-20, 0, 0],
+                        "8.0": [0, 0, 0]
+                    }
+                },
+                "leftPants": {
+                    "rotation": [0, 0, 0]
+                },
+                "arms2": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "2.0": [-20, 0, 0],
+                        "6.0": [20, 0, 0],
+                        "8.0": [0, 0, 0]
+                    }
+                }
+            }
+        },
+        "animation.npc.raise_arms": {
+            "loop": true,
+            "bones": {
+                "arms": {
+                    "rotation": ["variable.raise_arms * -15.0", 0, 0]
+                }
+            }
+        }
+    }
+}
