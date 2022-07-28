@@ -21,7 +21,7 @@ world.events.entityHit.subscribe(event => {
 function encantamientos(player) {
     let form = new ActionFormData()
         form.title("§l§5Encantamientos") // Title of the GUI
-        form.body("Elige el encantamiento para aplicar a tu objeto en mano.\n\n") 
+        form.body("Elige el encantamiento para aplicar a tu objeto en mano.\n\nCada encantamiento te cobra niveles de experiencia.\n\n") 
         form.button("§l§5Irrompible III\n§r§820 niveles")
         form.button("§l§5Agilidad acuática III\n§r§820 niveles")
         form.button("§l§5Afinidad acuática\n§r§820 niveles")
