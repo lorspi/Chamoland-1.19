@@ -1,5 +1,6 @@
 import 'scripts/items.js'
 import 'scripts/comandos.js'
+import 'scripts/entidades.js'
 
 import { chatrank } from 'scripts/chat.js'
 import { world } from 'mojang-minecraft'
