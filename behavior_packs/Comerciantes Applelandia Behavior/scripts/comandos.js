@@ -10,9 +10,13 @@ const overworld = World.getDimension("overworld")
 var clearlag = 0;
 var pvp = 0;
 var pvpactivador = "Nadie";
+var amoractivo = 0;
+var amorcontador = 0;
+
 
 //Constant tick
 World.events.tick.subscribe(() => {
+    //Clearlag
     if(clearlag>0){
         clearlag = clearlag - 1
     }
@@ -46,6 +50,7 @@ World.events.tick.subscribe(() => {
         overworld.runCommand(`tellraw @a {"rawtext":[{"text":"§c§lFueron borrados ${total} objetos del suelo."}]}`)     
     }
 
+    // Activación del PVP
     if(pvp>0){
         pvp = pvp - 1
     }
@@ -66,6 +71,27 @@ World.events.tick.subscribe(() => {
         overworld.runCommand(`playsound beacon.deactivate @a`)
         overworld.runCommand(`gamerule pvp false`)
     }
+
+    // Corazones
+    if(amoractivo===1){ 
+        amorcontador = amorcontador + 1
+        if(amorcontador===10){ 
+            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~-1 ~2 ~')
+        }
+        if(amorcontador===15){ 
+            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~1 ~1 ~1')
+        }
+        if(amorcontador===20){ 
+            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~ ~3 ~1')
+        }
+        if(amorcontador===20){ 
+            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~2 ~1 ~')
+        }
+        if(amorcontador===30){ 
+            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~ ~2 ~')
+            amorcontador = 1
+        }    
+    }
 })
 
 //On chat
@@ -79,10 +105,32 @@ World.events.beforeChat.subscribe(main => {
         switch (args[0]) {
             case ('clearlag'): {
                 try{
-                    sender.runCommand('tellraw @s[tag=!staff] {"rawtext":[{"text":"§cYou need the §lstaff§r§c tag to use this command. Please ask an operator to run §o/tag (username) add staff§r"}]}')
+                    sender.runCommand('tellraw @s[tag=!staff] {"rawtext":[{"text":"§cNo tienes permiso. §o/tag (username) add staff§r"}]}')
                 }catch{
                     clearlag = 301 //301
                 }
+                break
+            }
+            case ('amor'): {
+                if(amoractivo===1){
+                    try{
+                        sender.runCommand('tellraw @s[name=lorspi] {"rawtext":[{"text":"§cCorazones desactivados"}]}')
+                        amoractivo = 0
+                    }catch{
+                        sender.runCommand('tellraw @s[name=lorspi] {"rawtext":[{"text":"§cNo tienes permiso"}]}')
+                    }
+                }
+                else if(amoractivo===0) {
+                    try{
+                        sender.runCommand('tellraw @s[name=lorspi] {"rawtext":[{"text":"§cCorazones activados"}]}')
+                        amoractivo = 1
+                    }catch{
+                        sender.runCommand('tellraw @s[name=lorspi] {"rawtext":[{"text":"§cNo tienes permiso"}]}')
+                    }
+                    
+                }
+
+                
                 break
             }
             case ('spawn'): {
