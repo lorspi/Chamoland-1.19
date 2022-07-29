@@ -28,14 +28,18 @@ World.events.tick.subscribe(() => {
         overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o2 segundos§r§c§l..."}]}')
     }else if(clearlag===20){
         overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o1 segundos§r§c§l..."}]}')
-    }else if(clearlag===1){
-        try{
-            var items = overworld.runCommand("testfor @e[type=item,type=tnt,type=snowball,type=arrow]").statusMessage.split(" ").length
-            overworld.runCommand("kill @e[type=item,type=arrow,type=tnt,type=snowball]")
-            overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados §o"+items+"§r§c§l objetos del suelo."}]}')
-        }catch{
-        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados §o0§r§c§l objetos del suelo."}]}')
-        }
+    }else if(clearlag===1){       
+        //var items = overworld.runCommand("testfor @e[type=item]").statusMessage.split(" ").length
+        //var snowball = overworld.runCommand("testfor @e[type=snowball]").statusMessage.split(" ").length
+        //var arrow = overworld.runCommand("testfor @e[type=arrow]").statusMessage.split(" ").length
+        //var total = items + snowball + arrow
+        //overworld.runCommand("kill @e[type=item]")
+        //overworld.runCommand("kill @e[type=snowball]")
+        //overworld.runCommand("kill @e[type=arrow]")
+        //overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados todos los objetos del suelo."}]}')
+        //overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados §o"+items+"§r§c§l objetos del suelo."}]}') 
+        overworld.runCommand("kill @e[type=item]")
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados todos los objetos del suelo."}]}')     
     }
 })
 

@@ -51,10 +51,10 @@ function invocar(player) {
     let form = new ActionFormData()
         form.title("§l§1Invocador de criaturas") 
         form.body("Selecciona las criaturas debilitadas que quieres invocar.\n\nLas criaturas se invocarán a dos bloques hacia el este. (Por donde sale el sol.)") 
-        form.button("5 Zombies") 
-        form.button("5 Esqueletos")
-        form.button("3 Creepers")
-        form.button("2 Esqueletos wither")
+        form.button("§l5 Zombies") 
+        form.button("§l5 Esqueletos")
+        form.button("§l3 Creepers")
+        form.button("§l2 Esqueletos wither")
 
         form.show(player).then((response) => {
         if (response.selection === 0) {
