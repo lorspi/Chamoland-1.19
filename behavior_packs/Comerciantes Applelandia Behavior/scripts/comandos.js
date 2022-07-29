@@ -8,7 +8,8 @@ const overworld = World.getDimension("overworld")
 
 //Variabled
 var clearlag = 0;
-var spawn = 0;
+var pvp = 0;
+var pvpactivador = "Nadie";
 
 //Constant tick
 World.events.tick.subscribe(() => {
@@ -40,6 +41,27 @@ World.events.tick.subscribe(() => {
         //overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados §o"+items+"§r§c§l objetos del suelo."}]}') 
         overworld.runCommand("kill @e[type=item]")
         overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados todos los objetos del suelo."}]}')     
+    }
+
+    if(pvp>0){
+        pvp = pvp - 1
+    }
+    if(pvp>5){
+        overworld.runCommand(`title @a actionbar §c¡PVP activado temporalmente!`)
+    }
+    if(pvp===2400){ // 2400
+        overworld.runCommand(`tellraw @a {"rawtext":[{"text":"\n§e§l${pvpactivador} §r§eha activado el PVP por 2 minutos.\n "}]}`)
+        overworld.runCommand(`playsound beacon.activate @a`)
+        overworld.runCommand(`gamerule pvp true`)
+    }
+    if(pvp===400){ //400
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§eEl PVP será desactivado en 20 segundos."}]}')
+    }
+    else if(pvp===1){
+        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§ePVP desactivado."}]}')
+        overworld.runCommand(`title @a actionbar §a¡PVP desactivado!`)
+        overworld.runCommand(`playsound beacon.deactivate @a`)
+        overworld.runCommand(`gamerule pvp false`)
     }
 })
 
@@ -93,6 +115,11 @@ World.events.beforeChat.subscribe(main => {
                 }
                 break
             }
+            case ('pvp'): {
+                pvp = 2401 // 2401
+                pvpactivador = main.sender.name
+            }
+
         }
     }
 })
