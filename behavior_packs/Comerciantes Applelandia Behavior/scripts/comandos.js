@@ -30,17 +30,20 @@ World.events.tick.subscribe(() => {
     }else if(clearlag===20){
         overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lBorrando objetos en el suelo en §o1 segundos§r§c§l..."}]}')
     }else if(clearlag===1){       
-        //var items = overworld.runCommand("testfor @e[type=item]").statusMessage.split(" ").length
-        //var snowball = overworld.runCommand("testfor @e[type=snowball]").statusMessage.split(" ").length
-        //var arrow = overworld.runCommand("testfor @e[type=arrow]").statusMessage.split(" ").length
-        //var total = items + snowball + arrow
-        //overworld.runCommand("kill @e[type=item]")
-        //overworld.runCommand("kill @e[type=snowball]")
-        //overworld.runCommand("kill @e[type=arrow]")
-        //overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados todos los objetos del suelo."}]}')
-        //overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados §o"+items+"§r§c§l objetos del suelo."}]}') 
-        overworld.runCommand("kill @e[type=item]")
-        overworld.runCommand('tellraw @a {"rawtext":[{"text":"§c§lFueron borrados todos los objetos del suelo."}]}')     
+        try {var items = overworld.runCommand("testfor @e[type=item]").statusMessage.split(" ").length
+        } catch {var items = 0}
+        try {var arrow = overworld.runCommand("testfor @e[type=arrow]").statusMessage.split(" ").length
+        } catch {var arrow = 0}
+        try {var snowball = overworld.runCommand("testfor @e[type=snowball]").statusMessage.split(" ").length
+        } catch {var snowball = 0}
+
+        var total = items + snowball + arrow
+
+        try {overworld.runCommand("kill @e[type=item]")} catch {}
+        try {overworld.runCommand("kill @e[type=arrow]")} catch {}
+        try {overworld.runCommand("kill @e[type=snowball]")} catch {}
+
+        overworld.runCommand(`tellraw @a {"rawtext":[{"text":"§c§lFueron borrados ${total} objetos del suelo."}]}`)     
     }
 
     if(pvp>0){
@@ -78,7 +81,7 @@ World.events.beforeChat.subscribe(main => {
                 try{
                     sender.runCommand('tellraw @s[tag=!staff] {"rawtext":[{"text":"§cYou need the §lstaff§r§c tag to use this command. Please ask an operator to run §o/tag (username) add staff§r"}]}')
                 }catch{
-                    clearlag = 301
+                    clearlag = 301 //301
                 }
                 break
             }
