@@ -1,4 +1,12 @@
 {
+  "appleplus:caja_monedas": {
+    "textures": {
+      "up": "caja_monedas_up",
+      "down": "caja_monedas_down",
+      "side": "caja_monedas_side"
+    },
+    "sound": "wood"
+  },
   "format_version": [
     1,
     1,

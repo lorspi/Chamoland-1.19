@@ -2,6 +2,16 @@
   "resource_pack_name": "vanilla",
   "texture_name": "atlas.terrain",
   "padding": 8,
-  "num_mip_levels": 0,
-  "texture_data": {}
+  "num_mip_levels": 4,
+  "texture_data": {
+    "caja_monedas_up": {
+      "textures": "textures/blocks/caja_monedas_up"
+    },
+    "caja_monedas_down": {
+      "textures": "textures/blocks/caja_monedas_down"
+    },
+    "caja_monedas_side": {
+      "textures": "textures/blocks/caja_monedas_side"
+    }
+  }
 }

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "appleplus:caja_monedas"
+    },
+    "groups": [
+      "appleplus"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "000",
+      "000",
+      "000"
+    ],
+    "key": {
+      "0": {
+        "item": "appleplus:bolsa_moneda"
+      }
+    },
+    "result": {
+      "item": "appleplus:caja_monedas",
+      "count": 1
+    }
+  }
+}

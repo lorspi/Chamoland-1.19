@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "appleplus:caja_monedas",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/caja_monedas.json",
+      "minecraft:destroy_time": 0.3,
+      "minecraft:friction": 0.7,
+      "minecraft:map_color": "#815100",
+      "minecraft:block_light_absorption": 0.0,
+      "minecraft:block_light_emission": 0.0,
+      "minecraft:explosion_resistance": 1.0,
+      "minecraft:flammable": {
+        "flame_odds": 1,
+        "burn_odds": 1
+      }
+    }
+  }
+}
