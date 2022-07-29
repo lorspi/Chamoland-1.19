@@ -116,10 +116,17 @@ World.events.beforeChat.subscribe(main => {
                 break
             }
             case ('pvp'): {
-                pvp = 2401 // 2401
-                pvpactivador = main.sender.name
+                if(pvp>0){
+                    pvp = 20
+                    pvpactivador = main.sender.name
+                    overworld.runCommand(`tellraw @a {"rawtext":[{"text":"§e§l${pvpactivador} §r§eha desactivado el PVP."}]}`)
+                }
+                else {
+                    pvp = 2401 // 2401
+                    pvpactivador = main.sender.name
+                }
+                
             }
-
         }
     }
 })
