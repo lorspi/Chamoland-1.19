@@ -12,6 +12,13 @@ var pvp = 0;
 var pvpactivador = "Nadie";
 var amoractivo = 0;
 var amorcontador = 0;
+var random = 0;
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
 
 //Constant tick
@@ -75,22 +82,26 @@ World.events.tick.subscribe(() => {
     // Corazones
     amorcontador = amorcontador + 1
     if(amorcontador===10){ 
-        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~-1 ~2 ~')
+        overworld.runCommand(`execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~${getRandomInt(-1, 2)} ~${getRandomInt(0, 3)} ~${getRandomInt(-1, 2)}`)
       }
     if(amorcontador===15){ 
-        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~1 ~1 ~1')
+        overworld.runCommand(`execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~${getRandomInt(-1, 2)} ~${getRandomInt(0, 3)} ~${getRandomInt(-1, 2)}`)
     }
     if(amorcontador===20){ 
-        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~ ~3 ~1')
+        overworld.runCommand(`execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~${getRandomInt(-1, 2)} ~${getRandomInt(0, 3)} ~${getRandomInt(-1, 2)}`)
     }
-    if(amorcontador===20){ 
-        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~2 ~1 ~')
+    if(amorcontador===25){ 
+        overworld.runCommand(`execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~${getRandomInt(-1, 2)} ~${getRandomInt(0, 3)} ~${getRandomInt(-1, 2)}`)
     }
     if(amorcontador>30){ 
         amorcontador = 1
-        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~ ~2 ~')
+        overworld.runCommand(`execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~${getRandomInt(-1, 2)} ~${getRandomInt(0, 3)} ~${getRandomInt(-1, 2)}`)
     }    
 })
+
+  
+  
+  
 
 //On chat
 World.events.beforeChat.subscribe(main => {
