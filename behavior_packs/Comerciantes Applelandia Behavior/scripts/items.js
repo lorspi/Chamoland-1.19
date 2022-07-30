@@ -81,6 +81,7 @@ function invocar(player) {
             player.runCommand('summon creeper  ~2 ~1 ~')
             player.runCommand('summon creeper  ~2 ~1 ~')
             player.runCommand('summon creeper  ~2 ~1 ~')
+            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
             setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
             setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
