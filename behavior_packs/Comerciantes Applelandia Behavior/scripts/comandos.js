@@ -73,25 +73,23 @@ World.events.tick.subscribe(() => {
     }
 
     // Corazones
-    if(amoractivo===1){ 
-        amorcontador = amorcontador + 1
-        if(amorcontador===10){ 
-            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~-1 ~2 ~')
-        }
-        if(amorcontador===15){ 
-            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~1 ~1 ~1')
-        }
-        if(amorcontador===20){ 
-            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~ ~3 ~1')
-        }
-        if(amorcontador===20){ 
-            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~2 ~1 ~')
-        }
-        if(amorcontador===30){ 
-            overworld.runCommand('execute @e[name="lorspi"] ~ ~ ~ particle minecraft:heart_particle ~ ~2 ~')
-            amorcontador = 1
-        }    
+    amorcontador = amorcontador + 1
+    if(amorcontador===10){ 
+        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~-1 ~2 ~')
+      }
+    if(amorcontador===15){ 
+        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~1 ~1 ~1')
     }
+    if(amorcontador===20){ 
+        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~ ~3 ~1')
+    }
+    if(amorcontador===20){ 
+        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~2 ~1 ~')
+    }
+    if(amorcontador>30){ 
+        amorcontador = 1
+        overworld.runCommand('execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~ ~2 ~')
+    }    
 })
 
 //On chat
@@ -112,26 +110,14 @@ World.events.beforeChat.subscribe(main => {
                 break
             }
             case ('amor'): {
-                if(amoractivo===1){
-                    try{
-                        sender.runCommand('tellraw @s[name=lorspi] {"rawtext":[{"text":"§cCorazones desactivados"}]}')
-                        amoractivo = 0
-                    }catch{
-                        sender.runCommand('tellraw @s[name=lorspi] {"rawtext":[{"text":"§cNo tienes permiso"}]}')
-                    }
+                try{
+                    sender.runCommand(`tellraw @s[tag=!amor] {"rawtext":[{"text":"§aCorazones activados"}]}`)
+                    sender.runCommand('tag @s add amor')
+                }catch{
+                    sender.runCommand(`tellraw @s[tag=amor] {"rawtext":[{"text":"§cCorazones desactivados"}]}`)
+                    sender.runCommand('tag @s remove amor')
                 }
-                else if(amoractivo===0) {
-                    try{
-                        sender.runCommand('tellraw @s[name=lorspi] {"rawtext":[{"text":"§cCorazones activados"}]}')
-                        amoractivo = 1
-                    }catch{
-                        sender.runCommand('tellraw @s[name=lorspi] {"rawtext":[{"text":"§cNo tienes permiso"}]}')
-                    }
-                    
-                }
-
-                
-                break
+                break  
             }
             case ('spawn'): {
                 try{
