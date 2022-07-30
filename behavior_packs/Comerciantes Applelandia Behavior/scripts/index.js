@@ -2,6 +2,7 @@ import 'scripts/items.js'
 import 'scripts/comandos.js'
 import 'scripts/entidades.js'
 import 'scripts/ticks.js'
+import 'scripts/dormir.js'
 
 import { chatrank } from 'scripts/chat.js'
 import { world } from 'mojang-minecraft'
@@ -18,3 +19,4 @@ world.events.tick.subscribe((ticks) => {
         world.getDimension("overworld").runCommand(`tellraw @a {"rawtext":[{"text":"World has loaded in ${loadTime} ticks!"}]}`)
     }
 })
+

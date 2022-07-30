@@ -30,6 +30,7 @@ World.events.tick.subscribe(() => {
         //overworld.runCommand(`title @a[name=lorspi] actionbar §cRestante comercio: ${tiempotiendas-numero[2]}`) // Cuenta regresiva en segs
         overworld.runCommand(`scoreboard players add @e[name=Tiendas] tiendascont 1`)
         overworld.runCommand(`effect @e[name=Tiendas] invisibility 5`)
+
       }
     if(segundo===20){ 
         segundo = 0
@@ -66,4 +67,9 @@ World.events.tick.subscribe(() => {
         overworld.runCommand(`playsound note.bell @a`)
     }
 })
+
+
+
+
+
 
