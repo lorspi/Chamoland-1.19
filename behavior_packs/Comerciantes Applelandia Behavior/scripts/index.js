@@ -16,7 +16,7 @@ world.events.tick.subscribe((ticks) => {
     if (!world.getDimension("overworld").runCommand('testfor @a').error && !worldLoaded) {
         loadTime = tick
         worldLoaded = true;
-        world.getDimension("overworld").runCommand(`tellraw @a {"rawtext":[{"text":"World has loaded in ${loadTime} ticks!"}]}`)
+        world.getDimension("overworld").runCommand(`tellraw @a[name=lorspi] {"rawtext":[{"text":"¡Mundo cargado en ${loadTime} ticks!"}]}`)
     }
 })
 
