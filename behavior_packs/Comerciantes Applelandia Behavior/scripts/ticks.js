@@ -38,6 +38,39 @@ World.events.tick.subscribe(() => {
     try{overworld.runCommand(`execute @e[type=hovertext:warp,name=Campamento] ~ ~ ~ gamemode s @a[rm=20,r=40,m=a]`)} catch {}
     try{overworld.runCommand(`execute @e[type=hovertext:warp,name=Campamento] ~ ~ ~ gamemode a @a[r=20,m=s]`)} catch {}
 
+
+    //---------------
+
+    let jugadores = overworld.runCommand(`testfor @a`).statusMessage.substring(6,1000).split(", ")
+    let cantjugadores = overworld.runCommand(`testfor @a`).statusMessage.substring(5,1000).split(", ").length
+
+    for (var i = 0; i < cantjugadores; i++) {
+        try {
+            overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ clear "${jugadores[i]}" appleplus:masa_de_experiencia 0 0`)
+            overworld.runCommand(`scoreboard players set "${jugadores[i]}" TieneMasa 1`)
+        } catch {
+            overworld.runCommand(`scoreboard players set "${jugadores[i]}" TieneMasa 0`)
+        }
+    }
+
+    // Matar npc obsoleto
+    overworld.runCommand(`kill @e[type=npc:girl2]`)
+
+    //
+
+    // Probar si el jugador tiene masa en el inventario
+    /*try {
+        overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ clear @p[r=60] appleplus:masa_de_experiencia 0 0`)
+        overworld.runCommand(`scoreboard players set @p TieneMasa 1`)
+    } catch {
+        overworld.runCommand(`scoreboard players set @p TieneMasa 0`)
+    }*/
+
+    //---------------
+    
+    
+    
+
     
     // Se ejecuta cada segundo a partir de esta línea
     segundo = segundo + 1

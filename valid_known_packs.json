@@ -68,7 +68,8 @@
 			"G2si50EfW57eYEr5LHwaCSpa9fVy62bTDRlSs1Sa2oE=",
 			"RJoacybMnYO78APS6VvivRnxopQeAvc6BExeDPuDw2I=",
 			"pJmDC/0EttLaPaOB8yt3DgG47qDyk+wObMNhxlzExwM=",
-			"e1a5i6yJ+sKV8ao2DFnew/VEG2Vhgp1ZfMWeXeoIG2s="
+			"e1a5i6yJ+sKV8ao2DFnew/VEG2Vhgp1ZfMWeXeoIG2s=",
+			"iBYSmT+kWiYA82Wl2sAZUpySr8G8zb0NhQtWl5f4T/c="
 		],
 		"path" : "resource_packs/Comerciantes Applelandia Resource",
 		"uuid" : "01334532-462a-9c36-34b0-251658105093",
@@ -142,7 +143,11 @@
 	{
 		"file_system" : "RawPath",
 		"from_disk" : true,
-		"hashes" : [ "Vovwx2qCx9Z9xnGSfdfpq69MZLC90B6qrWzFQYCpS+0=" ],
+		"hashes" : 
+		[
+			"Vovwx2qCx9Z9xnGSfdfpq69MZLC90B6qrWzFQYCpS+0=",
+			"R96PfiOFgSLflymoLPdM6NvCzqLQE+rS1n379Nj2+Sc="
+		],
 		"path" : "behavior_packs/WorldEditBP",
 		"uuid" : "3cdb2ddf-662e-4f8f-a0a1-1293b91ccb2f",
 		"version" : "0.6.2"
@@ -280,7 +285,11 @@
 	{
 		"file_system" : "RawPath",
 		"from_disk" : true,
-		"hashes" : [ "NNkp++2I9dcYxuoKqN6UygvGDeP48TPQyIcNmIM0KcE=" ],
+		"hashes" : 
+		[
+			"NNkp++2I9dcYxuoKqN6UygvGDeP48TPQyIcNmIM0KcE=",
+			"QjYlrp5dQASE/FWbokr/P3smqUHBvnNyoQOAIImHrVI="
+		],
 		"path" : "resource_packs/WorldEditRP",
 		"uuid" : "e304a4eb-f0a0-4979-ac17-7b0f46a555c8",
 		"version" : "0.6.2"
@@ -477,7 +486,8 @@
 			"w5empwYqdGEcWh46uwh7eRSV+M/uwYITN2ZBvrjUrQU=",
 			"lwZX6DGhDMCV7o9m2AX2R5EUY+Ujkt5qPCST+WJV33I=",
 			"L1S9O4lbv6qqT/VoaX1hNO+j77BR1irMfH51GK3vtio=",
-			"0ANpoovcHQSkp7JX3p+e2HGO74huXYcagp5PMN47yVE="
+			"0ANpoovcHQSkp7JX3p+e2HGO74huXYcagp5PMN47yVE=",
+			"zsDI0ZX1Bp/EBD1J30YLbHG78HyMB7G/Sqgu99F2Rhg="
 		],
 		"path" : "behavior_packs/Appleplus",
 		"uuid" : "d62135c3-30bb-3e26-b678-5e84919a8855",
@@ -671,7 +681,8 @@
 			"kWAhHpDEVQN9bs0D35yLfCG26KzwMN4CKG0lUhCsNKQ=",
 			"jgj5UYmHPnrMcO63CosLQBufBUbMHHiUkbLQwlsh6HI=",
 			"9kBJfp4aOaLzyGMOPKip4NJ24jSnRJ/JGgT5XiV/UwE=",
-			"59TOGHYRGgT0NengvUW67VYl+J+XUc1OAPWn5WgtzSY="
+			"59TOGHYRGgT0NengvUW67VYl+J+XUc1OAPWn5WgtzSY=",
+			"TCpuNkvOgfKxrwMiGihYMCDGt16UWyJD7MP9SixHk70="
 		],
 		"path" : "behavior_packs/Comerciantes Applelandia Behavior",
 		"uuid" : "bcbd2957-df3c-416f-5edf-8d8c90a2c687",
