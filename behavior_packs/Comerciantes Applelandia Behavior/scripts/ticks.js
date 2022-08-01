@@ -8,7 +8,7 @@ const overworld = World.getDimension("overworld")
 const tiempotiendas = 800
 
 //Variables
-var sonido = 0;
+//var sonido = 0;
 var segundo = 0;
 
 //Constant tick
@@ -22,15 +22,31 @@ World.events.tick.subscribe(() => {
         sonido = 1
     }*/
 
-    // Se ejecuta cada segundo
+    // Modo de juego en el spawn
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ gamemode s @a[rm=80,r=300,m=a]`)} catch {}
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ gamemode a @a[r=80,m=s]`)} catch {}
+
+    // Matar criaturas en el spawn
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ kill @e[type=zombie,r=80]`)} catch {}
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ kill @e[type=creeper,r=80]`)} catch {}
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ kill @e[type=skeleton,r=80]`)} catch {}
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ kill @e[type=spider,r=80]`)} catch {}
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=kzjopw] ~ ~ ~ kill @e[type=zombie_villager,r=80]`)} catch {}
+
+    // Modo de juego en los campamentos
+    //summon hovertext:warp Campamento
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=Campamento] ~ ~ ~ gamemode s @a[rm=20,r=40,m=a]`)} catch {}
+    try{overworld.runCommand(`execute @e[type=hovertext:warp,name=Campamento] ~ ~ ~ gamemode a @a[r=20,m=s]`)} catch {}
+
+    
+    // Se ejecuta cada segundo a partir de esta línea
     segundo = segundo + 1
     if(segundo===1){ 
         var tienda = overworld.runCommand("scoreboard players list @e[name=Tiendas]").statusMessage.split("\n")
         var numero = tienda[1].split(" ")
-        //overworld.runCommand(`title @a[name=lorspi] actionbar §cRestante comercio: ${tiempotiendas-numero[2]}`) // Cuenta regresiva en segs
+        overworld.runCommand(`title @a[name=lorspi] actionbar §cRestante comercio: ${tiempotiendas-numero[2]}`) // Cuenta regresiva en segs
         overworld.runCommand(`scoreboard players add @e[name=Tiendas] tiendascont 1`)
-        overworld.runCommand(`effect @e[name=Tiendas] invisibility 5`)
-
+        overworld.runCommand(`effect @e[type=hovertext:warp] invisibility 5`)
       }
     if(segundo===20){ 
         segundo = 0
@@ -43,7 +59,7 @@ World.events.tick.subscribe(() => {
     scoreboard players list @e[name=Tiendas]
     scoreboard players add @e[name=Tiendas] tiendascont 1
     scoreboard players set @e[name=Tiendas] tiendascont 1
-    summon hovertext:hovertext Tiendas
+    summon hovertext:warp Tiendas
     */
 
     if(numero[2]>tiempotiendas) { // Reinicio
@@ -66,6 +82,8 @@ World.events.tick.subscribe(() => {
         overworld.runCommand(`tellraw @a {"rawtext":[{"text":"\n    §l§aComerciantes \n§r  ¡Inventarios actualizados!\n  Nuevas ofertas de compra y venta disponibles.\n "}]}`)
         overworld.runCommand(`playsound note.bell @a`)
     }
+
+    
 })
 
 
