@@ -16,6 +16,9 @@ function chatrank(data){
     }
     let text = `${ranks}${data.sender.nameTag}: §r§f${data.message}`
     world.getDimension('overworld').runCommand(`tellraw @a {"rawtext":[{"translate":${JSON.stringify(text)}}]}`)
+    try {
+        world.getDimension('overworld').runCommand(`playsound note.hat @a[tag=!silenciochat]`)
+    } catch {}
     data.cancel = true
 }
 export { chatrank }

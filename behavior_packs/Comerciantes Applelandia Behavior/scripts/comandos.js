@@ -10,9 +10,7 @@ const overworld = World.getDimension("overworld")
 var clearlag = 0;
 var pvp = 0;
 var pvpactivador = "Nadie";
-var amoractivo = 0;
 var amorcontador = 0;
-var random = 0;
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -174,6 +172,19 @@ World.events.beforeChat.subscribe(main => {
                     pvpactivador = main.sender.name
                 }
                 
+            }
+            case ('chat'): {
+                let etiqueta = sender.getTags().includes("silenciochat")
+                sender.runCommand(`tellraw @a {"rawtext":[{"text":"Valor: ${etiqueta}"}]}`)
+                
+                if(etiqueta==true){
+                    sender.runCommand(`tag ${sender.name} remove silenciochat`)
+                    sender.runCommand(`tellraw @a {"rawtext":[{"text":"§aHas activado el sonido del chat"}]}`)
+                }
+                else {
+                    sender.runCommand(`tag ${sender.name} add silenciochat`)
+                    sender.runCommand(`tellraw @a {"rawtext":[{"text":"§cHas desactivado el sonido del chat."}]}`)
+                }
             }
         }
     }
