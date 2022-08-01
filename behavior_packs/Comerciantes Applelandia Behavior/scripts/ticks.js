@@ -54,7 +54,7 @@ World.events.tick.subscribe(() => {
     }
 
     // Matar npc obsoleto
-    overworld.runCommand(`kill @e[type=npc:girl2]`)
+    try {overworld.runCommand(`kill @e[type=npc:girl2]`)} catch {}
 
     //
 
@@ -77,7 +77,7 @@ World.events.tick.subscribe(() => {
     if(segundo===1){ 
         var tienda = overworld.runCommand("scoreboard players list @e[name=Tiendas]").statusMessage.split("\n")
         var numero = tienda[1].split(" ")
-        //overworld.runCommand(`title @a[name=lorspi] actionbar §cRestante comercio: ${tiempotiendas-numero[2]}`) // Cuenta regresiva en segs
+        overworld.runCommand(`title @a[name=lorspi] actionbar §cRestante comercio: ${tiempotiendas-numero[2]}`) // Cuenta regresiva en segs
         overworld.runCommand(`scoreboard players add @e[name=Tiendas] tiendascont 1`)
         overworld.runCommand(`effect @e[type=hovertext:warp] invisibility 5`)
       }
