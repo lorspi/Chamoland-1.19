@@ -43,44 +43,6 @@
 		"from_disk" : true,
 		"hashes" : 
 		[
-			"4+sPAziwrvtnxj49DLrRBe+zmVB7JvOmQWyC9x84dtM=",
-			"2I4b2uTRk32oCXRPut7DsxQQDsBSEEn1sPdUdpdy3j0=",
-			"AxKWOjbn09FC/4BXnbeVqyMVLBvn2xPbVTg5Z9BYR2M=",
-			"D3bkQMkOLakCjrB46FbJt4v/AHN8bcyQqSK9jpmfgtk=",
-			"w/yVRnX4XtWHR1SOpIDvhGwmaqS5MqnzEr1Ho0o8+ig=",
-			"JLe5oGe2AbGa94qgOWJP+7L6MdUXHwc77plX7d+A4Vc=",
-			"mwjL6yADTKyPKG71/qB9U0oSNJY/rIisxBospo2I2oA=",
-			"BJnq6ZjIhmetld5W0SO6dAq5PXckF+Wzsys/+tbT3ek=",
-			"+xMR7gp7UzAAHCRNiB5WcJrht1tX5hzb39SkFJ9d6UU=",
-			"lhaRb+L/gRMnF6dZ73lD8vj1CPewkC6iOAp/FV8VJ2k=",
-			"tBghd1JDNcFtVMNwuxjZEflpyA1AsSr9V16EkHdNAAs=",
-			"3/ON/fk6Cybu5xxzC1Gz62Y8IPR5vj0pL0kq06ID80U=",
-			"qz8cszk05sNuF0XHlwPPBfi9i9+A3Uul6vFLUYWFf+o=",
-			"IXxOP0pfA2CFQzhmBYjfnRDHJjiQUl58hNJ0CQJBPKo=",
-			"VUrk9nVdTOG3XKfX6ajpLT0AyAlm8YD2HO5hYvKzfv0=",
-			"fY8LTHxvHHOrco3jHE+Xkl1CU1xPfJuU7tI0TjQ2Nas=",
-			"SwcpDPULOrGsQkBlS8Tozv5fKfqSwf7Wk7ryaSTv+pc=",
-			"lORSwGzQARrpoDdCp1AcEVYQHhCSXU0wqLand33Wimg=",
-			"UzvcDYM6BVfi+VpoBiovoIp6SP68RtB20hIj8jowsV0=",
-			"3DMMxcIIvp3HFqxliAHEfI+LW7Kc3OQI9LSSbB1cbBk=",
-			"pavFdeTTMRIy1wAwjWxLWjY94sro5yIDH57Vj617AVo=",
-			"aBgh+ExoYeV6d0R53+BC4Wwto6LNpPxPfWvYpBzy7+E=",
-			"G2si50EfW57eYEr5LHwaCSpa9fVy62bTDRlSs1Sa2oE=",
-			"RJoacybMnYO78APS6VvivRnxopQeAvc6BExeDPuDw2I=",
-			"pJmDC/0EttLaPaOB8yt3DgG47qDyk+wObMNhxlzExwM=",
-			"e1a5i6yJ+sKV8ao2DFnew/VEG2Vhgp1ZfMWeXeoIG2s=",
-			"iBYSmT+kWiYA82Wl2sAZUpySr8G8zb0NhQtWl5f4T/c="
-		],
-		"path" : "resource_packs/Comerciantes Applelandia Resource",
-		"uuid" : "01334532-462a-9c36-34b0-251658105093",
-		"version" : "0.2.4"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : 
-		[
 			"o72R2sx60IuVN8WzJDsLk9TVkJe6ygG3kmF7drx60oE=",
 			"WNW6TWowwtF+jzFSzIxu5jU6vTdZUjWp41x9c7icTQo=",
 			"3S+Aw7V7RHXy0bCOYLH+8yqsKOAPSXXXrzVL2CfFMVw="
@@ -138,6 +100,45 @@
 		"path" : "resource_packs/Chamoland",
 		"uuid" : "0575c61f-a5da-4b7f-9961-ffda2908861e",
 		"version" : "0.16.7"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : 
+		[
+			"4+sPAziwrvtnxj49DLrRBe+zmVB7JvOmQWyC9x84dtM=",
+			"2I4b2uTRk32oCXRPut7DsxQQDsBSEEn1sPdUdpdy3j0=",
+			"AxKWOjbn09FC/4BXnbeVqyMVLBvn2xPbVTg5Z9BYR2M=",
+			"D3bkQMkOLakCjrB46FbJt4v/AHN8bcyQqSK9jpmfgtk=",
+			"w/yVRnX4XtWHR1SOpIDvhGwmaqS5MqnzEr1Ho0o8+ig=",
+			"JLe5oGe2AbGa94qgOWJP+7L6MdUXHwc77plX7d+A4Vc=",
+			"mwjL6yADTKyPKG71/qB9U0oSNJY/rIisxBospo2I2oA=",
+			"BJnq6ZjIhmetld5W0SO6dAq5PXckF+Wzsys/+tbT3ek=",
+			"+xMR7gp7UzAAHCRNiB5WcJrht1tX5hzb39SkFJ9d6UU=",
+			"lhaRb+L/gRMnF6dZ73lD8vj1CPewkC6iOAp/FV8VJ2k=",
+			"tBghd1JDNcFtVMNwuxjZEflpyA1AsSr9V16EkHdNAAs=",
+			"3/ON/fk6Cybu5xxzC1Gz62Y8IPR5vj0pL0kq06ID80U=",
+			"qz8cszk05sNuF0XHlwPPBfi9i9+A3Uul6vFLUYWFf+o=",
+			"IXxOP0pfA2CFQzhmBYjfnRDHJjiQUl58hNJ0CQJBPKo=",
+			"VUrk9nVdTOG3XKfX6ajpLT0AyAlm8YD2HO5hYvKzfv0=",
+			"fY8LTHxvHHOrco3jHE+Xkl1CU1xPfJuU7tI0TjQ2Nas=",
+			"SwcpDPULOrGsQkBlS8Tozv5fKfqSwf7Wk7ryaSTv+pc=",
+			"lORSwGzQARrpoDdCp1AcEVYQHhCSXU0wqLand33Wimg=",
+			"UzvcDYM6BVfi+VpoBiovoIp6SP68RtB20hIj8jowsV0=",
+			"3DMMxcIIvp3HFqxliAHEfI+LW7Kc3OQI9LSSbB1cbBk=",
+			"pavFdeTTMRIy1wAwjWxLWjY94sro5yIDH57Vj617AVo=",
+			"aBgh+ExoYeV6d0R53+BC4Wwto6LNpPxPfWvYpBzy7+E=",
+			"G2si50EfW57eYEr5LHwaCSpa9fVy62bTDRlSs1Sa2oE=",
+			"RJoacybMnYO78APS6VvivRnxopQeAvc6BExeDPuDw2I=",
+			"pJmDC/0EttLaPaOB8yt3DgG47qDyk+wObMNhxlzExwM=",
+			"e1a5i6yJ+sKV8ao2DFnew/VEG2Vhgp1ZfMWeXeoIG2s=",
+			"iBYSmT+kWiYA82Wl2sAZUpySr8G8zb0NhQtWl5f4T/c=",
+			"G3wI1Cjzn4VSdM5xEoSwZPyGsAThhnynyIbOsSdnfTs="
+		],
+		"path" : "resource_packs/Comerciantes Applelandia Resource",
+		"uuid" : "01334532-462a-9c36-34b0-251658105093",
+		"version" : "0.2.5"
 	},
 	
 	{
@@ -683,7 +684,9 @@
 			"9kBJfp4aOaLzyGMOPKip4NJ24jSnRJ/JGgT5XiV/UwE=",
 			"59TOGHYRGgT0NengvUW67VYl+J+XUc1OAPWn5WgtzSY=",
 			"TCpuNkvOgfKxrwMiGihYMCDGt16UWyJD7MP9SixHk70=",
-			"PQBtFb+Ol7VhGDKXjjDsPaFSMqQweWAGGEM1fbwPCtg="
+			"PQBtFb+Ol7VhGDKXjjDsPaFSMqQweWAGGEM1fbwPCtg=",
+			"NtDcpcOP9SBB+hVsE0zIhJsLK9WJKBD7/q1spVPv7gg=",
+			"gSz5lI8nJN+b6k3tuR/kN47BUxK2Zq3vrnl0tmOKAiQ="
 		],
 		"path" : "behavior_packs/Comerciantes Applelandia Behavior",
 		"uuid" : "bcbd2957-df3c-416f-5edf-8d8c90a2c687",

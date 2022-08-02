@@ -20,5 +20,6 @@ tile.npc:adalita_block.name=Bloque de adalita
 
 item.npc:talismandes.name=§7Talismán del regreso desactivado
 item.npc:talisman.name=§l§eTalismán del regreso
+item.npc:talismancap.name=§l§5Replicador de criaturas
 
 tile.npc:lucky_block.name=§l§gBloque de la suerte

@@ -24,6 +24,11 @@
       "textures": [
     "textures/items/talisman"
       ]
+    },
+    "talismancap": {
+      "textures": [
+    "textures/items/talismancap"
+      ]
     }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "minecraft:recipe_shaped" : {
+    "result" : {
+      "count" : 1,
+      "data" : 0,
+      "item" : "npc:talismancap"
+    },
+    "tags" : [
+      "crafting_table"
+    ],
+    "key" : {
+      "A" : {
+        "item" : "appleplus:masa_de_experiencia"
+      },
+      "B" : {
+        "item" : "minecraft:stick"
+      },
+      "C" : {
+        "item" : "appleplus:cluster_de_almas"
+      }
+    },
+    "pattern" : [
+      "ACA",
+      "ABA",
+      "ABA"
+    ],
+    "description" : {
+      "identifier" : "npc:talismancap"
+    }
+  },
+  "format_version" : "1.10"
+}
