@@ -175,7 +175,7 @@ World.events.beforeChat.subscribe(main => {
             }
             case ('chat'): {
                 let etiqueta = sender.getTags().includes("silenciochat")
-                sender.runCommand(`tellraw @a {"rawtext":[{"text":"Valor: ${etiqueta}"}]}`)
+                //sender.runCommand(`tellraw @a {"rawtext":[{"text":"Valor: ${etiqueta}"}]}`)
                 
                 if(etiqueta==true){
                     sender.runCommand(`tag ${sender.name} remove silenciochat`)
