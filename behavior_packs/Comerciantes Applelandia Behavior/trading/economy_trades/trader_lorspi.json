@@ -126,7 +126,15 @@
               "gives": [
                 {
                   "item": "npc:talisman",
-                  "quantity": 1
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§bÚsalo para volver al spawn desde cualquier lugar."
+                      ]
+                    }
+                  ]
                 }
               ],
               "trader_exp": 2,

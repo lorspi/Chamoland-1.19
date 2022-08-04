@@ -134,7 +134,8 @@
 			"pJmDC/0EttLaPaOB8yt3DgG47qDyk+wObMNhxlzExwM=",
 			"e1a5i6yJ+sKV8ao2DFnew/VEG2Vhgp1ZfMWeXeoIG2s=",
 			"iBYSmT+kWiYA82Wl2sAZUpySr8G8zb0NhQtWl5f4T/c=",
-			"G3wI1Cjzn4VSdM5xEoSwZPyGsAThhnynyIbOsSdnfTs="
+			"G3wI1Cjzn4VSdM5xEoSwZPyGsAThhnynyIbOsSdnfTs=",
+			"CQGmy7uJfgxotCkNP5AVVNEu0IdlXxrUn6JjdiweYBg="
 		],
 		"path" : "resource_packs/Comerciantes Applelandia Resource",
 		"uuid" : "01334532-462a-9c36-34b0-251658105093",
@@ -489,7 +490,8 @@
 			"L1S9O4lbv6qqT/VoaX1hNO+j77BR1irMfH51GK3vtio=",
 			"0ANpoovcHQSkp7JX3p+e2HGO74huXYcagp5PMN47yVE=",
 			"zsDI0ZX1Bp/EBD1J30YLbHG78HyMB7G/Sqgu99F2Rhg=",
-			"R2TY63bf97fO5SlUokYx2rs/ZApMAjymFF0Z/gg2Mbw="
+			"R2TY63bf97fO5SlUokYx2rs/ZApMAjymFF0Z/gg2Mbw=",
+			"jSqxih2w2vrb/+O6o2jqj+dhgJ1ifCuAYTFSFWdqguY="
 		],
 		"path" : "behavior_packs/Appleplus",
 		"uuid" : "d62135c3-30bb-3e26-b678-5e84919a8855",
@@ -691,7 +693,13 @@
 			"PceXtuZtBocBsBEDStR4+EBLYAS6qcD7LXMH23xW5qY=",
 			"wQu9LYvBfZWIms8EJRpuHa6CYe1YcyozhUbFPZrmvj4=",
 			"Q47EfjeChRChMB/vyriG/9g2xR4A2GlUd9P0ZP44kiA=",
-			"tqvGsfOHBmD48IOc9Kc53UqStMgOf5M/9mnC3XT8c64="
+			"tqvGsfOHBmD48IOc9Kc53UqStMgOf5M/9mnC3XT8c64=",
+			"keRDqBDXr5nPqjtD6tK2Y0i9H0B7nGOtktXPpR+CnSw=",
+			"0c0P73bFdttWR4ujXvDGNh7vBrfZRbde6rdOUEU5AGg=",
+			"QDCvYXYrvnRzhLaI0JJNiYzLz9mdQHwgTiFnE9bXTjs=",
+			"z+XyE+mmCU5iIEu4/xf3GwRLSHwUuccGtjJyjYp6VEM=",
+			"TFKDQ5eQ5l6ouLaIZaCpvqEW1vDs7xUumrILsF7IgV0=",
+			"tqOvGgSDgrXB4gSD1bdTB8KBCbOt8L6FghUvnS6EGMc="
 		],
 		"path" : "behavior_packs/Comerciantes Applelandia Behavior",
 		"uuid" : "bcbd2957-df3c-416f-5edf-8d8c90a2c687",

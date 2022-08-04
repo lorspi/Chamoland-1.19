@@ -341,12 +341,7 @@
               "reward_exp": true
             }
           ]
-        }
-      ]
-    },
-    {
-      "total_exp_required": 5,
-      "groups": [
+        },
         {
           "num_to_select": 1,
           "trades": [
