@@ -36,8 +36,14 @@ function encantamientos(player) {
                         player.runCommand('xp -20l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 1) {
                 try{
@@ -47,8 +53,14 @@ function encantamientos(player) {
                         player.runCommand('xp -20l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 2) {
                 try{
@@ -58,8 +70,14 @@ function encantamientos(player) {
                         player.runCommand('xp -20l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 3) {
                 try{
@@ -69,8 +87,14 @@ function encantamientos(player) {
                         player.runCommand('xp -20l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 4) {
                 try{
@@ -80,8 +104,14 @@ function encantamientos(player) {
                         player.runCommand('xp -30l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 5) {
                 try{
@@ -91,8 +121,14 @@ function encantamientos(player) {
                         player.runCommand('xp -20l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 6) {
                 try{
@@ -102,8 +138,14 @@ function encantamientos(player) {
                         player.runCommand('xp -20l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 7) {
                 try{
@@ -113,8 +155,14 @@ function encantamientos(player) {
                         player.runCommand('xp -20l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 8) {
                 try{
@@ -124,8 +172,14 @@ function encantamientos(player) {
                         player.runCommand('xp -30l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
             if (response.selection === 9) {
                 try{
@@ -135,8 +189,14 @@ function encantamientos(player) {
                         player.runCommand('xp -60l @s')
                         player.runCommand('playsound random.orb @s')
                         encantado(player)
-                    } catch {nocompatible(player)}                
-                }catch{noniveles(player)}
+                    } catch {
+                        nocompatible(player)
+                        player.runCommand('playsound random.break @s')
+                    }                
+                }catch {
+                    noniveles(player)
+                    player.runCommand('playsound random.break @s')
+                }
             }
         })
     }

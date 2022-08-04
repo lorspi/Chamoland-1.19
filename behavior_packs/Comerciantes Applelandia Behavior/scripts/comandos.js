@@ -45,12 +45,15 @@ World.events.tick.subscribe(() => {
         } catch {var arrow = 0}
         try {var snowball = overworld.runCommand("testfor @e[type=snowball]").statusMessage.split(" ").length
         } catch {var snowball = 0}
+        try {var xp_orb = overworld.runCommand("testfor @e[type=xp_orb]").statusMessage.split(" ").length
+        } catch {var xp_orb = 0}
 
-        var total = items + snowball + arrow
+        var total = items + snowball + arrow + xp_orb
 
         try {overworld.runCommand("kill @e[type=item]")} catch {}
         try {overworld.runCommand("kill @e[type=arrow]")} catch {}
         try {overworld.runCommand("kill @e[type=snowball]")} catch {}
+        try {overworld.runCommand("kill @e[type=xp_orb]")} catch {}
 
         overworld.runCommand(`tellraw @a {"rawtext":[{"text":"§c§lFueron borrados ${total} objetos del suelo."}]}`)     
     }
