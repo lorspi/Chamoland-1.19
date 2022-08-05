@@ -149,6 +149,43 @@
             {
               "wants": [
                 {
+                  "item": "appleplus:masa_de_experiencia",
+                  "quantity": 6,
+                  "price_multiplier": 0.05
+                },
+                {
+                  "item": "appleplus:moneda",
+                  "quantity": 15,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "npc:talismancap",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§bGolpea una criatura para obtener una copia de ella en tu inventario.",
+                        "§bClic derecho con la herramienta en mano para ver las criaturas que puedes obtener."
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 2,
+              "max_uses": 99999999,
+              "reward_exp": false
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
                   "item": "appleplus:pila_moneda",
                   "quantity": 1,
                   "price_multiplier": 0.05
