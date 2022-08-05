@@ -1,6 +1,6 @@
 import { ActionFormData, MessageFormData } from "mojang-minecraft-ui"
 import { world } from "mojang-minecraft"
-//import "scripts/dependencias/timer.js";
+import "scripts/dependencias/timer.js";
 
 
 //Consts
@@ -11,6 +11,12 @@ var validarherramienta = false
 var validarmob = false
 var herramienta = "npc:talismancap"
 const mobs = ["cow", "sheep", "chicken" , "pig", "skeleton", "zombie", "wither_skeleton", "creeper", "zombie_villager", "villager", "villager_v2", "husk", "skeleton_horse", "donkey", "mule", "spider", "slime", "ghast", "zombie_pigman", "enderman", "cave_spider", "blaze", "magma_cube", "bat", "endermite", "guardian", "shulker", "squid", "glow_squid", "wolf", "mooshroom", "ocelot", "horse", "rabbit", "polar_bear", "llama", "parrot", "goat", "phantom", "fox", "turtle", "frog", "dolphin", "cat", "allay", "bee", "piglin"];
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
 world.events.entityHit.subscribe(event => {
 
@@ -47,8 +53,27 @@ world.events.entityHit.subscribe(event => {
             }
 
             player.runCommand(`playsound random.totem @s ~ ~ ~ 0.5`)
-            player.runCommand(`particle minecraft:totem_particle ~ ~ ~`)
-            player.runCommand(`particle minecraft:totem_particle ~ ~1 ~`)
+            //player.runCommand(`particle minecraft:totem_particle ~ ~ ~`)
+            //player.runCommand(`particle minecraft:totem_particle ~ ~${getRandomInt(1, 2)} ~`)
+
+            setTimeout(() => {
+                player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~${getRandomInt(2, 4)}`)}, 1);
+            setTimeout(() => {
+                player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~-${getRandomInt(2, 4)}`)}, 5);
+            setTimeout(() => {
+                player.runCommand(`particle minecraft:sculk_soul_particle ~-${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~${getRandomInt(2, 4)}`)}, 9);
+            setTimeout(() => {
+                player.runCommand(`particle minecraft:sculk_soul_particle ~-${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~-${getRandomInt(2, 4)}`)}, 13);
+
+
+            setTimeout(() => {
+                player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~`)}, 17);
+            setTimeout(() => {
+                player.runCommand(`particle minecraft:sculk_soul_particle ~-${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~`)}, 21);
+            setTimeout(() => {
+                player.runCommand(`particle minecraft:sculk_soul_particle ~ ~${getRandomInt(1, 3)} ~${getRandomInt(2, 4)}`)}, 24);
+            setTimeout(() => {
+                player.runCommand(`particle minecraft:sculk_soul_particle ~ ~${getRandomInt(1, 3)} ~-${getRandomInt(2, 4)}`)}, 28);
             
             //player.runCommand(`kill @e[type=${entity.id}]`)
         } else if(validarherramienta && !validarmob){
