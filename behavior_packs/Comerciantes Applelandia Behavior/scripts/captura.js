@@ -56,6 +56,8 @@ world.events.entityHit.subscribe(event => {
             //player.runCommand(`particle minecraft:totem_particle ~ ~ ~`)
             //player.runCommand(`particle minecraft:totem_particle ~ ~${getRandomInt(1, 2)} ~`)
 
+            /*
+            // Generación de partículas v1
             setTimeout(() => {
                 player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~${getRandomInt(2, 4)}`)}, 1);
             setTimeout(() => {
@@ -74,6 +76,21 @@ world.events.entityHit.subscribe(event => {
                 player.runCommand(`particle minecraft:sculk_soul_particle ~ ~${getRandomInt(1, 3)} ~${getRandomInt(2, 4)}`)}, 24);
             setTimeout(() => {
                 player.runCommand(`particle minecraft:sculk_soul_particle ~ ~${getRandomInt(1, 3)} ~-${getRandomInt(2, 4)}`)}, 28);
+            
+            */
+
+            // Generación de partículas v2
+            for (var i = 0; i < 50; i++) {
+                try{
+                    setTimeout(() => {player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(-3, 3)} ~${getRandomInt(1, 4)} ~${getRandomInt(-3, 3)}`)}, i);
+                } catch{}
+                try{
+                    setTimeout(() => {entity.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(-3, 3)} ~${getRandomInt(1, 4)} ~${getRandomInt(-3, 3)}`)}, i);
+                } catch{}
+                
+            }
+
+
             
             //player.runCommand(`kill @e[type=${entity.id}]`)
         } else if(validarherramienta && !validarmob){
