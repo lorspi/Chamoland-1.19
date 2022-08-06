@@ -89,8 +89,6 @@ world.events.entityHit.subscribe(event => {
                 } catch{}
                 
             }
-
-
             
             //player.runCommand(`kill @e[type=${entity.id}]`)
         } else if(validarherramienta && !validarmob){

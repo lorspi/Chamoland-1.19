@@ -16,3 +16,6 @@ item.appleplus:cianita.name=Cianita
 item.appleplus:applelandia.name=Volver a Applelandia
 item.appleplus:applecoin.name=Applecoin
 tile.appleplus:caja_monedas.name=Caja de monedas
+
+entity.appleplus:escarabajo.name=Escarabajo
+item.spawn_egg.entity.appleplus:escarabajo.name=Generar Escarabajo

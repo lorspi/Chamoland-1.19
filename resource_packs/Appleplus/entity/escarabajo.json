@@ -1,0 +1,36 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "appleplus:escarabajo",
+			"materials": {
+				"default": "silverfish"
+			},
+			"textures": {
+				"default": "textures/entity/escarabajo_cianita",
+				"peridoto": "textures/entity/escarabajo_peridoto",
+				"espinela": "textures/entity/escarabajo_espinela",
+				"adalita": "textures/entity/escarabajo_adalita"
+			},
+			"geometry": {
+				"default": "geometry.escarabajo"
+			},
+			"animations": {
+				"move": "animation.endermite.move"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.endermite.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.escarabajo"
+			],
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 8
+			}
+		}
+	}
+}

@@ -1,0 +1,246 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "appleplus:escarabajo",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:scarab_angry": {
+				"minecraft:angry": {
+					"duration": 15,
+					"broadcast_anger": true,
+					"broadcast_range": 16,
+					"calm_event": {
+						"event": "minecraft:on_calm",
+						"target": "self"
+					},
+					"broadcast_anger_on_attack": false,
+					"broadcast_anger_on_being_attacked": true,
+					"broadcast_targets": [
+						"desert:scarab"
+					],
+					"sound_interval": {
+						"range_min": 2,
+						"range_max": 5
+					}
+				},
+				"minecraft:movement": {
+					"value": 0.25
+				}
+			},
+			"minecraft:scarab_calm": {
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			},
+			"appleplus:cianita": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/cianita.json"
+				}
+			},
+			"appleplus:peridoto": {
+				"minecraft:variant": {
+					"value": 5
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/peridoto.json"
+				}
+			},
+			"appleplus:espinela": {
+				"minecraft:variant": {
+					"value": 8
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/espinela.json"
+				}
+			},
+			"appleplus:adalita": {
+				"minecraft:variant": {
+					"value": 11
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/adalita.json"
+				}
+			}
+		},
+		"components": {
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0,
+				"breathes_water": true
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.9
+			},
+			"minecraft:nameable": {},
+			"minecraft:navigation.walk": {
+				"is_amphibious": false,
+				"can_pass_doors": true,
+				"can_open_doors": false,
+				"avoid_water": true,
+				"avoid_portals": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"monster",
+					"scarab"
+				]
+			},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:attack": {
+				"damage": 1,
+				"effect_name": "nausea",
+				"effect_duration": 10
+			},
+			"minecraft:despawn": {
+				"filters": {
+					"any_of": [
+						{
+							"all_of": [
+								{
+									"test": "is_persistent",
+									"value": false
+								},
+								{
+									"test": "distance_to_nearest_player",
+									"operator": ">",
+									"value": 54
+								}
+							]
+						},
+						{
+							"all_of": [
+								{
+									"test": "is_persistent",
+									"value": false
+								},
+								{
+									"test": "inactivity_timer",
+									"subject": "self",
+									"value": 30
+								},
+								{
+									"test": "random_chance",
+									"value": 800
+								},
+								{
+									"test": "distance_to_nearest_player",
+									"operator": ">",
+									"value": 32
+								}
+							]
+						}
+					]
+				}
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 4,
+				"speed_multiplier": 1.5
+			},
+			"minecraft:behavior.move_towards_restriction": {
+				"priority": 6
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 7,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 8,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 9
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:scale": {
+				"value": 0.5
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"minecraft:scarab_calm"
+					]
+				},
+				"randomize": [
+					{
+						"add": {
+							"component_groups": [
+								"appleplus:cianita"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"appleplus:adalita"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"appleplus:peridoto"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"appleplus:espinela"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:become_angry": {
+				"remove": {
+					"minecraft:scarab_calm": {}
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:scarab_angry"
+					]
+				}
+			},
+			"minecraft:on_calm": {
+				"remove": {
+					"minecraft:scarab_angry": {}
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:scarab_calm"
+					]
+				}
+			}
+		}
+	}
+}

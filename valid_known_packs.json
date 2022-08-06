@@ -24,18 +24,15 @@
 		"from_disk" : true,
 		"hashes" : 
 		[
-			"sJFKm2F397djmAY0aBmQgk3RXITIRYiqv+j8MT8Irxk=",
-			"CXdbVo4T7EIBs8/8xigdMOJ7D59sIhdcKNBVkszkk5o=",
-			"SUX5T8e6MbbHxvE9F6LvkcTgBbdvcTY5cyDnlxF/HKk=",
-			"Apr1ze0jES3hUql5YGHAeHfuQ/ertV8Rj3ApRIQVAWs=",
-			"Ghc2MX4v3mEjAAJj45PR5R9n51ykC3rjbMFzHosjcM0=",
-			"YrBDcEeJp/4mGP88LqEYP23KiDcmB06h/cwrlvr3kLg=",
-			"AIpvY1ytu/Ise1BNqEuLXeQNVV+JlGURmjSau9ryYbA=",
-			"+wkrIb9lrh0i5zR76xDGXBVJ6C9EvjYNJYH+10NsVJo="
+			"XaI/QqrebHfy/bz+wdVOqBY6OAD0sK1ObbRF+nPN/5I=",
+			"xamiio1CS/+i/9vmtbguvubDSYQ/Pi8FmGcsk0SiLjg=",
+			"xAONlrGd8Iygl+VG006bisFepsnswreBGLVJA8/epHU=",
+			"TAkjbqiUkHdmocabdgeL3Lt8CW+zlYeyDVJXl8ndQDM=",
+			"Qf/tjXBbIyJwosGX3nStJYux80V8ynhXTiDgq9GpJqU="
 		],
-		"path" : "resource_packs/Appleplus",
-		"uuid" : "fd9bb1b9-70c6-35e0-bb4a-06561d89f9c3",
-		"version" : "1.1.2"
+		"path" : "behavior_packs/Mochilas",
+		"uuid" : "d0107ae8-9cbe-4c67-8330-61356312151e",
+		"version" : "0.0.6"
 	},
 	
 	{
@@ -43,13 +40,21 @@
 		"from_disk" : true,
 		"hashes" : 
 		[
-			"o72R2sx60IuVN8WzJDsLk9TVkJe6ygG3kmF7drx60oE=",
-			"WNW6TWowwtF+jzFSzIxu5jU6vTdZUjWp41x9c7icTQo=",
-			"3S+Aw7V7RHXy0bCOYLH+8yqsKOAPSXXXrzVL2CfFMVw="
+			"sJFKm2F397djmAY0aBmQgk3RXITIRYiqv+j8MT8Irxk=",
+			"CXdbVo4T7EIBs8/8xigdMOJ7D59sIhdcKNBVkszkk5o=",
+			"SUX5T8e6MbbHxvE9F6LvkcTgBbdvcTY5cyDnlxF/HKk=",
+			"Apr1ze0jES3hUql5YGHAeHfuQ/ertV8Rj3ApRIQVAWs=",
+			"Ghc2MX4v3mEjAAJj45PR5R9n51ykC3rjbMFzHosjcM0=",
+			"YrBDcEeJp/4mGP88LqEYP23KiDcmB06h/cwrlvr3kLg=",
+			"AIpvY1ytu/Ise1BNqEuLXeQNVV+JlGURmjSau9ryYbA=",
+			"+wkrIb9lrh0i5zR76xDGXBVJ6C9EvjYNJYH+10NsVJo=",
+			"Na8YWQE2YE0Wz6gZX/Avf2oh8RJ9nC+24P73o1sOyLk=",
+			"VK2xWD3TmodowxUrvR26RFCGokzyv8Rfi8A+BiOndDE=",
+			"0/wern9jDWQf1caJMSMMW/Opv6SSecNsooIl40l8eU8="
 		],
-		"path" : "resource_packs/Mochilas",
-		"uuid" : "d0107ae8-9cbe-4c67-8330-61356327551e",
-		"version" : "0.0.7"
+		"path" : "resource_packs/Appleplus",
+		"uuid" : "fd9bb1b9-70c6-35e0-bb4a-06561d89f9c3",
+		"version" : "1.2.0"
 	},
 	
 	{
@@ -174,6 +179,20 @@
 		"path" : "resource_packs/Just chairs RES",
 		"uuid" : "52816887-2ebd-4680-abe1-00dcb011040f",
 		"version" : "1.0.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : 
+		[
+			"o72R2sx60IuVN8WzJDsLk9TVkJe6ygG3kmF7drx60oE=",
+			"WNW6TWowwtF+jzFSzIxu5jU6vTdZUjWp41x9c7icTQo=",
+			"3S+Aw7V7RHXy0bCOYLH+8yqsKOAPSXXXrzVL2CfFMVw="
+		],
+		"path" : "resource_packs/Mochilas",
+		"uuid" : "d0107ae8-9cbe-4c67-8330-61356327551e",
+		"version" : "0.0.7"
 	},
 	
 	{
@@ -491,7 +510,9 @@
 			"0ANpoovcHQSkp7JX3p+e2HGO74huXYcagp5PMN47yVE=",
 			"zsDI0ZX1Bp/EBD1J30YLbHG78HyMB7G/Sqgu99F2Rhg=",
 			"R2TY63bf97fO5SlUokYx2rs/ZApMAjymFF0Z/gg2Mbw=",
-			"jSqxih2w2vrb/+O6o2jqj+dhgJ1ifCuAYTFSFWdqguY="
+			"jSqxih2w2vrb/+O6o2jqj+dhgJ1ifCuAYTFSFWdqguY=",
+			"SoiU7fJPJsbhTX4nIWcPkNXhHzW0NR9GHlAgSIlS5VA=",
+			"w7R1Fzfr/J918pTUCaISTPsM6TFDJIZzTsVbVsxR8r4="
 		],
 		"path" : "behavior_packs/Appleplus",
 		"uuid" : "d62135c3-30bb-3e26-b678-5e84919a8855",
@@ -705,7 +726,9 @@
 			"gIqobTwnLyJ1XckuNiS9Smn14GwrcAy6uAGx4f2xdq4=",
 			"LunLu87fzXBwcJeO+xbjCGDiLfN8+qwyB+advgLd9K0=",
 			"080rJRrD6sb7Voa9ky/XpRnNQbVDCYUrH9Jnp5rDBUg=",
-			"5womH9O+egZ8BI8388PebYiF2wFCWAngGsh6UmX+SxA="
+			"5womH9O+egZ8BI8388PebYiF2wFCWAngGsh6UmX+SxA=",
+			"qkwP2b5iAyi+oRt1kYUvQjsq1QK+NTDLMivYC1CIWas=",
+			"2IF9AlrjBNQ3Gs7LxG3hcrimrPIyC29ioZA3tbiTXC0="
 		],
 		"path" : "behavior_packs/Comerciantes Applelandia Behavior",
 		"uuid" : "bcbd2957-df3c-416f-5edf-8d8c90a2c687",
@@ -741,22 +764,6 @@
 		"path" : "behavior_packs/Bus",
 		"uuid" : "daf71faf-3f87-4a6d-b254-4d4cf9e2c12c",
 		"version" : "1.0.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : 
-		[
-			"XaI/QqrebHfy/bz+wdVOqBY6OAD0sK1ObbRF+nPN/5I=",
-			"xamiio1CS/+i/9vmtbguvubDSYQ/Pi8FmGcsk0SiLjg=",
-			"xAONlrGd8Iygl+VG006bisFepsnswreBGLVJA8/epHU=",
-			"TAkjbqiUkHdmocabdgeL3Lt8CW+zlYeyDVJXl8ndQDM=",
-			"Qf/tjXBbIyJwosGX3nStJYux80V8ynhXTiDgq9GpJqU="
-		],
-		"path" : "behavior_packs/Mochilas",
-		"uuid" : "d0107ae8-9cbe-4c67-8330-61356312151e",
-		"version" : "0.0.6"
 	},
 	
 	{
