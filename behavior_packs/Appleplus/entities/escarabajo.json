@@ -11,7 +11,7 @@
 		"component_groups": {
 			"minecraft:scarab_angry": {
 				"minecraft:angry": {
-					"duration": 15,
+					"duration": 2,
 					"broadcast_anger": true,
 					"broadcast_range": 16,
 					"calm_event": {
@@ -40,7 +40,7 @@
 			},
 			"appleplus:cianita": {
 				"minecraft:variant": {
-					"value": 1
+					"value": 0
 				},
 				"minecraft:loot": {
 					"table": "loot_tables/entities/cianita.json"
@@ -48,7 +48,7 @@
 			},
 			"appleplus:peridoto": {
 				"minecraft:variant": {
-					"value": 5
+					"value": 1
 				},
 				"minecraft:loot": {
 					"table": "loot_tables/entities/peridoto.json"
@@ -56,7 +56,7 @@
 			},
 			"appleplus:espinela": {
 				"minecraft:variant": {
-					"value": 8
+					"value": 2
 				},
 				"minecraft:loot": {
 					"table": "loot_tables/entities/espinela.json"
@@ -64,7 +64,7 @@
 			},
 			"appleplus:adalita": {
 				"minecraft:variant": {
-					"value": 11
+					"value": 3
 				},
 				"minecraft:loot": {
 					"table": "loot_tables/entities/adalita.json"
@@ -100,14 +100,17 @@
 				]
 			},
 			"minecraft:health": {
-				"value": 10,
-				"max": 10
+				"value": 38,
+				"max": 44
 			},
 			"minecraft:movement": {
-				"value": 0.25
+				"value": 0.5
 			},
 			"minecraft:attack": {
-				"damage": 1,
+				"damage": {
+					"range_min": 5,
+					"range_max": 15
+				},
 				"effect_name": "nausea",
 				"effect_duration": 10
 			},
@@ -151,6 +154,29 @@
 						}
 					]
 				}
+			},
+			"minecraft:behavior.avoid_mob_type": {
+				"priority": 5,
+				"entity_types": [
+				  {
+					"filters": {
+					  "any_of": [
+						{
+						  "all_of": [
+							{ "test": "is_family", "subject": "other", "value": "player" },
+							{ "test": "trusts", "subject": "other", "operator": "!=", "value": true },
+							{ "test": "is_sneaking", "subject": "other", "operator": "!=", "value": true }
+						  ]
+						},
+						{ "test": "is_family", "subject": "other", "value": "polarbear" },
+						{ "test": "is_family", "subject": "other", "value": "wolf" }
+					  ]
+					},
+					"max_dist": 10,
+					"walk_speed_multiplier": 1.0,
+					"sprint_speed_multiplier": 1.5
+				  }
+				]
 			},
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 1

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"geometry.escarabajo": {
+		"texturewidth": 32,
+		"textureheight": 32,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0.5, 0],
+		"bones": [
+			{
+				"name": "section_0",
+				"pivot": [0, 4, 1],
+				"cubes": [
+					{"origin": [-3, 0, -0.5], "size": [6, 4, 7.5], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "section_1",
+				"pivot": [0, 2.5, -2],
+				"cubes": [
+					{"origin": [-1.5, 0.5, -3], "size": [3, 2, 2], "uv": [16, 11], "inflate": 0.5},
+					{"origin": [-1, 3, -4], "size": [0, 0.5, 0.5], "uv": [4, 10]},
+					{"origin": [1, 3, -4], "size": [0, 0.5, 0.5], "uv": [4, 10]},
+					{"origin": [1, 3.5, -5], "size": [0, 0.5, 1], "uv": [4, 10]},
+					{"origin": [-1, 3.5, -5], "size": [0, 0.5, 1], "uv": [4, 10]}
+				]
+			}
+		]
+	}
+}
