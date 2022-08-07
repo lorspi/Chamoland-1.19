@@ -182,11 +182,11 @@ World.events.beforeChat.subscribe(main => {
                 
                 if(etiqueta==true){
                     sender.runCommand(`tag ${sender.name} remove silenciochat`)
-                    sender.runCommand(`tellraw @a {"rawtext":[{"text":"§aHas activado el sonido del chat"}]}`)
+                    sender.runCommand(`tellraw @s {"rawtext":[{"text":"§aHas activado el sonido del chat"}]}`)
                 }
                 else {
                     sender.runCommand(`tag ${sender.name} add silenciochat`)
-                    sender.runCommand(`tellraw @a {"rawtext":[{"text":"§cHas desactivado el sonido del chat."}]}`)
+                    sender.runCommand(`tellraw @s {"rawtext":[{"text":"§cHas desactivado el sonido del chat."}]}`)
                 }
             }
         }
