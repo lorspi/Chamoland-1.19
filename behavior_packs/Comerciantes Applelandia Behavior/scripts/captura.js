@@ -52,43 +52,22 @@ world.events.entityHit.subscribe(event => {
                 player.runCommand(`give ${player.name} ${entity.id.substring(10)}_spawn_egg`)
             }
 
-            player.runCommand(`playsound random.totem @s ~ ~ ~ 0.5`)
+            player.runCommand(`playsound particle.soul_escape @s ~ ~ ~`)
             //player.runCommand(`particle minecraft:totem_particle ~ ~ ~`)
             //player.runCommand(`particle minecraft:totem_particle ~ ~${getRandomInt(1, 2)} ~`)
 
-            /*
-            // Generación de partículas v1
-            setTimeout(() => {
-                player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~${getRandomInt(2, 4)}`)}, 1);
-            setTimeout(() => {
-                player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~-${getRandomInt(2, 4)}`)}, 5);
-            setTimeout(() => {
-                player.runCommand(`particle minecraft:sculk_soul_particle ~-${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~${getRandomInt(2, 4)}`)}, 9);
-            setTimeout(() => {
-                player.runCommand(`particle minecraft:sculk_soul_particle ~-${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~-${getRandomInt(2, 4)}`)}, 13);
-
-
-            setTimeout(() => {
-                player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~`)}, 17);
-            setTimeout(() => {
-                player.runCommand(`particle minecraft:sculk_soul_particle ~-${getRandomInt(2, 4)} ~${getRandomInt(1, 3)} ~`)}, 21);
-            setTimeout(() => {
-                player.runCommand(`particle minecraft:sculk_soul_particle ~ ~${getRandomInt(1, 3)} ~${getRandomInt(2, 4)}`)}, 24);
-            setTimeout(() => {
-                player.runCommand(`particle minecraft:sculk_soul_particle ~ ~${getRandomInt(1, 3)} ~-${getRandomInt(2, 4)}`)}, 28);
-            
-            */
 
             // Generación de partículas v2
             for (var i = 0; i < 50; i++) {
                 try{
-                    setTimeout(() => {player.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(-3, 3)} ~${getRandomInt(1, 4)} ~${getRandomInt(-3, 3)}`)}, i);
+                    setTimeout(() => {player.runCommand(`particle minecraft:soul_particle ~${getRandomInt(-3, 3)} ~${getRandomInt(1, 4)} ~${getRandomInt(-3, 3)}`)}, i);
                 } catch{}
                 try{
-                    setTimeout(() => {entity.runCommand(`particle minecraft:sculk_soul_particle ~${getRandomInt(-3, 3)} ~${getRandomInt(1, 4)} ~${getRandomInt(-3, 3)}`)}, i);
+                    setTimeout(() => {entity.runCommand(`particle minecraft:soul_particle ~${getRandomInt(-3, 3)} ~${getRandomInt(1, 4)} ~${getRandomInt(-3, 3)}`)}, i);
                 } catch{}
                 
             }
+            setTimeout(() => {player.runCommand(`playsound particle.soul_escape @s ~ ~ ~`)}, 50);  
             
             //player.runCommand(`kill @e[type=${entity.id}]`)
         } else if(validarherramienta && !validarmob){

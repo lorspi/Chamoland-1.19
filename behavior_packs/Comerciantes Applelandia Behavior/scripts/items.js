@@ -11,6 +11,23 @@ import "scripts/dependencias/timer.js";
  * YouTube: LVRAID3RS
  */
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+function particulas(player) {
+  // Generación de partículas v2
+  player.runCommand(`playsound particle.soul_escape @s ~ ~ ~`)
+  for (var i = 0; i < 50; i++) {
+    try{
+        setTimeout(() => {player.runCommand(`particle minecraft:soul_particle ~${getRandomInt(-3, 3)} ~${getRandomInt(1, 4)} ~${getRandomInt(-3, 3)}`)}, i);
+    } catch{}         
+  }
+  setTimeout(() => {player.runCommand(`playsound particle.soul_escape @s ~ ~ ~`)}, 50);  
+}
+
  world.events.beforeItemUse.subscribe(data => {
     let { item, source } = data
     const player = data.source
@@ -58,39 +75,43 @@ function invocar(player) {
 
         form.show(player).then((response) => {
         if (response.selection === 0) {
-            player.runCommand('summon zombie  ~2 ~1 ~')
-            player.runCommand('summon zombie  ~2 ~1 ~')
-            player.runCommand('summon zombie  ~2 ~1 ~')
-            player.runCommand('summon zombie  ~2 ~1 ~')
-            player.runCommand('summon zombie  ~2 ~1 ~')
-            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
-            setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
-            setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
+          particulas(player)
+          player.runCommand('summon zombie  ~2 ~1 ~')
+          player.runCommand('summon zombie  ~2 ~1 ~')
+          player.runCommand('summon zombie  ~2 ~1 ~')
+          player.runCommand('summon zombie  ~2 ~1 ~')
+          player.runCommand('summon zombie  ~2 ~1 ~')
+          player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
+          setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
+          setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
         if (response.selection === 1) {
-            player.runCommand('summon skeleton  ~2 ~1 ~')
-            player.runCommand('summon skeleton  ~2 ~1 ~')
-            player.runCommand('summon skeleton  ~2 ~1 ~')
-            player.runCommand('summon skeleton  ~2 ~1 ~')
-            player.runCommand('summon skeleton  ~2 ~1 ~')
-            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
-            setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
-            setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
+          particulas(player)
+          player.runCommand('summon skeleton  ~2 ~1 ~')
+          player.runCommand('summon skeleton  ~2 ~1 ~')
+          player.runCommand('summon skeleton  ~2 ~1 ~')
+          player.runCommand('summon skeleton  ~2 ~1 ~')
+          player.runCommand('summon skeleton  ~2 ~1 ~')
+          player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
+          setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
+          setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
         if (response.selection === 2) {
-            player.runCommand('summon creeper  ~2 ~1 ~')
-            player.runCommand('summon creeper  ~2 ~1 ~')
-            player.runCommand('summon creeper  ~2 ~1 ~')
-            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
-            setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
-            setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
+          particulas(player)
+          player.runCommand('summon creeper  ~2 ~1 ~')
+          player.runCommand('summon creeper  ~2 ~1 ~')
+          player.runCommand('summon creeper  ~2 ~1 ~')
+          player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
+          setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
+          setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
         if (response.selection === 3) {
-            player.runCommand('summon wither_skeleton  ~2 ~1 ~')
-            player.runCommand('summon wither_skeleton  ~2 ~1 ~')
-            player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
-            setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
-            setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
+          particulas(player)
+          player.runCommand('summon wither_skeleton  ~2 ~1 ~')
+          player.runCommand('summon wither_skeleton  ~2 ~1 ~')
+          player.runCommand(`clear @s appleplus:cluster_de_almas 0 1`)
+          setTimeout(() => {player.runCommand('damage @e[name=,r=10,tag=!segura] 19');}, 5);
+          setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
     })
 }

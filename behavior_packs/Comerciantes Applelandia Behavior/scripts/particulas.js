@@ -8,6 +8,7 @@ const overworld = World.getDimension("overworld")
 
 //Variables
 var escarabajo = 0;
+var almas = 0;
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -32,9 +33,23 @@ World.events.tick.subscribe(() => {
     }
     if(escarabajo===100){ 
         escarabajo = 0
-    }    
+    }
 
+    // Partícula de arena de
+    almas = almas + 1
+    if(almas===1){ 
+        try {
+            overworld.runCommand(`execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:soul_sand 0 particle minecraft:soul_particle ~${getRandomInt(-3, 4)} ~1 ~${getRandomInt(-3, 4)}`)
+        } catch {}
+        try {
+            overworld.runCommand(`execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:soul_soil 0 particle minecraft:soul_particle ~${getRandomInt(-3, 4)} ~1 ~${getRandomInt(-3, 4)}`)
+        } catch {}
+    }
+    if(almas===28){ 
+        almas = 0
+    }
 })
+
 
 
 
