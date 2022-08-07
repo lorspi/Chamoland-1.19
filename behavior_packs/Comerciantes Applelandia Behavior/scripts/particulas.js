@@ -5,6 +5,7 @@ import "scripts/dependencias/timer.js";
 
 //Consts
 const overworld = World.getDimension("overworld")
+const nether = World.getDimension("nether")
 
 //Variables
 var escarabajo = 0;
@@ -43,6 +44,12 @@ World.events.tick.subscribe(() => {
         } catch {}
         try {
             overworld.runCommand(`execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:soul_soil 0 particle minecraft:soul_particle ~${getRandomInt(-3, 4)} ~1 ~${getRandomInt(-3, 4)}`)
+        } catch {}
+        try {
+            nether.runCommand(`execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:soul_sand 0 particle minecraft:soul_particle ~${getRandomInt(-3, 4)} ~1 ~${getRandomInt(-3, 4)}`)
+        } catch {}
+        try {
+            nether.runCommand(`execute @a ~ ~ ~ detect ~ ~-1 ~ minecraft:soul_soil 0 particle minecraft:soul_particle ~${getRandomInt(-3, 4)} ~1 ~${getRandomInt(-3, 4)}`)
         } catch {}
     }
     if(almas===28){ 
