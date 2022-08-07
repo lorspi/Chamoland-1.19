@@ -4,6 +4,7 @@ import 'scripts/entidades.js'
 import 'scripts/ticks.js'
 import 'scripts/dormir.js'
 import 'scripts/captura.js'
+import 'scripts/particulas.js'
 
 import { chatrank } from 'scripts/chat.js'
 import { world } from 'mojang-minecraft'

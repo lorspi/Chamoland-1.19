@@ -1,0 +1,47 @@
+//bridge-file-version: #5
+//Imports
+import { world as World } from "mojang-minecraft";
+import "scripts/dependencias/timer.js";
+
+//Consts
+const overworld = World.getDimension("overworld")
+
+//Variables
+var escarabajo = 0;
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+//Constant tick
+World.events.tick.subscribe(() => {
+ 
+    // Partícula de escarabajo
+    escarabajo = escarabajo + 1
+    if(escarabajo===1){ 
+        try {
+            overworld.runCommand(`execute @e[type=appleplus:escarabajo] ~ ~ ~ particle minecraft:balloon_gas_particle ~${getRandomInt(0, 1)} ~0.${getRandomInt(2, 9)} ~${getRandomInt(0, 1)}`)
+        } catch {
+            overworld.runCommand(`tellraw @a {"rawtext":[{"text":"Falla"}]}`)
+        }
+    }
+    if(escarabajo===50){ 
+        try {
+            overworld.runCommand(`execute @e[type=appleplus:escarabajo] ~ ~ ~ particle minecraft:balloon_gas_particle ~${getRandomInt(-1, 2)} ~0.${getRandomInt(2, 9)} ~${getRandomInt(-1, 2)}`)
+        } catch {
+            overworld.runCommand(`tellraw @a {"rawtext":[{"text":"Falla"}]}`)
+        }
+    }
+    if(escarabajo===100){ 
+        escarabajo = 0
+    }    
+
+})
+
+
+
+
+
+
