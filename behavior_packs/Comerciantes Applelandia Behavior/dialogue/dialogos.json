@@ -56,7 +56,7 @@
         }, {
             "scene_tag": "encantamientos",
             "npc_name": "Lola",
-            "text": "Golpea a  Noé con el objeto que quieras encantar en tu mano. Abrirás la interfaz de encantamientos con la que podras encantar ese objeto si tienes los niveles requeridos y si este objeto es compatible.",
+            "text": "Golpea a  Noé con el objeto que quieras encantar en tu mano. Abrirás la interfaz de encantamientos con la que podrás encantar ese objeto si tienes los niveles requeridos y si este objeto es compatible.",
             "on_open_commands": [""],
             "on_close_commands": [""],
             "buttons": [{
