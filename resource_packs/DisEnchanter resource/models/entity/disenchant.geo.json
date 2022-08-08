@@ -1,0 +1,88 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.disenchant",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "disenchanter",
+					"pivot": [0, -1, 0],
+					"cubes": [
+						{
+							"origin": [3.75, 7, 3.75],
+							"size": [4, 4, 4],
+							"inflate": -0.5,
+							"uv": {
+								"north": {"uv": [29, 13], "uv_size": [3, 3]},
+								"east": {"uv": [32, 16], "uv_size": [-3, -3]},
+								"south": {"uv": [32, 16], "uv_size": [-3, -3]},
+								"west": {"uv": [29, 16], "uv_size": [3, -3]},
+								"up": {"uv": [29, 16], "uv_size": [3, -3]},
+								"down": {"uv": [29, 13], "uv_size": [3, 3]}
+							}
+						},
+						{
+							"origin": [-7.75, 7, 3.75],
+							"size": [4, 4, 4],
+							"inflate": -0.5,
+							"uv": {
+								"north": {"uv": [29, 13], "uv_size": [3, 3]},
+								"east": {"uv": [32, 16], "uv_size": [-3, -3]},
+								"south": {"uv": [29, 16], "uv_size": [3, -3]},
+								"west": {"uv": [29, 16], "uv_size": [3, -3]},
+								"up": {"uv": [32, 16], "uv_size": [-3, -3]},
+								"down": {"uv": [29, 13], "uv_size": [3, 3]}
+							}
+						},
+						{
+							"origin": [-7.75, 7, -7.75],
+							"size": [4, 4, 4],
+							"inflate": -0.5,
+							"uv": {
+								"north": {"uv": [32, 16], "uv_size": [-3, -3]},
+								"east": {"uv": [29, 16], "uv_size": [3, -3]},
+								"south": {"uv": [29, 16], "uv_size": [3, -3]},
+								"west": {"uv": [29, 16], "uv_size": [3, -3]},
+								"up": {"uv": [32, 13], "uv_size": [-3, 3]},
+								"down": {"uv": [29, 13], "uv_size": [3, 3]}
+							}
+						},
+						{
+							"origin": [3.75, 7, -7.75],
+							"size": [4, 4, 4],
+							"inflate": -0.5,
+							"uv": {
+								"north": {"uv": [29, 16], "uv_size": [3, -3]},
+								"east": {"uv": [29, 16], "uv_size": [3, -3]},
+								"south": {"uv": [29, 16], "uv_size": [3, -3]},
+								"west": {"uv": [32, 16], "uv_size": [-3, -3]},
+								"up": {"uv": [29, 13], "uv_size": [3, 3]},
+								"down": {"uv": [29, 13], "uv_size": [3, 3]}
+							}
+						},
+						{
+							"origin": [-8, -1, -8],
+							"size": [16, 12, 16],
+							"inflate": -1,
+							"uv": {
+								"north": {"uv": [16, 16], "uv_size": [16, 12]},
+								"east": {"uv": [0, 16], "uv_size": [16, 12]},
+								"south": {"uv": [48, 16], "uv_size": [16, 12]},
+								"west": {"uv": [32, 16], "uv_size": [16, 12]},
+								"up": {"uv": [16, 0], "uv_size": [16, 16]},
+								"down": {"uv": [32, 16], "uv_size": [16, -16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

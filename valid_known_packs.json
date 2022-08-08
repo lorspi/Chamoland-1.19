@@ -7,9 +7,41 @@
 	
 	{
 		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : 
+		[
+			"U3FgmnHrEaYykrcgqTiI+3gfknxI7c2aUKsZ+N5dmb8=",
+			"dvPYmJGmtUw/ncbcnsOEFuNSNHdJRqkjGCSx5oiXiiM=",
+			"B5lQcVhIfFN761Ae3zOPx4hgVdsAiHaol4ljvysRaWw="
+		],
+		"path" : "behavior_packs/experimental_caves_and_cliffs",
+		"uuid" : "8a779527-33b2-4dc6-abf4-947860a6d16d",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : [ "uJuPEnTViQaxB92HfgbfgEGyt3wJ08pg6OPTORJ4sKM=" ],
+		"path" : "resource_packs/DisEnchanter resource",
+		"uuid" : "3ed690fb-5dbb-4a72-b22a-496f94b7ad58",
+		"version" : "1.2.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
 		"path" : "resource_packs/vanilla",
 		"uuid" : "0575c61f-a5da-4b7f-9961-ffda2908861e",
 		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : [ "G9OghafDy8pmkZkT8wKpIeAkbPLn7STcEwlGbBu7Jec=" ],
+		"path" : "behavior_packs/DisEnchanter behavior",
+		"uuid" : "adf411be-c563-43eb-953f-5cad77580f9b",
+		"version" : "1.3.0"
 	},
 	
 	{
@@ -49,20 +81,6 @@
 		"path" : "resource_packs/Appleplus",
 		"uuid" : "fd9bb1b9-70c6-35e0-bb4a-06561d89f9c3",
 		"version" : "1.2.3"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : 
-		[
-			"4e6bxovPKHlZiEbWy+V3hTKZvbHeGHW4NXgdws4n0DE=",
-			"/MkJ86D5X9M2TsF4H/R7Dv8IAWHyvj4BTHuQNyOkGSk=",
-			"vN2QwtPJrpHf9C2szUpEQEPEdl5Yr8JTUY4fRHD84Ow="
-		],
-		"path" : "resource_packs/MoreUseful",
-		"uuid" : "01addeca-2289-4c29-9acd-51cce4728ee1",
-		"version" : "1.0.4"
 	},
 	
 	{
@@ -201,6 +219,20 @@
 		"path" : "resource_packs/Mochilas",
 		"uuid" : "d0107ae8-9cbe-4c67-8330-61356327551e",
 		"version" : "0.0.7"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : 
+		[
+			"4e6bxovPKHlZiEbWy+V3hTKZvbHeGHW4NXgdws4n0DE=",
+			"/MkJ86D5X9M2TsF4H/R7Dv8IAWHyvj4BTHuQNyOkGSk=",
+			"vN2QwtPJrpHf9C2szUpEQEPEdl5Yr8JTUY4fRHD84Ow="
+		],
+		"path" : "resource_packs/MoreUseful",
+		"uuid" : "01addeca-2289-4c29-9acd-51cce4728ee1",
+		"version" : "1.0.4"
 	},
 	
 	{
@@ -515,20 +547,6 @@
 		"from_disk" : true,
 		"hashes" : 
 		[
-			"U3FgmnHrEaYykrcgqTiI+3gfknxI7c2aUKsZ+N5dmb8=",
-			"dvPYmJGmtUw/ncbcnsOEFuNSNHdJRqkjGCSx5oiXiiM=",
-			"B5lQcVhIfFN761Ae3zOPx4hgVdsAiHaol4ljvysRaWw="
-		],
-		"path" : "behavior_packs/experimental_caves_and_cliffs",
-		"uuid" : "8a779527-33b2-4dc6-abf4-947860a6d16d",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : 
-		[
 			"fftgUi69ehkwhKp8liN9bhluyxwEkpatLWnG/xStZKA=",
 			"ArcoILc/5OU8Rp0kJOTN1RCEV5LoCXxr5N1QI7+6YHU=",
 			"YCF9iHYfXcf36P0YQO1FC4y6ssV5mnoB5O5nQwyBepo=",
@@ -722,7 +740,8 @@
 			"2IF9AlrjBNQ3Gs7LxG3hcrimrPIyC29ioZA3tbiTXC0=",
 			"IN0cX/mjRvInHOoO/8fkZCl4LDvqf/EaS6PBMGkKk/4=",
 			"ZnM5WedeInrmV0P/KprBnfGwu98+ZTNOWobcI3uY61M=",
-			"agHFM5groC8wLIUaSvtlwPeBOJIDDzgU20Erlk/DlNw="
+			"agHFM5groC8wLIUaSvtlwPeBOJIDDzgU20Erlk/DlNw=",
+			"OSDXfj2SNrf3HTrtRJvkxp8jwdlfX/g0Y8LpnbcbFUQ="
 		],
 		"path" : "behavior_packs/Comerciantes Applelandia Behavior",
 		"uuid" : "bcbd2957-df3c-416f-5edf-8d8c90a2c687",

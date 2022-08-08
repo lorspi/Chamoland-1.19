@@ -1,0 +1,135 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "disenchanter:disenchanting_table",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+        "animate": [
+          "disenchant"
+        ]
+      },
+      "animations": {
+        "disenchant": "controller.animation.disenchant"
+      }
+    },
+    "component_groups": {
+		"despawn":{
+			"minecraft:transformation":{
+				"drop_inventory": true,
+				"into": "disenchanter:despawn"
+			}
+		},
+		"cooldown":{
+			"minecraft:is_sheared":{}
+		}
+    },
+
+    "components": {
+		"minecraft:timer": {
+			"looping": true,
+			"time": [1,2],
+			"randomInterval": true,
+			"time_down_event": {
+				"event": "sphere",
+				"target": "self"
+			}
+			},
+	"minecraft:is_tamed":{},
+	"minecraft:is_chested":{},
+	"minecraft:inventory": {
+		"inventory_size": 10,
+		"container_type": "horse"
+	},
+	"minecraft:block_sensor": {
+		"sensor_radius": 1,
+		"on_break": [
+        {
+            "block_list": [
+                "disenchanter:disenchanting_table_block"
+            ],
+            "on_block_broken": "despawn"
+        }
+		]
+		},
+	"minecraft:persistent":{},
+      "minecraft:type_family": {
+        "family": [ "disenchant" ]
+      },
+      
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.7
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+	  "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:physics": {
+	  "has_gravity": false,
+	  "has_collision": false
+      },
+	"minecraft:nameable":{
+	"allow_name_tag_renaming": false	
+	},
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+    "events": {
+		"sphere":{
+			"sequence":[
+			{
+			"run_command":{
+				"command": "particle desinchanter:sphere ~ ~1 ~"
+			}
+			},
+			{
+			"remove":{"component_groups":["cooldown"]}	
+			}
+			]
+		},
+		"reset":{
+			"remove":{"component_groups":["cooldown"]}
+		},
+		"disenchant":{
+			"add":{"component_groups":["cooldown"]}
+		},
+		"disenchant_timer":{
+			"add":{"component_groups":["disenchant_timer"]},
+			"run_command":{
+				"command": "say ahh"
+			}
+		},
+		"research_done":{
+			"remove":{"component_groups":["reseach_timer"]}
+		},
+		"despawn":{
+			
+			"add":{"component_groups":["despawn"]}
+		}
+    }
+  }
+}

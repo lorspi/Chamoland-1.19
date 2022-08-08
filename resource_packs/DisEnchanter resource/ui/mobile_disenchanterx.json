@@ -1,0 +1,107 @@
+{
+  "namespace": "mobile_disenchanterx",
+	"center@chest.center_image":{
+	"offset": [-1.5,-1.5],
+	"size": [ 32, 32 ]	
+	},
+	"center_cell@chest.cell_image_center":{
+	"size":[32,32]	
+	},
+	"book@chest.cell_image_center":{
+	"size": [ 32, 32 ]	
+	},
+	"blank@chest.cell_image_blank":{
+	"size": [ 28, 28 ]		
+	},
+	
+  "disenchant_grid_panel@pocket_containers.inventory_grid":{
+	  "size": [280,84],
+	  "grid_dimensions": [ 10, 1 ],
+	  "controls":[
+	{
+    "one@chest.input_grid_panel": {
+	"grid_position": [ 0, 0 ],
+    "ignored": false,
+      "controls": [
+      {
+		"1@common.pocket_ui_container_item": {
+		"offset": [ 126, 224 ], //change this if u want to move this grid
+		"size": [ 28, 28 ],
+		"$cell_overlay_ref": "mobile_disenchanter.center",
+	    "$background_images|default": "mobile_disenchanter.center_cell",
+		"$item_renderer_panel_size|default": [ 28, 28 ],
+		"$item_renderer_size|default": [ 25, 25 ]
+		}
+	  },
+	  {
+		  "center@mobile_disenchanter.center_cell":{
+			"offset": [ 126, 224 ]
+		  }
+	  }
+	  ]
+	}
+    }
+	]
+  },
+  "disenchant_inventory_panel": {
+    "type": "panel",
+    "size": [ "80%", "95%" ],
+    "anchor_to": "center",
+    "anchor_from": "center",
+    "controls": [
+      {
+        "scrolling_panel@common.scrolling_panel": {
+          "layer": 1,
+          "$scrolling_pane_size": [ "100%", "100%-2px" ],
+          "$scrolling_content": "mobile_disenchanter.disenchant_grid_panel",
+          "$scroll_box_mouse_image_control": "common-classic.button_state_default",
+          "$scroll_size": [ "8px", "100%" ]
+        }
+      }
+    ]
+  },
+  "disenchant_half_screen": {
+    "type": "panel",
+    "size": [ "50%", "100%-27px" ],
+    "offset": [ 0, 27 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "inventory_panel@disenchant_inventory_panel": {} }
+    ]
+  },
+  "panel": {
+    "type": "panel",
+    "controls": [
+      { "container_gamepad_helpers@common.container_gamepad_helpers": { "layer": 3 } },
+      { "header@pocket_containers.header_area": { } },
+      { "bg@pocket_containers.background_panel": { } },
+      {
+        "inventory@pocket_containers.half_screen": {
+          "$container_size": 36,
+          "$pane_collection": "combined_hotbar_and_inventory_items"
+        }
+      },
+      {
+        "container@disenchant_half_screen": {
+          "anchor_from": "top_middle",
+          "$pane_collection": "container_items"
+        }
+      },
+      { "selected_item_details_factory@common.selected_item_details_factory": {} },
+      {
+        "item_lock_notification_factory@common.item_lock_notification_factory": {
+          "$offset": [ 0, "85%" ]
+        }
+      },
+      { "gamepad_cursor@common.gamepad_cursor_button": {} },
+      { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+      { "hold_icon@common.inventory_take_progress_icon_button": {} },
+      { "flying_item_renderer@common.flying_item_renderer": {} }
+    ]
+  },
+  "disenchant_panel@panel": {
+    "$container_size": 27
+  }
+  
+}

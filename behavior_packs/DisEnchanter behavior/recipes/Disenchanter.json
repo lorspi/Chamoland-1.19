@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "disenchanter:disenchanting_table_block_recipe"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "MGM",
+	  "MEM",
+	  "OOO"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:gold_block"
+      },
+      "E": {
+        "item": "minecraft:enchanting_table"
+      },
+      "M": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "O": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    "result": {
+      "item": "disenchanter:disenchanting_table_block"
+    }
+  }
+  
+}

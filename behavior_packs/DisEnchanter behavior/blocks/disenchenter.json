@@ -1,0 +1,48 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+	"description":{
+		"identifier": "disenchanter:disenchanting_table_block"
+	},
+	
+   "components": {
+	"minecraft:creative_category": {
+				"category": "items",
+				"group": "itemGroup.name.items"
+			},
+   "tag:stone": {},
+	"minecraft:geometry": "geometry.disenchant",
+	 "minecraft:material_instances": {
+      "*": {
+   		"texture": "disenchanter", // References texture defined in terrain_textures.json
+    		"render_method": "alpha_test" // Options 'blend', 'opaque', 'alpha_test'
+      }
+	  },	 
+	  "minecraft:destroy_time": 1,
+	  "minecraft:display_name": "Disenchanter Table",
+	  "minecraft:entity_collision": {
+		"origin": [-8,0,-8],
+		"size": [16,9,16]
+	  },
+	  "minecraft:pick_collision":{
+		"origin": [-8,0,-8],
+		"size": [16,9,16]
+	  },
+	"minecraft:on_placed": {
+      "event": "spawn",
+      "target": "self"
+	}
+    },
+	"events":{
+		"spawn":{
+			"run_command":{
+				"command": "summon disenchanter:disenchanting_table ~ ~-0.5 ~ x \"§r§r§rdisenchanting Table\""
+			}
+		}
+	},
+	"permutations": [
+	  		
+		]
+    
+  }
+}

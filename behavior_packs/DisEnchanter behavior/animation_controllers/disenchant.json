@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+	  "controller.animation.disenchant": {
+		"initial_state": "default",
+      "states": {
+		"default":{
+		"transitions": [
+		  {
+		  "books": "query.is_item_name_any('slot.inventory',9,'minecraft:amethyst_shard') && (!query.is_item_name_any('slot.inventory',0,'') && (query.is_item_name_any('slot.inventory',1,'minecraft:book') || query.is_item_name_any('slot.inventory',2,'minecraft:book') || query.is_item_name_any('slot.inventory',3,'minecraft:book') || query.is_item_name_any('slot.inventory',4,'minecraft:book') || query.is_item_name_any('slot.inventory',5,'minecraft:book') || query.is_item_name_any('slot.inventory',6,'minecraft:book') || query.is_item_name_any('slot.inventory',7,'minecraft:book') || query.is_item_name_any('slot.inventory',8,'minecraft:book')))"
+		  }		  
+		]
+		},
+        "books": {
+			"transitions": [
+		  { 
+		  "default": "!q.is_sheared"
+		  }	
+		],
+		  "on_entry":[
+		  //"/effect @s[hasitem=[{item=book,quantity=0}]] clear",
+		  //"/event entity @s[hasitem=[{item=book,quantity=..8}],tag=!start] disenchant_timer",
+		  "/effect @s[hasitem=[{item=book,quantity=..8}]] blindness 1 2 true",
+		  "/event entity @s disenchant"
+		  //"/effect @s[hasitem=[{item=book,quantity=..8}],tag=!start] tag @s add start"
+		  ]
+        },
+        "disenchant": {
+			"transitions": [
+		  {
+		  "default": "query.is_item_name_any('slot.inventory',0,'minecraft:enchanted_book') || !query.is_item_name_any('slot.inventory',0,'minecraft:enchanted_book')"
+		  }
+		],
+		  "on_entry":[
+		  "/effect @s clear",
+		  "/effect @s[hasitem=[{item=book}]] blindness 1 3 true",
+		  "/effect @s[hasitem=[{item=book,quantity=0}]] clear",
+		  "/tag @s remove start"
+		  ]
+        }
+      }
+    }
+  }
+}
