@@ -14,16 +14,19 @@
             ],
             "on_close_commands": [""],
             "buttons": [{
+                "name": "Viajar",
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator viajar"]
+            }, {
                 "name": "Experiencia",
                 "commands": ["/dialogue open @e[type=npc,r=7] @initiator comerciar_experiencia"]
             }, {
-                "name": "Viajar",
-                "commands": ["/dialogue open @e[type=npc,r=7] @initiator viajar"]
+                "name": "Encantamientos",
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator encantamientos"]
             }]
         }, {
             "scene_tag": "comerciar_experiencia",
             "npc_name": "Lola",
-            "text": "Puedes guardar 15 niveles experiencia en una  Masa de experiencia.\n\nPuedes convertir una  Masa de experiencia en 15 niveles de experiencia.",
+            "text": "Puedes guardar 15 niveles experiencia en una  Masa de experiencia con el botón §lGuardar experiencia§r o usando el comando §l!xp §r en cualquier lugar.\n\nPuedes convertir una  Masa de experiencia en 15 niveles de experiencia con el botón §lCargar experiencia§r o haciendo clic derecho en el aire con la masa en mano.",
             "on_open_commands": ["/scoreboard players set @initiator PagarXP 0","/execute @initiator[lm=15] ~ ~ ~ scoreboard players set @s PagarXP 1", "scoreboard objectives add TieneMasa dummy"],
             "on_close_commands": [""],
             "buttons": [{
@@ -47,6 +50,16 @@
                     "/execute @initiator[scores={TieneMasa=1}] ~ ~ ~ dialogue open @e[type=npc,r=7] @s xp_recibida"
                 ]
             }, {
+                "name": "§4< Volver",
+                "commands": ["/dialogue open @e[type=npc,r=7] @initiator inicial"]
+            }]
+        }, {
+            "scene_tag": "encantamientos",
+            "npc_name": "Lola",
+            "text": "Golpea a  Noé con el objeto que quieras encantar en tu mano. Abrirás la interfaz de encantamientos con la que podras encantar ese objeto si tienes los niveles requeridos y si este objeto es compatible.",
+            "on_open_commands": [""],
+            "on_close_commands": [""],
+            "buttons": [{
                 "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @initiator inicial"]
             }]
@@ -112,14 +125,14 @@
                 "name": "Spawn",
                 "commands": ["/tp @initiator @e[type=hovertext:warp,name=kzjopw]"]
             }, {
-                "name": "Zona OP",
-                "commands": ["/tp @initiator -1420 -60 113"]
-            }, {
                 "name": "Desierto",
                 "commands": ["/tp @initiator -1133 72 363"]
             }, {
                 "name": "Península",
                 "commands": ["/tp @initiator -5471 64 -3388"]
+            }, {
+                "name": "Portal al End",
+                "commands": ["/tp @initiator -312 -18 -904"]
             }, {
                 "name": "§4< Volver",
                 "commands": ["/dialogue open @e[type=npc,r=7] @initiator inicial"]
