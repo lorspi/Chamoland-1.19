@@ -95,9 +95,10 @@ World.events.tick.subscribe(() => {
         overworld.runCommand(`execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~${getRandomInt(-1, 2)} ~${getRandomInt(0, 3)} ~${getRandomInt(-1, 2)}`)
     }
     if(amorcontador>30){ 
-        amorcontador = 1
         overworld.runCommand(`execute @a[tag=amor] ~ ~ ~ particle minecraft:heart_particle ~${getRandomInt(-1, 2)} ~${getRandomInt(0, 3)} ~${getRandomInt(-1, 2)}`)
-    }    
+        amorcontador = 1
+    }
+
 })
 
   
