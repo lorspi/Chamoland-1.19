@@ -5,8 +5,7 @@ import {
   Direction,
   MinecraftItemTypes,
   ItemStack,
-  Location,
-  world,
+  world
 } from "mojang-minecraft";
 import GameTestExtensions from "./GameTestExtensions.js";
 

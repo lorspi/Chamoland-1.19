@@ -98,3 +98,35 @@ GameTest.register("WardenTests", "warden_go_to_projectile", (test) => {
         })
         .thenSucceed();
 }).maxTicks(TicksPerSecond * 10).padding(WARDEN_TESTS_PADDING); //timeout after 10 seconds
+
+GameTest.register("WardenTests", "warden_path_lava", (test) => {
+    const wardenEntityType = "minecraft:warden";
+    const pigEntityType = "minecraft:pig";
+    const startPosWarden = new BlockLocation(1, 3, 2);
+    const startPosPig = new Location(7, 3, 2);
+    test.spawn(wardenEntityType, startPosWarden.above());
+    test.spawnWithoutBehaviorsAtLocation(pigEntityType, startPosPig);
+
+    test
+        .startSequence()
+        .thenWait(() => {
+            test.assertEntityPresentInArea("minecraft:pig", false);
+        })
+        .thenSucceed();
+}).maxTicks(TicksPerSecond * 60).tag(GameTest.Tags.suiteDefault).padding(WARDEN_TESTS_PADDING); //timeout after 60 seconds
+
+GameTest.register("WardenTests", "warden_path_water", (test) => {
+    const wardenEntityType = "minecraft:warden";
+    const pigEntityType = "minecraft:pig";
+    const startPosWarden = new BlockLocation(1, 3, 2);
+    const startPosPig = new Location(7, 3, 2);
+    test.spawn(wardenEntityType, startPosWarden.above());
+    test.spawnWithoutBehaviorsAtLocation(pigEntityType, startPosPig);
+
+    test
+        .startSequence()
+        .thenWait(() => {
+            test.assertEntityPresentInArea("minecraft:pig", false);
+        })
+        .thenSucceed();
+}).maxTicks(TicksPerSecond * 60).tag(GameTest.Tags.suiteDefault).padding(WARDEN_TESTS_PADDING); //timeout after 60 seconds

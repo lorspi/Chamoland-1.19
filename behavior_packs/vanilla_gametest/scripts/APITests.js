@@ -1747,31 +1747,35 @@ GameTest.registerAsync("APITests", "projectile_hit_event_block", async (test) =>
   let projectileHitCallback = world.events.projectileHit.subscribe((e) => {
     if (e.blockHit && test.relativeBlockLocation(e.blockHit.block.location).equals(targetLoc)) {
       world.events.projectileHit.unsubscribe(projectileHitCallback);
-      test.assert(e.dimension === test.getDimension(), "Unexpected dimension");
-      test.assert(e.entityHit === undefined, "Expected no entity hit");
-      test.assert(
-        e.projectile?.id === "minecraft:arrow",
-        "Expected projectile to be arrow, but got " + e.projectile?.id
-      );
-      test.assert(e.source?.id === "minecraft:player", "Expected source to be player, but got " + e.source?.id);
-      test.assert(
-        isNearVec(e.hitVector, test.rotateVector(Vector.forward), 0.1),
-        `Expected e.hitVector to be forward, but got [${e.hitVector.x}, ${e.hitVector.y}, ${e.hitVector.z}]`
-      );
-      test.assert(
-        e.blockHit.block?.id === "minecraft:target",
-        "Expected block to be target, but got " + e.blockHit.block?.id
-      );
-      test.assert(e.blockHit.face == test.rotateDirection(Direction.north), "Expected north block face");
-      test.assert(
-        isNear(e.blockHit.faceLocationX, 0, 5, 0.1),
-        "Expected faceLocationX to be near center, but got " + e.blockHit.faceLocationX
-      );
-      test.assert(
-        isNear(e.blockHit.faceLocationY, 0.5, 0.1),
-        "Expected faceLocationY to be near center, but got " + e.blockHit.faceLocationY
-      );
-      test.succeed();
+      try {
+        test.assert(e.dimension === test.getDimension(), "Unexpected dimension");
+        test.assert(e.entityHit === undefined, "Expected no entity hit");
+        test.assert(
+          e.projectile?.id === "minecraft:arrow",
+          "Expected projectile to be arrow, but got " + e.projectile?.id
+        );
+        test.assert(e.source?.id === "minecraft:player", "Expected source to be player, but got " + e.source?.id);
+        test.assert(
+          isNearVec(e.hitVector, test.rotateVector(Vector.forward), 0.1),
+          `Expected e.hitVector to be forward, but got [${e.hitVector.x}, ${e.hitVector.y}, ${e.hitVector.z}]`
+        );
+        test.assert(
+          e.blockHit.block?.id === "minecraft:target",
+          "Expected block to be target, but got " + e.blockHit.block?.id
+        );
+        test.assert(e.blockHit.face == test.rotateDirection(Direction.north), "Expected north block face");
+        test.assert(
+          isNear(e.blockHit.faceLocationX, 0, 5, 0.1),
+          "Expected faceLocationX to be near center, but got " + e.blockHit.faceLocationX
+        );
+        test.assert(
+          isNear(e.blockHit.faceLocationY, 0.5, 0.2),
+          "Expected faceLocationY to be near center, but got " + e.blockHit.faceLocationY
+        );
+        test.succeed();
+      } catch (ex) {
+        test.fail(ex);
+      }
     }
   });
 
@@ -1850,3 +1854,54 @@ GameTest.registerAsync("APITests", "rotate_entity", async (test) => {
   .maxTicks(400)
   .structureName("ComponentTests:animal_pen")
   .tag(GameTest.Tags.suiteDefault);
+
+GameTest.registerAsync("APITests", "teleport_keep_velocity", async (test) => {
+  const arrow = test.spawn("arrow", new BlockLocation(2, 4, 1));
+  // The arrow should fall 1 block before hitting the target
+  arrow.setVelocity(new Vector(0, 0, 1.2));
+  const lampLoc = new BlockLocation(2, 3, 7);
+  await test.idle(2);
+  let arrowLoc = arrow.location;
+  arrowLoc.x -= 1;
+  arrow.teleport(arrowLoc, arrow.dimension, 0, 0, true);
+  test.succeedWhen(() => {
+    test.assertBlockPresent(MinecraftBlockTypes.litRedstoneLamp, lampLoc);
+  });
+})
+  .structureName("SimulatedPlayerTests:target_practice")
+  .tag(GameTest.Tags.suiteDefault);
+
+GameTest.registerAsync(`APITests`, `teleport_keep_velocity_mob`, async (test) => {
+  let pig1 = test.spawn(`minecraft:pig<minecraft:ageable_grow_up>`, new BlockLocation(0, 10, 0));
+  let pig2 = test.spawn(`minecraft:pig<minecraft:ageable_grow_up>`, new BlockLocation(0, 10, 2));
+  let simPlayer1 = test.spawnSimulatedPlayer(new BlockLocation(2, 10, 0));
+  let simPlayer2 = test.spawnSimulatedPlayer(new BlockLocation(2, 10, 2));
+
+  await test.idle(2);
+  const velocity = new Vector(0, 5, 0);
+  pig1.setVelocity(velocity);
+  pig2.setVelocity(velocity);
+  simPlayer1.setVelocity(velocity);
+  simPlayer2.setVelocity(velocity);
+
+  await test.idle(20);
+  pig1.teleport(test.worldLocation(new Location(0.5, 2, 0.5)), world.getDimension(`overworld`), 0, 0, false); // don't keep velocity
+  pig2.teleport(test.worldLocation(new Location(0.5, 3, 2.5)), world.getDimension(`overworld`), 0, 0, true); // keep velocity
+
+  simPlayer1.teleport(test.worldLocation(new Location(2.5, 3, 2.5)), world.getDimension(`overworld`), 0, 0, false); // don't keep velocity
+  try {
+    simPlayer2.teleport(test.worldLocation(new Location(2.5, 3, 2.5)), world.getDimension(`overworld`), 0, 0, true); // keep velocity, not supported for players
+    test.fail("Expected exception when keepVelocity is true on player");
+  } catch (ex) {
+    test.assert(ex === "keepVelocity is not supported for player teleportation", ex);
+  }
+
+  test.assert(pig1.velocity.y === 0, `Expected pig1.velocity.y to be 0, but got ${pig1.velocity.y}`);
+  test.assert(pig2.velocity.y > 1.5, `Expected pig2.velocity.y to be > 1.5, but got ${pig2.velocity.y}`);
+  test.assert(simPlayer1.velocity.y === 0, `Expected simPlayer1.velocity.y to be 0, but got ${simPlayer1.velocity.y}`);
+
+  pig1.kill();
+  pig2.kill();
+
+  test.succeed();
+}).tag(GameTest.Tags.suiteDefault);

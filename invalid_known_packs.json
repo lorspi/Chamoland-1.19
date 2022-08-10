@@ -10,8 +10,22 @@
 		"from_disk" : true,
 		"hashes" : 
 		[
+			"ZMA8lR0Z4Avp/sX4YoCQlD+lop4iW8D3k2mKu8WwQro=",
+			"A4CwIG96hHing6fugkDzEiddBiKezpFBpEkGuZ6DqtQ="
+		],
+		"path" : "behavior_packs/vanilla_1.19.10",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.19.10"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : 
+		[
 			"IvLqW+tBqx6+SUhr4JMK6a++aka0uqimEAFpx/3f1kw=",
-			"MOJKrTBJRZ82+QIu01m6gvLhZE9ADj1RcV1Na30pSwU="
+			"S/Pz3rA8OcSdfp1qOzTf+xm6N6PXdQox/7iBq9JLQfY=",
+			"73Xz7BKbcUUoNKmLtgUX9c4PZ7q/XIiCwHj3OEBc52s="
 		],
 		"path" : "behavior_packs/vanilla_gametest",
 		"uuid" : "00000000-0000-0000-0000-000000000000",

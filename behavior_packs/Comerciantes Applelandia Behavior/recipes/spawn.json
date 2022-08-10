@@ -1,0 +1,29 @@
+{
+  "minecraft:recipe_shaped" : {
+    "result" : {
+      "count" : 1,
+      "data" : 0,
+      "item" : "npc:talisman"
+    },
+    "tags" : [
+      "crafting_table"
+    ],
+    "key" : {
+      "A" : {
+        "item" : "appleplus:masa_de_experiencia"
+      },
+      "B" : {
+        "item" : "minecraft:stick"
+      }
+    },
+    "pattern" : [
+      " A ",
+      " B ",
+      " B "
+    ],
+    "description" : {
+      "identifier" : "npc:talisman"
+    }
+  },
+  "format_version" : "1.10"
+}

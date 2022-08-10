@@ -364,7 +364,7 @@ GameTest.register("PathFindingTests", "carpet_walk_around", (test) => {
   .tag("suite:java_parity") // Test fails both on Java and Bedrock sometimes.
   .tag(GameTest.Tags.suiteDisabled); // Village couldn't walk around the carpet sometimes.
 
-
+// Tests for a two blocks tall mob to properly pathfind around and over trapdoors. Does not require padding.
 GameTest.register("PathFindingTests", "trapdoors", (test) => {
     const villagerEntitySpawnType = "minecraft:villager_v2<minecraft:spawn_farmer>";
 
@@ -381,6 +381,7 @@ GameTest.register("PathFindingTests", "trapdoors", (test) => {
     .maxTicks(TEST_MAX_TICKS)
     .tag(GameTest.Tags.suiteDefault);
 
+// Tests for a one block tall mob to properly pathfind around and over trapdoors. Does not require padding.
 GameTest.register("PathFindingTests", "trapdoors_short_mob", (test) => {
     const pigSpawnType = "minecraft:pig";
 

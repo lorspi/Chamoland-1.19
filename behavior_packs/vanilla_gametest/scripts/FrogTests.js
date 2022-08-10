@@ -105,3 +105,25 @@ GameTest.register("FrogTests", "frog_lay_egg", (test) => {
         })
         .thenSucceed();
 }).maxTicks(TicksPerSecond * 90).tag(GameTest.Tags.suiteDefault);
+
+GameTest.register("FrogTests", "frog_egg_flow_water", (test) => { //This test verifies that frogs only lay egg on water that has a flat surface, and not on the "flowing" part of water
+    const startPosFrogOne = new BlockLocation(1, 2, 1);
+    const startPosFrogTwo = new BlockLocation(2, 2, 1);
+    const startPosPlayer = new BlockLocation(1, 3, 3);
+    const flatWaterPos = new BlockLocation(5, 4, 4); //This position is where the water is flat
+
+    let playerSim = test.spawnSimulatedPlayer(startPosPlayer, "playerSim_frog");
+    let frogOne = test.spawn("minecraft:frog", startPosFrogOne);
+    let frogTwo = test.spawn("minecraft:frog", startPosFrogTwo);
+    const testEx = new GameTestExtensions(test);
+
+    test
+        .startSequence()
+        .thenExecute(() => testEx.giveItem(playerSim, MinecraftItemTypes.slimeBall, 2, 0))
+        .thenExecute(() => test.assert(playerSim.interactWithEntity(frogOne) == true, ""))
+        .thenExecute(() => test.assert(playerSim.interactWithEntity(frogTwo) == true, ""))
+        .thenWait(() => {
+            test.assertBlockPresent(MinecraftBlockTypes.frogSpawn, flatWaterPos, true);
+        })
+        .thenSucceed();
+}).maxTicks(TicksPerSecond * 90).tag(GameTest.Tags.suiteDefault);

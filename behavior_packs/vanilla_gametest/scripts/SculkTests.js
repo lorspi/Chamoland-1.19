@@ -1,5 +1,6 @@
 import * as GameTest from "mojang-gametest";
-import { BlockLocation, BlockPermutation, BlockProperties, MinecraftBlockTypes, TicksPerSecond } from "mojang-minecraft";
+import { BlockLocation, BlockProperties, MinecraftBlockTypes, TicksPerSecond } from "mojang-minecraft";
+import GameTestExtensions from "./GameTestExtensions.js";
 
 const TEST_PADDING = 5;
 
@@ -74,7 +75,7 @@ GameTest.register("SculkTests", "spread_uneven", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 3, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !== undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos1 = new BlockLocation(0, 4, 0);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos1, /* faceMask (down) = */ 1, INITIAL_CHARGE_SMALL);
@@ -86,7 +87,7 @@ GameTest.register("SculkTests", "spread_uneven", (test) => {
         for (var x = 0; x < 5; ++x) {
             for (var y = 0; y < 5; ++y) {
                 for (var z = 0; z < 5; ++z) {
-                    if (test.getBlock(new BlockLocation(x, y, z)).id == "minecraft:sculk") {
+                    if (test.getBlock(new BlockLocation(x, y, z)).id ===  "minecraft:sculk") {
                         ++sculkCount;
                     }
                 }
@@ -109,7 +110,7 @@ GameTest.register("SculkTests", "spread_uneven_overcharged", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 3, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos1 = new BlockLocation(0, 4, 0);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos1, /* faceMask (down) = */ 1, INITIAL_CHARGE);
@@ -121,7 +122,7 @@ GameTest.register("SculkTests", "spread_uneven_overcharged", (test) => {
         for (var x = 0; x < 5; ++x) {
             for (var y = 0; y < 5; ++y) {
                 for (var z = 0; z < 5; ++z) {
-                    if (test.getBlock(new BlockLocation(x, y, z)).id == "minecraft:sculk") {
+                    if (test.getBlock(new BlockLocation(x, y, z)).id ===  "minecraft:sculk") {
                         ++sculkCount;
                     }
                 }
@@ -143,7 +144,7 @@ GameTest.register("SculkTests", "spread_stairway_up", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(0, 3, -1);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (south) = */ 1 << 2, INITIAL_CHARGE);
@@ -165,7 +166,7 @@ GameTest.register("SculkTests", "spread_stairway_up_unsupported", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(0, 3, -1);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (south) = */ 1 << 2, INITIAL_CHARGE);
@@ -187,7 +188,7 @@ GameTest.register("SculkTests", "spread_stairway_down", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 17, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(0, 17, -1);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (south) = */ 1 << 2, INITIAL_CHARGE);
@@ -209,7 +210,7 @@ GameTest.register("SculkTests", "spread_pillar_up", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(2, 4, 1);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (south) = */ 1 << 2, INITIAL_CHARGE);
@@ -224,7 +225,7 @@ GameTest.register("SculkTests", "spread_pillar_up", (test) => {
     .tag(GameTest.Tags.suiteDefault);
 
 GameTest.register("SculkTests", "vein_consume_blocks", (test) => {
-    const TEST_AREA_SIZE_X = 9;
+    const TEST_AREA_SIZE_X = 10;
     const TEST_AREA_SIZE_Z = 5;
     const CONSUME_ROW_DELAY = TEST_AREA_SIZE_X * 2;
     const CONSUME_ROW_CHARGE = TEST_AREA_SIZE_X;
@@ -232,7 +233,7 @@ GameTest.register("SculkTests", "vein_consume_blocks", (test) => {
     const sculkCatalystPos = new BlockLocation(4, 2, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, new BlockLocation(0, 4, 0), /* faceMask (down) = */ 1, CONSUME_ROW_CHARGE);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, new BlockLocation(0, 2, 1), /* faceMask (up) = */ 1 << 1, CONSUME_ROW_CHARGE);
@@ -245,7 +246,7 @@ GameTest.register("SculkTests", "vein_consume_blocks", (test) => {
             for (var z = 0; z < TEST_AREA_SIZE_Z; z++) {
                 const testPos = new BlockLocation(x, 3, z);
                 var blockID = test.getBlock(testPos).type.id.valueOf();
-                test.assert(blockID == "minecraft:sculk", blockID + " is expected to be consumed by sculk.");
+                test.assert(blockID ===  "minecraft:sculk", blockID + " is expected to be consumed by sculk.");
             }
         }
     }).thenSucceed();
@@ -259,17 +260,45 @@ GameTest.register("SculkTests", "vein_spread_blocks", (test) => {
     test.spawn("minecraft:creeper", new BlockLocation(0, 4, 4)).kill();
     test.spawn("minecraft:creeper", new BlockLocation(4, 4, 0)).kill();
     test.spawn("minecraft:creeper", new BlockLocation(4, 4, 4)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(2, 4, 0)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(0, 4, 2)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(4, 4, 2)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(2, 4, 4)).kill();
 
     test.succeedWhen(() => {
         for (var x = 0; x < 5; ++x) {
             for (var z = 0; z < 5; ++z) {
-                const isSculk = test.getBlock(new BlockLocation(x, 3, z)).id == "minecraft:sculk" || test.getBlock(new BlockLocation(x, 4, z)).id == "minecraft:sculk_vein";
+                const isSculk = test.getBlock(new BlockLocation(x, 3, z)).id ===  "minecraft:sculk" || test.getBlock(new BlockLocation(x, 4, z)).id ===  "minecraft:sculk_vein";
                 test.assert(isSculk, "Sculk failed to spread to [" + x + ", " + z + "]!");
             }
         };
     });
 })
     .maxTicks(TicksPerSecond * 10)
+    .padding(TEST_PADDING)
+    .tag(GameTest.Tags.suiteDefault);
+
+GameTest.register("SculkTests", "vein_spread_blocks_replaceable", (test) => {
+    test.spawn("minecraft:creeper", new BlockLocation(1, 3, 1)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(1, 3, 3)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(4, 3, 1)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(4, 3, 3)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(6, 3, 1)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(6, 3, 3)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(9, 3, 1)).kill();
+    test.spawn("minecraft:creeper", new BlockLocation(9, 3, 3)).kill();
+
+    test.succeedWhen(() => {
+        test.assertBlockPresent(MinecraftBlockTypes.sculk, new BlockLocation(1, 2, 1));
+        test.assertBlockPresent(MinecraftBlockTypes.sculk, new BlockLocation(1, 2, 3));
+        test.assertBlockPresent(MinecraftBlockTypes.sculk, new BlockLocation(3, 2, 1));
+        test.assertBlockPresent(MinecraftBlockTypes.sculk, new BlockLocation(3, 2, 3));
+        test.assertBlockPresent(MinecraftBlockTypes.sculk, new BlockLocation(7, 2, 1));
+        test.assertBlockPresent(MinecraftBlockTypes.sculk, new BlockLocation(7, 2, 3));
+        test.assertBlockPresent(MinecraftBlockTypes.sculk, new BlockLocation(9, 2, 1));
+        test.assertBlockPresent(MinecraftBlockTypes.sculk, new BlockLocation(9, 2, 3));
+    });
+})
     .padding(TEST_PADDING)
     .tag(GameTest.Tags.suiteDefault);
 
@@ -285,12 +314,12 @@ GameTest.register("SculkTests", "vein_non_spread_blocks", (test) => {
         var sculkVeinCount = 0;
         for (var x = 0; x < 5; ++x) {
             for (var z = 0; z < 5; ++z) {
-                if (test.getBlock(new BlockLocation(x, 4, z)).id == "minecraft:sculk_vein") {
+                if (test.getBlock(new BlockLocation(x, 4, z)).id ===  "minecraft:sculk_vein") {
                     ++sculkVeinCount;
                 }
             }
         };
-        test.assert(sculkVeinCount == 4, "Only 4 veins where expected to be placed, one for each mob death position!");
+        test.assert(sculkVeinCount ===  4, "Only 4 veins where expected to be placed, one for each mob death position!");
     });
 })
     .padding(TEST_PADDING)
@@ -312,13 +341,25 @@ GameTest.register("SculkTests", "vein_non_spread_fire", (test) => {
     .padding(TEST_PADDING)
     .tag(GameTest.Tags.suiteDefault);
 
+// Tests that no sculk vein is placed on a catalyst if a mob dies on top of it.
+GameTest.register("SculkTests", "vein_non_spread_catalyst", (test) => {
+    const spawnPos = new BlockLocation(2, 3, 2);
+    test.spawn("minecraft:creeper", spawnPos).kill();
+
+    test.startSequence().thenExecuteFor(TicksPerSecond * 2, () => {
+        test.assertBlockPresent(MinecraftBlockTypes.air, spawnPos);
+    }).thenSucceed();
+})
+    .padding(TEST_PADDING)
+    .tag(GameTest.Tags.suiteDefault);
+
 GameTest.register("SculkTests", "spread_under_water", (test) => {
     const INITIAL_CHARGE = 30;
 
     const sculkCatalystPos = new BlockLocation(2, 7, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(3, 6, 3);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (down) = */ 1, INITIAL_CHARGE);
@@ -335,7 +376,7 @@ GameTest.register("SculkTests", "vein_non_place_blocks", (test) => {
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     test.spawn("minecraft:creeper", new BlockLocation(1, 30, 2));
     test.spawn("minecraft:creeper", new BlockLocation(2, 30, 1));
@@ -349,8 +390,8 @@ GameTest.register("SculkTests", "vein_non_place_blocks", (test) => {
                 for (var z = 0; z < 5; z++) {
                     testPos = new BlockLocation(x, y, z);
                     var blockID = test.getBlock(testPos).type.id.valueOf();
-                    test.assert(blockID != "minecraft:sculk", "Sculk should not have spread.");
-                    test.assert(blockID != "minecraft:sculk_vein", "Sculk Vein should not have spread.");
+                    test.assert(blockID !==  "minecraft:sculk", "Sculk should not have spread.");
+                    test.assert(blockID !==  "minecraft:sculk_vein", "Sculk Vein should not have spread.");
                 }
             }
         }
@@ -366,49 +407,95 @@ GameTest.register("SculkTests", "charge_cap", (test) => {
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const mobSpawnLocation = new BlockLocation(2, 4, 2);
     test.spawn("minecraft:creeper", mobSpawnLocation).kill();
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 3, 2), sculkSpreader.maxCharge - MERGEABLE_EXPERIENCE_AMOUNT);
 
     test.startSequence().thenExecuteAfter(2, () => {
-        test.assert(sculkSpreader.getNumberOfCursors() == 1, "Charges should merge up to maximum.");
+        test.assert(sculkSpreader.getNumberOfCursors() ===  1, "Charges should merge up to maximum.");
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
     }).thenExecuteAfter(2, () => {
-        test.assert(sculkSpreader.getNumberOfCursors() == 1, "Charges should merge up to maximum.");
+        test.assert(sculkSpreader.getNumberOfCursors() ===  1, "Charges should merge up to maximum.");
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
         test.spawn("minecraft:creeper", mobSpawnLocation).kill();
     }).thenExecuteAfter(2, () => {
-        test.assert(sculkSpreader.getNumberOfCursors() == 2, "Charges should not merge above maximum.");
+        test.assert(sculkSpreader.getNumberOfCursors() ===  2, "Charges should not merge above maximum.");
     }).thenSucceed();
 
 })
     .padding(TEST_PADDING)
     .tag(GameTest.Tags.suiteDefault);
 
-GameTest.register("SculkTests", "multiple_catalysts", (test) => {
+// Tests that on an experienceless mob death, a catalyst blooms but does not get a cursor.
+GameTest.register("SculkTests", "catalyst_no_xp_death", (test) => {
+    const sculkCatalystPos = new BlockLocation(2, 2, 2);
+    test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
+    const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
+
+    const mobSpawnLocation = sculkCatalystPos.offset(0, 1, 0);
+    test.spawn("minecraft:villager_v2<minecraft:spawn_farmer>", mobSpawnLocation).kill();
+
+    test.startSequence().thenExecuteAfter(2, () => {
+        const numberOfCursors = sculkSpreader.getNumberOfCursors();
+        test.assert(numberOfCursors ===  0, "Expected total number of cursors to be 0. Actual amount: " + numberOfCursors);
+        const testEx = new GameTestExtensions(test);
+        testEx.assertBlockProperty("bloom", 1, sculkCatalystPos);
+    }).thenSucceed();
+})
+    .padding(TEST_PADDING)
+    .tag(GameTest.Tags.suiteDefault);
+
+// Tests that on mob death, only the closest catalyst gets a cursor.
+GameTest.register("SculkTests", "multiple_catalysts_one_death", (test) => {
     const catalystPositions = [
         new BlockLocation(0, 2, 0),
         new BlockLocation(4, 2, 0),
         new BlockLocation(4, 2, 4),
         new BlockLocation(0, 2, 4)];
 
-    catalystPositions.forEach(
-        location => test.assert(test.getSculkSpreader(location) != undefined, "Failed to find sculk catalyst."));
+    catalystPositions.forEach(location => test.assert(test.getSculkSpreader(location) !==  undefined, "Failed to find sculk catalyst."));
 
-    const mobSpawnLocation = new BlockLocation(2, 4, 2);
+    const closestCatalystPosition = catalystPositions[0];
+    const mobSpawnLocation = closestCatalystPosition.offset(0, 2, 0);
     test.spawn("minecraft:creeper", mobSpawnLocation).kill();
 
     test.startSequence().thenExecuteAfter(2, () => {
-        var numberOfCursors = 0;
+        let numberOfCursors = 0;
         catalystPositions.forEach(position => numberOfCursors += test.getSculkSpreader(position).getNumberOfCursors());
-        test.assert(numberOfCursors == 1, "Expected total number of cursors to be 1. Actual amount: " + numberOfCursors);
+        test.assert(numberOfCursors ===  1, "Expected total number of cursors to be 1. Actual amount: " + numberOfCursors);
+        const closestCatalystCursors = test.getSculkSpreader(closestCatalystPosition).getNumberOfCursors();
+        test.assert(closestCatalystCursors ===  1, "Expected the closest sculk catalyst to get the cursor.");
+    }).thenSucceed();
+})
+    .padding(TEST_PADDING)
+    .tag(GameTest.Tags.suiteDefault);
+
+// Tests that on mob death, only the closest catalyst gets a cursor. In this case, a mob dies on top
+// of each one of the four catalysts, resulting in four cursors being created, one per catalyst.
+GameTest.register("SculkTests", "multiple_catalysts_multiple_deaths", (test) => {
+    const catalystPositions = [
+        new BlockLocation(0, 2, 0),
+        new BlockLocation(4, 2, 0),
+        new BlockLocation(4, 2, 4),
+        new BlockLocation(0, 2, 4)];
+
+    catalystPositions.forEach(location => {
+        test.assert(test.getSculkSpreader(location) !==  undefined, "Failed to find sculk catalyst.");
+        test.spawn("minecraft:creeper", location.offset(0, 2, 0)).kill();
+    });
+
+    test.startSequence().thenExecuteAfter(2, () => {
+        let numberOfCursors = 0;
+        catalystPositions.forEach(position => numberOfCursors += test.getSculkSpreader(position).getNumberOfCursors());
+        test.assert(numberOfCursors ===  4, "Expected total number of cursors to be 4. Actual amount: " + numberOfCursors);
     }).thenSucceed();
 })
     .padding(TEST_PADDING)
@@ -420,13 +507,13 @@ GameTest.register("SculkTests", "charge_decay_sculk", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 4, 2), INITIAL_CHARGE);
 
     test.succeedWhen(() => {
         const totalCharge = sculkSpreader.getTotalCharge();
-        test.assert(totalCharge == FINAL_CHARGE, "Charge should drop to " + FINAL_CHARGE + ". Total charge: " + totalCharge);
+        test.assert(totalCharge ===  FINAL_CHARGE, "Charge should drop to " + FINAL_CHARGE + ". Total charge: " + totalCharge);
     });
 })
     .maxAttempts(5)
@@ -440,14 +527,14 @@ GameTest.register("SculkTests", "charge_decay_sculk_vein", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const spreadStartPos = new BlockLocation(2, 6, 2);
     placeSculkVeinAndSpread(test, sculkSpreader, sculkCatalystPos, spreadStartPos, /* faceMask (down) = */ 1, INITIAL_CHARGE);
 
     test.succeedWhen(() => {
         const totalCharge = sculkSpreader.getTotalCharge();
-        test.assert(totalCharge == FINAL_CHARGE, "Charge should drop to " + FINAL_CHARGE + ". Total charge: " + totalCharge);
+        test.assert(totalCharge ===  FINAL_CHARGE, "Charge should drop to " + FINAL_CHARGE + ". Total charge: " + totalCharge);
     });
 })
     .maxAttempts(5)
@@ -461,7 +548,7 @@ GameTest.register("SculkTests", "sculk_growth_spawning", (test) => {
     const sculkCatalystPos = new BlockLocation(4, 4, 2);
     test.assertBlockPresent(MinecraftBlockTypes.sculkCatalyst, sculkCatalystPos);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     for (var z = 1; z < 4; z++) {
         const spreadStartPos = new BlockLocation(1, 4, z);
@@ -496,7 +583,7 @@ GameTest.register("SculkTests", "sculk_growth_spawning", (test) => {
             }
         }
 
-        test.assert(nearGrowths == 0, "No growths should have spawned near the catalyst.");
+        test.assert(nearGrowths ===  0, "No growths should have spawned near the catalyst.");
     });
 })
     .maxTicks(TicksPerSecond * 40)
@@ -509,7 +596,7 @@ GameTest.register("SculkTests", "charge_forced_direction", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(1, 3, 2), INITIAL_CHARGE);
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(1, 13, 2), INITIAL_CHARGE);
@@ -536,7 +623,7 @@ GameTest.register("SculkTests", "charge_redirection", (test) => {
 
     const sculkCatalystPos = new BlockLocation(5, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(4, 5, 2), INITIAL_CHARGE);
 
     test.startSequence().thenExecuteAfter(TicksPerSecond * 2, () => {
@@ -564,7 +651,7 @@ GameTest.register("SculkTests", "charge_merging", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 5, 0), INITIAL_CHARGE);
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 5, 4), INITIAL_CHARGE);
@@ -574,7 +661,7 @@ GameTest.register("SculkTests", "charge_merging", (test) => {
     test.succeedWhen(() => {
         const totalCharge = sculkSpreader.getTotalCharge();
         const numberOfCursors = sculkSpreader.getNumberOfCursors();
-        test.assert(numberOfCursors == 1, "There are " + numberOfCursors + " cursors, should be only one");
+        test.assert(numberOfCursors ===  1, "There are " + numberOfCursors + " cursors, should be only one");
         test.assert(totalCharge >= MIN_RESIDUAL_CHARGE, "Total charge of + " + INITIAL_CHARGE * 4 + " + should be roughly preserved, current charge: " + totalCharge);
     });
 })
@@ -587,18 +674,18 @@ GameTest.register("SculkTests", "charge_in_air_disappear", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 4, 2), INITIAL_CHARGE);
 
     const charge = sculkSpreader.getTotalCharge();
-    test.assert(charge == INITIAL_CHARGE, "Total charge of " + INITIAL_CHARGE + " should be still present at this point.");
+    test.assert(charge ===  INITIAL_CHARGE, "Total charge of " + INITIAL_CHARGE + " should be still present at this point.");
 
     test.setBlockType(MinecraftBlockTypes.air, new BlockLocation(2, 4, 2));
 
     test.startSequence().thenExecuteAfter(3, () => {
         const numberOfCursors = sculkSpreader.getNumberOfCursors();
-        test.assert(numberOfCursors == 0, "The cursor did not disappear in 3 ticks despite having no substrate.");
+        test.assert(numberOfCursors ===  0, "The cursor did not disappear in 3 ticks despite having no substrate.");
     }).thenSucceed();
 })
     .padding(TEST_PADDING)
@@ -609,12 +696,12 @@ GameTest.register("SculkTests", "charge_in_air_jump", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     spreadFromBlockOrAssert(test, sculkSpreader, sculkCatalystPos, MinecraftBlockTypes.sculk, new BlockLocation(2, 4, 2), INITIAL_CHARGE);
 
     const charge = sculkSpreader.getTotalCharge();
-    test.assert(charge == INITIAL_CHARGE, "Total charge of " + INITIAL_CHARGE + " should be still present at this point.");
+    test.assert(charge ===  INITIAL_CHARGE, "Total charge of " + INITIAL_CHARGE + " should be still present at this point.");
 
     test.setBlockType(MinecraftBlockTypes.air, new BlockLocation(2, 4, 2));
     test.setBlockType(MinecraftBlockTypes.sculk, new BlockLocation(2, 5, 2));
@@ -657,7 +744,7 @@ GameTest.register("SculkTests", "spread_to_moving_blocks", (test) => {
         var sculkCount = 0;
         for (var x = 1; x < 8; x++) {
             for (var z = 1; z < 4; z++) {
-                if (test.getBlock(new BlockLocation(x, 3, z)).id == "minecraft:sculk") {
+                if (test.getBlock(new BlockLocation(x, 3, z)).id ===  "minecraft:sculk") {
                     ++sculkCount;
                 }
             }
@@ -676,7 +763,7 @@ GameTest.register("SculkTests", "spread_on_player_death", (test) => {
 
     const sculkCatalystPos = new BlockLocation(2, 2, 2);
     const sculkSpreader = test.getSculkSpreader(sculkCatalystPos);
-    test.assert(sculkSpreader != undefined, "No Sculk Spreader has been retrieved!");
+    test.assert(sculkSpreader !==  undefined, "No Sculk Spreader has been retrieved!");
 
     const grassPos = new BlockLocation(1, 4, 2);
     const grassWithTallGrassPos = new BlockLocation(3, 4, 2);

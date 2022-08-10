@@ -1,0 +1,37 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "resourcePack.editor.server.description",
+    "name": "resourcePack.editor.server.name",
+    "uuid": "3222066e-79d0-4573-9e15-93472d32cbd5",
+    "version": [ 0, 0, 1 ],
+    "min_engine_version": [ 1, 14, 0 ]
+  },
+  "modules": [
+    {
+      "description": "resourcePack.editor.server.description",
+      "type": "script",
+      "uuid": "68c18ba2-cba3-4aae-9af4-fcae6b733325",
+      "version": [ 0, 0, 1 ],
+      "language": "javascript",
+      "entry": "scripts/Main.js"	    
+    }
+  ],
+  "dependencies": [
+    // "editor-server" - server specific module
+    {
+      "uuid": "8518d9c7-a1f5-4bf3-acc7-78e87df595fc",
+      "version": [ 0, 1, 0 ]
+    },
+    // "editor-common" - common shared client/server module
+    {
+      "uuid": "5d1bb201-7cc3-4149-9845-dc555a8b5763",
+      "version": [ 0, 1, 0 ]
+    },
+    // "mojang-minecraft"
+    {
+      "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+      "version": [ 0, 1, 0 ]
+    }
+  ]
+}

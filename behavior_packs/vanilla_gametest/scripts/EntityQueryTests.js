@@ -85,13 +85,13 @@ GameTest.register("EntityQueryTests", "dimension_entity_query", (test) => {
   // e8|e7|e6
   // e5|e4|e3
   // e2|e1|e0
-  const e0 = test.spawn("minecraft:cow", new BlockLocation(1, 2, 1));
-  const e1 = test.spawn("minecraft:cow", new BlockLocation(3, 2, 1));
-  const e2 = test.spawn("minecraft:cow", new BlockLocation(5, 2, 1));
-  const e3 = test.spawn("husk", new BlockLocation(1, 2, 3));
-  const e4 = test.spawn("minecraft:zombie", new BlockLocation(3, 2, 3));
-  const e5 = test.spawn("minecraft:sheep", new BlockLocation(5, 2, 3));
-  const e6 = test.spawn("sheep", new BlockLocation(1, 2, 5));
+  const e0 = test.spawn("minecraft:cow<minecraft:ageable_grow_up>", new BlockLocation(1, 2, 1));
+  const e1 = test.spawn("minecraft:cow<minecraft:ageable_grow_up>", new BlockLocation(3, 2, 1));
+  const e2 = test.spawn("minecraft:cow<minecraft:ageable_grow_up>", new BlockLocation(5, 2, 1));
+  const e3 = test.spawn("minecraft:husk<minecraft:ageable_grow_up>", new BlockLocation(1, 2, 3));
+  const e4 = test.spawn("minecraft:zombie<minecraft:ageable_grow_up>", new BlockLocation(3, 2, 3));
+  const e5 = test.spawn("minecraft:sheep<minecraft:ageable_grow_up>", new BlockLocation(5, 2, 3));
+  const e6 = test.spawn("minecraft:sheep<minecraft:ageable_grow_up>", new BlockLocation(1, 2, 5));
   const e7 = test.spawnSimulatedPlayer(new BlockLocation(3, 2, 5), p1Name);
   const e8 = test.spawnSimulatedPlayer(new BlockLocation(5, 2, 5), p2Name);
 

@@ -1,5 +1,5 @@
 import * as GameTest from "mojang-gametest";
-import { BlockLocation, MinecraftItemTypes, ItemStack } from "mojang-minecraft";
+import { BlockLocation, Location, MinecraftItemTypes, ItemStack } from "mojang-minecraft";
 
 function isNear(n1, n2) {
   return Math.abs(n1 - n2) < 0.01;
@@ -489,15 +489,15 @@ GameTest.register("ComponentTests", "strength_component", (test) => {
   .structureName("ComponentTests:animal_pen")
   .tag(GameTest.Tags.suiteDefault);
 
-GameTest.register("ComponentTests", "item_component", async (test) => {
-  const itemLoc = test.worldBlockLocation(new BlockLocation(1, 2, 1));
-  test.pressButton(new BlockLocation(0, 2, 0));
-  await test.idle(40);
-  const entities = test.getDimension().getEntitiesAtBlockLocation(itemLoc);
-  test.assert(entities.length === 1, "Expected 1 entity");
-  const itemComp = entities[0].getComponent("item");
+GameTest.registerAsync("ComponentTests", "item_component", async (test) => {
+  const itemAmount = 5;
+  const torchItem = new ItemStack(MinecraftItemTypes.torch, itemAmount);
+  const torch = test.spawnItem(torchItem, new Location(1.5, 2.5, 1.5));
+  const itemComp = torch.getComponent("item");
   test.assert(itemComp !== undefined, "Expected item component");
   test.assert(itemComp.itemStack.id === "minecraft:torch", "Unexpected item id");
-  test.assert(itemComp.itemStack.amount === 1, "Unexpected item amount");
+  test.assert(itemComp.itemStack.amount === itemAmount, "Unexpected item amount");
   test.succeed();
-}).tag(GameTest.Tags.suiteDefault);
+})
+  .structureName("ComponentTests:platform")
+  .tag(GameTest.Tags.suiteDefault);

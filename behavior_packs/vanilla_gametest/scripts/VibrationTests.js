@@ -15,8 +15,8 @@ function succeedOnVibrationDetected(test, sensorPos, comparatorPos, expectedFreq
     });
 }
 
-function failOnVibrationDetected(test, sensorPos, duration) {
-    test.startSequence().thenExecuteFor(duration, () => {
+function failOnVibrationDetected(test, sensorPos, duration, delay = 0) {
+    test.startSequence().thenIdle(delay).thenExecuteFor(duration, () => {
         const testEx = new GameTestExtensions(test);
         testEx.assertBlockProperty("powered_bit", 0, sensorPos);
     }).thenSucceed();
@@ -68,11 +68,17 @@ GameTest.register("VibrationTests", "output_distance", (test) => {
 
     destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(0, 0, -8), sensorPos.offset(-1, -1, 1));
     destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(0, 0, -7), sensorPos.offset(-2, -1, 1));
+    destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(3, 0, -6), sensorPos.offset(-3, -1, 1));
     destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(0, 0, -6), sensorPos.offset(-4, -1, 1));
+    destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(3, 0, -5), sensorPos.offset(-5, -1, 1));
     destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(0, 0, -5), sensorPos.offset(-6, -1, 1));
+    destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(2, 0, -4), sensorPos.offset(-7, -1, 1));
     destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(0, 0, -4), sensorPos.offset(-8, -1, 1));
+    destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(2, 0, -3), sensorPos.offset(-9, -1, 1));
     destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(0, 0, -3), sensorPos.offset(-10, -1, 1));
+    destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(1, 0, -2), sensorPos.offset(-11, -1, 1));
     destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(0, 0, -2), sensorPos.offset(-12, -1, 1));
+    destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(1, 0, -1), sensorPos.offset(-13, -1, 1));
     destroyBlockAndTestComparatorOutput(test, sequence, sensorPos, sensorPos.offset(0, 0, -1), sensorPos.offset(-14, -1, 1));
     spawnCreeperAndTestComparatorOutput(test, sequence, sensorPos, new Location(16.5, 3, 9.5), sensorPos.offset(-15, -1, 1));
 
@@ -81,7 +87,7 @@ GameTest.register("VibrationTests", "output_distance", (test) => {
     .maxTicks(TicksPerSecond * 60)
     .tag(GameTest.Tags.suiteDefault);
 
-// Tests that a Sculk Sensor reacts to an in-range vibration and ignores closer ones emitted after it.
+// Tests that a Sculk Sensor reacts to the closest vibration emitted in a tick.
 GameTest.register("VibrationTests", "activation_multiple_vibrations", (test) => {
     const sensorPos = new BlockLocation(9, 2, 9);
 
@@ -95,13 +101,7 @@ GameTest.register("VibrationTests", "activation_multiple_vibrations", (test) => 
         test.destroyBlock(destroyPosFar);
         test.destroyBlock(destroyPosClose);
     }).thenExecuteAfter(1, () => {
-        // Executed at tick 1. Sensor shouldn't have been activated by second vibration.
-        testEx.assertBlockProperty("powered_bit", 0, sensorPos);
-    }).thenExecuteAfter(6, () => {
-        // Executed at tick 7. Sensor shouldn't have been activated yet by first vibration.
-        testEx.assertBlockProperty("powered_bit", 0, sensorPos);
-    }).thenExecuteAfter(3, () => {
-        // Executed at tick 8. Sensor should have been activated by first vibration already.
+        // Executed at tick 1. Sensor have been activated by second vibration.
         testEx.assertBlockProperty("powered_bit", 1, sensorPos);
     }).thenSucceed();
 })
@@ -301,8 +301,8 @@ GameTest.register("VibrationTests", "event_entity_move_carpet", (test) => {
 })
     .tag(GameTest.Tags.suiteDefault);
 
-// Tests that a vibration dampering entity (Warden) does not produce vibrations when moving.
-GameTest.register("VibrationTests", "event_entity_move_dampering", (test) => {
+// Tests that a vibration dampening entity (Warden) does not produce vibrations when moving.
+GameTest.register("VibrationTests", "event_entity_move_dampening", (test) => {
     const sensorPos = new BlockLocation(9, 2, 9);
 
     const spawnPos = new Location(16.5, 2, 7.5);
@@ -378,8 +378,8 @@ GameTest.register("VibrationTests", "event_entity_move_sneaking_on_sensor", (tes
     .maxTicks(TicksPerSecond * 30)
     .tag(GameTest.Tags.suiteDefault);
 
-// Tests that a flying entity produces vibrations of the expected frequency.
-GameTest.register("VibrationTests", "event_flap", (test) => {
+// Tests that a flying parrot produces vibrations of the expected frequency.
+GameTest.register("VibrationTests", "event_flap_parrot", (test) => {
     const sensorPos = new BlockLocation(9, 2, 9);
     const comparatorPos = new BlockLocation(9, 2, 10);
     const expectedFrequency = 2;
@@ -389,6 +389,35 @@ GameTest.register("VibrationTests", "event_flap", (test) => {
 
     const targetPos = new BlockLocation(7, 2, 9);
     test.walkTo(parrot, targetPos, 1);
+
+    succeedOnVibrationDetected(test, sensorPos, comparatorPos, expectedFrequency);
+})
+    .tag(GameTest.Tags.suiteDefault);
+
+// Tests that a flying bee produces vibrations of the expected frequency.
+GameTest.register("VibrationTests", "event_flap_bee", (test) => {
+    const sensorPos = new BlockLocation(9, 2, 9);
+    const comparatorPos = new BlockLocation(9, 2, 10);
+    const expectedFrequency = 2;
+
+    const spawnPos = new Location(11.5, 2, 9.5);
+    const bee = test.spawnWithoutBehaviorsAtLocation("minecraft:bee", spawnPos);
+
+    const targetPos = new BlockLocation(7, 2, 9);
+    test.walkTo(bee, targetPos, 1);
+
+    succeedOnVibrationDetected(test, sensorPos, comparatorPos, expectedFrequency);
+})
+    .tag(GameTest.Tags.suiteDefault);
+
+// Tests that a falling chicken produces vibrations of the expected frequency.
+GameTest.register("VibrationTests", "event_flap_chicken", (test) => {
+    const sensorPos = new BlockLocation(9, 2, 9);
+    const comparatorPos = new BlockLocation(9, 2, 10);
+    const expectedFrequency = 2;
+
+    const spawnPos = new Location(9.5, 5, 7.5);
+    test.spawnWithoutBehaviorsAtLocation("minecraft:chicken", spawnPos);
 
     succeedOnVibrationDetected(test, sensorPos, comparatorPos, expectedFrequency);
 })
@@ -410,6 +439,18 @@ GameTest.register("VibrationTests", "event_swim", (test) => {
 })
     .tag(GameTest.Tags.suiteDefault);
 
+// Tests that a swimming entity staying still in water does not produce vibrations.
+GameTest.register("VibrationTests", "event_swim_still", (test) => {
+    const sensorPos = new BlockLocation(9, 2, 9);
+
+    const spawnPos = new Location(9.5, 2, 7.5);
+    test.spawnAtLocation("minecraft:tropicalfish", spawnPos);
+
+    // When the fish is spawned, it emits a splash vibration, so we wait for the sensor to reset before checking for further ones.
+    failOnVibrationDetected(test, sensorPos, TicksPerSecond * 1, SENSOR_MAX_DELAY_TICKS + SENSOR_ACTIVE_TICKS + SENSOR_COOLDOWN_TICKS);
+})
+    .tag(GameTest.Tags.suiteDefault);
+
 // Tests that a Boat moving on water produces vibrations of the expected frequency.
 GameTest.register("VibrationTests", "event_swim_boat", (test) => {
     const sensorPos = new BlockLocation(9, 2, 9);
@@ -426,6 +467,19 @@ GameTest.register("VibrationTests", "event_swim_boat", (test) => {
 })
     .tag(GameTest.Tags.suiteDefault);
 
+// Tests that a Boat staying still on water does not produce vibrations.
+GameTest.register("VibrationTests", "event_swim_boat_still", (test) => {
+    const sensorPos = new BlockLocation(9, 2, 9);
+
+    const spawnPos = new Location(9.5, 3, 6.5);
+    test.spawnAtLocation("minecraft:boat", spawnPos);
+
+    // When the Boat is spawned, it emits a splash vibration, so we wait for the sensor to reset before checking for further ones.
+    failOnVibrationDetected(test, sensorPos, TicksPerSecond * 4, SENSOR_MAX_DELAY_TICKS + SENSOR_ACTIVE_TICKS + SENSOR_COOLDOWN_TICKS);
+})
+    .tag(GameTest.Tags.suiteDefault)
+    .maxTicks(TicksPerSecond * 5 + SENSOR_MAX_DELAY_TICKS + SENSOR_ACTIVE_TICKS + SENSOR_COOLDOWN_TICKS);
+
 // Tests that an entity hitting ground produces vibrations of the expected frequency.
 GameTest.register("VibrationTests", "event_hit_ground", (test) => {
     const sensorPos = new BlockLocation(9, 2, 9);
@@ -439,8 +493,8 @@ GameTest.register("VibrationTests", "event_hit_ground", (test) => {
 })
     .tag(GameTest.Tags.suiteDefault);
 
-// [Bug 734008] Tests that a vibration dampering item (a Wool block, ejected by powering a Dispenser containing it) does not produce vibrations when hitting ground.
-GameTest.register("VibrationTests", "event_hit_ground_dampering", (test) => {
+// [Bug 734008] Tests that a vibration dampening item (a Wool block, ejected by powering a Dispenser containing it) does not produce vibrations when hitting ground.
+GameTest.register("VibrationTests", "event_hit_ground_dampening", (test) => {
     const sensorPos = new BlockLocation(9, 2, 9);
 
     const placeAtPos = new BlockLocation(9, 6, 6);
@@ -458,6 +512,16 @@ GameTest.register("VibrationTests", "event_hit_ground_wool", (test) => {
     test.spawnWithoutBehaviorsAtLocation("minecraft:creeper", spawnPos);
 
     failOnVibrationDetected(test, sensorPos, TicksPerSecond * 2);
+})
+    .tag(GameTest.Tags.suiteDefault);
+
+// Tests that a Sculk Sensor detects Wool in item form (retrieved from the .mcstructure) lying on top of it.
+GameTest.register("VibrationTests", "event_sculk_touch_wool", (test) => {
+    const sensorPos = new BlockLocation(9, 2, 9);
+    const comparatorPos = new BlockLocation(9, 2, 10);
+    const expectedFrequency = 1;
+
+    succeedOnVibrationDetected(test, sensorPos, comparatorPos, expectedFrequency);
 })
     .tag(GameTest.Tags.suiteDefault);
 
@@ -514,7 +578,7 @@ GameTest.register("VibrationTests", "event_projectile_land", (test) => {
 GameTest.register("VibrationTests", "event_projectile_land_wool", (test) => {
     const sensorPos = new BlockLocation(9, 2, 9);
 
-    const placeAtPos = new BlockLocation(9, 4, 4);
+    const placeAtPos = new BlockLocation(9, 7, 4);
     test.setBlockType(MinecraftBlockTypes.redstoneBlock, placeAtPos);
 
     failOnVibrationDetected(test, sensorPos, TicksPerSecond * 2);
