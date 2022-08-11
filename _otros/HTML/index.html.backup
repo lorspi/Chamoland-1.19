@@ -1,0 +1,142 @@
+<!-- 
+http://lorspi.com/mundito/alquimia.png
+http://lorspi.com/mundito/formato.gif
+http://lorspi.com/mundito/bare-bones.zip
+http://lorspi.com/mundito/MinecraftTL-Java.exe
+http://lorspi.com/mundito/MinecraftTL-SinJava.exe
+ -->
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://demo.develp.de/codester/mycraft/ -->
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="theme-color" content="#4CAF50">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="msapplication-TileColor" content="#be2e36">
+	<meta name="theme-color" content="#be2e36">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<title>Pixelmon - Estado</title>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	
+	<!--<link rel="apple-touch-icon" sizes="57x57" href="img/iconos/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/iconos/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/iconos/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/iconos/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/iconos/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/iconos/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/iconos/apple-icon-144x144.png">-->
+	<link rel="apple-touch-icon" sizes="512x512" href="img/icono.png">
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap.min.css" rel="stylesheet">
+	<!-- Template core CSS -->
+	<link href="assets/main.css" rel="stylesheet">
+	<link href="assets/css" rel="stylesheet"> 
+	<!--<script defer="" src="assets/all.js.descarga"></script>
+	<script src="assets/cookieconsent.min.js.descarga" data-cfasync="false"></script>-->
+
+
+	</head>
+	<body>
+
+	<!-- Header Section -->
+	<header class="masthead" id="cabecera">
+		<div class="container h-100">
+			<div class="row h-100 align-items-center">
+				<div class="col-12 text-center">
+					<img src="img/weblogo.png" style="max-width: 90%; align-self: center;">
+					<br><br>
+					<!--<div class="container" style="max-width:300px;">
+						<a class="btn btn-primary" href="#bienvenido">Bienvenido</a>
+					</div>-->
+					<br><br>
+					<div class="container" style="max-width:350px;">
+					<div class="alert text-center text-uppercase" role="alert" id="btnestado">
+						<h4 class="alert-heading pulse animated"><span id="jugadores"></span><small id="estado">Cargando estado...</small></h4>
+					</div>
+					</div>
+					<p id="demo"> </p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /.header -->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="assets/bootstrap.bundle.min.js.descarga"></script>
+	<script>
+	$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+	});
+	</script>
+	<script>
+	function toasty() {
+	var x = document.getElementById("global-notification");
+	x.className = "show";
+	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	}
+	</script>
+	<script>
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+	</script>
+	<script>
+		var url = "https://api.minetools.eu/ping/51.81.190.108/25565";
+		var i, nombre = "";
+
+		$.getJSON(url, function(r) {
+		    //data is the JSON string
+		if(r.error){
+		    $('#estado').html('Desconectado');
+		    $('#jugadores').css("display","none");
+		    $('#btnestado').addClass( "alert-danger" );
+		   return false;
+		 } else {
+		 	var cantidad = r.players.online;
+			var es = 'es';
+			var os = 's';
+			if (r.players.online == 1){
+				var es = '';
+				var os = '';
+			}
+
+			//------------------------
+		 	for (i = 0; i < r.players.sample.length; i++) {
+			  nombre += r.players.sample[i].name + " ";
+			}
+			//------------------------
+
+			if (r.version.name == "\u00a74\u25cf Offline" ) {
+				$('#estado').html('Desconectado');
+			    $('#jugadores').css("display","none");
+			    $('#btnestado').addClass( "alert-danger" );
+		   	return false;
+			} else {
+				$('#estado').html('Jugador'+es+' conectado'+os);
+				//$('#estado').html('Jugadores conectados');
+				$('#jugadores').html(r.players.online+'<br>');
+				$('#btnestado').addClass( "alert-success" );
+				$('#btnestado').addClass( "button-glow" );
+				$('#demo').html(nombre+' ');  //-------------------------------------
+				return false;
+			}
+		}
+	});
+	</script>
+	
+	
+</body></html>

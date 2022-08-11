@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+    color: white !important;
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+#estado {
+    font-size: 10pt;
+}
