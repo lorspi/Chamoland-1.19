@@ -1,5 +1,6 @@
 import { world } from "mojang-minecraft";
 
+// Item en la mano del escudo
 world.events.tick.subscribe(() => {
     let players = Array.from(world.getPlayers());
     try {
@@ -10,6 +11,7 @@ world.events.tick.subscribe(() => {
 });
 
 
+// Item en la mano principal
 world.events.tick.subscribe(() => {
     let players = Array.from(world.getPlayers());
 
@@ -20,13 +22,17 @@ world.events.tick.subscribe(() => {
         if (hand.id == "minecraft:totem_of_undying") {
             try {
                 p.runCommand(`execute @s[hasitem={item=totem_of_undying,location=slot.weapon.mainhand}] ~ ~ ~ function luz/light`);
+                p.runCommand(`tellraw @a {"rawtext":[{"text":"luz: ${p.name}"}]}`);
             } catch (err) {
                 p.runCommand(`execute @s ~ ~ ~ function luz/lightnt`);
+                //p.runCommand(`tellraw @a {"rawtext":[{"text":"apagado"}]}`);
             }
         }
     }
 });
 
+
+// Item en la mano principal
 world.events.tick.subscribe(() => {
     let players = Array.from(world.getPlayers());
 
