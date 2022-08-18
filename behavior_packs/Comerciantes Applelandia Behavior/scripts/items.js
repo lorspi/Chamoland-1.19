@@ -122,7 +122,7 @@ function invocar(player) {
 
 function checkpoint(player) {
   let form = new ActionFormData()
-      form.title("Puntos de control") 
+      form.title("Punto de control") 
       //form.body("#####") 
       form.button("Guardar") 
       form.button("Cargar")
