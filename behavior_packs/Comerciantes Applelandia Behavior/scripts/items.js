@@ -59,6 +59,10 @@ function particulas(player) {
     if (item.id == "appleplus:cluster_de_almas") { 
       invocar(player)
     }
+    if (item.id == "appleplus:amuleto") { 
+      checkpoint(player)
+      //player.runCommand(`clear @s appleplus:amuleto 0 1`)
+    }
   })
 
 
@@ -114,4 +118,46 @@ function invocar(player) {
           setTimeout(() => {player.runCommand('tag @e[name=,r=10] add segura');}, 10);
         }
     })
+}
+
+function checkpoint(player) {
+  let form = new ActionFormData()
+      form.title("Puntos de control") 
+      //form.body("#####") 
+      form.button("Guardar") 
+      form.button("Cargar")
+      form.button("Borrar")
+
+      form.show(player).then((response) => {
+      if (response.selection === 0) {
+        //particulas(player)
+        try {
+            player.runCommand(`testfor @e[type=hovertext:hovertext,name=" ${player.name}"]`)
+            player.runCommand(`tellraw @s {"rawtext":[{"text":"§aPunto de control guardado."}]}`)
+            player.runCommand(`tp @e[type=hovertext:hovertext,name=" ${player.name}"] @s`)
+        } catch {
+            player.runCommand(`tellraw @s {"rawtext":[{"text":"§aPunto de control creado."}]}`)
+            player.runCommand(`summon hovertext:hovertext " ${player.name}"`)
+        }
+      }
+      if (response.selection === 1) {
+        //particulas(player)
+        try {
+            player.runCommand(`testfor @e[type=hovertext:hovertext,name=" ${player.name}"]`)
+            player.runCommand(`tellraw @s {"rawtext":[{"text":"§aViajaste a tu punto de control."}]}`)
+            player.runCommand(`tp @s @e[type=hovertext:hovertext,name=" ${player.name}"] `)
+        } catch {
+            player.runCommand(`tellraw @s {"rawtext":[{"text":"§cNo has guardado ningún punto de control."}]}`)
+        }
+      }
+      if (response.selection === 2) {
+        //particulas(player)
+        try {
+            player.runCommand(`kill @e[type=hovertext:hovertext,name=" ${player.name}"]`)
+            player.runCommand(`tellraw @s {"rawtext":[{"text":"§aPunto de control borrado."}]}`)
+        } catch {
+            player.runCommand(`tellraw @s {"rawtext":[{"text":"§cNo has guardado ningún punto de control."}]}`)
+        }
+      }
+  })
 }

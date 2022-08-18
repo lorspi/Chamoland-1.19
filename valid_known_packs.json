@@ -12,7 +12,8 @@
 		[
 			"U3FgmnHrEaYykrcgqTiI+3gfknxI7c2aUKsZ+N5dmb8=",
 			"dvPYmJGmtUw/ncbcnsOEFuNSNHdJRqkjGCSx5oiXiiM=",
-			"nzkFzoH+Ea6RrhRblT0gTRKhK8KU5oAN2O5NdwfAsPo="
+			"nzkFzoH+Ea6RrhRblT0gTRKhK8KU5oAN2O5NdwfAsPo=",
+			"B5lQcVhIfFN761Ae3zOPx4hgVdsAiHaol4ljvysRaWw="
 		],
 		"path" : "behavior_packs/experimental_caves_and_cliffs",
 		"uuid" : "8a779527-33b2-4dc6-abf4-947860a6d16d",
@@ -26,7 +27,8 @@
 		[
 			"JTRL5FYV3GvENPIiq1MqgBy5VU3NqJ1qSvtZLD6wQf4=",
 			"GGVOJBGOItdtcsrkcWujOlQERcVEBPoVFpf9hRj3/4Y=",
-			"uJuPEnTViQaxB92HfgbfgEGyt3wJ08pg6OPTORJ4sKM="
+			"uJuPEnTViQaxB92HfgbfgEGyt3wJ08pg6OPTORJ4sKM=",
+			"ENXUk06ESJfSDy0xRKVmarWPFo959RtOSemvxvCBYsg="
 		],
 		"path" : "resource_packs/DisEnchanter resource",
 		"uuid" : "3ed690fb-5dbb-4a72-b22a-496f94b7ad58",
@@ -47,7 +49,8 @@
 		[
 			"WatXc1nkxVeg6DLoxqj0VpfKGMqIz2PPtbmKOT9WwPM=",
 			"BYEqIrk3ZhJk6TgjUspOGXnrhPQludYeioc8/0K/m4U=",
-			"G9OghafDy8pmkZkT8wKpIeAkbPLn7STcEwlGbBu7Jec="
+			"G9OghafDy8pmkZkT8wKpIeAkbPLn7STcEwlGbBu7Jec=",
+			"lj0LjTubal3ue28IbviuJy7n0q5gVzDCIWOgb2ai49M="
 		],
 		"path" : "behavior_packs/DisEnchanter behavior",
 		"uuid" : "adf411be-c563-43eb-953f-5cad77580f9b",
@@ -80,7 +83,8 @@
 			"fGNHU6IR8TrvhHxSQZCSRcvZckzlFkfJ0r8sB8EtD3g=",
 			"r5zdz6z9+c9aXZY+PKryV9Mk17DC2IsrlXfOglIYTqg=",
 			"Zli4o1bUH16tbl7XQtsKX5vOkUTPmuD4WJ7P/fTyutk=",
-			"70/k8FPE2fG7BPmgeZt/JXICTwUsvXe30xRKlUSNqFs="
+			"70/k8FPE2fG7BPmgeZt/JXICTwUsvXe30xRKlUSNqFs=",
+			"Peig41Q6JEUt8jvCiH2OU2O8M1z9TBJ9KFuWCk+fdpM="
 		],
 		"path" : "resource_packs/Appleplus",
 		"uuid" : "fd9bb1b9-70c6-35e0-bb4a-06561d89f9c3",
@@ -94,7 +98,8 @@
 		[
 			"kzEvn1fqCxqc7rDfFesGEgxkKmiduZbP4GzUfzBGVs8=",
 			"b0BsBegzhRT1UIHj37U5+TPRuAOuwHCXIB6wc93me9s=",
-			"OTj7NKutICxSHX115E2j8WvpWO1Z9AAK77Zl0ziwlf4="
+			"OTj7NKutICxSHX115E2j8WvpWO1Z9AAK77Zl0ziwlf4=",
+			"LkRSLa9KOyjlxvppyAQmlPfrb12yiPai1XrUWPwQQFA="
 		],
 		"path" : "resource_packs/Bus",
 		"uuid" : "01334576-461a-9c33-34b0-522953812314",
@@ -110,7 +115,8 @@
 			"ug8BSI5CQlsr3MWr096hDBhQ9rXkB9VKda5GwTOvYUo=",
 			"Tcey+YaXfQIruTgx8jxKCOP8x6Am23nIEM8uH64AML4=",
 			"RDcPO4Obk+jkPAmlKEB6sTI7eUWHvJjrbASH4ZluW5s=",
-			"WV/F/aKvseYVch2mur0edW2RSIjHICcyLKFRzG5P0JM="
+			"WV/F/aKvseYVch2mur0edW2RSIjHICcyLKFRzG5P0JM=",
+			"T/bjkmymijUoL6NF3WzHBPTrT7FSrxpCclA+1vi4dRc="
 		],
 		"path" : "behavior_packs/StructureImports",
 		"uuid" : "9f26f1b3-2c67-4dcd-9b93-b7d41f20a857",
@@ -131,7 +137,8 @@
 		[
 			"A6dAO7MDpjQXvXTAl0BSXS6fkxPFqa1reZV5dU1h82M=",
 			"84qN8wCmO/GCABXl3EX3woML6ZQDjQcBcComUjN6c/g=",
-			"R8YQ0eG/NH56YMOIQzkJImBSwX6I+3KP/j5ieIWmysc="
+			"R8YQ0eG/NH56YMOIQzkJImBSwX6I+3KP/j5ieIWmysc=",
+			"VBh27IG4Bqd71LuRqKOgFMnf3j6XGsht4QEKZLCvwRM="
 		],
 		"path" : "resource_packs/Chamoland",
 		"uuid" : "0575c61f-a5da-4b7f-9961-ffda2908861e",
@@ -165,7 +172,8 @@
 			"nPQEQ690kO5SKEaVKKzPxUy0PTRHxBgSOyagesDO9lY=",
 			"iDeWm44WURtBJha3j7ocT3MEayev1Lk39Uvdckk73h0=",
 			"7IHoKnztzr5xmOgZqOq/EBK9Z+GzqplrbUSSCKBnjFQ=",
-			"iyhFH4q47uEB6HavxMipVLsxXIjXUAWTaY5gk6xGg5M="
+			"iyhFH4q47uEB6HavxMipVLsxXIjXUAWTaY5gk6xGg5M=",
+			"dwjQW7lIqL+L90nnVc/NIJK9Q6AamcZ3rIeEZIRkPrA="
 		],
 		"path" : "resource_packs/Comerciantes Applelandia Resource",
 		"uuid" : "01334532-462a-9c36-34b0-251658105093",
@@ -179,7 +187,8 @@
 		[
 			"/yrxf/yhVB9sXcd5FVUHouEBpO3Kj2WAJ8YmJ5DLw1Q=",
 			"SUEjn9enJ/+6hSPT30RHm+8MBycUCQo71bHRMCkMGBg=",
-			"Vovwx2qCx9Z9xnGSfdfpq69MZLC90B6qrWzFQYCpS+0="
+			"Vovwx2qCx9Z9xnGSfdfpq69MZLC90B6qrWzFQYCpS+0=",
+			"R96PfiOFgSLflymoLPdM6NvCzqLQE+rS1n379Nj2+Sc="
 		],
 		"path" : "behavior_packs/WorldEditBP",
 		"uuid" : "3cdb2ddf-662e-4f8f-a0a1-1293b91ccb2f",
@@ -200,7 +209,8 @@
 		[
 			"9Lnf2rjd9ERjc3AxhyyNldW4Jz3SpbdAim3UInWuwyk=",
 			"NQr6ZBcB+5+AtxO7B2DoMkdGDTw25zcRuNCldTGGtAI=",
-			"ozLbubXLF9aTrJIgGyzElyKrzdpmqOPksAvW9awwzqk="
+			"ozLbubXLF9aTrJIgGyzElyKrzdpmqOPksAvW9awwzqk=",
+			"BGQXyQMv0pTlUEZeu1AEP0x20le9UaZNWUNCfkm/9r0="
 		],
 		"path" : "resource_packs/Just chairs RES",
 		"uuid" : "52816887-2ebd-4680-abe1-00dcb011040f",
@@ -221,7 +231,8 @@
 		[
 			"o72R2sx60IuVN8WzJDsLk9TVkJe6ygG3kmF7drx60oE=",
 			"WNW6TWowwtF+jzFSzIxu5jU6vTdZUjWp41x9c7icTQo=",
-			"6kaTpJIdtIMrDD+brwR8T96hfi0od9GIVuQd0bZmEEo="
+			"6kaTpJIdtIMrDD+brwR8T96hfi0od9GIVuQd0bZmEEo=",
+			"3S+Aw7V7RHXy0bCOYLH+8yqsKOAPSXXXrzVL2CfFMVw="
 		],
 		"path" : "resource_packs/Mochilas",
 		"uuid" : "d0107ae8-9cbe-4c67-8330-61356327551e",
@@ -235,7 +246,8 @@
 		[
 			"4e6bxovPKHlZiEbWy+V3hTKZvbHeGHW4NXgdws4n0DE=",
 			"/MkJ86D5X9M2TsF4H/R7Dv8IAWHyvj4BTHuQNyOkGSk=",
-			"3pTjRDMiniqAFRopC7nU3brfCTV8blGL+h3TJlOLXtk="
+			"3pTjRDMiniqAFRopC7nU3brfCTV8blGL+h3TJlOLXtk=",
+			"vN2QwtPJrpHf9C2szUpEQEPEdl5Yr8JTUY4fRHD84Ow="
 		],
 		"path" : "resource_packs/MoreUseful",
 		"uuid" : "01addeca-2289-4c29-9acd-51cce4728ee1",
@@ -265,7 +277,8 @@
 			"bYdRXocMm5gqtfErLbWWu7OJEGHgXG6kTtG4rHS2bi8=",
 			"FQVZZoy3BYk8eUl+/eAGpdHVJTPaQ2ENSunljoH7Eww=",
 			"YmwcB/Jv/jrXda+oj72NbaTxzKiwOr3G52vHq0rn/R0=",
-			"3rHrNI9gKMLj6Bmn6TUvOEqGR1foFY+UEeo+RGcrRSU="
+			"3rHrNI9gKMLj6Bmn6TUvOEqGR1foFY+UEeo+RGcrRSU=",
+			"g6N3+u9ryIrNYoW9/uRBu8ZZnb4qfoKN1Ra5iqHIqFk="
 		],
 		"path" : "behavior_packs/Just chairs DAT",
 		"uuid" : "ff3a10ac-74a6-4b05-ad57-357ef0e97040",
@@ -288,7 +301,8 @@
 			"eOV4H+luXFQKq/K0ix56HGzkP/wI9XozpcEywGIK10A=",
 			"zwj/AHwLX43g+Plgjj9SKJKQ3ih/6iDJFqD74YpG26s=",
 			"OG1432+CG8Nta/2WHCpFuWY3MVNIkl26zJ/rVzOMyI0=",
-			"9ok3hsCii5pZBks3rlihyJD61OzQo1mZS8jCGDy27Zs="
+			"9ok3hsCii5pZBks3rlihyJD61OzQo1mZS8jCGDy27Zs=",
+			"UbpE2zMHEqsIJg75Ijifcer+54phWfYGZNmG/PErEFg="
 		],
 		"path" : "resource_packs/Potopo'sPl",
 		"uuid" : "e8351410-73cc-11ea-bc55-0242ac130003",
@@ -339,7 +353,8 @@
 		[
 			"LmIJt+1q3P8P/E9XbK+f9SvsKc+JAn+b8M+3PKayGnY=",
 			"FPOiPComqOCvel6rupXI00PxzhfyiGPvJW1PAopVJ2k=",
-			"NNkp++2I9dcYxuoKqN6UygvGDeP48TPQyIcNmIM0KcE="
+			"NNkp++2I9dcYxuoKqN6UygvGDeP48TPQyIcNmIM0KcE=",
+			"QjYlrp5dQASE/FWbokr/P3smqUHBvnNyoQOAIImHrVI="
 		],
 		"path" : "resource_packs/WorldEditRP",
 		"uuid" : "e304a4eb-f0a0-4979-ac17-7b0f46a555c8",
@@ -374,7 +389,8 @@
 		[
 			"ybjdUARV3VsRDRIvtvOnuNbRCxK9grl6EeePTyb5KeY=",
 			"kQE9EgKjsJP8kRMO94FA4DOfFC+8lowgF8KfDrTEZWM=",
-			"RLKBgpbM4wForqg5WgBguNnsgX/b6a0wDowT3K9w8iY="
+			"RLKBgpbM4wForqg5WgBguNnsgX/b6a0wDowT3K9w8iY=",
+			"mmOIVNbXOWrzfcCPqTkwq8Sweh69DmHzOrxwavL6m9g="
 		],
 		"path" : "behavior_packs/MoreUseful",
 		"uuid" : "c7c8c864-932e-47b6-9105-b3f5474ed58e",
@@ -402,7 +418,8 @@
 		[
 			"+v7+yRCYyrmxU5R+fXS5sknW7E5dMgw8ZxSUkDxQFfA=",
 			"RuAwJi/IPm0fsnzJ4FGfhM67ZGQgsFNsN4+8YiAZO5I=",
-			"AOciZ1gsqOnRzbRGXfbmMRXxPaFi45JB+nAjzQHuimQ="
+			"AOciZ1gsqOnRzbRGXfbmMRXxPaFi45JB+nAjzQHuimQ=",
+			"r4SVf17I/b4Dk9S8SuzUWRXJU6ByPuJgcnXPYS6ZVjA="
 		],
 		"path" : "behavior_packs/2 Horses",
 		"uuid" : "0e55cacc-62ba-44f1-a5fa-3d6b7fb6798d",
@@ -538,7 +555,8 @@
 			"OybqX4TtEi70uvEpULq1oeX0AMdp8uh5b8THFXu2bCA=",
 			"dUIcgAdowsRC+HzuaWjsJoE3djH112+0v1nR8tMqvGk=",
 			"PdNnfLq7kVckE8XyZwi6dawsFts6QTyg3to5Lb2B+/4=",
-			"fBpbDIW5ps+crtcOKfXWMUGrMdF9bu37/cQLRtwVRcE="
+			"fBpbDIW5ps+crtcOKfXWMUGrMdF9bu37/cQLRtwVRcE=",
+			"dQkKFf6pamuQ3d0vrqr4VhYGCLegjnDYHBvm4Nk85n8="
 		],
 		"path" : "behavior_packs/Appleplus",
 		"uuid" : "d62135c3-30bb-3e26-b678-5e84919a8855",
@@ -636,7 +654,8 @@
 			"MjRnU1tg6TUtR28UNv0PcGUccZEnATWY0lA3032l4jY=",
 			"BWz9ji353gVLFtsFA38HnXBM5QmrQ7AVEWbecv6zHW4=",
 			"+7AMybbWGL8ZilI81VN3U16Z/+HNSQsLiJ2I8kq2CAg=",
-			"oJbvzrrx1hC0X5RHZ2GXtTWY63ufAT/bZ+t8pOZTcW4="
+			"oJbvzrrx1hC0X5RHZ2GXtTWY63ufAT/bZ+t8pOZTcW4=",
+			"QdUxhovmhe7wo34jVV5YmI9oj4ZS+mtvm+XqUC61iQ0="
 		],
 		"path" : "behavior_packs/Comerciantes Applelandia Behavior",
 		"uuid" : "bcbd2957-df3c-416f-5edf-8d8c90a2c687",
@@ -649,7 +668,8 @@
 		"hashes" : 
 		[
 			"gymtxHtwe9QzHaW5cHjWWiXsZK/8OzOIbhL3GPN6m7o=",
-			"LWh3rfiz6qtj5e8JVJNGHD7M2LHGYnXhU3TE4cHOr/I="
+			"LWh3rfiz6qtj5e8JVJNGHD7M2LHGYnXhU3TE4cHOr/I=",
+			"oII5gRnVOmMLYnKtJ7u49VlKZODTXZqmVDWRZ3TX/Fc="
 		],
 		"path" : "behavior_packs/test_vanilla_1.11",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
@@ -666,7 +686,8 @@
 			"LJycCnWStYxJgQKzL6rfH2FS2lMm/rBYFQM0L8973Js=",
 			"q0t91JvEQlfp6PU3pfsTjIzcfMXbQoiH7P3CDWlAn+E=",
 			"BOwA35Eih8FtMS9pzQeO1G/HYSCR+/R29ZnkFr5je6c=",
-			"7x7UPqk7cSlo5b7ftc4dCwaWAVFEj0N+tdTXDzQ+uXY="
+			"7x7UPqk7cSlo5b7ftc4dCwaWAVFEj0N+tdTXDzQ+uXY=",
+			"Wgmkf3ylfwPY1bc4duhbUJLmbZfyaIOPHDL1/c+r8wM="
 		],
 		"path" : "behavior_packs/Bus",
 		"uuid" : "daf71faf-3f87-4a6d-b254-4d4cf9e2c12c",
@@ -679,7 +700,8 @@
 		"hashes" : 
 		[
 			"yNgx6rJf/KI3tJxX/tgSZJ8Z0uY1QlsXQTatjKp4vcE=",
-			"PXyncUplLteU0orpycmUj8H7tz/rALxyRk05+emiQxg="
+			"PXyncUplLteU0orpycmUj8H7tz/rALxyRk05+emiQxg=",
+			"8HB8Mnid8Ypn5WiOJeBwJ5hLbRprrS02CkPgpoHmLPI="
 		],
 		"path" : "behavior_packs/editor",
 		"uuid" : "3222066e-79d0-4573-9e15-93472d32cbd5",
@@ -695,7 +717,8 @@
 			"xamiio1CS/+i/9vmtbguvubDSYQ/Pi8FmGcsk0SiLjg=",
 			"MIfDpFMZ4VTFztYMBAfN+rk9Z0Y9Punw0RklUVA6UTw=",
 			"IqKNzf/oyuZrlNXGHkXf6cHbYYA3J5rvSEPWACz/SJA=",
-			"FzBV6+WtsFXCd0vuTV8XJzjcPaj32GLpNNY9RfGlWZo="
+			"FzBV6+WtsFXCd0vuTV8XJzjcPaj32GLpNNY9RfGlWZo=",
+			"TAkjbqiUkHdmocabdgeL3Lt8CW+zlYeyDVJXl8ndQDM="
 		],
 		"path" : "behavior_packs/Mochilas",
 		"uuid" : "d0107ae8-9cbe-4c67-8330-61356312151e",
@@ -727,7 +750,8 @@
 			"GdtnGV0vmQG+pM5Si/3OvJWQ2ksBPJ5PYxFrmO1Yn8M=",
 			"L9BGktemtHavkp5kJMfspSYMfGz0+ReJB4dlLWh1nwM=",
 			"IEoEaO3fyYfytSrhFmpuca0ZrsvKixg49tyNG28a61Y=",
-			"AuJQgflSK+uT38fL0HPXkb8fkrADu1Egm3ECFQG/dYU="
+			"AuJQgflSK+uT38fL0HPXkb8fkrADu1Egm3ECFQG/dYU=",
+			"BqtrNK4a5QkqEDmfzsJSwM2opBJhaTO3kFIErRC2AjU="
 		],
 		"path" : "behavior_packs/Potopo'sPl",
 		"uuid" : "1d28cf36-73cd-11ea-bc55-0242ac130003",
@@ -740,7 +764,8 @@
 		"hashes" : 
 		[
 			"C2dE4mBrsF9fKIRzY1mpmtwWB2kw+JFbnN2qQtpCiRw=",
-			"SjVhMvoSejv0/qTusjjosIpB2nYGXxR/XZKGkS4u3WU="
+			"SjVhMvoSejv0/qTusjjosIpB2nYGXxR/XZKGkS4u3WU=",
+			"yNqLu6W+XZoGAiWTgt4zYLUeovu3Y4pmx5/gL4b8EMI="
 		],
 		"path" : "behavior_packs/test_vanilla_1.12",
 		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
