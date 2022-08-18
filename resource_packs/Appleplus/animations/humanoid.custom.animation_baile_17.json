@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.humanoid.customm.baile_17": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"rotation": [0, 0, 0],
+					"position": [0, -10, 0],
+					"scale": 1
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [0, 0, -5],
+						"1.0": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [0, 0, 5],
+						"1.0": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [-90, -10, 0]
+				},
+				"ll": {
+					"rotation": [60, 0, 0],
+					"position": [0, 1.72, -1]
+				},
+				"lp": {
+					"rotation": [60, 0, 0],
+					"position": [0, 1.58, -0.92]
+				},
+				"rightLeg": {
+					"rotation": [-90, 10, 0]
+				},
+				"rl": {
+					"rotation": [60, 0, 0],
+					"position": [0, 1.72, -1]
+				},
+				"rp": {
+					"rotation": [60, 0, 0],
+					"position": [0, 1.58, -0.92]
+				},
+				"waist": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.48": [1, 0.975, 1],
+						"1.0": [1, 1, 1]
+					}
+				}
+			}
+		}
+	}
+}

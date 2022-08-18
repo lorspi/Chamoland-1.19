@@ -1,0 +1,187 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.humanoid.customm.muerto": {
+			"loop": true,
+			"animation_length": 0.76,
+			"bones": {
+				"root": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [15, 0, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"bone": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": [1, 1.025, 1]
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [-15, -60, 0],
+						"0.76": [-15, 25, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"hat": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"cape": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"leftArm": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"la": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"leftSleeve": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"ls": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"leftItem": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [-90, 0, 0],
+						"0.76": [-90, 35, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.28": [0, 1, -1],
+						"0.76": [-1, 1, -1]
+					},
+					"scale": 1
+				},
+				"ra": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [0, 0, -50],
+						"0.52": [0, 0, -75],
+						"0.76": [0, 0, -85]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.28": [-0.8, 1.6, 0],
+						"0.52": [-1.4, 2, 0],
+						"0.76": [-1.9, 2, 0]
+					},
+					"scale": 1
+				},
+				"rightItem": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"rightSleeve": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"rs": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [0, 0, -50],
+						"0.52": [0, 0, -75],
+						"0.76": [0, 0, -85]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.28": [-0.6, 1.4, 0],
+						"0.52": [-1.4, 2, 0],
+						"0.76": [-1.9, 2, 0]
+					},
+					"scale": 1
+				},
+				"jacket": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"j": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"leftLeg": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [0, 0, -5]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"ll": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"leftPants": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"lp": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"rightLeg": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [0, 0, 5]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"rl": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"rightPants": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"rp": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				}
+			}
+		}
+	}
+}
