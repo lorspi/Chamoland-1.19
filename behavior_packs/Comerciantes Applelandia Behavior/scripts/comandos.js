@@ -170,10 +170,12 @@ World.events.beforeChat.subscribe(main => {
                     pvp = 20
                     pvpactivador = main.sender.name
                     overworld.runCommand(`tellraw @a {"rawtext":[{"text":"§e§l${pvpactivador} §r§eha desactivado el PVP."}]}`)
+                    return
                 }
                 else {
                     pvp = 2401 // 2401
                     pvpactivador = main.sender.name
+                    return
                 }
                 
             }
@@ -184,10 +186,12 @@ World.events.beforeChat.subscribe(main => {
                 if(etiqueta==true){
                     sender.runCommand(`tag ${sender.name} remove silenciochat`)
                     sender.runCommand(`tellraw @s {"rawtext":[{"text":"§aHas activado el sonido del chat"}]}`)
+                    return
                 }
                 else {
                     sender.runCommand(`tag ${sender.name} add silenciochat`)
                     sender.runCommand(`tellraw @s {"rawtext":[{"text":"§cHas desactivado el sonido del chat."}]}`)
+                    return
                 }
             }
         }
