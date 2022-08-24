@@ -1,0 +1,25 @@
+Dedicated_Server.txt
+[2022-08-24 21:01:45:465 INFO] Starting Server
+[2022-08-24 21:01:45:465 INFO] Version 1.19.21.01
+[2022-08-24 21:01:45:465 INFO] Session ID b651ebba-cc34-4094-ab96-c6ba5b460aa0
+[2022-08-24 21:01:45:465 INFO] Level Name: Bedrock level gametest
+[2022-08-24 21:01:45:480 INFO] Game mode: 0 Survival
+[2022-08-24 21:01:45:480 INFO] Difficulty: 1 EASY
+[2022-08-24 21:01:45:618 INFO] Experiment(s) active: spct, ddi_, ucft, gtst, mola
+[2022-08-24 21:01:45:618 INFO] opening worlds/Bedrock level gametest/db
+[2022-08-24 21:01:46:518 INFO] IPv4 supported, port: 25566
+[2022-08-24 21:01:46:518 INFO] IPv6 not supported
+[2022-08-24 21:01:49:312 INFO] Server started.
+[2022-08-24 21:01:49:362 INFO] ================ TELEMETRY MESSAGE ===================
+[2022-08-24 21:01:49:362 INFO] Server Telemetry is currently not enabled. 
+[2022-08-24 21:01:49:362 INFO] Enabling this telemetry helps us improve the game.
+[2022-08-24 21:01:49:362 INFO] 
+[2022-08-24 21:01:49:362 INFO] To enable this feature, add the line 'emit-server-telemetry=true'
+[2022-08-24 21:01:49:362 INFO] to the server.properties file in the handheld/src-server directory
+[2022-08-24 21:01:49:362 INFO] ======================================================
+[2022-08-24 21:01:52:193 INFO] IPv4 supported, port: 19132
+[2022-08-24 21:01:52:193 INFO] IPv6 not supported
+[2022-08-24 21:02:10:496 INFO] Player connected: lorspi, xuid: 2533274909782977
+[2022-08-24 21:02:22:971 INFO] Player disconnected: lorspi, xuid: 2533274909782977
+[2022-08-24 21:04:15:906 INFO] Server stop requested.
+[2022-08-24 21:04:15:956 INFO] Stopping server...
