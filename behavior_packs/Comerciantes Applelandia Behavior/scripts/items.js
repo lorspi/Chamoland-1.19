@@ -60,8 +60,20 @@ function particulas(player) {
       invocar(player)
     }
     if (item.id == "appleplus:amuleto") { 
-      checkpoint(player)
+      //checkpoint(player)
       //player.runCommand(`clear @s appleplus:amuleto 0 1`)
+      try {
+          player.runCommand(`tellraw @s {"rawtext":[{"text":"§aViajaste al punto de control."}]}`)
+          player.runCommand(`tp @s @e[type=hovertext:warp,name=Punto]`)
+      } catch {
+          player.runCommand(`tellraw @s {"rawtext":[{"text":"§cNo puedes viajar al punto de control."}]}`)
+      }
+    }
+    if (item.id == "appleplus:casa") { 
+      player.runCommand(`summon hovertext:hovertext ""`)
+    }
+    if (item.id == "appleplus:aldea") { 
+      player.runCommand(`kill @e[name=]`)
     }
   })
 
