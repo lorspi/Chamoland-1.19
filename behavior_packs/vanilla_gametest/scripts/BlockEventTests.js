@@ -115,5 +115,5 @@ registerBlockPlaceTest(MinecraftItemTypes.bamboo, MinecraftBlockTypes.dirt);
 registerBlockPlaceTest(MinecraftItemTypes.banner);
 registerBlockPlaceTest(MinecraftItemTypes.bed);
 registerBlockPlaceTest(MinecraftItemTypes.flowerPot);
-registerBlockPlaceTest(MinecraftItemTypes.redstoneWire);
+registerBlockPlaceTest(MinecraftItemTypes.redstone);
 registerBlockPlaceTest(MinecraftItemTypes.oakSign);

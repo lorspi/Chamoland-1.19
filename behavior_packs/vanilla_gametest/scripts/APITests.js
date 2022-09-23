@@ -11,6 +11,7 @@ import {
   EntityEventOptions,
   EntityDataDrivenTriggerEventOptions,
   FluidContainer,
+  FluidType,
   MinecraftEffectTypes,
   MinecraftItemTypes,
   ItemStack,
@@ -437,11 +438,11 @@ GameTest.register("APITests", "piston", (test) => {
   test.assert(pistonComp != undefined, "Expected piston component");
 
   let assertPistonState = (isMoving, isExpanded, isExpanding, isRetracted, isRetracting) => {
-    test.assert(pistonComp.isMoving === isMoving, "Unexpected isMoving");
-    test.assert(pistonComp.isExpanded === isExpanded, "Unexpected isExpanded");
-    test.assert(pistonComp.isExpanding === isExpanding, "Unexpected isExpanding");
-    test.assert(pistonComp.isRetracted === isRetracted, "Unexpected isRetracted");
-    test.assert(pistonComp.isRetracting === isRetracting, "Unexpected isRetracting");
+    test.assert(pistonComp.isMoving === isMoving, `Unexpected isMoving, expected[${isMoving}] actual[${pistonComp.isMoving}]`);
+    test.assert(pistonComp.isExpanded === isExpanded, `Unexpected isExpanded, expected[${isExpanded}] actual[${pistonComp.isExpanded}]`);
+    test.assert(pistonComp.isExpanding === isExpanding, `Unexpected isExpanding, expected[${isExpanding}] actual[${pistonComp.isExpanding}]`);
+    test.assert(pistonComp.isRetracted === isRetracted, `Unexpected isRetracted, expected[${isRetracted}] actual[${pistonComp.isRetracted}]`);
+    test.assert(pistonComp.isRetracting === isRetracting, `Unexpected isRetracting, expected[${isRetracting}] actual[${pistonComp.isRetracting}]`);
   };
 
   test
@@ -451,18 +452,17 @@ GameTest.register("APITests", "piston", (test) => {
       assertPistonState(false, false, false, true, false); // isRetracted
       test.setBlockType(MinecraftBlockTypes.redstoneBlock, redstoneLoc);
     })
-    .thenIdle(4)
+    .thenIdle(3)
     .thenExecute(() => {
-      test.assert(pistonComp.attachedBlocks.length === 3, "Expected 3 attached blocks");
+      test.assert(pistonComp.attachedBlocks.length === 3, `Expected 3 attached blocks, actual [${pistonComp.attachedBlocks.length}]`);
       assertPistonState(true, false, true, false, false); // isMoving, isExpanding
     })
     .thenIdle(2)
     .thenExecute(() => {
       assertPistonState(false, true, false, false, false); // isExpanded
-
       test.setBlockType(MinecraftBlockTypes.air, redstoneLoc);
     })
-    .thenIdle(4)
+    .thenIdle(3)
     .thenExecute(() => {
       assertPistonState(true, false, false, false, true); // isMoving, isRetracting
     })
@@ -1015,7 +1015,7 @@ GameTest.register("APITests", "cauldron", (test) => {
   const loc = new BlockLocation(0, 1, 0);
   var block = test.getBlock(loc);
 
-  test.setFluidContainer(loc, GameTest.FluidType.water);
+  test.setFluidContainer(loc, FluidType.water);
   test.assert(block.getComponent("waterContainer") != null, "This is a water container");
   test.assert(
     block.getComponent("lavaContainer") == null,
@@ -1046,7 +1046,7 @@ GameTest.register("APITests", "cauldron", (test) => {
   test.assert(isNear(block.getComponent("waterContainer").customColor.green, 0.133), "green component should be set");
   test.assert(isNear(block.getComponent("waterContainer").customColor.blue, 0.333), "blue component should be set");
 
-  test.setFluidContainer(loc, GameTest.FluidType.lava);
+  test.setFluidContainer(loc, FluidType.lava);
   test.assert(
     block.getComponent("waterContainer") == null,
     "A lava container should not have a waterContainer component"
@@ -1061,7 +1061,7 @@ GameTest.register("APITests", "cauldron", (test) => {
     "A lava container should not have a potionContainer component"
   );
 
-  test.setFluidContainer(loc, GameTest.FluidType.powderSnow);
+  test.setFluidContainer(loc, FluidType.powderSnow);
   test.assert(
     block.getComponent("waterContainer") == null,
     "A snow container should not have a waterContainer component"
@@ -1076,7 +1076,7 @@ GameTest.register("APITests", "cauldron", (test) => {
     "A snow container should not have a potionContainer component"
   );
 
-  test.setFluidContainer(loc, GameTest.FluidType.potion);
+  test.setFluidContainer(loc, FluidType.potion);
   test.assert(
     block.getComponent("snowContainer") == null,
     "A potion container should not have a waterContainer component"
@@ -1101,7 +1101,7 @@ GameTest.register("APITests", "cauldron_nocrash", (test) => {
 
   test.setBlockType(MinecraftBlockTypes.air, loc);
   test.setBlockType(MinecraftBlockTypes.cauldron, loc);
-  test.setFluidContainer(loc, GameTest.FluidType.potion);
+  test.setFluidContainer(loc, FluidType.potion);
 
   let cauldron = block.getComponent("potionContainer");
   cauldron.fillLevel = 2;
@@ -1855,18 +1855,17 @@ GameTest.registerAsync("APITests", "rotate_entity", async (test) => {
   .structureName("ComponentTests:animal_pen")
   .tag(GameTest.Tags.suiteDefault);
 
-GameTest.registerAsync("APITests", "teleport_keep_velocity", async (test) => {
+GameTest.register("APITests", "teleport_keep_velocity", (test) => {
   const arrow = test.spawn("arrow", new BlockLocation(2, 4, 1));
   // The arrow should fall 1 block before hitting the target
-  arrow.setVelocity(new Vector(0, 0, 1.2));
-  const lampLoc = new BlockLocation(2, 3, 7);
-  await test.idle(2);
-  let arrowLoc = arrow.location;
-  arrowLoc.x -= 1;
-  arrow.teleport(arrowLoc, arrow.dimension, 0, 0, true);
-  test.succeedWhen(() => {
-    test.assertBlockPresent(MinecraftBlockTypes.litRedstoneLamp, lampLoc);
-  });
+  arrow.setVelocity(test.rotateVector(new Vector(0, 0, 1.2)));
+  let relativeLoc = test.relativeLocation(arrow.location);
+  relativeLoc.x -= 1;
+  let teleportLoc = test.worldLocation(relativeLoc);
+  arrow.teleport(teleportLoc, arrow.dimension, 0, 0, true);
+  let velocity = arrow.velocity.length();
+  test.assert(velocity > 0.5, "Expected velocity to be greater than 0.5, but got " + velocity);
+  test.succeed();
 })
   .structureName("SimulatedPlayerTests:target_practice")
   .tag(GameTest.Tags.suiteDefault);

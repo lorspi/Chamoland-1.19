@@ -35,3 +35,9 @@ import "scripts/ItemTests.js";
 import "scripts/ItemEnchantmentsTests.js";
 import "scripts/SculkTests.js";
 import "scripts/VibrationTests.js";
+import "scripts/EnchantmentTests.js";
+
+import { system } from "mojang-minecraft";
+system.events.beforeWatchdogTerminate.subscribe((e) => {
+  e.cancel = true;
+});

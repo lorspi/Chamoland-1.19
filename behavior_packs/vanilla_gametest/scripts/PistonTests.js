@@ -332,7 +332,7 @@ GameTest.register("PistonTests", "block_leave_bedrock", (test) => {
   test.pulseRedstone(trigger, 2);
   test
     .startSequence()
-    .thenIdle(2)
+    .thenIdle(1)
     .thenWait(() => {
       test.assertBlockPresent(MinecraftBlockTypes.concrete, extended, true);
       test.assertBlockPresent(MinecraftBlockTypes.air, retracted, true);
@@ -340,7 +340,7 @@ GameTest.register("PistonTests", "block_leave_bedrock", (test) => {
     .thenExecuteAfter(3, () => {
       test.pulseRedstone(trigger, 2);
     })
-    .thenIdle(6)
+    .thenIdle(5)
     .thenWait(() => {
       test.assertBlockPresent(MinecraftBlockTypes.concrete, retracted, true);
       test.assertBlockPresent(MinecraftBlockTypes.air, extended, true);

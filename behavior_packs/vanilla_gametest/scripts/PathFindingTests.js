@@ -191,7 +191,8 @@ function createVerticalTestFunctionWithPlacementMap(counter, placementMap, tag) 
     // Prepare the map
     placeBlocksFromMap(test, placementMap);
     const bedPos = new BlockLocation(1, 2, 4);
-    const aboveBedPos = bedPos.above().above(); // Check 2 blocks above the bed because under rare circumstances the villager hit box may stick out above the bed block when lying down.
+    const doubleAboveBedPos = bedPos.above().above(); // Check 2 blocks above the bed because under rare circumstances the villager hit box may stick out above the bed block when lying down. (Shouldn't happen anymore)
+    const singleAboveBedPos = bedPos.above(); // Villager hit box should be working in bed properly now
     const spawnPos = new BlockLocation(5, 3, 4);
 
     // Do the test
@@ -199,7 +200,8 @@ function createVerticalTestFunctionWithPlacementMap(counter, placementMap, tag) 
     test.spawn(villagerEntitySpawnType, spawnPos);
 
     test.succeedWhen(() => {
-      test.assertEntityPresent(villagerEntityType, aboveBedPos, false);
+      test.assertEntityPresent(villagerEntityType, singleAboveBedPos, false);
+      test.assertEntityPresent(villagerEntityType, doubleAboveBedPos, false);
       test.assertEntityPresent(villagerEntityType, bedPos, true);
 
       test.killAllEntities(); // Clean up villagers so the VillageManager doesn't waste time looking for points of interest (POIs)
@@ -225,14 +227,16 @@ function createVerticalTestFunctionWithCustomBlocks(testName, floor1, floor2, mi
     // Prepare the map
     placeBlocks(test, floor1, floor2, mid2, ceiling2);
     const bedPos = new BlockLocation(1, 2, 4);
-    const aboveBedPos = bedPos.above().above(); // Check 2 blocks above the bed because under rare circumstances the villager hit box may stick out above the bed block when lying down.
+    const doubleAboveBedPos = bedPos.above().above(); // Check 2 blocks above the bed because under rare circumstances the villager hit box may stick out above the bed block when lying down. (Shouldn't happen anymore)
+    const singleAboveBedPos = bedPos.above(); // Villager hit box should be working in bed properly now
     const spawnPos = new BlockLocation(5, 3, 4);
 
     // Do the test
     test.assertEntityPresent(villagerEntityType, bedPos, false);
     test.spawn(villagerEntitySpawnType, spawnPos);
     test.succeedWhen(() => {
-      test.assertEntityPresent(villagerEntityType, aboveBedPos, false);
+      test.assertEntityPresent(villagerEntityType, singleAboveBedPos, false);
+      test.assertEntityPresent(villagerEntityType, doubleAboveBedPos, false);
       test.assertEntityPresent(villagerEntityType, bedPos, true);
 
       test.killAllEntities(); // Clean up villagers so the VillageManager doesn't waste time looking for points of interest (POIs)

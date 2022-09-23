@@ -546,6 +546,7 @@ GameTest.register("VibrationTests", "event_splash_boat_on_bubble_column", (test)
 
     succeedOnVibrationDetected(test, sensorPos, comparatorPos, expectedFrequency);
 })
+    .maxTicks(TicksPerSecond * 15)
     .tag(GameTest.Tags.suiteDefault);
 
 // Tests that a projectile being shot (by powering a Dispenser) produces vibrations of the expected frequency.

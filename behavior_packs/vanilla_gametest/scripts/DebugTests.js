@@ -37,10 +37,10 @@ GameTest.register("DebugTests", "perf_hang", (test) => {
   .structureName("DebugTests:always_succeed");
 
 GameTest.register("DebugTests", "perf_slow", (test) => {
-  console.warn("3 ms delay each frame");
+  console.warn("7 ms delay each frame");
   let tickEvent = world.events.tick.subscribe((eventData) => {
     const start = Date.now();
-    while (Date.now() - start < 3) {}
+    while (Date.now() - start < 7) {}
   });
   test.runAfterDelay(80, () => {
     world.events.tick.unsubscribe(tickEvent);
@@ -54,6 +54,21 @@ GameTest.register("DebugTests", "perf_spike", (test) => {
   console.warn("150 ms delay");
   const start = Date.now();
   while (Date.now() - start < 150) {}
+  test.succeed();
+})
+  .tag(GameTest.Tags.suiteDebug)
+  .structureName("DebugTests:always_succeed");
+
+GameTest.register("DebugTests", "out_of_memory", (test) => {
+  let buffer = new ArrayBuffer(250000000); // 250MB
+  test.fail("Test should have ran out of memory");
+})
+  .tag(GameTest.Tags.suiteDebug)
+  .structureName("DebugTests:always_fail");
+
+GameTest.register("DebugTests", "high_memory_usage", (test) => {
+  let buffer = new ArrayBuffer(100000000); // 100MB
+  buffer.a = buffer; // circular reference
   test.succeed();
 })
   .tag(GameTest.Tags.suiteDebug)

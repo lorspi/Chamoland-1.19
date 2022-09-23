@@ -1,3 +1,0 @@
-Dedicated_Server.txt
-[2022-09-21 20:40:45:093 INFO] Server stop requested.
-[2022-09-21 20:40:45:139 INFO] Stopping server...

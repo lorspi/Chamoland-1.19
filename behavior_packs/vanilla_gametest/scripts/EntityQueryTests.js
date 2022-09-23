@@ -17,8 +17,7 @@ GameTest.register("EntityQueryTests", "world_player_query", (test) => {
   test
     .startSequence()
     .thenExecuteAfter(2, () => {
-      let options = new EntityQueryOptions();
-      options.name = player.nameTag;
+      let options = { name: player.nameTag };
       const playerIterator = world.getPlayers(options);
       const iteratorType = playerIterator.constructor.toString().match(/function (\w*)/)[1];
       test.assert(iteratorType == "PlayerIterator", "Expected PlayerIterator, got " + iteratorType);
@@ -36,8 +35,7 @@ GameTest.register("EntityQueryTests", "dimension_player_query", async (test) => 
 
   await test.idle(2);
 
-  let options = new EntityQueryOptions();
-  options.name = player.nameTag;
+  let options = { name: player.nameTag };
   const dimension = test.getDimension();
   const players = Array.from(dimension.getPlayers(options));
   test.assert(players.length === 1 && players[0] === player, "Unexpected player");
@@ -57,9 +55,10 @@ GameTest.register("EntityQueryTests", "dimension_entity_query", (test) => {
   const testEx = new GameTestExtensions(test);
 
   const createQueryOptions = function () {
-    let options = new EntityQueryOptions();
-    options.location = test.worldLocation(new Location(1, 2, 1));
-    options.volume = testEx.rotateVolume(new BlockAreaSize(5, 3, 5));
+    let options = {
+      location: test.worldLocation(new Location(1, 2, 1)),
+      volume: testEx.rotateVolume(new BlockAreaSize(5, 3, 5)),
+    };
     return options;
   };
 
@@ -311,27 +310,27 @@ GameTest.register("EntityQueryTests", "world_player_query_positional_option_exce
   };
 
   test.spawnSimulatedPlayer(new BlockLocation(1, 2, 1), "world_player_1");
-  let options = new EntityQueryOptions();
+  let options = {};
   options.location = new Location(0, 2, 1);
   assertQueryPositionalOptionException(options, "location");
 
-  options = new EntityQueryOptions();
+  options = {};
   options.closest = 1;
   assertQueryPositionalOptionException(options, "closest");
 
-  options = new EntityQueryOptions();
+  options = {};
   options.farthest = 1;
   assertQueryPositionalOptionException(options, "farthest");
 
-  options = new EntityQueryOptions();
+  options = {};
   options.maxDistance = 1;
   assertQueryPositionalOptionException(options, "maxDistance");
 
-  options = new EntityQueryOptions();
+  options = {};
   options.minDistance = 1;
   assertQueryPositionalOptionException(options, "minDistance");
 
-  options = new EntityQueryOptions();
+  options = {};
   options.volume = new BlockAreaSize(1, 1, 1);
   assertQueryPositionalOptionException(options, "volume");
 

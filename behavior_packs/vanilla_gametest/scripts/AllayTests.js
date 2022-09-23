@@ -27,7 +27,8 @@ GameTest.register("AllayTests", "allay_pickup_item", (test) => {
 
 // Tests that an Allay can leave a vertically partial block it got stuck into (e.g. lantern).
 GameTest.register("AllayTests", "allay_unstucks_from_lantern", (test) => {
-    const spawnPos = new Location(5.75, 4, 2.5);
+    // Really make sure it's stuck up in the lanterns.  
+    const spawnPos = new Location(5.75, 4.25, 2.5);
     const allayEntityType = "minecraft:allay";
     const allay = test.spawnWithoutBehaviorsAtLocation(allayEntityType, spawnPos);
 
