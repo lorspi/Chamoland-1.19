@@ -1,4 +1,4 @@
-import { world } from "mojang-minecraft";
+import { world } from "@minecraft/server";
 
 // Item en la mano del escudo
 world.events.tick.subscribe(() => {

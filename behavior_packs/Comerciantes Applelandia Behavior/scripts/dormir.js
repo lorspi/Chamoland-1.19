@@ -1,6 +1,6 @@
 //bridge-file-version: #5
 //Imports
-import { world as World } from "mojang-minecraft";
+import { world as World } from "@minecraft/server";
 
 //Consts
 const overworld = World.getDimension("overworld")

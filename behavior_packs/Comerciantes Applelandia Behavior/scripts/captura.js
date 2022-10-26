@@ -1,6 +1,6 @@
-import { ActionFormData, MessageFormData } from "mojang-minecraft-ui"
-import { world } from "mojang-minecraft"
-import "scripts/dependencias/timer.js";
+import { ActionFormData, MessageFormData } from "@minecraft/server-ui"
+import { world } from "@minecraft/server"
+import "dependencias/timer.js";
 
 
 //Consts

@@ -1,4 +1,4 @@
-import { world } from "mojang-minecraft"
+import { world } from "@minecraft/server"
 
 function chatrank(data){
     const tags = data.sender.getTags()    

@@ -1,7 +1,7 @@
 //bridge-file-version: #5
 //Imports
-import { world as World } from "mojang-minecraft";
-import "scripts/dependencias/timer.js";
+import { world as World } from "@minecraft/server";
+import "dependencias/timer.js";
 
 //Consts
 const overworld = World.getDimension("overworld")
