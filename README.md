@@ -2,10 +2,9 @@
 
 ## Para correr servidor localmente
 
-* Bajas el archivo necesario y lo pones en la razíz (al lado de _bedrock_server.exe_):
-https://mega.nz/file/Y15wRKxb#vsf0_aPDOsApIVtBdMnssWNDNikW87_QwaRMFNvMJgY
+* Extraes _"bedrock-server.pdb.zip"_ en la raíz (al lado de _"bedrock_server.exe"_):
 * Ejecutas __bedrock_server.exe__
-* Desde el juego vas _"Jugar"_ a la pestaña _"Servidores"_. Agregas un servidor nuevo. Pones tu IPV4 local y puerto 19132.
+* Desde el juego vas _"Jugar"_ a la pestaña _"Servidores"_. Agregas un servidor nuevo. Pones tu IPV4 local y puerto 25566.
 
 ## Ayuda
 
@@ -13,3 +12,4 @@ https://mega.nz/file/Y15wRKxb#vsf0_aPDOsApIVtBdMnssWNDNikW87_QwaRMFNvMJgY
 * Minecraft Addons: https://www.minecraft.net/es-es/addons
 * Documentación de Microsoft para Bedrock: https://docs.microsoft.com/en-us/minecraft/creator/
 * Documentación de terceros: https://wiki.bedrock.dev
+* Explicación de cambios en la API de Bedrock: https://youtu.be/avUkl7H13cI
