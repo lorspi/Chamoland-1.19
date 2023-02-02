@@ -1,0 +1,99 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.kitchen_totem",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "Par1",
+					"pivot": [-5, 11, 0]
+				},
+				{
+					"name": "Brazo",
+					"parent": "Par1",
+					"pivot": [5, 11, 0],
+					"rotation": [0, -90, -135],
+					"cubes": [
+						{"origin": [3, 6.87527, -2.36112], "size": [4, 4, 3], "uv": [28, 37]},
+						{"origin": [3, 3.87527, -6.36112], "size": [4, 3, 7], "uv": [23, 31]},
+						{"origin": [3.5, 4.37527, -7.36112], "size": [3, 2, 2], "uv": [0, 39]}
+					]
+				},
+				{
+					"name": "Brazo2",
+					"parent": "Par1",
+					"pivot": [-5, 11, 0],
+					"rotation": [0, 90, 132.5],
+					"cubes": [
+						{"origin": [-7, 6.87527, -2.36112], "size": [4, 4, 3], "uv": [28, 37]},
+						{"origin": [-7, 3.87527, -6.36112], "size": [4, 3, 7], "uv": [23, 31]},
+						{"origin": [-6.5, 4.37527, -7.36112], "size": [3, 2, 2], "uv": [0, 39]}
+					]
+				},
+				{
+					"name": "Par2",
+					"pivot": [0, 11, 5],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "Brazo3",
+					"parent": "Par2",
+					"pivot": [10, 11, 5],
+					"rotation": [0, -90, -135],
+					"cubes": [
+						{"origin": [8, 6.87527, 2.63888], "size": [4, 4, 3], "uv": [28, 37]},
+						{"origin": [8, 3.87527, -1.36112], "size": [4, 3, 7], "uv": [23, 31]},
+						{"origin": [8.5, 4.37527, -2.36112], "size": [3, 2, 2], "uv": [0, 39]}
+					]
+				},
+				{
+					"name": "Brazo4",
+					"parent": "Par2",
+					"pivot": [0, 11, 5],
+					"rotation": [0, 90, 132.5],
+					"cubes": [
+						{"origin": [-2, 6.87527, 2.63888], "size": [4, 4, 3], "uv": [28, 37]},
+						{"origin": [-2, 3.87527, -1.36112], "size": [4, 3, 7], "uv": [23, 31]},
+						{"origin": [-1.5, 4.37527, -2.36112], "size": [3, 2, 2], "uv": [0, 39]}
+					]
+				},
+				{
+					"name": "Cuerpo",
+					"pivot": [0, 1, 0]
+				},
+				{
+					"name": "bone6",
+					"parent": "Cuerpo",
+					"pivot": [0, 15, 35]
+				},
+				{
+					"name": "bone5",
+					"parent": "Cuerpo",
+					"pivot": [0, 9, 0],
+					"cubes": [
+						{"origin": [-7, 0, -7], "size": [14, 14, 14], "uv": [0, 0]},
+						{"origin": [-4, 2, -8], "size": [8, 4, 1], "uv": [0, 84]},
+						{"origin": [-1, 3, -8.4], "size": [2, 2, 1], "uv": [3, 97]}
+					]
+				},
+				{
+					"name": "bone7",
+					"parent": "Cuerpo",
+					"pivot": [0, 1, 0]
+				},
+				{
+					"name": "bone8",
+					"parent": "Cuerpo",
+					"pivot": [0, 1, 0]
+				}
+			]
+		}
+	]
+}
