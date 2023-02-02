@@ -13,3 +13,4 @@ https://mega.nz/file/Y15wRKxb#vsf0_aPDOsApIVtBdMnssWNDNikW87_QwaRMFNvMJgY
 * Minecraft Addons: https://www.minecraft.net/es-es/addons
 * Documentación de Microsoft para Bedrock: https://docs.microsoft.com/en-us/minecraft/creator/
 * Documentación de terceros: https://wiki.bedrock.dev
+* Explicación de cambios en la API de Bedrock: https://youtu.be/avUkl7H13cI
