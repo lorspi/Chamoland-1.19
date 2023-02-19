@@ -1,10 +1,20 @@
 # Chamoland
 
-## Para correr servidor localmente
+## Correr servidor localmente
 
 * Extraes _"bedrock-server.pdb.zip"_ en la raíz (al lado de _"bedrock_server.exe"_):
 * Ejecutas __bedrock_server.exe__
 * Desde el juego vas _"Jugar"_ a la pestaña _"Servidores"_. Agregas un servidor nuevo. Pones tu IPV4 local y puerto 25566.
+
+## Instalar definiciones del API
+
+ - Instalar NodeJS: https://nodejs.org/en/
+ - Definiciones:  
+    ``npm i @minecraft/server@beta``  
+    ``npm i @minecraft/server-gametest@beta``  
+    ``npm i @minecraft/server-ui@beta``  
+    ``npm i @minecraft/server-admin@beta``  
+    ``npm i @minecraft/server-net@beta``
 
 ## Ayuda
 
