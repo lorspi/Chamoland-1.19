@@ -3,6 +3,7 @@ Peuqeños
  = Cara de lorspi
  = Cara Panta
  = Cara Panta transp
+ = Cara de Shakal
 
  = Moneda
  = Pila de monedas 
@@ -51,6 +52,7 @@ Grandes
  = PantallazoAzul
  = AngieDi
  = lorspi HD
+ = Shakal
 
 -----
 
